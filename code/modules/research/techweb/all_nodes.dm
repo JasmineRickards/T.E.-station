@@ -1580,6 +1580,7 @@
 		"pin_testing",
 		"tele_shield",
 		"ammoworkbench_disk_lethal", //SKYRAT EDIT ADDITION
+		"SC-1", //Good job, guys. Adding a critical component that can't be found so easily. T.E. change
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20000)
 	discount_experiments = list(/datum/experiment/ordnance/explosive/pressurebomb = 10000)
@@ -1591,7 +1592,10 @@
 	prereq_ids = list("adv_engi", "weaponry")
 	design_ids = list(
 		"pin_loyalty",
-		"ammo_workbench", //SKYRAT EDIT ADDITION
+		"ammo_workbench",//SKYRAT EDIT ADDITION
+		"SC-2",	//Reeeal smart. T.E. change
+		"p-90", //T.E. change
+		"p-90ammo", //T.E. change
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 

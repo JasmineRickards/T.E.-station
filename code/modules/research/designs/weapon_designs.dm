@@ -144,6 +144,60 @@
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 	autolathe_exportable = FALSE
 
+/datum/design/sc1
+	name = "SC-1 Laser rifle"
+	desc = "The basic energy rifle used by security forces."
+	id = "SC-1"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 10000, /datum/material/glass = 2000, /datum/material/titanium = 1000)
+	build_path = /obj/item/gun/energy/laser
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/p90
+	name = "p90 PDW"
+	desc = "The Point defence weapon used by security forces."
+	id = "p-90"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 10000, /datum/material/glass = 2000, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path = /obj/item/gun/ballistic/automatic/p90
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/p90ammo
+	name = "p90 PDW magazine"
+	desc = "The Point defence weapon ammo used by security forces."
+	id = "p-90ammo"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 5000, /datum/material/silver = 900,)
+	build_path = /obj/item/ammo_box/magazine/p90
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+
+/datum/design/sc2
+	name = "SC-2 Laser rifle"
+	desc = "The advanced energy rifle used by security forces."
+	id = "SC-2"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 10000, /datum/material/glass = 2000, /datum/material/silver = 900, /datum/material/titanium = 3000)
+	build_path = /obj/item/gun/energy/e_gun
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+
 /datum/design/nuclear_gun
 	name = "Advanced Energy Gun Part Kit"
 	desc = "The kit for an energy gun with an experimental miniaturized reactor."

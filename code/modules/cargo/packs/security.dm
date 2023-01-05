@@ -223,7 +223,7 @@
 	crate_name = "chemical implant crate"
 
 // SKYRAT EDIT REMOVAL BEGIN - CARGO ARMAMENTS
-/*
+
 /datum/supply_pack/security/armory/ballistic
 	name = "Combat Shotguns Crate"
 	desc = "For when the enemy absolutely needs to be replaced with lead. \
@@ -245,13 +245,13 @@
 
 /datum/supply_pack/security/armory/energy
 	name = "Energy Guns Crate"
-	desc = "Contains two Energy Guns, capable of firing both nonlethal and lethal \
+	desc = "Contains two Energy Guns, capable of firing lethal bolts. \
 		blasts of light. Requires Armory access to open."
 	cost = CARGO_CRATE_VALUE * 18
-	contains = list(/obj/item/gun/energy/e_gun = 2)
+	contains = list(/obj/item/gun/energy/laser = 2)
 	crate_name = "energy gun crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
-*/
+
 // SKYRAT EDIT REMOVAL END
 
 /datum/supply_pack/security/armory/exileimp
@@ -371,7 +371,7 @@
 	crate_name = "swat crate"
 
 // SKYRAT EDIT REMOVAL BEGIN - CARGO ARMAMENTS
-/*
+
 /datum/supply_pack/security/armory/thermal
 	name = "Thermal Pistol Crate"
 	desc = "Contains a pair of holsters each with two experimental thermal pistols, \
@@ -401,5 +401,5 @@
 		/obj/item/ammo_box/magazine/wt550m9 = 4,
 	)
 	crate_name = "Ammo box"
-*/
+
 // SKYRAT EDIT REMOVAL END
