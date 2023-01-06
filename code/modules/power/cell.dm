@@ -30,6 +30,7 @@
 	var/rigged = FALSE
 	///If the power cell was damaged by an explosion, chance for it to become corrupted and function the same as rigged.
 	var/corrupted = FALSE
+	var/self_recharge = 0 //does it self recharge, over time, or not?
 	///how much power is given every tick in a recharger
 	var/chargerate = 100
 	///If true, the cell will state it's maximum charge in it's description
@@ -378,6 +379,16 @@
 	maxcharge = 40000
 	custom_materials = list(/datum/material/glass=600)
 	chargerate = 4000
+
+/obj/item/stock_parts/cell/bluespacereactor
+	empty = TRUE
+	name = "bluespace power cell"
+	desc = "A rechargeable transdimensional power cell."
+	icon_state = "bscell"
+	maxcharge = 10000
+	custom_materials = list(/datum/material/glass=600)
+	chargerate = 400
+	self_recharge = 1
 
 /obj/item/stock_parts/cell/bluespace/empty
 	empty = TRUE

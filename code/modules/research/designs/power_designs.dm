@@ -67,6 +67,20 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
 
+/datum/design/bluespacereactor
+	name = "Bluespace reactor Power Cell"
+	desc = "A power cell self recharges at the cost of capacity."
+	id = "bluespace_cell"
+	build_type = PROTOLATHE | AWAY_LATHE | MECHFAB
+	materials = list(/datum/material/iron = 2700, /datum/material/gold = 1200, /datum/material/glass = 1600, /datum/material/diamond = 1600, /datum/material/titanium = 1500, /datum/material/bluespace = 850)
+	construction_time=150
+	build_path = /obj/item/stock_parts/cell/bluespacereactor
+	category = list(
+		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_4
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
+
+
 /datum/design/inducer
 	name = "Inducer"
 	desc = "The NT-75 Electromagnetic Power Inducer can wirelessly induce electric charge in an object, allowing you to recharge power cells without having to remove them."
