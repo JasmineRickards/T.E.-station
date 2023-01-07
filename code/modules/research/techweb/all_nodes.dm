@@ -791,6 +791,7 @@
 	design_ids = list(
 		"bluespace_cell",
 		"quadratic_capacitor",
+		"bluespace_reactor",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
 	discount_experiments = list(/datum/experiment/scanning/points/machinery_pinpoint_scan/tier3_cells = 3000)

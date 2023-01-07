@@ -50,6 +50,8 @@
 /obj/item/stock_parts/cell/Initialize(mapload, override_maxcharge)
 	. = ..()
 	create_reagents(5, INJECTABLE | DRAINABLE)
+	if(self_recharge)
+		START_PROCESSING(SSobj, src)
 	if (override_maxcharge)
 		maxcharge = override_maxcharge
 	rating = max(round(maxcharge / 10000, 1), 1)
@@ -102,6 +104,22 @@
 		loc.update_appearance()
 
 	return .
+
+/obj/item/stock_parts/cell/vv_edit_var(var_name, var_value)
+	switch(var_name)
+		if(NAMEOF(src, self_recharge))
+			if(var_value)
+				START_PROCESSING(SSobj, src)
+			else
+				STOP_PROCESSING(SSobj, src)
+	. = ..()
+
+/obj/item/stock_parts/cell/process()
+	if(self_recharge)
+		give(chargerate * 0.25)
+	else
+		return PROCESS_KILL
+
 
 /obj/item/stock_parts/cell/create_reagents(max_vol, flags)
 	. = ..()
@@ -382,8 +400,8 @@
 
 /obj/item/stock_parts/cell/bluespacereactor
 	empty = TRUE
-	name = "bluespace power cell"
-	desc = "A rechargeable transdimensional power cell."
+	name = "bluespace reactor power cell"
+	desc = "A self charging transdimensional power cell."
 	icon_state = "bscell"
 	maxcharge = 10000
 	custom_materials = list(/datum/material/glass=600)

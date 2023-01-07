@@ -70,7 +70,7 @@
 /datum/design/bluespacereactor
 	name = "Bluespace reactor Power Cell"
 	desc = "A power cell self recharges at the cost of capacity."
-	id = "bluespace_cell"
+	id = "bluespace_reactor"
 	build_type = PROTOLATHE | AWAY_LATHE | MECHFAB
 	materials = list(/datum/material/iron = 2700, /datum/material/gold = 1200, /datum/material/glass = 1600, /datum/material/diamond = 1600, /datum/material/titanium = 1500, /datum/material/bluespace = 850)
 	construction_time=150
