@@ -7,3 +7,4 @@
 jasrick603 = Host
 transcendentenemy = Host
 thatfurry = Trial Admin
+Lurzefromgermany = Coder
