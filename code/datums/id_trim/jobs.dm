@@ -535,7 +535,12 @@
 		ACCESS_WEAPONS,
 		)
 	minimal_wildcard_access = list(
+		ACCESS_HOS,
 		ACCESS_HOP,
+		ACCESS_CE,
+		ACCESS_RD,
+		ACCESS_CMO,
+		ACCESS_QM,
 		)
 	extra_access = list()
 	extra_wildcard_access = list()
@@ -586,6 +591,11 @@
 		)
 	minimal_wildcard_access = list(
 		ACCESS_HOS,
+		ACCESS_HOP,
+		ACCESS_CE,
+		ACCESS_RD,
+		ACCESS_CMO,
+		ACCESS_QM,
 		)
 	template_access = list(
 		ACCESS_CAPTAIN,

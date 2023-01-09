@@ -18,7 +18,7 @@
 /obj/projectile/bullet/shotgun_beanbag
 	name = "beanbag slug"
 	icon_state = "pellet"
-	damage = 10
+	damage = 5
 	stamina = 55
 	wound_bonus = 20
 	sharpness = NONE
@@ -40,7 +40,7 @@
 
 /obj/projectile/bullet/shotgun_stunslug
 	name = "stunslug"
-	damage = 5
+	damage = 1
 	paralyze = 100
 	stutter = 10 SECONDS
 	jitter = 40 SECONDS
@@ -83,7 +83,7 @@
 
 /obj/projectile/bullet/pellet/shotgun_rubbershot
 	name = "rubbershot pellet"
-	damage = 3
+	damage = 1
 	stamina = 11
 	sharpness = NONE
 	embedding = null

@@ -6,5 +6,6 @@
 
 jasrick603 = Host
 transcendentenemy = Host
-thatfurry = Trial Admin
+thatfurry = Game Admin
 Lurzefromgermany = Coder
+HyroFox = Game Admin

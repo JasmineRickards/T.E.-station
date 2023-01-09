@@ -1541,6 +1541,9 @@
 		"seclite",
 		"zipties",
 		"inspector",
+		"spkkit",
+		"G17kit",
+		"r84kit",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 
@@ -1581,7 +1584,11 @@
 		"pin_testing",
 		"tele_shield",
 		"ammoworkbench_disk_lethal", //SKYRAT EDIT ADDITION
-		"SC-1", //Good job, guys. Adding a critical component that can't be found so easily. T.E. change
+		"SC-1",	//Good job, guys. Adding a critical component that can't be found so easily. T.E. change
+		"pbgun", //Good job, guys. Adding a critical component that can't be found so easily. T.E. changes below
+		"owkit",
+		"pbsmg",
+
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20000)
 	discount_experiments = list(/datum/experiment/ordnance/explosive/pressurebomb = 10000)
@@ -1594,9 +1601,16 @@
 	design_ids = list(
 		"pin_loyalty",
 		"ammo_workbench",//SKYRAT EDIT ADDITION
-		"SC-2",	//Reeeal smart. T.E. change
-		"p-90", //T.E. change
-		"p-90ammo", //T.E. change
+		"SC-2",	//Reeeal smart. T.E. changes below
+		"p-90",
+		"p-90ammo",
+		"m16ar",
+		"m16mod",
+		"m16mod2",
+		"m16ammo",
+		"m16ammodrum",
+		"as2kit",
+		"norwindkit",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 

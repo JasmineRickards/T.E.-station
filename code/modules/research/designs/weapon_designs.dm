@@ -157,6 +157,110 @@
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 	autolathe_exportable = FALSE
 
+/datum/design/pbgun
+	name = "Bolt Pepperball AHG"
+	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
+	id = "pbgun"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 5000, /datum/material/glass = 250, /datum/material/plastic = 1500)
+	build_path = /obj/item/gun/ballistic/automatic/pistol/pepperball
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/pbgunammo
+	name = "pistol magazine (pepperball)"
+	desc = "A gun magazine filled with balls."
+	id = "pbgunammo"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 1250)
+	build_path = /obj/item/ammo_box/magazine/pepperball
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/G17kit
+	name = "GK-17 pistol supply box"
+//	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
+	id = "G17kit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 250,	/datum/material/silver = 900, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/glock17
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/spk
+	name = "9x19mm pistol case"
+//	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
+	id = "spkkit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 250,	/datum/material/silver = 900, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/pdh_peacekeeper
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/revolutionkit
+	name = "Revolution Revolver"
+//	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
+	id = "r84kit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 250,	/datum/material/silver = 900, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/revolution
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/ostwindkit
+	name = "Ostwind rifle kit"
+//	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
+	id = "owkit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 25000, /datum/material/glass = 250,	/datum/material/silver = 900, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/ostwind
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/pbsmgkit
+	name = "Pitbull smg kit"
+//	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
+	id = "pbsmg"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 25000, /datum/material/glass = 250,	/datum/material/silver = 900, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/pitbull
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/as2kit
+	name = "M2 Auto shotgun kit"
+//	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
+	id = "as2kit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 30000, /datum/material/glass = 250,	/datum/material/silver = 900, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/m23
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
 /datum/design/p90
 	name = "p90 PDW"
 	desc = "The Point defence weapon used by security forces."
@@ -183,6 +287,83 @@
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 	autolathe_exportable = FALSE
 
+/datum/design/norwind
+	name = "12.7x30mm DMR supply box."
+//	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
+	id = "norwindkit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 30500, /datum/material/glass = 2000, /datum/material/titanium = 8000, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path =/obj/item/storage/box/gunset/norwind
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/m16
+	name = "XM-2537 rifle"
+	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
+	id = "m16ar"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 12500, /datum/material/glass = 2000, /datum/material/titanium = 2000, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path = /obj/item/gun/ballistic/automatic/m16
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/m16mod
+	name = "XM-2537 SOPMOD rifle"
+	desc = "A heavily tweaked carbine version of the XM-2537 rifle made for tactically operating in tactical environments. This doesn't smell \"authentic military hardware\" to you."
+	id = "m16mod"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 2000, /datum/material/titanium = 2500, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path = /obj/item/gun/ballistic/automatic/m16/modern
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/m16mod2
+	name = "XM-2537 'Amans Patriae' rifle"
+	desc = "An expertly modified, super-compact XM-2537 rifle designed for operating in tight corridors and fields full of Bethlehem flowers. You're a soldier, finish your mission!"
+	id = "m16mod2"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 17500, /datum/material/glass = 2000, /datum/material/titanium = 2500, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path = /obj/item/gun/ballistic/automatic/m16/modern/v2
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/m16ammo
+	name = "XM-2537 magazine"
+	desc = "A double-stack translucent polymer magazine for use with the XM-2537 rifles. Holds 30 rounds of .277 Aestus."
+	id = "m16ammo"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 5000, /datum/material/silver = 900,)
+	build_path = /obj/item/ammo_box/magazine/m16
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/m16ammodrum
+	name = "XM-2537 drum magazine"
+	desc = "A double-stack solid polymer drum made for use with the Amans Patriae rifle. Holds 50 rounds of .277 ammo."
+	id = "m16ammodrum"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 9000, /datum/material/silver = 1400,)
+	build_path = /obj/item/ammo_box/magazine/m16/patriot
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
 
 /datum/design/sc2
 	name = "SC-2 Laser rifle"

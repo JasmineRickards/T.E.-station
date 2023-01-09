@@ -11,7 +11,7 @@
 
 /obj/projectile/bullet/c45/rubber
 	name = ".460 Ceres rubber bullet"
-	damage = 10
+	damage = 2
 	stamina = 30
 	ricochets_max = 6
 	ricochet_incidence_leeway = 0
@@ -62,7 +62,7 @@
 
 /obj/projectile/bullet/a556/rubber
 	name = ".277 rubber bullet"
-	damage = 10
+	damage = 3
 	armour_penetration = 10
 	stamina = 30
 	ricochets_max = 6
@@ -161,7 +161,7 @@
 
 /obj/projectile/bullet/c34/rubber
 	name = ".34 rubber bullet"
-	damage = 5
+	damage = 2
 	stamina = 20
 	wound_bonus = -75
 	shrapnel_type = null
