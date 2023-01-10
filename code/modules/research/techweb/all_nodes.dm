@@ -1584,10 +1584,12 @@
 		"pin_testing",
 		"tele_shield",
 		"ammoworkbench_disk_lethal", //SKYRAT EDIT ADDITION
-		"SC-1",	//Good job, guys. Adding a critical component that can't be found so easily. T.E. change
-		"pbgun", //Good job, guys. Adding a critical component that can't be found so easily. T.E. changes below
+		"SC-1",	//Good job, guys. Adding a critical component that can't be found so easily. T.E. changes below
+		"pbgun",
 		"owkit",
 		"pbsmg",
+		"crooniekit",
+		"g11kit",
 
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20000)
@@ -1611,6 +1613,8 @@
 		"m16ammodrum",
 		"as2kit",
 		"norwindkit",
+		"zetakit",
+		"fireflykit",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 
@@ -1681,6 +1685,8 @@
 		"c38_hotshot",
 		"c38_iceblox",
 		"techshotshell",
+		"g18k",
+		"ospreykit",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 

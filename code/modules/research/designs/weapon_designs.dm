@@ -222,6 +222,19 @@
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 	autolathe_exportable = FALSE
 
+/datum/design/zetakit
+	name = "Zeta Revolver"
+//	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
+	id = "zetakit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 15000, /datum/material/glass = 250,	/datum/material/silver = 900, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/zeta
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
 /datum/design/ostwindkit
 	name = "Ostwind rifle kit"
 //	desc = "An incredibly mediocre 'firearm' designed to fire soft pepper balls meant to easily subdue targets."
@@ -292,8 +305,21 @@
 //	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
 	id = "norwindkit"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron = 30500, /datum/material/glass = 2000, /datum/material/titanium = 8000, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	materials = list(/datum/material/iron = 30500, /datum/material/glass = 2000, /datum/material/titanium = 8000, /datum/material/silver = 900, /datum/material/plastic = 1500)
 	build_path =/obj/item/storage/box/gunset/norwind
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/croonie
+	name = "Cheam 6mm SMG kit"
+//	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
+	id = "crooniekit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 8500, /datum/material/glass = 2000, /datum/material/plastic = 1500)
+	build_path =/obj/item/storage/box/gunset/croon
 	category = list(
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
 	)
@@ -346,6 +372,58 @@
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = 5000, /datum/material/silver = 900,)
 	build_path = /obj/item/ammo_box/magazine/m16
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/g18kit
+	name = "G-18 pistol kit"
+//	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
+	id = "g18k"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 12500, /datum/material/glass = 2000, /datum/material/titanium = 2000, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/glock18_hos
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/ospreykit
+	name = "Osprey pistol kit"
+//	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
+	id = "ospreykit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 12500, /datum/material/glass = 2000, /datum/material/titanium = 2000, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/pdh
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/fireflykit
+	name = "Firefly pistol kit"
+//	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
+	id = "fireflykit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 12500, /datum/material/glass = 2000, /datum/material/titanium = 2000, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/firefly
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+
+/datum/design/g11kit
+	name = "G-11 pistol kit"
+//	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
+	id = "g11kit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 12500, /datum/material/glass = 2000, /datum/material/titanium = 2000, /datum/material/silver = 900, /datum/material/titanium = 3000, /datum/material/plastic = 1500)
+	build_path = /obj/item/storage/box/gunset/g11
 	category = list(
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
 	)

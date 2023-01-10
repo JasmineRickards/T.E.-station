@@ -1,5 +1,5 @@
-#define PHYSICAL_DAMAGE_HEALING -0.2
-#define EXOTIC_DAMAGE_HEALING -0.1
+#define PHYSICAL_DAMAGE_HEALING -2
+#define EXOTIC_DAMAGE_HEALING -1
 
 /obj/item/gun/medbeam/afad
 	name = "Automated First Aid Device"
@@ -9,7 +9,7 @@
 	inhand_icon_state = "chronogun"
 	w_class = WEIGHT_CLASS_NORMAL
 
-	
+
 
 /obj/item/gun/medbeam/afad/on_beam_tick(mob/living/target)
 	if(target.health != target.maxHealth)

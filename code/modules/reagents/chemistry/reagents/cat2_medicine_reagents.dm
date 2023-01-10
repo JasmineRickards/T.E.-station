@@ -99,7 +99,7 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/medicine/c2/libital/on_mob_life(mob/living/carbon/affected_mob, delta_time, times_fired)
-	affected_mob.adjustOrganLoss(ORGAN_SLOT_LIVER, 0.3 * REM * delta_time, required_organtype = affected_organtype)
+	affected_mob.adjustOrganLoss(ORGAN_SLOT_LIVER, 0.1 * REM * delta_time, required_organtype = affected_organtype)
 	affected_mob.adjustBruteLoss(-3 * REM * normalise_creation_purity() * delta_time, required_bodytype = affected_bodytype)
 	..()
 	return TRUE
@@ -163,13 +163,13 @@
 
 /datum/reagent/medicine/c2/lenturi/on_mob_life(mob/living/carbon/affected_mob, delta_time, times_fired)
 	affected_mob.adjustFireLoss(-3 * REM * normalise_creation_purity() * delta_time, required_bodytype = affected_bodytype)
-	affected_mob.adjustOrganLoss(ORGAN_SLOT_STOMACH, 0.4 * REM * delta_time, required_organtype = affected_organtype)
+	affected_mob.adjustOrganLoss(ORGAN_SLOT_STOMACH, 0.1 * REM * delta_time, required_organtype = affected_organtype)
 	..()
 	return TRUE
 
 /datum/reagent/medicine/c2/aiuri
 	name = "Aiuri"
-	description = "Used to treat burns. Does minor eye damage."
+	description = "Used to treat burns."
 	reagent_state = LIQUID
 	color = "#8C93FF"
 	ph = 4
@@ -179,7 +179,7 @@
 
 /datum/reagent/medicine/c2/aiuri/on_mob_life(mob/living/carbon/affected_mob, delta_time, times_fired)
 	affected_mob.adjustFireLoss(-2 * REM * normalise_creation_purity() * delta_time, required_bodytype = affected_bodytype)
-	affected_mob.adjustOrganLoss(ORGAN_SLOT_EYES, 0.25 * REM * delta_time, required_organtype = affected_organtype)
+//	affected_mob.adjustOrganLoss(ORGAN_SLOT_EYES, 0.25 * REM * delta_time, required_organtype = affected_organtype)
 	..()
 	return TRUE
 
@@ -350,7 +350,7 @@
 	if(creation_purity >= 1) //Perfectly pure multivers gives a bonus of 2!
 		medibonus += 1
 	affected_mob.adjustToxLoss(-0.5 * min(medibonus, 3 * normalise_creation_purity()) * REM * delta_time, required_biotype = affected_biotype) //not great at healing but if you have nothing else it will work
-	affected_mob.adjustOrganLoss(ORGAN_SLOT_LUNGS, 0.5 * REM * delta_time, required_organtype = affected_organtype) //kills at 40u
+	affected_mob.adjustOrganLoss(ORGAN_SLOT_LUNGS, 0.1 * REM * delta_time, required_organtype = affected_organtype) //kills at 40u
 	for(var/r2 in affected_mob.reagents.reagent_list)
 		var/datum/reagent/the_reagent2 = r2
 		if(the_reagent2 == src)
@@ -395,7 +395,7 @@
 	..()
 
 /datum/reagent/medicine/c2/syriniver/on_mob_life(mob/living/carbon/affected_mob, delta_time, times_fired)
-	affected_mob.adjustOrganLoss(ORGAN_SLOT_LIVER, 0.8 * REM * delta_time, required_organtype = affected_organtype)
+	affected_mob.adjustOrganLoss(ORGAN_SLOT_LIVER, 0.2 * REM * delta_time, required_organtype = affected_organtype)
 	affected_mob.adjustToxLoss(-1 * REM * delta_time, FALSE, required_biotype = affected_biotype)
 	for(var/datum/reagent/R in affected_mob.reagents.reagent_list)
 		if(issyrinormusc(R))
