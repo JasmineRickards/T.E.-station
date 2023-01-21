@@ -29,7 +29,8 @@
 		/obj/item/clothing/suit/armor/vest/blueshirt = 3,
 		/obj/item/clothing/gloves/tackler/security = 5,
 		/obj/item/grenade/stingbang = 5,
-		/obj/item/watertank/pepperspray = 2
+		/obj/item/watertank/pepperspray = 2,
+		/obj/item/skillchip/chameleon/reload = 8,
 	)
 	refill_canister = /obj/item/vending_refill/security_peacekeeper
 	default_price = PAYCHECK_CREW

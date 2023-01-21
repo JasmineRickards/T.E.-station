@@ -196,6 +196,17 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING | DEPARTMENT_BITFLAG_MEDICAL
 
+/datum/design/board/chem_dispenserbotany
+	name = "Portable Botanical Chem Dispenser Board"
+	desc = "The circuit board for a portable chem dispenser."
+	id = "chem_dispenserbot"
+	build_path = /obj/item/circuitboard/machine/chem_dispenser/mutagensaltpeter
+	category = list(
+		RND_CATEGORY_MACHINE + RND_SUBCATEGORY_MACHINE_CHEMISTRY
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING | DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SERVICE
+
+
 /datum/design/board/chem_master
 	name = "Chem Master Board"
 	desc = "The circuit board for a Chem Master 3000."

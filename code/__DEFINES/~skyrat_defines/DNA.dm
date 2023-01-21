@@ -50,13 +50,13 @@
 #define MAXIMUM_MARKINGS_PER_LIMB 3
 
 #define BODY_SIZE_NORMAL 1.00
-#define BODY_SIZE_MAX 1.5
-#define BODY_SIZE_MIN 0.8
+#define BODY_SIZE_MAX 2.5
+#define BODY_SIZE_MIN 0.6
 
 //In inches
 #define PENIS_MAX_GIRTH 15
 #define PENIS_MIN_LENGTH 1
-#define PENIS_MAX_LENGTH 20
+#define PENIS_MAX_LENGTH 45
 
 #define SHEATH_NONE	"None"
 #define SHEATH_NORMAL "Sheath"
@@ -73,7 +73,7 @@
 	"breasts_size" = 1,\
 	"breasts_lactation" = FALSE,\
 	"penis_size" = 13,\
-	"penis_girth" = 9,\
+	"penis_girth" = 3,\
 	"penis_taur_mode" = TRUE,\
 	"penis_sheath" = SHEATH_NONE,\
 	"balls_size" = 1,\

@@ -267,7 +267,7 @@
 	id = "as2kit"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = 30000, /datum/material/glass = 250,	/datum/material/silver = 900, /datum/material/plastic = 1500)
-	build_path = /obj/item/storage/box/gunset/m23
+	build_path = /obj/item/storage/box/gunset/as2
 	category = list(
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
 	)

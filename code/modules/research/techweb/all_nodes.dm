@@ -623,6 +623,7 @@
 		"anomaly_refinery",
 		"tank_compressor",
 		"atmos_thermal",
+		"rtgb", //Good alternative to pacman spam
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 12500)
 	discount_experiments = list(/datum/experiment/scanning/random/material/easy = 7500)
@@ -701,6 +702,7 @@
 		"turbine_compressor",
 		"turbine_rotor",
 		"turbine_stator",
+		"rtgbadv", //And even better
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3500)
 	discount_experiments = list(/datum/experiment/scanning/points/machinery_pinpoint_scan/tier2_capacitors = 2500)
@@ -1499,6 +1501,7 @@
 	prereq_ids = list("adv_engi", "biotech")
 	design_ids = list(
 		"biogenerator",
+		"chem_dispenserbot",
 		"flora_gun",
 		//SKYRAT EDIT - ADDITION MEDIGUNS
 		"salvemedicell",
@@ -1610,7 +1613,7 @@
 		"m16mod",
 		"m16mod2",
 		"m16ammo",
-		"m16ammodrum",
+//		"m16ammodrum", Disabled because broken sprite. Fun.
 		"as2kit",
 		"norwindkit",
 		"zetakit",

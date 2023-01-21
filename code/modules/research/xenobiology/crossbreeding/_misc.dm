@@ -88,6 +88,7 @@ Slimecrossing Items
 	icon = 'icons/mob/simple/slimes.dmi'
 	icon_state = "yellow slime extract"
 	rating = 7
+	self_recharge = 1
 	custom_materials = null
 	maxcharge = 50000
 	chargerate = 2500
