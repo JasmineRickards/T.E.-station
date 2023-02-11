@@ -20,7 +20,7 @@
 		/obj/item/stack/sheet/mineral/silver = 8,
 		/obj/item/stack/sheet/mineral/titanium = 8,
 		/obj/item/stack/sheet/mineral/uranium = 3,
-		/obj/item/xenoarch/strange_rock = 3,
+		/obj/item/xenoarch/strange_rock = 0.01,
 		/obj/item/stack/sheet/mineral/gold = 3,
 		/obj/item/stack/sheet/mineral/diamond = 1,
 	)
@@ -149,7 +149,7 @@
 /datum/supply_pack/misc/bluespace_miner
 	name = "Bluespace Miner"
 	desc = "Nanotrasen has revolutionized the procuring of materials with bluespace-- featuring the Bluespace Miner!"
-	cost = CARGO_CRATE_VALUE * 50 // 30,000
+	cost = CARGO_CRATE_VALUE * 15 // 30,000
 	contains = list(/obj/item/circuitboard/machine/bluespace_miner)
 	crate_name = "Bluespace Miner Circuitboard Crate"
 	crate_type = /obj/structure/closet/crate

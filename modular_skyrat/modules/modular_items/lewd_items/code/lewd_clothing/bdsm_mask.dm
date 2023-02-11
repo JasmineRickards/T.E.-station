@@ -185,26 +185,26 @@
 	return ..()
 
 // Adding breath_manually on equip
-/obj/item/clothing/mask/gas/bdsm_mask/equipped(/mob/user, slot)
-	. = ..()
-	var/mob/living/carbon/human/affected_human = loc
-	var/worn_mask = affected_human.get_item_by_slot(ITEM_SLOT_MASK)
-	if(worn_mask == src)
-		if(mask_on)
-			if(breath_status == FALSE)
-				time_to_choke_left = time_to_choke
-				breath_status = TRUE
-				affected_human.try_lewd_autoemote("inhale")
-			to_chat(affected_human, span_purple("You suddenly find it much harder to breathe!."))
-			START_PROCESSING(SSobj, src)
-			time_to_choke_left = time_to_choke
-
+//obj/item/clothing/mask/gas/bdsm_mask/equipped(/mob/user, slot)
+//	. = ..()
+//	var/mob/living/carbon/human/affected_human = loc
+//	var/worn_mask = affected_human.get_item_by_slot(ITEM_SLOT_MASK)
+//	if(worn_mask == src)
+//		if(mask_on)
+//			if(breath_status == FALSE)
+//				time_to_choke_left = time_to_choke
+//				breath_status = TRUE
+//				affected_human.try_lewd_autoemote("inhale")
+//			to_chat(affected_human, span_purple("You suddenly find it much harder to breathe!."))
+//			START_PROCESSING(SSobj, src)
+//			time_to_choke_left = time_to_choke
+//
 // We unequipped mask, now we can breath without buttons
-/obj/item/clothing/mask/gas/bdsm_mask/dropped(mob/user)
-	. = ..()
-	if(mask_on == TRUE)
-		STOP_PROCESSING(SSobj, src)
-		temp_check = TRUE
+//obj/item/clothing/mask/gas/bdsm_mask/dropped(mob/user)
+//	. = ..()
+//	if(mask_on == TRUE)
+//		STOP_PROCESSING(SSobj, src)
+//		temp_check = TRUE
 
 // To check if player already have this mask on and trying to change mode
 /obj/item/clothing/mask/gas/bdsm_mask/proc/check()
@@ -231,7 +231,7 @@
 		STOP_PROCESSING(SSobj, src)
 
 // Mask choke processor
-/obj/item/clothing/mask/gas/bdsm_mask/process(delta_time)
+/*obj/item/clothing/mask/gas/bdsm_mask/process(delta_time)
 	var/mob/living/affected_mob = loc
 	var/mob/living/carbon/affected_carbon = affected_mob
 
@@ -265,7 +265,7 @@
 			tt -= delta_time
 	else
 		time_to_choke_left -= delta_time
-
+*/
 /*
 *	FILTERS
 */

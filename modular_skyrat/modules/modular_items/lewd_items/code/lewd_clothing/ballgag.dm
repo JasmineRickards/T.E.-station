@@ -82,7 +82,7 @@
 	moan_volume = 40
 	resizable = TRUE
 	greyscale_config = /datum/greyscale_config/ballgag/choking_small
-	chokes_wearer = TRUE
+	chokes_wearer = FALSE
 
 /obj/item/clothing/mask/ballgag/choking/attack_self(mob/user)
 	. = ..()
