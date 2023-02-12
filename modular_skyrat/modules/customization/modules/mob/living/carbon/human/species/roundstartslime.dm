@@ -441,7 +441,7 @@
 				"Choose your penis girth:\n(1-[max_girth] (based on length) in inches)",
 				"Character Preference",
 				max_value = max_girth,
-				min_value = 1
+				min_value = 0.3
 			)
 			if(new_girth)
 				alterer.dna.features["penis_girth"] = new_girth

@@ -183,7 +183,7 @@
 	name = "BBQ Ribs"
 	reqs = list(
 		/datum/reagent/consumable/bbqsauce = 5,
-		/obj/item/food/meat/steak/plain = 2,
+		/obj/item/food/meat/steak = 2,
 		/obj/item/stack/rods = 2
 	)
 	result = /obj/item/food/bbqribs

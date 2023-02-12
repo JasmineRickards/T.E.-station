@@ -14,7 +14,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m16
 	can_suppress = FALSE
 	burst_size = 3
-	fire_delay = 2
+	fire_delay = 0.6
 	fire_sound = 'modular_skyrat/modules/gunsgalore/sound/guns/fire/m16_fire.ogg'
 	fire_sound_volume = 50
 	rack_sound = 'modular_skyrat/modules/gunsgalore/sound/guns/interact/sfrifle_cock.ogg'
@@ -51,7 +51,7 @@
 	worn_icon_state = "m16"
 	spread = 0.5
 	burst_size = 3
-	fire_delay = 1.90
+	fire_delay = 0.6
 
 /obj/item/gun/ballistic/automatic/m16/modern/v2
 	name = "\improper XM-2537 'Amans Patriae' rifle"
@@ -67,8 +67,8 @@
 	name = "\improper XM-2537 drum magazine"
 	desc = "A double-stack solid polymer drum made for use with the Amans Patriae rifle. Holds 50 rounds of .277 ammo."
 	icon = 'modular_skyrat/modules/gunsgalore/icons/guns/gunsgalore_items.dmi'
-	icon_state = "m16"
+	icon_state = "m16d"
 	ammo_type = /obj/item/ammo_casing/a556
 	caliber = "a556"
-	max_ammo = 50
+	max_ammo = 100
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
