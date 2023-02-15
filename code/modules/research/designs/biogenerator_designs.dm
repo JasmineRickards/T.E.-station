@@ -95,7 +95,7 @@
 	id = "rootdough"
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 35)
-	make_reagents = list(/obj/item/food/rootdough = 1)
+	build_path = /obj/item/food/rootdough
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
 
 /datum/design/kortanut
@@ -103,7 +103,7 @@
 	id = "korta_nut"
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 35)
-	make_reagents = list(/obj/item/food/grown/korta_nut = 1)
+	build_path = /obj/item/food/grown/korta_nut
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
 
 /datum/design/kortasyrup
@@ -158,7 +158,7 @@
 	name = "Egg"
 	id = "egg"
 	build_type = BIOGENERATOR
-	materials = list(/obj/item/food/egg = 15)
+	materials = list(/datum/material/biomass = 15)
 	build_path = /obj/item/food/egg
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
 

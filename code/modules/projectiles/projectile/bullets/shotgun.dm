@@ -1,7 +1,7 @@
 /obj/projectile/bullet/shotgun_slug
 	name = "12g shotgun slug"
 	icon_state = "pellet"
-	damage = 50
+	damage = 60
 	sharpness = SHARP_POINTY
 	wound_bonus = 0
 
@@ -18,8 +18,8 @@
 /obj/projectile/bullet/shotgun_beanbag
 	name = "beanbag slug"
 	icon_state = "pellet"
-	damage = 5
-	stamina = 55
+	damage = 1
+	stamina = 75
 	wound_bonus = 20
 	sharpness = NONE
 	embedding = null
@@ -27,7 +27,7 @@
 /obj/projectile/bullet/incendiary/shotgun
 	name = "incendiary slug"
 	icon_state = "pellet"
-	damage = 20
+	damage = 25
 
 /obj/projectile/bullet/incendiary/shotgun/no_trail
 	name = "precision incendiary slug"
@@ -36,7 +36,7 @@
 
 /obj/projectile/bullet/incendiary/shotgun/dragonsbreath
 	name = "dragonsbreath pellet"
-	damage = 5
+	damage = 6
 
 /obj/projectile/bullet/shotgun_stunslug
 	name = "stunslug"
@@ -76,15 +76,15 @@
 
 /obj/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
-	damage = 7.5
+	damage = 12
 	wound_bonus = 5
 	bare_wound_bonus = 5
 	wound_falloff_tile = -2.5 // low damage + additional dropoff will already curb wounding potential anything past point blank
 
 /obj/projectile/bullet/pellet/shotgun_rubbershot
 	name = "rubbershot pellet"
-	damage = 1
-	stamina = 11
+	damage = 0.3
+	stamina = 15
 	sharpness = NONE
 	embedding = null
 	speed = 1.2
@@ -106,12 +106,12 @@
 /obj/projectile/bullet/pellet/shotgun_incapacitate
 	name = "incapacitating pellet"
 	damage = 1
-	stamina = 6
+	stamina = 8
 	embedding = null
 
 /obj/projectile/bullet/pellet/shotgun_improvised
 	tile_dropoff = 0.35 //Come on it does 6 damage don't be like that.
-	damage = 6
+	damage = 8
 	wound_bonus = 0
 	bare_wound_bonus = 7.5
 

@@ -12,6 +12,16 @@
 	result = /obj/item/food/eggsausage
 	subcategory = CAT_EGG
 
+/datum/crafting_recipe/food/friedegg1
+	name = "Fried egg"
+	reqs = list(
+		/datum/reagent/consumable/salt = 1,
+		/datum/reagent/consumable/blackpepper = 1,
+		/obj/item/food/egg = 1
+	)
+	result = /obj/item/food/friedegg
+	subcategory = CAT_EGG
+
 /datum/crafting_recipe/food/omelette
 	name = "Omelette"
 	reqs = list(

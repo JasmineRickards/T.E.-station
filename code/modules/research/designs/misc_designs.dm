@@ -269,6 +269,16 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_MEDICAL
 
+/*/datum/design/diskplantgene
+	name = "Plant Data Disk"
+	desc = "A disk for storing plant genetic data."
+	id = "diskplantgene"
+	build_type = PROTOLATHE | AUTOLATHE
+	materials = list(/datum/material/iron=200, /datum/material/glass=100)
+	build_path = /obj/item/disk/plantgene
+	category = list(RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_KITCHEN)
+	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_SERVICE
+*/
 /datum/design/nv_sci_goggles
 	name = "Night Vision Science Goggles"
 	desc = "Goggles that lets the user see in the dark and recognize chemical compounds at a glance."
