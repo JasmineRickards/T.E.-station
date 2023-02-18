@@ -314,7 +314,7 @@
 	autolathe_exportable = FALSE
 
 /datum/design/croonie
-	name = "Cheam 6mm SMG kit"
+	name = "Cheap 6mm SMG kit"
 //	desc = "A relatively new infantry rifle chambered for the .277 Aestus round, designed for use by private security and freight crews. \"Armentarium Centrale\" is printed on the side of the receiver, right next to a yellow sun."
 	id = "crooniekit"
 	build_type = PROTOLATHE | AWAY_LATHE
@@ -651,6 +651,18 @@
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 200)
 	build_path = /obj/item/ammo_casing/shotgun/techshell
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+
+/datum/design/peppermag
+	name = "Pepperball magazine"
+	desc = "A basic magazine containing pepperball filled pain-balls"
+	id = "peppermag"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 1000, /datum/material/glass = 200)
+	build_path = /obj/item/ammo_box/magazine/pepperball
 	category = list(
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
 	)

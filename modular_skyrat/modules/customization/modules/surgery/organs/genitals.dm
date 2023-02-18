@@ -112,7 +112,7 @@
 		if(aroused == AROUSAL_PARTIAL)
 			returned_string += " There's a [pname]penis poking out of it."
 	else
-		returned_string = "You see a [pname]penis. You estimate it's [genital_size] inches long, and [girth] inches in circumference."
+		returned_string = "You see a [pname]penis. You estimate it's [genital_size] inches long, and [girth] inches wide."
 		switch(aroused)
 			if(AROUSAL_NONE)
 				returned_string += " It seems flaccid."

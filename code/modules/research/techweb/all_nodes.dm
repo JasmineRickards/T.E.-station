@@ -1690,6 +1690,7 @@
 		"c38_hotshot",
 		"c38_iceblox",
 		"techshotshell",
+		"peppermag",
 		"g18k",
 		"ospreykit",
 	)
