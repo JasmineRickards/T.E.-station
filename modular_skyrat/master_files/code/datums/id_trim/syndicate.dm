@@ -78,6 +78,14 @@
 	sechud_icon_state = SECHUD_DS2_CORPLIAISON
 	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_SYNDICATE_LEADER)
 
+/datum/id_trim/syndicom/skyrat/ds2/captain
+	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
+	assignment = "DS-2 Captain"
+	trim_state = "trim_ds2admiral"
+	sechud_icon_state = SECHUD_DS2_ADMIRAL
+	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_SYNDICATE_LEADER)
+
+
 /datum/id_trim/syndicom/skyrat/ds2/stationadmiral
 	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
 	assignment = "DS-2 Admiral"

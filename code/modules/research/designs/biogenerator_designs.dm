@@ -18,6 +18,14 @@
 	make_reagents = list(/datum/reagent/consumable/soymilk = 1)
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
 
+/datum/design/soysauce
+	name = "Soy Sauce"
+	id = "soysauce"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 0.4)
+	make_reagents = list(/datum/reagent/consumable/soysauce = 1)
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
+
 /datum/design/ethanol
 	name = "Ethanol"
 	id = "ethanol"
@@ -96,6 +104,14 @@
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 35)
 	build_path = /obj/item/food/rootdough
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
+
+/datum/design/rice
+	name = "Rice"
+	id = "rice"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 35)
+	build_path = /obj/item/food/uncooked_rice
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
 
 /datum/design/kortanut
