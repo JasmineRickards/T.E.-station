@@ -5,7 +5,7 @@
 "ae" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/structure/cable,/obj/effect/turf_decal/trimline/blue/filled/line{dir = 5},/turf/open/floor/iron/white/smooth_corner{dir = 4},/area/mine/medical)
 "af" = (/obj/structure/necropolis_gate/legion_gate,/obj/structure/necropolis_arch,/obj/structure/stone_tile/slab,/turf/open/indestructible/boss,/area/lavaland/surface/outdoors)
 "ag" = (/obj/machinery/door/airlock/external/glass{name = "Mining External Airlock"},/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{cycle_id = "lavaland_public_west"},/obj/effect/turf_decal/trimline/blue/filled/line,/obj/effect/turf_decal/trimline/blue/filled/mid_joiner,/turf/open/floor/iron/textured_large,/area/mine/lounge)
-"ah" = (/obj/machinery/power/rtg/advanced,/turf/open/floor/plating,/area/mine/maintenance/service)
+"ah" = (/obj/machinery/power/rtg/advanced,/obj/structure/cable,/turf/open/floor/plating,/area/mine/maintenance/service)
 "ai" = (/turf/closed/mineral/random/volcanic,/area/lavaland/surface/outdoors)
 "aj" = (/turf/open/lava/smooth/lava_land_surface,/area/lavaland/surface/outdoors)
 "ak" = (/turf/closed/mineral/random/volcanic,/area/lavaland/surface/outdoors/unexplored/danger)
