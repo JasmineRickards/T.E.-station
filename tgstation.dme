@@ -2415,6 +2415,7 @@
 #include "code\modules\antagonists\clown_ops\bananium_bomb.dm"
 #include "code\modules\antagonists\clown_ops\clown_weapons.dm"
 #include "code\modules\antagonists\clown_ops\outfits.dm"
+#include "code\modules\antagonists\compliance_implant\compliance_implant.dm"
 #include "code\modules\antagonists\creep\creep.dm"
 #include "code\modules\antagonists\cult\blood_magic.dm"
 #include "code\modules\antagonists\cult\cult.dm"
