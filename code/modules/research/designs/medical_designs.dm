@@ -599,6 +599,16 @@
 	category = list(RND_SUBCATEGORY_IMPLANTS)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY | DEPARTMENT_BITFLAG_MEDICAL
 
+/datum/design/implant_compliance
+	name = "Compliance Implant Case"
+	desc = "A glass case containing a compliance implant, used for easy-to-use co-operation from prisoners."
+	id = "implant_compliance"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500, /datum/material/gold = 100)
+	build_path = /obj/item/implantcase/compliance
+	category = list(RND_SUBCATEGORY_IMPLANTS)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+
 //Cybernetic organs
 
 /datum/design/cybernetic_liver

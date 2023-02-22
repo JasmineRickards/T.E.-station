@@ -1339,6 +1339,15 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
+/datum/techweb_node/interrogation_implants
+	id = "interrogation_implants"
+	display_name = "Interrogation Implants"
+	description = "Simplified compliance devices for those untrained for more advanced machines."
+	prereq_ids = list("subdermal_implants", "interrogation")
+	design_ids = list(
+		"implant_compliance"
+	)
+
 /datum/techweb_node/cyber_organs
 	id = "cyber_organs"
 	display_name = "Cybernetic Organs"
