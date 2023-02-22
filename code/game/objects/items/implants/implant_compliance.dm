@@ -35,7 +35,7 @@
 			Ethicality not guaranteed, please consult a licensed Psychiatrist before use."
 	imp_type = /obj/item/implant/compliance
 
-/obj/item/implantcase/compliance/attack_hand(mob/user, list/modifiers)
+/obj/item/implantcase/compliance/attack_self(mob/user, list/modifiers)
 	if(istype(imp, /obj/item/implant/compliance))
 		var/obj/item/implant/compliance/our_implant = imp
 		if(obj_flags & EMAGGED)
