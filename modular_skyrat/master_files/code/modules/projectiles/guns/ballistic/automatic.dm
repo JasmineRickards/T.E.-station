@@ -33,7 +33,7 @@
 	inhand_icon_state = "c20r"
 	selector_switch_icon = TRUE
 	mag_type = /obj/item/ammo_box/magazine/smgm45
-	fire_delay = 2
+	fire_delay = 1.3
 	burst_size = 3
 	pin = /obj/item/firing_pin/implant/pindicate
 	can_bayonet = TRUE
@@ -63,7 +63,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	inhand_icon_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/wt550m9
-	fire_delay = 2
+	fire_delay = 1.5
 	can_suppress = FALSE
 	burst_size = 1
 	fire_select_modes = list(SELECT_SEMI_AUTOMATIC, SELECT_FULLY_AUTOMATIC)
@@ -113,7 +113,7 @@
 	can_suppress = FALSE
 	var/obj/item/gun/ballistic/revolver/grenadelauncher/underbarrel
 	burst_size = 3
-	fire_delay = 2
+	fire_delay = 1.5
 	spread = 5
 	pin = /obj/item/firing_pin/implant/pindicate
 	mag_display = TRUE
@@ -178,7 +178,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556
 	can_suppress = FALSE
 	burst_size = 3
-	fire_delay = 1
+	fire_delay = 1.3
 	company_flag = COMPANY_NANOTRASEN
 
 
@@ -195,6 +195,7 @@
 	mag_type = /obj/item/ammo_box/magazine/mm712x82
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 1
+	fire_delay = 1.3
 	fire_select_modes = list(SELECT_SEMI_AUTOMATIC, SELECT_FULLY_AUTOMATIC)
 	can_suppress = FALSE
 	spread = 7

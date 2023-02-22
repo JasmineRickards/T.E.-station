@@ -330,7 +330,7 @@
 	icon_state = "pdh"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = CALIBER_10MM
-	max_ammo = 6
+	max_ammo = 8
 	multiple_sprites = AMMO_BOX_FULL_EMPTY_BASIC
 
 /obj/item/ammo_box/magazine/multi_sprite/makarov/hp
@@ -450,8 +450,8 @@
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
 	burst_size = 3
-	fire_delay = 2.10
-	spread = 25
+	fire_delay = 1.6
+	spread = 5
 	mag_display = FALSE
 	mag_display_ammo = FALSE
 	fire_select_modes = list(SELECT_SEMI_AUTOMATIC, SELECT_BURST_SHOT)
@@ -493,7 +493,7 @@
 	can_suppress = TRUE
 	mag_display = FALSE
 	mag_display_ammo = FALSE
-	burst_size = 2
+	burst_size = 1.4
 	fire_delay = 1.90
 	fire_select_modes = list(SELECT_SEMI_AUTOMATIC, SELECT_BURST_SHOT)
 	fire_sound = 'sound/weapons/gun/rifle/shot.ogg'
@@ -509,7 +509,7 @@
 	icon_state = "croon"
 	ammo_type = /obj/item/ammo_casing/c9mm
 	caliber = CALIBER_9MM
-	max_ammo = 8
+	max_ammo = 14
 	multiple_sprites = AMMO_BOX_FULL_EMPTY_BASIC
 	possible_types = list(AMMO_TYPE_LETHAL, AMMO_TYPE_HOLLOWPOINT, AMMO_TYPE_INCENDIARY, AMMO_TYPE_AP)
 
@@ -1005,10 +1005,10 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BELT | ITEM_SLOT_OCLOTHING
 	mag_type = /obj/item/ammo_box/magazine/multi_sprite/pitbull
-	fire_delay = 4.20
+	fire_delay = 1.6
 	can_suppress = FALSE
 	burst_size = 3
-	spread = 15
+	spread = 5
 	mag_display = TRUE
 	mag_display_ammo = TRUE
 	fire_sound = 'modular_skyrat/modules/sec_haul/sound/sfrifle_fire.ogg'
@@ -1060,8 +1060,8 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BELT | ITEM_SLOT_OCLOTHING
 	mag_type = /obj/item/ammo_box/magazine/multi_sprite/ostwind
-	spread = 10
-	fire_delay = 2
+	spread = 5
+	fire_delay = 1.6
 	can_suppress = FALSE
 	burst_size = 2
 	mag_display = TRUE

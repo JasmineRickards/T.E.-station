@@ -14,7 +14,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m16
 	can_suppress = FALSE
 	burst_size = 3
-	fire_delay = 0.6
+	fire_delay = 1.5
 	fire_sound = 'modular_skyrat/modules/gunsgalore/sound/guns/fire/m16_fire.ogg'
 	fire_sound_volume = 50
 	rack_sound = 'modular_skyrat/modules/gunsgalore/sound/guns/interact/sfrifle_cock.ogg'
@@ -51,7 +51,7 @@
 	worn_icon_state = "m16"
 	spread = 0.5
 	burst_size = 3
-	fire_delay = 0.6
+	fire_delay = 1.5
 
 /obj/item/gun/ballistic/automatic/m16/modern/v2
 	name = "\improper XM-2537 'Amans Patriae' rifle"
@@ -61,7 +61,7 @@
 	worn_icon_state = "m16"
 	mag_type = /obj/item/ammo_box/magazine/m16/patriot
 	burst_size = 4
-	fire_delay = 0.5
+	fire_delay = 1.5
 
 /obj/item/ammo_box/magazine/m16/patriot
 	name = "\improper XM-2537 drum magazine"
