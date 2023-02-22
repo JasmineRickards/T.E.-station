@@ -365,6 +365,7 @@
 			"Ghost and Other Roles" = list(
 				ROLE_PAI,
 				ROLE_BRAINWASHED,
+				ROLE_COMPLIANT,
 				ROLE_DEATHSQUAD,
 				ROLE_DRONE,
 				ROLE_LAVALAND,

@@ -59,6 +59,7 @@
 #define ROLE_REVENANT "Revenant"
 #define ROLE_BRAINWASHED "Brainwashed Victim"
 #define ROLE_HYPNOTIZED "Hypnotized Victim"
+#define ROLE_COMPLIANT "Compliance Implanted"
 #define ROLE_OVERTHROW "Syndicate Mutineer" //Role removed, left here for safety.
 #define ROLE_HIVE "Hivemind Host" //Role removed, left here for safety.
 #define ROLE_SENTIENCE "Sentience Potion Spawn"
