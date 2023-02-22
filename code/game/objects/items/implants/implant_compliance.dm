@@ -18,6 +18,7 @@
 	return dat
 
 /obj/item/implant/compliance/implant(mob/living/target, mob/user, silent = FALSE, force = FALSE)
+	. = ..()
 	if(obj_flags & EMAGGED)
 		brainwash_message = "Whispers in the back of your skull make you feel uneasy, make you feel wrong. Yet, the whispers cease as [calibrated_person] \
 							is near, a light in the darkness. There's an incessant, nagging thankfulness in you as you think of them - you must help them in kind, at all costs."
