@@ -19,12 +19,11 @@
 
 /obj/item/implant/compliance/implant(mob/living/target, mob/user, silent = FALSE, force = FALSE)
 	. = ..()
+	brainwash_message = "You feel at peace - a kinship in the fires of your heart feels a sympathy for [company] and their motives. \
+						With this newfound peace, you feel, deeply, that you should co-operate with members of their [department] department."
 	if(obj_flags & EMAGGED)
 		brainwash_message = "Whispers in the back of your skull make you feel uneasy, make you feel wrong. Yet, the whispers cease as [calibrated_person] \
 							is near, a light in the darkness. There's an incessant, nagging thankfulness in you as you think of them - you must help them in kind, at all costs."
-	else
-		brainwash_message = "You feel at peace - a kinship in the fires of your heart feels a sympathy for [company] and their motives. \
-								With this newfound peace, you feel, deeply, that you should co-operate with members of their [department] department."
 	brainwash(target, brainwash_message)
 	message_admins("[ADMIN_LOOKUPFLW(user)] implanted [ADMIN_LOOKUPFLW(target)] with a compliance implant. Brainwashing Message: '[brainwash_message]'.")
 	qdel(src)
@@ -55,8 +54,8 @@
 				return
 			our_implant.department = input
 
-/obj/item/implantcase/compliance/emag_act()
-	if(obj_flags & EMAGGED)
+/obj/item/implantcase/compliance/emag_act(user)
+	if(imp.obj_flags & EMAGGED)
 		return
-	obj_flags |= EMAGGED
-
+	imp.obj_flags |= EMAGGED
+	balloon_alert(user, "Card Swiped")
