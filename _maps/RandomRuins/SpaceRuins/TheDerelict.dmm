@@ -3830,10 +3830,7 @@
 /area/ruin/space/ks13/engineering/singulo)
 "DK" = (
 /obj/structure/rack,
-/obj/item/circuitboard/machine/circuit_imprinter/offstation{
-	pixel_x = 6;
-	pixel_y = 6
-	},
+/obj/item/circuitboard/machine/circuit_imprinter,
 /obj/item/ai_module/core/full/drone,
 /turf/open/floor/iron,
 /area/ruin/space/ks13/ai/corridor)
@@ -5316,7 +5313,7 @@
 	pixel_x = -6;
 	pixel_y = 6
 	},
-/obj/item/circuitboard/machine/protolathe/offstation,
+/obj/item/circuitboard/machine/protolathe,
 /turf/open/floor/iron,
 /area/ruin/space/ks13/ai/corridor)
 "LM" = (

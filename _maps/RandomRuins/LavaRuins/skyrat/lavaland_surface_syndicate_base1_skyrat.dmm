@@ -3731,8 +3731,9 @@
 /area/ruin/syndicate_lava_base/medbay)
 "LK" = (
 /obj/structure/table/glass,
-/obj/item/storage/box/rndboards{
-	pixel_y = 4
+/obj/item/storage/box/rndboards/mundane{
+	pixel_y = 13;
+	pixel_x = 5
 	},
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/testlab)
