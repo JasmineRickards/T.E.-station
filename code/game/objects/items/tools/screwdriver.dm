@@ -89,6 +89,8 @@
 	attack_verb_simple = list("drill", "screw", "jab", "whack")
 	hitsound = 'sound/items/drill_hit.ogg'
 	usesound = 'sound/items/drill_use.ogg'
+	/// Sound we use when replacing the drillbit.
+	var/bitsound = 'sound/items/change_drill.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	toolspeed = 0.7
 	random_color = FALSE
@@ -96,6 +98,16 @@
 	greyscale_config_belt = null
 	greyscale_config_inhand_left = null
 	greyscale_config_inhand_right = null
+
+/obj/item/screwdriver/power/wb32
+	name = "WB-32 Hardlight-Tipped Drill"
+	desc = "Even the formerly simple hand drill has, inevitably, been reconsidered by WB-32 - An impossibly tactile grip fits with a \
+	drillbit that will always, unsettlingly, manage to fit it's target perfectly."
+	toolspeed = 0.1
+	hitsound = 'sound/weapons/pulse.ogg'
+	usesound = 'sound/weapons/blade1.ogg'
+	bitsound = 'saberon'
+
 
 /obj/item/screwdriver/power/Initialize(mapload)
 	. = ..()
@@ -117,7 +129,7 @@
 
 	tool_behaviour = (active ? TOOL_WRENCH : TOOL_SCREWDRIVER)
 	balloon_alert(user, "attached [active ? "bolt bit" : "screw bit"]")
-	playsound(user ? user : src, 'sound/items/change_drill.ogg', 50, TRUE)
+	playsound(user ? user : src, bitsound, 50, TRUE)
 	return COMPONENT_NO_DEFAULT_MESSAGE
 
 /obj/item/screwdriver/power/examine()

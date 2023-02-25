@@ -342,7 +342,7 @@
 
 /obj/item/weldingtool/largetank/flamethrower_screwdriver()
 	return
-	
+
 /obj/item/weldingtool/largetank/empty
 	starting_fuel = FALSE
 
@@ -384,11 +384,19 @@
 	light_system = NO_LIGHT_SUPPORT
 	light_range = 0
 	change_icons = FALSE
+	var/refill_amount = 1
 
 /obj/item/weldingtool/abductor/process()
 	if(get_fuel() <= max_fuel)
-		reagents.add_reagent(/datum/reagent/fuel, 1)
+		reagents.add_reagent(/datum/reagent/fuel, refill_amount)
 	..()
+
+/obj/item/weldingtool/abductor/wb32 // This wasn't going to just be a retheme but whatever sick fuck made it so that light_system and light_range are responsible for welding tools blinding you is :(
+	name = "WB-32 Nano-Gen Welding Tool"
+	desc = "In the vastness of space, welding fuel is a logistical nightmare. Carrying large quantities will, inevitably, be a disaster - \
+	and most of the supply may very easily end up having to be used to fend off the damage done simply by carrying it, with anything from \
+	stray meteors to debris commonly leading to agonizingly long chains of accidents. Enter, WB-32's Nano-Gen welder. Passively generating \
+	welding fuel on the fly, welders like these have historically saved many a freighter simply by existing. Allegedly."
 
 /obj/item/weldingtool/hugetank
 	name = "upgraded industrial welding tool"
