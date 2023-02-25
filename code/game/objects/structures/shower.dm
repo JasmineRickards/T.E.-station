@@ -46,9 +46,9 @@ GLOBAL_LIST_INIT(shower_mode_descriptions, list(
 	///What reagent should the shower be filled with when initially built.
 	var/reagent_id = /datum/reagent/water
 	///How much reagent capacity should the shower begin with when built.
-	var/reagent_capacity = 200
+	var/reagent_capacity = 1000
 	///How many units the shower refills every second.
-	var/refill_rate = 0.5
+	var/refill_rate = 1
 	///Does the shower have a water recycler to recollect it's water supply?
 	var/has_water_reclaimer = TRUE
 	///Which mode the shower is operating in.

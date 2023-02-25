@@ -41,7 +41,7 @@
 
 /obj/item/mod/module/armor_booster
 	// Half of the old armor is on the MODsuit, the other half is from the booster
-	armor_values = list(MELEE = 20, BULLET = 25, LASER = 15, ENERGY = 20)
+	armor_values = list(MELEE = 15, BULLET = 10, LASER = 10, ENERGY = 10)
 
 /datum/mod_theme/elite // Elite Syndiate
 	armor = list(MELEE = 50, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 75, BIO = 100, FIRE = 100, ACID = 100, WOUND = 25)

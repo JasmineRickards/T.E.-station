@@ -43,7 +43,7 @@
 	complexity = 0
 
 /obj/item/mod/module/armor_booster/contractor // Much flatter distribution because contractor suit gets a shitton of armor already
-	armor_values = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20)
+	armor_values = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 10)
 	speed_added = -0.5 //Bulky as shit
 	desc = "An embedded set of armor plates, allowing the suit's already extremely high protection \
 		to be increased further. However, the plating, while deployed, will slow down the user \

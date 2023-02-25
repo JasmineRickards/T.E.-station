@@ -40,4 +40,4 @@
 	removable = TRUE
 	complexity = 1
 	speed_added = 0.25
-	armor_values = list(MELEE = 20, BULLET = 25, LASER = 15, ENERGY = 20)
+	armor_values = list(MELEE = 15, BULLET = 10, LASER = 10, ENERGY = 10)
