@@ -309,11 +309,11 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "cc" = (
 /obj/structure/frame/machine,
-/obj/item/circuitboard/machine/protolathe/offstation,
 /obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/circuitboard/machine/protolathe,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "cd" = (
@@ -6609,11 +6609,11 @@
 /area/ruin/space/has_grav/port_tarkon/developement)
 "RI" = (
 /obj/structure/frame/machine,
-/obj/item/circuitboard/machine/circuit_imprinter/offstation,
 /obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/circuitboard/machine/circuit_imprinter,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/has_grav/port_tarkon/developement)
 "RJ" = (

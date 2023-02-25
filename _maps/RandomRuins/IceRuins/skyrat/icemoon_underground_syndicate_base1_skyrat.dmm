@@ -609,9 +609,9 @@
 /area/ruin/syndicate_lava_base/bar)
 "dT" = (
 /obj/structure/table/glass,
-/obj/item/storage/box/rndboards{
-	pixel_y = 15;
-	pixel_x = 2
+/obj/item/storage/box/rndboards/mundane{
+	pixel_y = 13;
+	pixel_x = 5
 	},
 /obj/item/storage/part_replacer{
 	pixel_y = 6
