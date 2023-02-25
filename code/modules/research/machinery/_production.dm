@@ -29,7 +29,7 @@
 	var/stripe_color = null
 
 	/// Does this charge the user's ID on fabrication?
-	var/charges_tax = TRUE
+	var/charges_tax = FALSE
 
 /obj/machinery/rnd/production/Initialize(mapload)
 	. = ..()
