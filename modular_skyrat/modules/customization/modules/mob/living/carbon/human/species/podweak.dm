@@ -5,7 +5,6 @@
 		TRAIT_PLANT_SAFE,
 		TRAIT_LITERATE,
 	)
-	payday_modifier = 0.75
 
 /datum/species/pod/podweak
 	name = "Podperson"

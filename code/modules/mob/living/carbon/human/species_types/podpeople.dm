@@ -15,7 +15,6 @@
 
 	burnmod = 1.25
 	heatmod = 1.5
-	payday_modifier = 0.75
 	meat = /obj/item/food/meat/slab/human/mutant/plant
 	exotic_blood = /datum/reagent/water
 	disliked_food = MEAT | DAIRY | SEAFOOD | BUGS
