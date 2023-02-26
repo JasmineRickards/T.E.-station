@@ -106,7 +106,7 @@
 	toolspeed = 0.1
 	hitsound = 'sound/weapons/pulse.ogg'
 	usesound = 'sound/weapons/blade1.ogg'
-	bitsound = 'saberon'
+	bitsound = 'sound/weapons/saberon.ogg'
 
 
 /obj/item/screwdriver/power/Initialize(mapload)
