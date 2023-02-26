@@ -384,11 +384,10 @@
 	light_system = NO_LIGHT_SUPPORT
 	light_range = 0
 	change_icons = FALSE
-	var/refill_amount = 1
 
 /obj/item/weldingtool/abductor/process()
 	if(get_fuel() <= max_fuel)
-		reagents.add_reagent(/datum/reagent/fuel, refill_amount)
+		reagents.add_reagent(/datum/reagent/fuel, 1)
 	..()
 
 /obj/item/weldingtool/abductor/wb32 // This wasn't going to just be a retheme but whatever sick fuck made it so that light_system and light_range are responsible for welding tools blinding you is :(
