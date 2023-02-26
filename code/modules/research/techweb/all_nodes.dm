@@ -1614,7 +1614,7 @@
 		"p-90ammo",
 		"m16ar",
 		"m16mod",
-		"m16mod2",
+//		"m16mod2",
 		"m16ammo",
 //		"m16ammodrum", Disabled because broken sprite. Fun.
 		"as2kit",
