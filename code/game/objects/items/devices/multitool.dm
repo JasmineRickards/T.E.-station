@@ -136,6 +136,12 @@
 	custom_materials = list(/datum/material/iron = 5000, /datum/material/silver = 2500, /datum/material/plasma = 5000, /datum/material/titanium = 2000, /datum/material/diamond = 2000)
 	toolspeed = 0.1
 
+/obj/item/multitool/abductor/wb32
+	name = "WB-32 Skeleton Key"
+	desc = "The reverse engineering community is a prevalent culture - discussing how technology works under the hood has historically lead to incredible contraptions, and has led \
+	to the prevalence of remote signalling devices, for work, pleasure, and otherwise, in the modern day and age. Skeleton Keys like this one provide easy access to any and all \
+	wire-related information directly to a user's neurons, or lack thereof, for specialty situations WB-32 chooses."
+
 /obj/item/multitool/cyborg//SKYRAT EDIT - ICON OVERRIDEN BY AESTHETICS - SEE MODULE
 	name = "electronic multitool"
 	desc = "Optimised version of a regular multitool. Streamlines processes handled by its internal microchip."

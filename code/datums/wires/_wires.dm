@@ -247,7 +247,7 @@
 		return TRUE
 
 	// Same for anyone with an abductor multitool.
-	if(user.is_holding_item_of_type(/obj/item/multitool/abductor))
+	if(user.is_holding_item_of_type(/obj/item/multitool/abductor) || user.is_holding_item_of_type(/obj/item/multitool/abductor/wb32)) // This needs to be a var on multitools to avoid this awful behavior.
 		return TRUE
 
 	// Station blueprints do that too, but only if the wires are not randomized.

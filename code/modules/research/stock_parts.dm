@@ -1,6 +1,6 @@
 /*Power cells are in code\modules\power\cell.dm
 
-If you create T5+ please take a pass at mech_fabricator.dm. The parts being good enough allows it to go into minus values and create materials out of thin air when printing stuff.*/
+If you create T6+ please take a pass at mech_fabricator.dm. The parts being good enough allows it to go into minus values and create materials out of thin air when printing stuff.*/
 /obj/item/storage/part_replacer//SKYRAT EDIT - ICON OVERRIDEN BY AESTHETICS - SEE MODULE
 	name = "rapid part exchange device"
 	desc = "Special mechanical module made to store, sort, and apply standard machine parts."
@@ -153,9 +153,6 @@ If you create T5+ please take a pass at mech_fabricator.dm. The parts being good
 	if(removed_component.reagents)
 		UnregisterSignal(removed_component.reagents, COMSIG_REAGENTS_PRE_ADD_REAGENT)
 
-
-/obj/item/storage/part_replacer/bluespace/tier1
-
 /obj/item/storage/part_replacer/bluespace/tier1/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/stock_parts/capacitor(src)
@@ -164,8 +161,6 @@ If you create T5+ please take a pass at mech_fabricator.dm. The parts being good
 		new /obj/item/stock_parts/micro_laser(src)
 		new /obj/item/stock_parts/matter_bin(src)
 		new /obj/item/stock_parts/cell/high(src)
-
-/obj/item/storage/part_replacer/bluespace/tier2
 
 /obj/item/storage/part_replacer/bluespace/tier2/PopulateContents()
 	for(var/i in 1 to 10)
@@ -176,8 +171,6 @@ If you create T5+ please take a pass at mech_fabricator.dm. The parts being good
 		new /obj/item/stock_parts/matter_bin/adv(src)
 		new /obj/item/stock_parts/cell/super(src)
 
-/obj/item/storage/part_replacer/bluespace/tier3
-
 /obj/item/storage/part_replacer/bluespace/tier3/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/stock_parts/capacitor/super(src)
@@ -187,8 +180,6 @@ If you create T5+ please take a pass at mech_fabricator.dm. The parts being good
 		new /obj/item/stock_parts/matter_bin/super(src)
 		new /obj/item/stock_parts/cell/hyper(src)
 
-/obj/item/storage/part_replacer/bluespace/tier4
-
 /obj/item/storage/part_replacer/bluespace/tier4/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/stock_parts/capacitor/quadratic(src)
@@ -197,6 +188,15 @@ If you create T5+ please take a pass at mech_fabricator.dm. The parts being good
 		new /obj/item/stock_parts/micro_laser/quadultra(src)
 		new /obj/item/stock_parts/matter_bin/bluespace(src)
 		new /obj/item/stock_parts/cell/bluespace(src)
+
+/obj/item/storage/part_replacer/bluespace/tier5/PopulateContents()
+	for(var/i in 1 to 10)
+		new /obj/item/stock_parts/capacitor/wb32(src)
+		new /obj/item/stock_parts/scanning_module/wb32(src)
+		new /obj/item/stock_parts/manipulator/wb32(src)
+		new /obj/item/stock_parts/micro_laser/wb32(src)
+		new /obj/item/stock_parts/matter_bin/wb32(src)
+		new /obj/item/stock_parts/cell/bluespacereactor/wb32(src)
 
 /obj/item/storage/part_replacer/cargo //used in a cargo crate
 
@@ -409,6 +409,48 @@ If you create T5+ please take a pass at mech_fabricator.dm. The parts being good
 	icon_state = "bluespace_matter_bin"
 	rating = 4
 	energy_rating = 10
+	custom_materials = list(/datum/material/iron=80)
+
+//Rating 5
+
+/obj/item/stock_parts/capacitor/wb32
+	name = "WB-32 capacitor"
+	desc = "Impossibly high-load capacitors, meant to withstand even the load of several silicon units simultaneously."
+	icon_state = "quadratic_capacitor"
+	rating = 5
+	energy_rating = 15
+	custom_materials = list(/datum/material/iron=10, /datum/material/glass=10) // Imagine recycling archotechnology. Bozo
+
+/obj/item/stock_parts/scanning_module/wb32
+	name = "WB-32 scanning module"
+	desc = "An ultra-thin scanning module, designed for near instant identification."
+	icon_state = "triphasic_scan_module"
+	rating = 5
+	energy_rating = 15
+	custom_materials = list(/datum/material/iron=10, /datum/material/glass=10)
+
+/obj/item/stock_parts/manipulator/wb32
+	name = "WB-32 manipulator"
+	desc = "A manipulator the size of your pinky that can effortlessly manipulate anything from entire mechas to the atoms forming them."
+	icon_state = "femto_mani"
+	rating = 5
+	energy_rating = 15
+	custom_materials = list(/datum/material/iron=10)
+
+/obj/item/stock_parts/micro_laser/wb32
+	name = "WB-32 micro-laser"
+	icon_state = "quadultra_micro_laser"
+	desc = "A tiny tube and laser assembly, precise and quick enough to have already finished burning words into the floor while you examined it."
+	rating = 5 // Borgs weeping
+	energy_rating = 15
+	custom_materials = list(/datum/material/iron=10, /datum/material/glass=10)
+
+/obj/item/stock_parts/matter_bin/wb32
+	name = "WB-32 matter bin"
+	desc = "It's theorized just one of these could hold the combined molecules of an entire Terran county."
+	icon_state = "bluespace_matter_bin"
+	rating = 5
+	energy_rating = 15
 	custom_materials = list(/datum/material/iron=80)
 
 // Subspace stock parts

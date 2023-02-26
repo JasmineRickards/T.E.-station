@@ -99,6 +99,14 @@
 	toolspeed = 0.7
 	force_opens = TRUE
 
+/obj/item/crowbar/power/wb32
+	name = "WB-32 Seperation Jaws"
+	desc = "One of the most hazardous environments for paramedics and salvage workers alike is deep space. While traditional \
+	prying and cutting equipment proved effective for smaller cruisers and freighters, the growing prevalance of collosus-class \
+	vessels opened a need in the market for more effective tools in both markets, and, owing to supposed mechanical similarities \
+	researchers have been unable to decipher, WB-32 alleviated both needs with one device."
+	toolspeed = 0.1 // And the lord said, "My son, walk in the light, for it is you who shall lead the tide"
+
 /obj/item/crowbar/power/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/transforming, \
