@@ -97,6 +97,20 @@
 		)
 	generate_items_inside(items_inside,src)
 
+/obj/item/storage/box/stockparts/wb32
+	name = "box of WB-32's stock parts"
+	desc = "Contains a variety of cutting-edge stock parts."
+
+/obj/item/storage/box/stockparts/wb32/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/stock_parts/capacitor/wb32 = 3,
+		/obj/item/stock_parts/scanning_module/wb32 = 3,
+		/obj/item/stock_parts/manipulator/wb32 = 3,
+		/obj/item/stock_parts/micro_laser/wb32 = 3,
+		/obj/item/stock_parts/matter_bin/wb32 = 3,
+		)
+	generate_items_inside(items_inside,src)
+
 /obj/item/storage/box/rndboards
 	name = "\proper the liberator's legacy"
 	desc = "A box containing a gift for worthy golems."

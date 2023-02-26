@@ -153,9 +153,6 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 	if(removed_component.reagents)
 		UnregisterSignal(removed_component.reagents, COMSIG_REAGENTS_PRE_ADD_REAGENT)
 
-
-/obj/item/storage/part_replacer/bluespace/tier1
-
 /obj/item/storage/part_replacer/bluespace/tier1/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/stock_parts/capacitor(src)
@@ -164,8 +161,6 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 		new /obj/item/stock_parts/micro_laser(src)
 		new /obj/item/stock_parts/matter_bin(src)
 		new /obj/item/stock_parts/cell/high(src)
-
-/obj/item/storage/part_replacer/bluespace/tier2
 
 /obj/item/storage/part_replacer/bluespace/tier2/PopulateContents()
 	for(var/i in 1 to 10)
@@ -176,8 +171,6 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 		new /obj/item/stock_parts/matter_bin/adv(src)
 		new /obj/item/stock_parts/cell/super(src)
 
-/obj/item/storage/part_replacer/bluespace/tier3
-
 /obj/item/storage/part_replacer/bluespace/tier3/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/stock_parts/capacitor/super(src)
@@ -187,8 +180,6 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 		new /obj/item/stock_parts/matter_bin/super(src)
 		new /obj/item/stock_parts/cell/hyper(src)
 
-/obj/item/storage/part_replacer/bluespace/tier4
-
 /obj/item/storage/part_replacer/bluespace/tier4/PopulateContents()
 	for(var/i in 1 to 10)
 		new /obj/item/stock_parts/capacitor/quadratic(src)
@@ -197,6 +188,15 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 		new /obj/item/stock_parts/micro_laser/quadultra(src)
 		new /obj/item/stock_parts/matter_bin/bluespace(src)
 		new /obj/item/stock_parts/cell/bluespace(src)
+
+/obj/item/storage/part_replacer/bluespace/tier5/PopulateContents()
+	for(var/i in 1 to 10)
+		new /obj/item/stock_parts/capacitor/wb32(src)
+		new /obj/item/stock_parts/scanning_module/wb32(src)
+		new /obj/item/stock_parts/manipulator/wb32(src)
+		new /obj/item/stock_parts/micro_laser/wb32(src)
+		new /obj/item/stock_parts/matter_bin/wb32(src)
+		new /obj/item/stock_parts/cell/bluespacereactor/wb32(src)
 
 /obj/item/storage/part_replacer/cargo //used in a cargo crate
 
