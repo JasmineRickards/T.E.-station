@@ -398,6 +398,9 @@
 	custom_materials = list(/datum/material/glass=600)
 	chargerate = 4000
 
+/obj/item/stock_parts/cell/bluespace/empty
+	empty = TRUE
+
 /obj/item/stock_parts/cell/bluespacereactor
 	empty = TRUE
 	name = "bluespace reactor power cell"
@@ -408,8 +411,13 @@
 	chargerate = 400
 	self_recharge = 1
 
-/obj/item/stock_parts/cell/bluespace/empty
-	empty = TRUE
+/obj/item/stock_parts/cell/bluespacereactor/wb32
+	name = "WB-32 Quantum MicroReactor"
+	desc = "Rumormills beleive microreactors like these were originally made due to WB-32 misunderstanding the concept of gift-giving, \
+	to, quote, \"Treat itself\". Those of a less cynical mindset simply beleive they were made for conveinence and planetary restriction, \
+	especially for harvesting rigs on the \"surface\" of gas giants."
+	maxcharge = 100000
+	chargerate = 5000 // Probably sustains every single possible model of station at once, if it was ever given the chance.
 
 /obj/item/stock_parts/cell/infinite
 	name = "infinite-capacity power cell"

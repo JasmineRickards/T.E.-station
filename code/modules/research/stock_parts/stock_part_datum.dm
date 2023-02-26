@@ -64,6 +64,8 @@ GLOBAL_LIST_INIT(stock_part_datums, generate_stock_part_datums())
 			return 5
 		if (4)
 			return 10
+		if (5)
+			return 15
 		else
 			CRASH("Invalid level given to energy_rating: [tier]")
 
@@ -83,3 +85,7 @@ GLOBAL_LIST_INIT(stock_part_datums, generate_stock_part_datums())
 /datum/stock_part/scanning_module/tier4
 	tier = 4
 	physical_object_type = /obj/item/stock_parts/scanning_module/triphasic
+
+/datum/stock_part/scanning_module/tier5
+	tier = 5
+	physical_object_type = /obj/item/stock_parts/scanning_module/wb32
