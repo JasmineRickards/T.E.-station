@@ -20,6 +20,15 @@
 	name = "\improper Bluespace Tech's belt"
 	w_class = WEIGHT_CLASS_TINY
 
+/obj/item/storage/belt/utility/chief/full/debug/PopulateContents()
+	SSwardrobe.provide_type(/obj/item/screwdriver/power/wb32, src)
+	SSwardrobe.provide_type(/obj/item/crowbar/power/wb32, src)
+	SSwardrobe.provide_type(/obj/item/weldingtool/abductor/wb32, src)
+	SSwardrobe.provide_type(/obj/item/multitool/abductor/wb32, src)
+	SSwardrobe.provide_type(/obj/item/stack/cable_coil, src)
+	SSwardrobe.provide_type(/obj/item/extinguisher/mini, src)
+	SSwardrobe.provide_type(/obj/item/analyzer/ranged, src)
+
 /datum/outfit/debug/bst //Debug objs
 	name = "Bluespace Tech"
 	uniform = /obj/item/clothing/under/syndicate/combat
