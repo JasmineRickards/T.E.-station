@@ -149,18 +149,19 @@
 /datum/supply_pack/misc/bluespace_miner
 	name = "Bluespace Miner"
 	desc = "Nanotrasen has revolutionized the procuring of materials with bluespace-- featuring the Bluespace Miner!"
-	cost = CARGO_CRATE_VALUE * 15 // 30,000
+	cost = CARGO_CRATE_VALUE * 15 // 3,000
 	contains = list(/obj/item/circuitboard/machine/bluespace_miner)
 	crate_name = "Bluespace Miner Circuitboard Crate"
 	crate_type = /obj/structure/closet/crate
 
-/* if we were going to go research based
 /datum/design/board/bluespace_miner
 	name = "Machine Design (Bluespace Miner)"
 	desc = "Allows for the construction of circuit boards used to build a bluespace miner."
 	id = "bluespace_miner"
 	build_path = /obj/item/circuitboard/machine/bluespace_miner
-	category = list(RND_CATEGORY_MISC_MACHINERY)
+	category = list(
+		RND_CATEGORY_MACHINE + RND_SUBCATEGORY_MACHINE_CARGO
+	)
 	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_ENGINEERING
 
 /datum/experiment/scanning/points/bluespace_miner
@@ -181,4 +182,3 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	discount_experiments = list(/datum/experiment/scanning/points/bluespace_miner = 5000)
-*/
