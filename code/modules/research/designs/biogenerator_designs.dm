@@ -66,6 +66,14 @@
 	make_reagents = list(/datum/reagent/consumable/bbqsauce = 1)
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
 
+/datum/design/ketchup
+	name = "Ketchup"
+	id = "ketchup"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 5)
+	make_reagents = list(/datum/reagent/consumable/ketchup = 1)
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_BIO_FOOD)
+
 /datum/design/enzyme
 	name = "Universal Enzyme"
 	id = "enzyme"
