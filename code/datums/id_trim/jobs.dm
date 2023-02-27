@@ -389,7 +389,6 @@
 	minimal_access = list(
 		ACCESS_KITCHEN,
 		ACCESS_MINERAL_STOREROOM,
-		ACCESS_MORGUE,
 		ACCESS_SERVICE,
 		)
 	extra_access = list(
