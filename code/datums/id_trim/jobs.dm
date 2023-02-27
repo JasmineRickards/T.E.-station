@@ -502,53 +502,19 @@
 	subdepartment_color = COLOR_SERVICE_LIME
 	department_state = "departmenthead"
 	sechud_icon_state = SECHUD_HEAD_OF_PERSONNEL
-	minimal_access = list(
-		ACCESS_AI_UPLOAD,
-		ACCESS_ALL_PERSONAL_LOCKERS,
-		ACCESS_AUX_BASE,
-		ACCESS_BAR,
-		ACCESS_BRIG_ENTRANCE,
-		ACCESS_CARGO,
-		ACCESS_CHAPEL_OFFICE,
-		ACCESS_CHANGE_IDS,
-		ACCESS_CREMATORIUM,
-		ACCESS_COMMAND,
-		ACCESS_COURT,
-		ACCESS_ENGINEERING,
-		ACCESS_EVA,
-		ACCESS_GATEWAY,
-		ACCESS_HYDROPONICS,
-		ACCESS_JANITOR,
-		ACCESS_KEYCARD_AUTH,
-		ACCESS_KITCHEN,
-		ACCESS_LAWYER,
-		ACCESS_LIBRARY,
-		ACCESS_MAINT_TUNNELS,
-		ACCESS_MEDICAL,
-		ACCESS_MINERAL_STOREROOM,
-		ACCESS_PSYCHOLOGY,
-		ACCESS_RC_ANNOUNCE,
-		ACCESS_SCIENCE,
-		ACCESS_SERVICE,
-		ACCESS_TELEPORTER,
-		ACCESS_THEATRE,
-		ACCESS_WEAPONS,
-		)
-	minimal_wildcard_access = list(
-		ACCESS_HOS,
-		ACCESS_HOP,
-		ACCESS_CE,
-		ACCESS_RD,
-		ACCESS_CMO,
-		ACCESS_QM,
-		)
-	extra_access = list()
-	extra_wildcard_access = list()
 	template_access = list(
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 	)
 	job = /datum/job/head_of_personnel
+
+/datum/id_trim/job/head_of_personnel/New()
+	extra_access |= (SSid_access.get_flag_access_list(ACCESS_FLAG_COMMON) + SSid_access.get_flag_access_list(ACCESS_FLAG_COMMAND))
+	extra_wildcard_access |= (SSid_access.get_flag_access_list(ACCESS_FLAG_PRV_COMMAND) + SSid_access.get_flag_access_list(ACCESS_FLAG_CAPTAIN))
+	minimal_access |= (SSid_access.get_flag_access_list(ACCESS_FLAG_COMMON) + SSid_access.get_flag_access_list(ACCESS_FLAG_COMMAND))
+	minimal_wildcard_access |= (SSid_access.get_flag_access_list(ACCESS_FLAG_PRV_COMMAND) + SSid_access.get_flag_access_list(ACCESS_FLAG_CAPTAIN))
+
+	return ..()
 
 /datum/id_trim/job/head_of_security
 	assignment = "Head of Security"
@@ -559,59 +525,19 @@
 	subdepartment_color = COLOR_SECURITY_RED
 	department_state = "departmenthead"
 	sechud_icon_state = SECHUD_HEAD_OF_SECURITY
-	extra_access = list(ACCESS_TELEPORTER)
-	extra_wildcard_access = list()
-	minimal_access = list(
-		ACCESS_ALL_PERSONAL_LOCKERS,
-		ACCESS_ARMORY,
-		ACCESS_AUX_BASE,
-		ACCESS_BRIG,
-		ACCESS_BRIG_ENTRANCE,
-		ACCESS_CARGO,
-		ACCESS_COMMAND,
-		ACCESS_CONSTRUCTION,
-		ACCESS_COURT,
-		ACCESS_DETECTIVE,
-		ACCESS_ENGINEERING,
-		ACCESS_EVA,
-		ACCESS_GATEWAY,
-		ACCESS_KEYCARD_AUTH,
-		ACCESS_MAINT_TUNNELS,
-		ACCESS_MECH_SECURITY,
-		ACCESS_MEDICAL,
-		ACCESS_MINERAL_STOREROOM,
-		ACCESS_MINING,
-		ACCESS_MORGUE,
-		ACCESS_RC_ANNOUNCE,
-		ACCESS_SCIENCE,
-		ACCESS_SECURITY,
-		ACCESS_SERVICE,
-		ACCESS_SHIPPING,
-		ACCESS_WEAPONS,
-		)
-	minimal_wildcard_access = list(
-		ACCESS_HOS,
-		ACCESS_HOP,
-		ACCESS_CE,
-		ACCESS_RD,
-		ACCESS_CMO,
-		ACCESS_QM,
-		)
 	template_access = list(
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		)
 	job = /datum/job/head_of_security
 
-/datum/id_trim/job/head_of_security/refresh_trim_access()
-	. = ..()
+/datum/id_trim/job/head_of_security/New()
+	extra_access |= (SSid_access.get_flag_access_list(ACCESS_FLAG_COMMON) + SSid_access.get_flag_access_list(ACCESS_FLAG_COMMAND))
+	extra_wildcard_access |= (SSid_access.get_flag_access_list(ACCESS_FLAG_PRV_COMMAND) + SSid_access.get_flag_access_list(ACCESS_FLAG_CAPTAIN))
+	minimal_access |= (SSid_access.get_flag_access_list(ACCESS_FLAG_COMMON) + SSid_access.get_flag_access_list(ACCESS_FLAG_COMMAND))
+	minimal_wildcard_access |= (SSid_access.get_flag_access_list(ACCESS_FLAG_PRV_COMMAND) + SSid_access.get_flag_access_list(ACCESS_FLAG_CAPTAIN))
 
-	if(!.)
-		return
-
-	// Config check for if sec has maint access.
-	if(CONFIG_GET(flag/security_has_maint_access))
-		access |= list(ACCESS_MAINT_TUNNELS)
+	return ..()
 
 /datum/id_trim/job/janitor
 	assignment = "Janitor"
