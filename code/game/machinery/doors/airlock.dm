@@ -1129,6 +1129,8 @@
 				var/time_to_open = 50
 				playsound(src, 'sound/machines/airlock_alien_prying.ogg', 100, TRUE) //is it aliens or just the CE being a dick?
 				prying_so_hard = TRUE
+				if(I)
+					time_to_open = 71.43 * I.toolspeed // Rounds down so that basic jaws of life (toolspeed 0.7) are IDENTICAL speed to xenomorphs prying
 				if(do_after(user, time_to_open, src))
 					if(check_electrified && shock(user,100))
 						prying_so_hard = FALSE
