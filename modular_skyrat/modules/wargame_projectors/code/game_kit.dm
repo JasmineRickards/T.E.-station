@@ -11,6 +11,7 @@
 
 /obj/item/storage/secure/briefcase/white/wargame_kit/PopulateContents()
 	var/static/items_inside = list(
+		/obj/item/paper/yggsrule = 1,
 		/obj/item/wargame_projector/ships = 1,
 		/obj/item/wargame_projector/ships/red = 1,
 		/obj/item/wargame_projector/terrain = 1,

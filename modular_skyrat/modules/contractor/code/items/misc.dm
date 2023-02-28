@@ -106,3 +106,68 @@
 			<p>Good luck agent. You can burn this document with the supplied lighter.</p>"}
 
 	return ..()
+
+/obj/item/paper/yggsrule
+	name = "Yggsie's wargame rules"
+	default_raw_text = {"## Wargame Rules.
+
+			# Moving
+
+			Each unit has its own moveset, Strike craft can move twice, Light ships
+			 can move three times, Medium ships twice, and large ships just once.
+			If a unit moves, and has not exhausted all available moves, can attack
+			 another unit within range with just 1 attack. Using an attack
+			will deplete any remaining moves the unit has.
+
+			# Attacking
+
+			Units must account for obstacles, especially at range. If a target is behind an obstacle,
+			 your projectile will travel in a straight line,
+			and hit the obstacle before the target. Missiles can be used to maneuver around targets,
+			 but they only move two tiles per turn, and must
+			move onto the tile of the target to hit. Missiles have 1 health, and die when fired upon.
+			 Firing a missile counts as an attack move,
+			and hitting a target will deal 2 damage. If a missile hits nothing for three full
+			 turns, it will lose all fuel, and drift in its prior
+			direction at 1 tile per turn.
+
+			# Strike craft
+
+			Strike craft when attacking, deals 1 damage per set of two vessels in a wing,
+			 or individually, they deal just 1 damage.
+			A wing of 6 strike craft, will deal 3 damage. These are also the only units that
+			 can overlap another unit when ending their move.
+
+			# Light vessels
+
+			Light vessels can move three spaces, but can only attack within 1 range with direct fire weapons.
+
+			# Medium vessels
+
+			Medium vessels have a health pool of 2, a 2 range attack with direct fire weapons and a
+			2 tile move option. They are also a UNIQUE unit, and can fire specialised
+			short range breaching missiles.
+			These missiles travel at a rate of 2 tiles per turn, and can only move for three turns.
+			 If these missiles hit, 1 damage is done.
+
+			# Large vessels - Cruisers
+
+			Large vessels have 1 movement point, a health pool of 6, a 3 range direct attack, and
+			 the option to fire 1 standard missile per turn. The missile can travel 2 tiles
+			per turn.
+
+			# Large vessels - Carriers
+
+			Carriers have a health pool of 3, no direct attack option, a missile weapon, 1 movement point,
+			 and 2 charges of point defence per turn. Point defence means
+			it can kill a missile within 2 range, does not consume an attack or movement point. Every two
+			turns, the carrier will create 1 strike craft unit.
+
+			# Platforms
+
+			Platforms cannot move, but have a two range direct attack, 2 health pool, and a missile weapon.
+
+			# Stations
+
+			Stations cannot move, have a 3 range direct attack, 6 health pool, and a missile weapon.
+			"}
