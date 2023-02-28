@@ -2,7 +2,7 @@
 	projectile_type = /obj/projectile/energy/electrode
 	select_name = "stun"
 	fire_sound = 'sound/weapons/taser.ogg'
-	e_cost = 200
+	e_cost = 150
 	harmful = FALSE
 
 /obj/item/ammo_casing/energy/electrode/spec
@@ -13,17 +13,17 @@
 	e_cost = 100
 
 /obj/item/ammo_casing/energy/electrode/old
-	e_cost = 1000
+	e_cost = 500
 
 /obj/item/ammo_casing/energy/disabler
 	projectile_type = /obj/projectile/beam/disabler
 	select_name = "disable"
-	e_cost = 50
+	e_cost = 25
 	fire_sound = 'sound/weapons/taser2.ogg'
 	harmful = FALSE
 
 /obj/item/ammo_casing/energy/disabler/hos
-	e_cost = 60
+	e_cost = 35
 
 // SKYRAT ADDITION START
 /obj/item/ammo_casing/energy/disabler/skyrat
