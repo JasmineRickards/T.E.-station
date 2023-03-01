@@ -649,3 +649,5 @@
 	default = 50
 
 /datum/config_entry/string/morgue_cadaver_override_species
+
+/datum/config_entry/flag/no_station_traits // Do we disable station traits? Uncommenting will disable station traits

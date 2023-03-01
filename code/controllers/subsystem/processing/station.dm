@@ -30,6 +30,8 @@ PROCESSING_SUBSYSTEM_DEF(station)
 	#ifdef LOWMEMORYMODE // NO MORE FUCKING STUPID STATION TRAITS ON STARTUP WHEN IM TESTING SHIT FUCK YOU
 	return
 	#endif
+	if (CONFIG_GET(flag/no_station_traits))
+		return // I'm sorry, my Intern
 	// SKYRAT EDIT END
 
 	if (fexists(FUTURE_STATION_TRAITS_FILE))
