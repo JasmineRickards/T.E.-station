@@ -170,4 +170,10 @@
 			# Stations
 
 			Stations cannot move, have a 3 range direct attack, 6 health pool, and a missile weapon.
-			"}
+
+			#Obstacles
+
+			While obstacles protect ships from direct fire provided it is between the two ships firing upon each
+			other, each obstacle has a set amount of health. Dense fields have 3 health, and can be moved over.
+			Standard asteroid fields has 2 health, and can be moved over. Small meteors have 3 health, and can
+			be moved over. Large meteors have 5 health, and cannot be moved over."}
