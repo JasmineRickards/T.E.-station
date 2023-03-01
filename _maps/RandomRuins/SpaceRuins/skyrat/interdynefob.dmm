@@ -2029,6 +2029,9 @@
 	name = "master at arms's bedsheet"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mob_spawn/ghost_role/human/ds2/syndicate_command/masteratarms{
+	dir = 8
+	},
 /turf/open/floor/carpet/royalblack,
 /area/ruin/space/has_grav/skyrat/interdynefob/security)
 "ih" = (
@@ -3893,7 +3896,8 @@
 	pixel_x = 5;
 	pixel_y = 15
 	},
-/turf/open/floor/carpet/royalblack,
+/obj/effect/turf_decal/siding/dark,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/skyrat/interdynefob/security)
 "qn" = (
 /obj/machinery/light/no_nightlight/directional/east,
@@ -5047,8 +5051,13 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/skyrat/interdynefob/bridge/eva)
 "vr" = (
-/obj/effect/mob_spawn/ghost_role/human/ds2/syndicate_command/masteratarms,
-/turf/open/floor/carpet/royalblack,
+/obj/machinery/suit_storage_unit{
+	mask_type = /obj/item/clothing/mask/gas/syndicate;
+	storage_type = /obj/item/tank/jetpack/oxygen/harness;
+	mod_type = /obj/item/mod/control/pre_equipped/traitor_elite
+	},
+/obj/effect/turf_decal/siding/dark,
+/turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/skyrat/interdynefob/security)
 "vv" = (
 /obj/effect/turf_decal/siding/wood{
@@ -9618,7 +9627,8 @@
 	dir = 6
 	},
 /mob/living/simple_animal/pet/fox{
-	name = "Rhials"
+	name = "Rhials";
+	desc = "Legend has it that once, a long time ago,  Rhials was the Admiral's personal pet fox. Now, he bravely occupies the Corporate Liasion's time, pining for the days where he had a pug to play with and a seat at the top."
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/skyrat/interdynefob/bridge/cl)
