@@ -13,7 +13,7 @@
 	alt_titles = list("AI", "Station Intelligence", "Automated Overseer")
 
 /datum/job/assistant
-	alt_titles = list("Assistant", "Civilian", "Tourist", "Businessman", "Businesswoman", "Trader", "Entertainer", "Freelancer", "Artist", "Off-Duty Staff", "Off-Duty Crew")
+	alt_titles = list("Assistant", "Civilian", "Tourist", "Businessman", "Businesswoman", "Trader", "Entertainer", "Freelancer", "Artist", "Off-Duty Staff", "Off-Duty Crew", "Slave")
 
 /datum/job/atmospheric_technician
 	alt_titles = list("Atmospheric Technician", "Life Support Technician", "Emergency Fire Technician", "Firefighter")
@@ -105,7 +105,7 @@
 	alt_titles = list("Paramedic", "Emergency Medical Technician", "Search and Rescue Technician")
 
 /datum/job/prisoner
-	alt_titles = list("Prisoner", "Minimum Security Prisoner", "Maximum Security Prisoner", "SuperMax Security Prisoner", "Protective Custody Prisoner", "Convict", "Felon", "Inmate")
+	alt_titles = list("Prisoner", "Minimum Security Prisoner", "Maximum Security Prisoner", "SuperMax Security Prisoner", "Protective Custody Prisoner", "Convict", "Felon", "Inmate", "Sec-Slave")
 
 /datum/job/psychologist
 	alt_titles = list("Psychologist", "Psychiatrist", "Therapist", "Counsellor")
