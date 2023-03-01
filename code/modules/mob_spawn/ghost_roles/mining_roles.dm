@@ -279,9 +279,10 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	prompt_name = "a syndicate science technician"
-	you_are_text = "You are a syndicate science technician, employed in a top secret research facility developing biological weapons."
-	flavour_text = "Unfortunately, your hated enemy, Nanotrasen, has begun mining in this sector. Continue your research as best you can, and try to keep a low profile."
-	important_text = "The base is rigged with explosives, DO NOT abandon it or let it fall into enemy hands!"
+	you_are_text = "You are a syndicate science technician, employed in a top secret research facility developing biological weapons under the nose of WB-32."
+	flavour_text = "Unfortunately, Nanotrasen has begun mining in this sector - meaning your formerly under-the-radar facility is in a particularly perilous situation. \
+	Continue gathering resources as best as you can, and try to keep a low profile."
+	important_text = "The base is rigged with explosives, DO NOT abandon it or let it's true purpose slip!"
 	outfit = /datum/outfit/lavaland_syndicate
 	spawner_job_path = /datum/job/lavaland_syndicate
 	loadout_enabled = TRUE // SKYRAT EDIT ADDITION - ghost role loadouts
@@ -295,9 +296,7 @@
 /obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate/comms
 	name = "Syndicate Comms Agent"
 	prompt_name = "a syndicate comms agent"
-	you_are_text = "You are a syndicate comms agent, employed in a top secret research facility developing biological weapons."
-	flavour_text = "Unfortunately, your hated enemy, Nanotrasen, has begun mining in this sector. Monitor enemy activity as best you can, and try to keep a low profile. Use the communication equipment to provide support to any field agents, and sow disinformation to throw Nanotrasen off your trail. Do not let the base fall into enemy hands!"
-	important_text = "DO NOT abandon the base."
+	you_are_text = "You are a syndicate comms agent, employed in a top secret research facility developing biological weapons under the nose of WB-32."
 	outfit = /datum/outfit/lavaland_syndicate/comms
 
 /datum/outfit/lavaland_syndicate
