@@ -141,47 +141,6 @@
 	desc = "The reverse engineering community is a prevalent culture - discussing how technology works under the hood has historically lead to incredible contraptions, and has led \
 	to the prevalence of remote signalling devices, for work, pleasure, and otherwise, in the modern day and age. Skeleton Keys like this one provide easy access to any and all \
 	wire-related information directly to a user's neurons, or lack thereof, for specialty situations WB-32 chooses."
-	/// Are we in door opening mode?
-	var/open_mode = FALSE
-	/// A list of all the access this multitool is authorized to use. Admin formality more than anything.
-	var/list/access_list
-
-/obj/item/multitool/abductor/wb32/Initialize()
-	access_list = SSid_access.get_region_access_list(list(REGION_ALL_GLOBAL))
-
-/obj/item/multitool/abductor/wb32/examine(mob/user)
-	. = ..()
-	. += span_notice("Use it inhand to toggle instantaneous door opening.")
-
-/obj/item/multitool/abductor/wb32/attack_self(mob/user, modifiers)
-	. = ..()
-	if(open_mode == TRUE)
-		balloon_alert(user, "Opening Off")
-		open_mode = FALSE
-	else if(open_mode == FALSE)
-		balloon_alert(user, "Opening On")
-		open_mode = TRUE
-
-/obj/item/multitool/abductor/wb32/melee_attack_chain(mob/user, atom/target, params)
-	if(open_mode == TRUE)
-		var/datum/component/ntnet_interface/target_interface = target.GetComponent(/datum/component/ntnet_interface)
-		// Try to find an airlock in the clicked turf if that fails
-		if(!target_interface)
-			var/obj/machinery/door/airlock/door = locate() in get_turf(target)
-			if(door)
-				target_interface = door.GetComponent(/datum/component/ntnet_interface)
-			else
-				. = ..()
-				return
-		user.set_machine(src)
-		// Generate a control packet.
-		var/datum/netdata/data = new(list("data" = mode,"data_secondary" = "toggle"))
-		data.receiver_id = target_interface.hardware_id
-		data.passkey = access_list
-		data.user = user // for responce message
-
-		ntnet_send(data)
-	else . = ..() // Call parent if we're not on open mode, so we still behave normally otherwise
 
 /obj/item/multitool/cyborg//SKYRAT EDIT - ICON OVERRIDEN BY AESTHETICS - SEE MODULE
 	name = "electronic multitool"
