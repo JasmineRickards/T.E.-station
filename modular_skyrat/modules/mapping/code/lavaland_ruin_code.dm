@@ -4,17 +4,11 @@
 	you_are_text = "You are a syndicate shaft miner, employed in a top secret research facility developing biological weapons."
 	outfit = /datum/outfit/lavaland_syndicate/shaftminer
 
-/obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate/comms/space
-	outfit = /datum/outfit/lavaland_syndicate/comms/space
-
+/// Icemoon Variants
 /obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate/shaftminer/ice
-	name = "Syndicate Shaft Miner"
-	you_are_text = "You are a syndicate shaft miner, employed in a top secret research facility developing biological weapons."
 	outfit = /datum/outfit/lavaland_syndicate/shaftminer/ice
 
 /obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate/ice
-	name = "Syndicate Bioweapon Scientist"
-	you_are_text = "You are a syndicate science technician, employed in a top secret research facility developing biological weapons."
 	outfit = /datum/outfit/lavaland_syndicate/ice
 
 //OUTFITS//
@@ -37,13 +31,6 @@
 	uniform = /obj/item/clothing/under/syndicate/skyrat/tactical
 	suit = /obj/item/clothing/suit/hooded/wintercoat/syndicate
 	ears = /obj/item/radio/headset/interdyne
-
-/datum/outfit/lavaland_syndicate/comms
-	uniform = /obj/item/clothing/under/rank/security/skyrat/utility/redsec/syndicate
-	ears = /obj/item/radio/headset/interdyne/comms
-
-/datum/outfit/lavaland_syndicate/comms/space
-	ears = /obj/item/radio/headset/syndicate/alt
 
 /datum/outfit/lavaland_syndicate/shaftminer
 	name = "Lavaland Syndicate Shaft Miner"
@@ -99,7 +86,3 @@
 	name = "interdyne command headset"
 	desc = "A commanding headset to gather your underlings. Protects the ears from flashbangs."
 	command = TRUE
-
-/obj/item/radio/headset/interdyne/comms
-	keyslot = new /obj/item/encryptionkey/headset_syndicate/interdyne
-	keyslot2 = new /obj/item/encryptionkey/syndicate
