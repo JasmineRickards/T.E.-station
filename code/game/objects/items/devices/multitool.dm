@@ -146,7 +146,7 @@
 	/// A list of all the access this multitool is authorized to use. Admin formality more than anything.
 	var/list/access_list
 
-/obj/item/multitool/abductor/wb32/initialize()
+/obj/item/multitool/abductor/wb32/Initialize()
 	access_list = SSid_access.get_region_access_list(list(REGION_ALL_GLOBAL))
 
 /obj/item/multitool/abductor/wb32/examine(mob/user)
