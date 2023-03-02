@@ -416,7 +416,7 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 /obj/item/stock_parts/capacitor/wb32
 	name = "WB-32 capacitor"
 	desc = "Impossibly high-load capacitors, meant to withstand even the load of several silicon units simultaneously."
-	icon_state = "quadratic_capacitor"
+	icon_state = "WB-32-capacitor"
 	rating = 5
 	energy_rating = 15
 	custom_materials = list(/datum/material/iron=10, /datum/material/glass=10) // Imagine recycling archotechnology. Bozo
@@ -424,7 +424,7 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 /obj/item/stock_parts/scanning_module/wb32
 	name = "WB-32 scanning module"
 	desc = "An ultra-thin scanning module, designed for near instant identification."
-	icon_state = "triphasic_scan_module"
+	icon_state = "WB-32-scanning-module"
 	rating = 5
 	energy_rating = 15
 	custom_materials = list(/datum/material/iron=10, /datum/material/glass=10)
@@ -432,14 +432,14 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 /obj/item/stock_parts/manipulator/wb32
 	name = "WB-32 manipulator"
 	desc = "A manipulator the size of your pinky that can effortlessly manipulate anything from entire mechas to the atoms forming them."
-	icon_state = "femto_mani"
+	icon_state = "WB-32-manipulator"
 	rating = 5
 	energy_rating = 15
 	custom_materials = list(/datum/material/iron=10)
 
 /obj/item/stock_parts/micro_laser/wb32
 	name = "WB-32 micro-laser"
-	icon_state = "quadultra_micro_laser"
+	icon_state = "WB-32-micro_laser"
 	desc = "A tiny tube and laser assembly, precise and quick enough to have already finished burning words into the floor while you examined it."
 	rating = 5 // Borgs weeping
 	energy_rating = 15
@@ -448,7 +448,7 @@ If you create T6+ please take a pass at mech_fabricator.dm. The parts being good
 /obj/item/stock_parts/matter_bin/wb32
 	name = "WB-32 matter bin"
 	desc = "It's theorized just one of these could hold the combined molecules of an entire Terran county."
-	icon_state = "bluespace_matter_bin"
+	icon_state = "WB-32-matter_bin"
 	rating = 5
 	energy_rating = 15
 	custom_materials = list(/datum/material/iron=80)

@@ -396,6 +396,8 @@
 	and most of the supply may very easily end up having to be used to fend off the damage done simply by carrying it, with anything from \
 	stray meteors to debris commonly leading to agonizingly long chains of accidents. Enter, WB-32's Nano-Gen welder. Passively generating \
 	welding fuel on the fly, welders like these have historically saved many a freighter simply by existing. Allegedly."
+	icon = 'modular_skyrat/modules/aesthetics/tools/tools.dmi'
+	icon_state = "WB-32_nano-gen_welding_tool"
 
 /obj/item/weldingtool/hugetank
 	name = "upgraded industrial welding tool"

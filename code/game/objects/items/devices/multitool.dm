@@ -141,6 +141,8 @@
 	desc = "The reverse engineering community is a prevalent culture - discussing how technology works under the hood has historically lead to incredible contraptions, and has led \
 	to the prevalence of remote signalling devices, for work, pleasure, and otherwise, in the modern day and age. Skeleton Keys like this one provide easy access to any and all \
 	wire-related information directly to a user's neurons, or lack thereof, for specialty situations WB-32 chooses."
+	icon = 'modular_skyrat/modules/aesthetics/device/device.dmi'
+	icon_state = "WB-32_skeleton_key"
 
 /obj/item/multitool/cyborg//SKYRAT EDIT - ICON OVERRIDEN BY AESTHETICS - SEE MODULE
 	name = "electronic multitool"

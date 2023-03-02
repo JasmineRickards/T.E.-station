@@ -106,6 +106,7 @@
 	vessels opened a need in the market for more effective tools in both markets, and, owing to supposed mechanical similarities \
 	researchers have been unable to decipher, WB-32 alleviated both needs with one device."
 	toolspeed = 0.1 // And the lord said, "My son, walk in the light, for it is you who shall lead the tide"
+	icon_state = "WB-32_separation_jaws"
 
 /obj/item/crowbar/power/Initialize(mapload)
 	. = ..()
