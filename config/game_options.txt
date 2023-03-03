@@ -49,7 +49,7 @@ MULTIPLICATIVE_MOVESPEED /mob/living/simple_animal 0
 
 ## NAMES ###
 ## If uncommented this adds a random surname to a player's name if they only specify one name.
-HUMANS_NEED_SURNAMES
+#HUMANS_NEED_SURNAMES
 
 ## If uncommented, this forces all players to use random names !and appearances!.
 #FORCE_RANDOM_NAMES
@@ -123,7 +123,7 @@ PROTECT_ROLES_FROM_ANTAGONIST
 #ENFORCE_HUMAN_AUTHORITY_ON_EVERYONE
 
 ## If late-joining players have a chance to become a traitor/changeling
-ALLOW_LATEJOIN_ANTAGONISTS
+#ALLOW_LATEJOIN_ANTAGONISTS
 
 ## Uncomment to prevent the nuclear operative leader from getting the war declaration item
 #DISABLE_WAROPS
@@ -141,7 +141,7 @@ EVENTS_MIN_TIME_MUL 1
 
 ## Multiplier for minimal player count (players = alive non-AFK humans) for dangerous events to start.
 ## Set to 0 to make dangerous events avaliable for all populations.
-EVENTS_MIN_PLAYERS_MUL 1
+EVENTS_MIN_PLAYERS_MUL 15
 
 
 ## AI ###
@@ -163,7 +163,7 @@ ALLOW_AI_MULTICAM
 ## AWAY MISSIONS ###
 
 ## Uncomment to load one of the missions from awaymissionconfig.txt or away_missions/ at roundstart.
-#ROUNDSTART_AWAY
+ROUNDSTART_AWAY
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
 ## 600 is one minute.
@@ -226,7 +226,7 @@ NEAR_DEATH_EXPERIENCE
 ## Set to 4 for "specified", silicons will start with an existing lawset. (If no specified lawset is identified, the AI will spawn with asimov.)
 
 
-DEFAULT_LAWS 0
+DEFAULT_LAWS 1
 
 ## SILICON ASIMOV SUPERIORITY OVERRIDE ###
 ## This makes "Asimov Superiority" show up as a perk for humans in the character creation menu even if asimov is not the default lawset, such as when used with asimov++
@@ -552,7 +552,11 @@ MAXFINE 2000
 
 ## Comment if you wish to enable title music playing at the lobby screen. This flag is disabled by default to facilitate better code testing on local machines.
 ## Do keep in mind that this flag will not affect individual player's preferences: if they opt-out on your server, it will never play for them.
-DISALLOW_TITLE_MUSIC
+##<<<<<<< Updated upstream
+#DISALLOW_TITLE_MUSIC
 
 ## Uncomment if you wish to disable station traits. Useful for testing or bozos.
 NO_STATION_TRAITS
+=======
+#DISALLOW_TITLE_MUSIC
+>>>>>>> Stashed changes
