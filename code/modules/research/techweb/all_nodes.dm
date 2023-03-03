@@ -1549,7 +1549,8 @@
 		"spkkit",
 		"G17kit",
 		"r84kit",
-		"implant_compliance"
+		"implant_compliance",
+		"bulletdrive"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 

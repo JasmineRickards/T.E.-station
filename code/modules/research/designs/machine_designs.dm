@@ -613,6 +613,16 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
 
+/datum/design/board/bulletdrive
+	name = "Bullet Drive Board"
+	desc = "The circuit board for a Bullet Drive."
+	id = "bulletdrive"
+	build_path = /obj/item/circuitboard/machine/dish_drive/bullet
+	category = list(
+		RND_CATEGORY_MACHINE + RND_SUBCATEGORY_MACHINE_SECURITY
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY | DEPARTMENT_BITFLAG_ENGINEERING
+
 /datum/design/board/vendor
 	name = "Vendor Board"
 	desc = "The circuit board for a Vendor."
