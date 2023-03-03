@@ -418,6 +418,8 @@
 	especially for harvesting rigs on the \"surface\" of gas giants."
 	maxcharge = 100000
 	chargerate = 5000 // Probably sustains every single possible model of station at once, if it was ever given the chance.
+	icon_state = "WB-32-quantum-microreactor"
+	charge_light_type = null
 
 /obj/item/stock_parts/cell/infinite
 	name = "infinite-capacity power cell"

@@ -104,6 +104,7 @@
 	desc = "Even the formerly simple hand drill has, inevitably, been reconsidered by WB-32 - An impossibly tactile grip fits with a \
 	drillbit that will always, unsettlingly, manage to fit it's target perfectly."
 	toolspeed = 0.1
+	icon_state = "WB-32_hardlight-tipped_drill"
 	hitsound = 'sound/weapons/pulse.ogg'
 	usesound = 'sound/weapons/blade1.ogg'
 	bitsound = 'sound/weapons/saberon.ogg'
