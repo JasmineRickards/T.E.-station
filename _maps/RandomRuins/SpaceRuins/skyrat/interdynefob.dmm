@@ -516,18 +516,16 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/skyrat/interdynefob/halls)
 "bP" = (
-/obj/structure/table,
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 1
-	},
-/obj/item/storage/bag/tray/cafeteria,
-/obj/item/storage/bag/tray/cafeteria{
-	pixel_y = 3
-	},
-/obj/item/storage/bag/tray/cafeteria{
-	pixel_y = 6
-	},
-/turf/open/floor/iron/dark/textured_large,
+/obj/effect/turf_decal/siding/dark,
+/obj/structure/closet/crate/trashcart/laundry,
+/obj/item/clothing/under/rank/prisoner/syndicate,
+/obj/item/clothing/under/rank/prisoner/syndicate,
+/obj/item/clothing/under/rank/prisoner/syndicate,
+/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
+/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
+/obj/item/clothing/under/rank/prisoner/skirt/syndicate,
+/obj/effect/spawner/random/contraband/prison,
+/turf/open/floor/iron/small,
 /area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "bR" = (
 /obj/machinery/computer/operating,
@@ -915,6 +913,7 @@
 /area/ruin/space/has_grav/skyrat/interdynefob/service/dorms)
 "dn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/skyrat/interdynefob/medbay)
 "do" = (
@@ -1221,7 +1220,9 @@
 /area/ruin/space/has_grav/skyrat/interdynefob/bridge)
 "eE" = (
 /obj/structure/filingcabinet,
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north{
+	req_access = list("syndicate")
+	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/skyrat/interdynefob/security/lawyer)
@@ -1364,6 +1365,7 @@
 	maints_access_required = list("syndicate");
 	name = "Insurgent Care"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/skyrat/interdynefob/medbay)
 "fe" = (
@@ -1498,7 +1500,9 @@
 /obj/effect/turf_decal/trimline/dark_blue/line{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north{
+	req_access = list("syndicate")
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
@@ -1726,6 +1730,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/skyrat/interdynefob/medbay)
 "ha" = (
@@ -1837,7 +1842,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/skyrat/interdynefob/security)
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "hx" = (
 /obj/machinery/power/turbine/inlet_compressor,
 /obj/effect/turf_decal/stripes/line{
@@ -1866,7 +1871,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/skyrat/interdynefob/security)
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "hA" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -3243,6 +3248,13 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/skyrat/interdynefob/engineering)
+"nD" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark,
+/turf/open/floor/iron/dark/small,
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "nG" = (
 /obj/structure/window/reinforced/survival_pod{
 	dir = 6
@@ -3787,7 +3799,7 @@
 	cycle_id = "DS2permabrig"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/ruin/space/has_grav/skyrat/interdynefob/security)
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "pI" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/window/reinforced/survival_pod,
@@ -4433,7 +4445,7 @@
 	trim = /datum/id_trim/syndicom/skyrat/ds2/prisoner
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/has_grav/skyrat/interdynefob/security)
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "sr" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
@@ -4467,7 +4479,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east{
+	req_access = list("syndicate")
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -4796,6 +4810,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/cable,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/skyrat/interdynefob/medbay/chem)
 "tY" = (
@@ -4993,7 +5008,8 @@
 /area/ruin/space/has_grav/skyrat/interdynefob/research)
 "ve" = (
 /obj/effect/turf_decal/siding/dark,
-/turf/open/floor/iron/dark/small,
+/obj/machinery/washing_machine,
+/turf/open/floor/iron/small,
 /area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "vg" = (
 /obj/structure/table/optable,
@@ -5550,7 +5566,7 @@
 	pixel_x = 8;
 	pixel_y = 3
 	},
-/turf/open/floor/iron/dark/small,
+/turf/open/floor/iron/small,
 /area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "yi" = (
 /obj/structure/cable,
@@ -5625,7 +5641,7 @@
 	},
 /obj/item/restraints/handcuffs,
 /turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/has_grav/skyrat/interdynefob/security)
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "yP" = (
 /obj/structure/chair,
 /obj/machinery/firealarm/directional/west,
@@ -5977,6 +5993,13 @@
 /area/ruin/space/has_grav/skyrat/interdynefob/halls)
 "Al" = (
 /obj/structure/table,
+/obj/item/storage/bag/tray/cafeteria,
+/obj/item/storage/bag/tray/cafeteria{
+	pixel_y = 3
+	},
+/obj/item/storage/bag/tray/cafeteria{
+	pixel_y = 6
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "An" = (
@@ -6412,6 +6435,7 @@
 	dir = 10
 	},
 /obj/machinery/duct,
+/obj/structure/cable,
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/skyrat/interdynefob/medbay)
 "Ce" = (
@@ -6545,7 +6569,6 @@
 /turf/open/floor/plating/elevatorshaft,
 /area/ruin/space/has_grav/skyrat/interdynefob/cargo/hangar)
 "CT" = (
-/obj/structure/chair/stool/directional/west,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 10
 	},
@@ -6636,8 +6659,8 @@
 /obj/effect/turf_decal/stripes/red/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/dark/corner{
-	dir = 1
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
 	},
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
@@ -6801,6 +6824,11 @@
 /obj/machinery/smartfridge,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ruin/space/has_grav/skyrat/interdynefob/service/hydroponics)
+"DO" = (
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "DS" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/siding/thinplating/end{
@@ -7460,7 +7488,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/skyrat/interdynefob/security)
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "GR" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/reagent_dispensers/fueltank,
@@ -9308,7 +9336,9 @@
 	dir = 9
 	},
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north{
+	req_access = list("syndicate")
+	},
 /obj/structure/chair/sofa/corp/left{
 	color = "#DE3A3A";
 	dir = 4
@@ -9551,6 +9581,17 @@
 /obj/structure/punching_bag,
 /turf/open/floor/carpet/blue,
 /area/ruin/space/has_grav/skyrat/interdynefob/service/dorms/fitness)
+"PZ" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/dark,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/power/apc/auto_name/directional/north{
+	req_access = list("syndicate")
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/white,
+/area/ruin/space/has_grav/skyrat/interdynefob/medbay/chem)
 "Qa" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 8
@@ -9779,6 +9820,7 @@
 "QN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/skyrat/interdynefob/medbay)
 "QO" = (
@@ -9799,7 +9841,6 @@
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/skyrat/interdynefob/service/hydroponics)
 "QV" = (
-/obj/structure/chair/stool/directional/east,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
 	},
@@ -11192,7 +11233,7 @@
 	cycle_id = "DS2permabrig"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/ruin/space/has_grav/skyrat/interdynefob/security)
+/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "Wv" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
@@ -12146,8 +12187,8 @@ rc
 rc
 rc
 yh
-ve
 bP
+QV
 Al
 ah
 Se
@@ -12201,7 +12242,7 @@ iO
 VT
 Ir
 Du
-ve
+nD
 CT
 JA
 Ua
@@ -12457,20 +12498,20 @@ dh
 iK
 gb
 iZ
-uV
-uV
-uV
-uV
-Xh
-Xh
-Xh
-Xh
-Xh
-Xh
-Xh
-Xh
-Xh
-Xh
+kF
+kF
+kF
+kF
+kF
+kF
+kF
+kF
+kF
+kF
+kF
+kF
+kF
+kF
 yL
 hz
 GO
@@ -12525,12 +12566,12 @@ jd
 zn
 lt
 Ov
-Xh
-Xh
+kF
+kF
 pB
-ms
+DO
 Wu
-Xh
+kF
 PX
 Lv
 bS
@@ -13508,7 +13549,7 @@ Rt
 Rt
 Rt
 Rt
-cA
+PZ
 Vu
 iX
 oc
