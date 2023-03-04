@@ -1894,10 +1894,18 @@
 "hC" = (
 /obj/effect/turf_decal/stripes/red/line,
 /obj/effect/turf_decal/siding/dark,
-/obj/structure/window/reinforced/survival_pod,
-/obj/structure/rack,
-/obj/item/storage/medkit/emergency,
-/obj/machinery/light/cold/directional/east,
+/obj/effect/turf_decal/delivery/white{
+	color = "#00ff00";
+	name = "green"
+	},
+/obj/machinery/cryopod{
+	dir = 8
+	},
+/obj/machinery/computer/cryopod/interdyne{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/structure/railing,
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "hE" = (
@@ -4154,7 +4162,6 @@
 	name = "Brig Restroom"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured_large,
@@ -7427,7 +7434,8 @@
 /area/ruin/space/has_grav/skyrat/interdynefob/research)
 "GD" = (
 /obj/effect/turf_decal/siding/dark,
-/obj/structure/table,
+/obj/item/storage/medkit/emergency,
+/obj/structure/rack,
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "GE" = (
@@ -9308,20 +9316,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/skyrat/interdynefob/bridge)
-"OT" = (
-/obj/machinery/cryopod{
-	dir = 8
-	},
-/obj/effect/turf_decal/delivery/white{
-	color = "#00ff00";
-	name = "green"
-	},
-/obj/machinery/computer/cryopod/interdyne{
-	dir = 8;
-	pixel_x = 24
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/has_grav/skyrat/interdynefob/security/prison)
 "OU" = (
 /obj/effect/turf_decal/trimline/dark_green/corner{
 	dir = 4
@@ -12349,7 +12343,7 @@ kF
 kF
 hC
 Lw
-OT
+Lw
 Vb
 hA
 GD
@@ -12404,7 +12398,7 @@ bu
 kF
 kF
 gj
-kF
+DO
 Ae
 kF
 kF
