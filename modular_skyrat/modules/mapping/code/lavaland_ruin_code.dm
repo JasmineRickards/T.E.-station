@@ -25,6 +25,7 @@
 		id_card.update_label()
 		id_card.update_icon()
 
+	handlebank(syndicate)
 	return ..()
 
 /datum/outfit/lavaland_syndicate/ice
