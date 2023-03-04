@@ -23,6 +23,11 @@
 	outfit = /datum/outfit/black_market
 	quirks_enabled = TRUE
 	random_appearance = FALSE
+	loadout_enabled = TRUE
+
+/datum/outfit/black_market/post_equip(mob/living/carbon/human/shady, visualsOnly)
+	handlebank(shady)
+	return ..()
 
 /datum/outfit/black_market
 	name = "Black Market Trader"
@@ -33,8 +38,6 @@
 /obj/effect/mob_spawn/ghost_role/human/ds2
 	name = "DS2 personnel"
 	prompt_name = "DS2 personnel"
-	you_are_text = "You are a syndicate operative, employed in a top secret research facility developing biological weapons."
-	flavour_text = "Unfortunately, your hated enemy, Nanotrasen, has begun mining in this sector. Continue operating as best you can, and try to keep a low profile."
 	quirks_enabled = TRUE
 	random_appearance = FALSE
 	computer_area = /area/ruin/space/has_grav/skyrat/interdynefob/service/dorms
@@ -138,6 +141,8 @@
 		id_card.registered_name = syndicate.real_name
 		id_card.update_label()
 		id_card.update_icon()
+
+	handlebank(syndicate)
 
 	return ..()
 
@@ -314,6 +319,8 @@
 		id_card.update_label()
 		id_card.update_icon()
 
+	handlebank(staff)
+
 	return ..()
 
 /datum/outfit/hotelstaff/manager
@@ -344,6 +351,8 @@
 	flavour_text = "You were running cargo, a typical freight job until pirates attacked. You and your crewmates just barely made it, but the engines are shot. You're trapped in space now, only able to work together to survive this nightmare."
 	important_text = "Work with your crew and don't abandon them. You are not directly working with NT, you are an independent freighter crew for the ship's Chief. Your job was merely being a deckhand doing freight work and helping with kitchen prep."
 	random_appearance = FALSE
+	quirks_enabled = TRUE
+	loadout_enabled = TRUE
 
 /datum/outfit/freighter_crew
 	name = "Freighter Crew"
@@ -351,6 +360,16 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	back = /obj/item/storage/backpack
 	id = /obj/item/card/id/away/freightcrew
+
+/datum/outfit/freighter_crew/post_equip(mob/living/carbon/human/crewman, visualsOnly)
+	var/obj/item/card/id/id_card = crewman.wear_id
+	if(istype(id_card))
+		id_card.registered_name = crewman.real_name
+		id_card.update_label()
+		id_card.update_icon()
+
+	handlebank(crewman)
+	return ..()
 
 /obj/effect/mob_spawn/ghost_role/human/lostminer
 	name = "freighter cryo excavator pod"
@@ -365,6 +384,8 @@
 	flavour_text = "You were running cargo, a typical freight job until pirates attacked. You and your crewmates just barely made it, but the engines are shot. You're trapped in space now, only able to work together to survive this nightmare."
 	important_text = "Work with your crew and don't abandon them. You are not directly working with NT, you are an independent freighter crew working under the ship Chief. Your role was to be an excavation and salvage worker for the ship."
 	random_appearance = FALSE
+	quirks_enabled = TRUE
+	loadout_enabled = TRUE
 
 /datum/outfit/freighter_excavator
 	name = "Freighter Excavator"
@@ -381,6 +402,16 @@
 	r_pocket = /obj/item/storage/bag/ore
 	id = /obj/item/card/id/away/freightmine
 
+/datum/outfit/freighter_excavator/post_equip(mob/living/carbon/human/crewman, visualsOnly)
+	var/obj/item/card/id/id_card = crewman.wear_id
+	if(istype(id_card))
+		id_card.registered_name = crewman.real_name
+		id_card.update_label()
+		id_card.update_icon()
+
+	handlebank(crewman)
+	return ..()
+
 /obj/effect/mob_spawn/ghost_role/human/lostcargoqm
 	name = "freighter cryo boss pod"
 	prompt_name = "a lost Quartermaster"
@@ -394,6 +425,8 @@
 	flavour_text = "You and your crew were running a normal freight haul until a pirate attack knocked out the engines. All you can do now is try and survive and keep your crew alive."
 	important_text = "Do not abandon your crew, lead them and work with them to survive. You are not directly working with NT, you are an independent freighter crew. You are the captain of the ship, which you purchased a while ago, and are in charge of the crew."
 	random_appearance = FALSE
+	quirks_enabled = TRUE
+	loadout_enabled = TRUE
 
 /datum/outfit/freighter_boss
 	name = "Freighter Boss"
@@ -405,6 +438,16 @@
 		/obj/item/megaphone/cargo=1,
 		)
 	id = /obj/item/card/id/away/silver/freightqm
+
+/datum/outfit/freighter_boss/post_equip(mob/living/carbon/human/crewman, visualsOnly)
+	var/obj/item/card/id/id_card = crewman.wear_id
+	if(istype(id_card))
+		id_card.registered_name = crewman.real_name
+		id_card.update_label()
+		id_card.update_icon()
+
+	handlebank(crewman)
+	return ..()
 
 //Port Tarkon, 6 people trapped in a revamped charlie-station like ghost role. Survive the aliens and threats, Fix the port and/or finish construction
 
@@ -444,6 +487,7 @@
 	target_radio.set_frequency(FREQ_TARKON)
 	target_radio.recalculateChannels()
 
+	handlebank(tarkon)
 	return ..()
 
 /obj/effect/mob_spawn/ghost_role/human/tarkon/sci
@@ -519,6 +563,17 @@
 	l_pocket = null
 	r_pocket = null
 	skillchips = list(/obj/item/skillchip/chameleon/reload)
+
+/datum/outfit/proc/handlebank(mob/living/carbon/human/owner)
+	var/datum/bank_account/offstation_bank_account = new(owner.real_name)
+	owner.account_id = offstation_bank_account.account_id
+	offstation_bank_account.replaceable = FALSE
+	offstation_bank_account.account_job = new /datum/job/ghost_role //note to self: Replace later
+	owner.mind.add_memory(MEMORY_ACCOUNT, list(DETAIL_ACCOUNT_ID = owner.account_id), story_value = STORY_VALUE_SHIT, memory_flags = MEMORY_FLAG_NOLOCATION)
+	if(owner.wear_id)
+		var/obj/item/card/id/id_card = owner.wear_id
+		id_card.registered_account = offstation_bank_account
+	return
 
 //ITEMS//
 /obj/item/radio/headset/cybersun
