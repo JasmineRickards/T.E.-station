@@ -1468,6 +1468,17 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/engineering/atmos/pumproom)
+"auL" = (
+/obj/machinery/duct,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/sleeper{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/blue{
+	dir = 5
+	},
+/turf/open/floor/iron/white/diagonal,
+/area/station/medical/medbay/central)
 "auP" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 1
@@ -78422,6 +78433,17 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/exit/departure_lounge)
+"vMm" = (
+/obj/machinery/duct,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/sleeper{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/blue{
+	dir = 6
+	},
+/turf/open/floor/iron/white/diagonal,
+/area/station/medical/medbay/central)
 "vMr" = (
 /obj/structure/closet/firecloset,
 /obj/effect/turf_decal/bot,
@@ -114618,8 +114640,8 @@ kCj
 qft
 fve
 eFN
-eFN
-eFN
+auL
+vMm
 eFN
 rOB
 tSw

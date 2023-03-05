@@ -438,6 +438,7 @@
 		"piercesyringe",
 		"plasmarefiller",
 		"smoke_machine",
+		"sleeper",
 
 		//SKYRAT EDIT START - RESEARCH DESIGNS
 		"monkey_helmet",
@@ -2261,7 +2262,7 @@
 	id = "syndicate_basic"
 	display_name = "Illegal Technology"
 	description = "Dangerous research used to create dangerous objects."
-	prereq_ids = list("adv_engi", "adv_weaponry", "explosive_weapons")
+	prereq_ids = list("adv_engi", "adv_weaponry", "explosive_weapons", "adv_biotech")
 	design_ids = list(
 		"advanced_camera",
 		"ai_cam_upgrade",
@@ -2273,6 +2274,7 @@
 		"rapidsyringe",
 		"suppressor",
 		"super_pointy_tape",
+		"syndsleeper",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	hidden = TRUE

@@ -1076,13 +1076,6 @@
 /area/station/cargo/office)
 "amR" = (
 /obj/structure/table/glass,
-/obj/item/clothing/glasses/hud/health{
-	pixel_y = 6
-	},
-/obj/item/clothing/glasses/hud/health{
-	pixel_y = 3
-	},
-/obj/item/clothing/glasses/hud/health,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/structure/disposalpipe/segment{
@@ -1090,6 +1083,17 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/storage/box/gloves{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = 6
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = 3
+	},
+/obj/item/clothing/glasses/hud/health,
 /turf/open/floor/iron,
 /area/station/medical/treatment_center)
 "amS" = (
@@ -13096,18 +13100,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/aft)
-"dck" = (
-/obj/machinery/defibrillator_mount/directional/south,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/item/storage/box/gloves{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/box/beakers,
-/obj/structure/window/reinforced/spawner/east,
-/obj/structure/table/reinforced/rglass,
-/turf/open/floor/iron,
-/area/station/medical/treatment_center)
 "dcG" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
 /obj/effect/landmark/start/depsec/science,
@@ -14295,10 +14287,10 @@
 "dsM" = (
 /obj/structure/table/glass,
 /obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/structure/window/reinforced/spawner/west,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/item/clothing/gloves/color/latex,
 /obj/item/clothing/suit/apron/surgical,
+/obj/structure/window/spawner/west,
 /turf/open/floor/iron/dark,
 /area/station/medical/surgery/theatre)
 "dsN" = (
@@ -15225,7 +15217,6 @@
 	},
 /obj/item/storage/pill_bottle/mannitol,
 /obj/item/reagent_containers/dropper,
-/obj/structure/window/reinforced/spawner,
 /obj/machinery/camera/directional/west{
 	c_tag = "Medbay - Cryogenics";
 	name = "medical camera";
@@ -15237,6 +15228,7 @@
 	},
 /obj/effect/turf_decal/siding/blue,
 /obj/structure/table/glass,
+/obj/structure/window,
 /turf/open/floor/iron,
 /area/station/medical/cryo)
 "dEv" = (
@@ -28505,7 +28497,13 @@
 /obj/item/storage/belt/medical{
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = 8;
+	pixel_y = -2
+	},
+/obj/item/storage/box/rxglasses{
+	pixel_x = -6
+	},
 /turf/open/floor/iron,
 /area/station/medical/treatment_center)
 "gQK" = (
@@ -43859,12 +43857,12 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/transit_tube)
 "kDA" = (
-/obj/structure/window/reinforced/spawner/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/effect/turf_decal/trimline/blue/end{
 	dir = 8
 	},
 /obj/machinery/shower/directional/west,
+/obj/structure/window/spawner/north,
 /turf/open/floor/iron/textured,
 /area/station/medical/cryo)
 "kDE" = (
@@ -44653,7 +44651,6 @@
 /turf/open/floor/iron,
 /area/station/security/brig)
 "kNT" = (
-/obj/structure/window/reinforced/spawner/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 9
@@ -44661,6 +44658,7 @@
 /obj/vehicle/ridden/wheelchair{
 	dir = 8
 	},
+/obj/structure/window/spawner/north,
 /turf/open/floor/iron/textured,
 /area/station/medical/medbay)
 "kNY" = (
@@ -53207,7 +53205,6 @@
 	pixel_y = 36
 	},
 /obj/machinery/light_switch/directional/north,
-/obj/structure/window/reinforced/spawner/east,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
@@ -53215,6 +53212,7 @@
 	dir = 4
 	},
 /obj/structure/closet/secure_closet/medical1,
+/obj/structure/window/spawner/east,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/theatre)
 "mSZ" = (
@@ -56553,11 +56551,10 @@
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "nLB" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/item/storage/box/rxglasses,
 /obj/machinery/light/directional/south,
-/obj/structure/table/reinforced/rglass,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/tile/blue/diagonal_centre,
+/obj/effect/turf_decal/tile/blue/diagonal_edge,
+/turf/open/floor/iron/diagonal,
 /area/station/medical/treatment_center)
 "nLF" = (
 /obj/structure/disposalpipe/segment,
@@ -61381,13 +61378,13 @@
 /turf/open/floor/wood,
 /area/station/security/detectives_office/private_investigators_office)
 "paA" = (
-/obj/structure/bed/pod{
-	desc = "An old medical bed, just waiting for replacement with something up to date.";
-	name = "medical bed"
+/obj/structure/window/spawner/east,
+/obj/machinery/sleeper{
+	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/structure/window/reinforced/spawner/east,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/tile/blue/diagonal_centre,
+/obj/effect/turf_decal/tile/blue/diagonal_edge,
+/turf/open/floor/iron/diagonal,
 /area/station/medical/treatment_center)
 "paQ" = (
 /obj/effect/turf_decal/trimline/purple/filled/line,
@@ -91922,13 +91919,13 @@
 /area/station/command/heads_quarters/hop)
 "wqQ" = (
 /obj/item/radio/intercom/directional/east,
-/obj/structure/window/reinforced/spawner,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/effect/turf_decal/trimline/blue/end{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/blue,
 /obj/machinery/shower/directional/west,
+/obj/structure/window,
 /turf/open/floor/iron/textured,
 /area/station/medical/cryo)
 "wqT" = (
@@ -141078,7 +141075,7 @@ okk
 sKV
 efb
 paA
-dck
+paA
 oDE
 oDE
 oDE
