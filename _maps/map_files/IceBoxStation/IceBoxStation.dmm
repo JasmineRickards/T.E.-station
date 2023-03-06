@@ -5282,6 +5282,13 @@
 /obj/item/clothing/suit/hooded/wintercoat,
 /turf/open/floor/iron,
 /area/mine/laborcamp)
+"bDM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/self_actualization_device,
+/obj/effect/turf_decal/tile/blue/full,
+/turf/open/floor/iron/large,
+/area/station/medical/treatment_center)
 "bDO" = (
 /obj/structure/fluff/tram_rail,
 /obj/structure/fluff/tram_rail{
@@ -10524,7 +10531,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 10
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "ddz" = (
@@ -71523,6 +71532,9 @@
 /area/mine/laborcamp)
 "wbw" = (
 /obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 8
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "wbB" = (
@@ -73409,6 +73421,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/landmark/start/medical_doctor,
+/obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "wDf" = (
@@ -246763,8 +246776,8 @@ xPT
 cxA
 lka
 vkD
-nji
-rpM
+cey
+pyu
 eHZ
 jQa
 qeg
@@ -247021,7 +247034,7 @@ cxA
 lyl
 nMu
 wDe
-hxs
+bDM
 uEr
 nzs
 hxs

@@ -55823,6 +55823,18 @@
 	dir = 8
 	},
 /area/station/medical/treatment_center)
+"pEm" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 8
+	},
+/obj/machinery/duct,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/self_actualization_device,
+/obj/structure/railing,
+/turf/open/floor/iron/white/smooth_edge{
+	dir = 4
+	},
+/area/station/medical/medbay/central)
 "pEn" = (
 /turf/closed/wall,
 /area/station/maintenance/aft/greater)
@@ -114639,7 +114651,7 @@ qxO
 kCj
 qft
 fve
-eFN
+pEm
 auL
 vMm
 eFN
