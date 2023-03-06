@@ -81386,6 +81386,7 @@
 /obj/effect/turf_decal/siding/blue{
 	dir = 8
 	},
+/obj/machinery/self_actualization_device,
 /turf/open/floor/iron,
 /area/station/medical/cryo)
 "tQP" = (

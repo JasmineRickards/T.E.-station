@@ -11972,6 +11972,8 @@
 "elW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/bot,
+/obj/machinery/holopad,
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "emr" = (
@@ -32125,8 +32127,7 @@
 /turf/open/floor/iron/white,
 /area/station/command/heads_quarters/captain/private)
 "lBz" = (
-/obj/effect/turf_decal/bot,
-/obj/machinery/holopad,
+/obj/machinery/self_actualization_device,
 /turf/open/floor/iron/dark,
 /area/station/medical/treatment_center)
 "lBB" = (
