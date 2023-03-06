@@ -70855,7 +70855,8 @@
 /obj/effect/turf_decal/tile/blue,
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
-/obj/machinery/vending/drugs,
+/obj/machinery/self_actualization_device,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/exam_room)
 "ugr" = (
@@ -77228,8 +77229,6 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/paramedic)
 "vUs" = (
-/obj/structure/bed,
-/obj/machinery/iv_drip,
 /obj/effect/turf_decal/bot_white/right,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -77240,7 +77239,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/item/bedsheet/medical,
+/obj/machinery/vending/drugs,
 /turf/open/floor/iron/dark,
 /area/station/medical/medbay/central)
 "vUt" = (

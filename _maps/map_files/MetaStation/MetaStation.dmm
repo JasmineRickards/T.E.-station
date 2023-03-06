@@ -34605,9 +34605,12 @@
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "msl" = (
-/obj/machinery/iv_drip,
 /obj/effect/turf_decal/siding/blue{
 	dir = 9
+	},
+/obj/machinery/self_actualization_device,
+/obj/structure/railing{
+	dir = 8
 	},
 /turf/open/floor/iron/white/diagonal,
 /area/station/medical/treatment_center)
