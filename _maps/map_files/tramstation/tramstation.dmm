@@ -1676,12 +1676,7 @@
 /area/station/maintenance/tram/left)
 "aKO" = (
 /obj/effect/turf_decal/box,
-/obj/structure/fluff{
-	desc = "What, you think the water just magically soaks into the metallic flooring?";
-	icon = 'icons/obj/lavaland/survival_pod.dmi';
-	icon_state = "fan_tiny";
-	name = "shower drain"
-	},
+/obj/structure/drain,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/shower/directional/east,
 /turf/open/floor/iron/white,
@@ -23580,12 +23575,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/tram/left)
 "iCA" = (
-/obj/structure/fluff{
-	desc = "What, you think the water just magically soaks into the metallic flooring?";
-	icon = 'icons/obj/lavaland/survival_pod.dmi';
-	icon_state = "fan_tiny";
-	name = "shower drain"
-	},
+/obj/structure/drain,
 /obj/machinery/duct,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -31497,9 +31487,9 @@
 /turf/open/floor/plating,
 /area/station/medical/chemistry)
 "lrQ" = (
-/obj/machinery/holopad,
-/obj/effect/turf_decal/bot,
-/turf/open/floor/iron/dark,
+/obj/structure/window/fulltile,
+/obj/structure/flora/bush/flowers_pp/style_random,
+/turf/open/floor/grass,
 /area/station/medical/treatment_center)
 "lrU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -32134,6 +32124,11 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/station/command/heads_quarters/captain/private)
+"lBz" = (
+/obj/effect/turf_decal/bot,
+/obj/machinery/holopad,
+/turf/open/floor/iron/dark,
+/area/station/medical/treatment_center)
 "lBB" = (
 /obj/machinery/computer/secure_data,
 /obj/effect/turf_decal/trimline/red/filled/line{
@@ -39742,6 +39737,15 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/lobby)
+"opn" = (
+/obj/machinery/sleeper{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/medical/treatment_center)
 "opr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -41719,6 +41723,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/security/brig)
+"pcI" = (
+/obj/machinery/sleeper{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/medical/treatment_center)
 "pcK" = (
 /obj/effect/turf_decal/stripes,
 /obj/machinery/computer/pod/old/mass_driver_controller/ordnancedriver{
@@ -45912,12 +45925,7 @@
 /area/station/cargo/warehouse)
 "qym" = (
 /obj/effect/turf_decal/box,
-/obj/structure/fluff{
-	desc = "What, you think the water just magically soaks into the metallic flooring?";
-	icon = 'icons/obj/lavaland/survival_pod.dmi';
-	icon_state = "fan_tiny";
-	name = "shower drain"
-	},
+/obj/structure/drain,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/shower/directional/west,
 /turf/open/floor/iron/white,
@@ -67004,12 +67012,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/main)
 "ydw" = (
-/obj/structure/fluff{
-	desc = "What, you think the water just magically soaks into the metallic flooring?";
-	icon = 'icons/obj/lavaland/survival_pod.dmi';
-	icon_state = "fan_tiny";
-	name = "shower drain"
-	},
+/obj/structure/drain,
 /obj/machinery/duct,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -164807,7 +164810,7 @@ qym
 wbT
 dvQ
 uZQ
-xOn
+pcI
 dkW
 dkW
 pXJ
@@ -165065,7 +165068,7 @@ ecW
 dXo
 lTc
 lrQ
-xOn
+lBz
 dkW
 dHv
 xSZ
@@ -165321,7 +165324,7 @@ aKO
 krE
 bvK
 eGn
-xOn
+opn
 xOn
 dkW
 sIq

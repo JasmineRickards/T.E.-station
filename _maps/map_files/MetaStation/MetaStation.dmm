@@ -2259,14 +2259,12 @@
 /turf/open/space,
 /area/space/nearstation)
 "aPe" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/defibrillator_mount/directional/south,
 /obj/machinery/light/directional/south,
-/obj/structure/bed/pod{
-	desc = "An old medical bed, just waiting for replacement with something up to date.";
-	name = "medical bed"
+/obj/effect/turf_decal/siding/blue{
+	dir = 1
 	},
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/white/diagonal,
 /area/station/medical/treatment_center)
 "aPj" = (
 /obj/effect/landmark/event_spawn,
@@ -6956,6 +6954,15 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
+"cBm" = (
+/obj/machinery/sleeper{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/blue/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/white/diagonal,
+/area/station/medical/treatment_center)
 "cBw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/freezer,
@@ -9715,6 +9722,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
 /area/station/service/library)
+"dFm" = (
+/obj/machinery/sleeper{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/blue{
+	dir = 9
+	},
+/turf/open/floor/iron/white/diagonal,
+/area/station/medical/treatment_center)
 "dFo" = (
 /obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/stripes/line{
@@ -34588,6 +34604,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
+"msl" = (
+/obj/machinery/iv_drip,
+/obj/effect/turf_decal/siding/blue{
+	dir = 9
+	},
+/turf/open/floor/iron/white/diagonal,
+/area/station/medical/treatment_center)
 "msu" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -90334,7 +90357,7 @@ hMq
 sxf
 iMv
 nKE
-xtu
+msl
 rvb
 uod
 wWs
@@ -90847,8 +90870,8 @@ xQC
 kLZ
 iUJ
 bJk
-ppG
-ppG
+dFm
+cBm
 vun
 mZD
 cho

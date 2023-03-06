@@ -2499,8 +2499,6 @@
 	name = "medical camera";
 	network = list("ss13","medical")
 	},
-/obj/structure/table,
-/obj/item/book/manual/wiki/medicine,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
@@ -2508,6 +2506,10 @@
 	dir = 1
 	},
 /obj/machinery/status_display/evac/directional/east,
+/obj/effect/turf_decal/bot,
+/obj/machinery/sleeper{
+	dir = 8
+	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/exam_room)
 "aHD" = (
@@ -70851,13 +70853,9 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue,
-/obj/structure/chair{
-	desc = "A gray chair. Nothing more relaxing while waiting for therapy than watching the dying.";
-	dir = 8;
-	name = "therapy waiting chair"
-	},
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
+/obj/machinery/vending/drugs,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/exam_room)
 "ugr" = (
@@ -71101,7 +71099,9 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/bot,
-/obj/machinery/vending/drugs,
+/obj/machinery/sleeper{
+	dir = 8
+	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/exam_room)
 "ukM" = (
