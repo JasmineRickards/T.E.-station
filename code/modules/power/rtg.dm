@@ -111,7 +111,7 @@
 	name = "Lava powered RTG"
 	desc = "This device only works when exposed to the toxic fumes of Lavaland"
 	circuit = null
-	power_gen = 1500
+	power_gen = 50000
 	anchored = TRUE
 	resistance_flags = LAVA_PROOF
 
@@ -136,9 +136,9 @@
 
 /obj/machinery/power/rtg/old_station
 	name = "Old RTG"
-	desc = "A very old RTG, it seems on the verge of being destroyed"
+	desc = "A very old RTG, it seems on the verge of its life cycle."
 	circuit = null
-	power_gen = 750
+	power_gen = 1250
 	anchored = TRUE
 
 /obj/machinery/power/rtg/old_station/attackby(obj/item/I, mob/user, params)

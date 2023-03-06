@@ -3,7 +3,7 @@
  * Foods given a venue value are exportable to cargo as a backup to selling from venues, however at the expense of elasticity.
  */
 /datum/export/food
-	cost = 10
+	cost = 500
 	unit_name = "serving"
 	message = "of food"
 	export_types = list(/obj/item/food)

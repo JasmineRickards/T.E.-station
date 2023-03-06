@@ -1,5 +1,5 @@
 /datum/export/material
-	cost = 5 // Cost per MINERAL_MATERIAL_AMOUNT, which is 2000cm3 as of April 2016.
+	cost = 25 // Cost per MINERAL_MATERIAL_AMOUNT, which is 2000cm3 as of April 2016.
 	message = "cm3 of developer's tears. Please, report this on github"
 	amount_report_multiplier = MINERAL_MATERIAL_AMOUNT
 	var/material_id = null
@@ -30,38 +30,38 @@
 // Materials. Nothing but plasma is really worth selling. Better leave it all to RnD and sell some plasma instead.
 
 /datum/export/material/bananium
-	cost = CARGO_CRATE_VALUE * 2
+	cost = CARGO_CRATE_VALUE * 10
 	material_id = /datum/material/bananium
 	message = "cm3 of bananium"
 
 /datum/export/material/diamond
-	cost = CARGO_CRATE_VALUE
+	cost = CARGO_CRATE_VALUE * 3
 	material_id = /datum/material/diamond
 	message = "cm3 of diamonds"
 
 /datum/export/material/plasma
-	cost = CARGO_CRATE_VALUE * 0.4
+	cost = CARGO_CRATE_VALUE * 2
 	k_elasticity = 0
 	material_id = /datum/material/plasma
 	message = "cm3 of plasma"
 
 /datum/export/material/uranium
-	cost = CARGO_CRATE_VALUE * 0.2
+	cost = CARGO_CRATE_VALUE * 0.8
 	material_id = /datum/material/uranium
 	message = "cm3 of uranium"
 
 /datum/export/material/gold
-	cost = CARGO_CRATE_VALUE * 0.25
+	cost = CARGO_CRATE_VALUE * 1.2
 	material_id = /datum/material/gold
 	message = "cm3 of gold"
 
 /datum/export/material/silver
-	cost = CARGO_CRATE_VALUE * 0.1
+	cost = CARGO_CRATE_VALUE * 0.8
 	material_id = /datum/material/silver
 	message = "cm3 of silver"
 
 /datum/export/material/titanium
-	cost = CARGO_CRATE_VALUE * 0.25
+	cost = CARGO_CRATE_VALUE * 0.6
 	material_id = /datum/material/titanium
 	message = "cm3 of titanium"
 
@@ -71,12 +71,12 @@
 	message = "cm3 of adamantine"
 
 /datum/export/material/mythril
-	cost = CARGO_CRATE_VALUE * 3
+	cost = CARGO_CRATE_VALUE * 6
 	material_id = /datum/material/mythril
 	message = "cm3 of mythril"
 
 /datum/export/material/bscrystal
-	cost = CARGO_CRATE_VALUE * 0.6
+	cost = CARGO_CRATE_VALUE * 1.4
 	message = "of bluespace crystals"
 	material_id = /datum/material/bluespace
 
@@ -86,12 +86,12 @@
 	material_id = /datum/material/plastic
 
 /datum/export/material/runite
-	cost = CARGO_CRATE_VALUE * 1.2
+	cost = CARGO_CRATE_VALUE * 2
 	message = "cm3 of runite"
 	material_id = /datum/material/runite
 
 /datum/export/material/iron
-	cost = CARGO_CRATE_VALUE * 0.01
+	cost = CARGO_CRATE_VALUE * 0.5
 	message = "cm3 of iron"
 	material_id = /datum/material/iron
 	export_types = list(
@@ -99,20 +99,20 @@
 		/obj/item/stack/rods, /obj/item/stack/ore, /obj/item/coin)
 
 /datum/export/material/glass
-	cost = CARGO_CRATE_VALUE * 0.01
+	cost = CARGO_CRATE_VALUE * 0.4
 	message = "cm3 of glass"
 	material_id = /datum/material/glass
 	export_types = list(/obj/item/stack/sheet/glass, /obj/item/stack/ore,
 		/obj/item/shard)
 
 /datum/export/material/hot_ice
-	cost = CARGO_CRATE_VALUE * 0.8
+	cost = CARGO_CRATE_VALUE * 1.4
 	message = "cm3 of Hot Ice"
 	material_id = /datum/material/hot_ice
 	export_types = /obj/item/stack/sheet/hot_ice
 
 /datum/export/material/metal_hydrogen
-	cost = CARGO_CRATE_VALUE * 1.05
+	cost = CARGO_CRATE_VALUE * 5
 	message = "cm3 of metallic hydrogen"
 	material_id = /datum/material/metalhydrogen
 	export_types = /obj/item/stack/sheet/mineral/metal_hydrogen

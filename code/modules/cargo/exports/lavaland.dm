@@ -2,7 +2,7 @@
 //Consumable or one-use items like the magic D20 and gluttony's blessing are omitted
 
 /datum/export/lavaland/minor
-	cost = CARGO_CRATE_VALUE * 20
+	cost = CARGO_CRATE_VALUE * 40
 	unit_name = "minor lava planet artifact"
 	export_types = list(/obj/item/immortality_talisman,
 						/obj/item/book_of_babel,
@@ -27,7 +27,7 @@
 						)
 
 /datum/export/lavaland/major //valuable chest/ruin loot, minor megafauna loot
-	cost = CARGO_CRATE_VALUE * 40
+	cost = CARGO_CRATE_VALUE * 80
 	unit_name = "lava planet artifact"
 	export_types = list(/obj/item/guardiancreator/miner,
 						/obj/item/rod_of_asclepius,
@@ -39,7 +39,7 @@
 //Megafauna loot, except for ash drakes
 
 /datum/export/lavaland/megafauna
-	cost = CARGO_CRATE_VALUE * 80
+	cost = CARGO_CRATE_VALUE * 120
 	unit_name = "major lava planet artifact"
 	export_types = list(/obj/item/hierophant_club,
 						/obj/item/melee/cleaving_saw,
