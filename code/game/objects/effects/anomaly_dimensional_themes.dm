@@ -218,18 +218,6 @@
 	material = /datum/material/uranium
 	sound = 'sound/items/welder.ogg'
 
-/datum/dimension_theme/meat
-	icon = 'icons/obj/food/meat.dmi'
-	icon_state = "meat"
-	material = /datum/material/meat
-	sound = 'sound/items/eatfood.ogg'
-
-/datum/dimension_theme/pizza
-	icon = 'icons/obj/food/pizza.dmi'
-	icon_state = "pizzamargherita"
-	material = /datum/material/pizza
-	sound = 'sound/items/eatfood.ogg'
-
 /datum/dimension_theme/natural
 	icon = 'icons/obj/hydroponics/harvest.dmi'
 	icon_state = "map_flower"

@@ -35,9 +35,6 @@
 	w_class = WEIGHT_CLASS_SMALL
 	decomp_type = /obj/item/food/pizzaslice/moldy
 
-/obj/item/food/pizzaslice/MakeProcessable()
-	AddElement(/datum/element/processable, TOOL_ROLLINGPIN, /obj/item/stack/sheet/pizza, 1, 1 SECONDS, table_required = TRUE, screentip_verb = "Flatten")
-
 /obj/item/food/pizza/margherita
 	name = "pizza margherita"
 	desc = "The most cheezy pizza in galaxy."

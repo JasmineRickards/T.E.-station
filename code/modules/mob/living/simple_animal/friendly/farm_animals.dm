@@ -59,11 +59,6 @@
 	if(pulledby)
 		return
 
-	for(var/direction in shuffle(list(1,2,4,8,5,6,9,10)))
-		var/step = get_step(src, direction)
-		if(step && ((locate(/obj/structure/spacevine) in step) || (locate(/obj/structure/glowshroom) in step)))
-			Move(step, get_dir(src, step))
-
 /mob/living/simple_animal/hostile/retaliate/goat/Retaliate()
 	..()
 	src.visible_message(span_danger("[src] gets an evil-looking gleam in [p_their()] eye."))
@@ -80,11 +75,6 @@
 		SV.eat(src)
 		eaten = TRUE
 
-	var/obj/structure/glowshroom/GS = locate(/obj/structure/glowshroom) in loc
-	if(GS)
-		qdel(GS)
-		eaten = TRUE
-
 	if(eaten && prob(10))
 		say("Nom")
 
@@ -95,7 +85,7 @@
 		if(istype(H.dna.species, /datum/species/pod))
 			var/obj/item/bodypart/NB = pick(H.bodyparts)
 			H.visible_message(span_warning("[src] takes a big chomp out of [H]!"), \
-								  span_userdanger("[src] takes a big chomp out of your [NB]!"))
+			span_userdanger("[src] takes a big chomp out of your [NB]!"))
 			NB.dismember()
 
 /mob/living/simple_animal/chick
