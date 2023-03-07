@@ -6,6 +6,7 @@
 	armor = list(MELEE = 25, BULLET = 25, LASER = 25, ENERGY = 25, BOMB = 50, BIO = 90, FIRE = 70, ACID = 50)
 	strip_delay = 40
 	resistance_flags = NONE
+	clothing_flags = NOSLIP
 	lace_time = 12 SECONDS
 
 /obj/item/clothing/shoes/combat/Initialize(mapload)
@@ -16,7 +17,6 @@
 /obj/item/clothing/shoes/combat/swat //overpowered boots for death squads
 	name = "\improper SWAT boots"
 	desc = "High speed, no drag combat boots."
-	clothing_flags = NOSLIP
 	armor = list(MELEE = 40, BULLET = 30, LASER = 25, ENERGY = 25, BOMB = 50, BIO = 100, FIRE = 90, ACID = 50)
 
 /obj/item/clothing/shoes/jackboots
@@ -39,6 +39,7 @@
 	slowdown = -1
 
 /obj/item/clothing/shoes/jackboots/sec
+	clothing_flags = NOSLIP // THE BLUE HELMETS ARE EVOLVING
 	icon_state = "jackboots_sec"
 
 /obj/item/clothing/shoes/winterboots

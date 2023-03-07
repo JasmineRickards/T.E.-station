@@ -29,10 +29,13 @@
 	var/cleanspeed = 3.5 SECONDS //slower than mop
 	force_string = "robust... against germs"
 	var/uses = 100
+	/// Can this soap trip?
+	var/slips = FALSE // I'm sorry assistant, I'm afraid I cannot do that.
 
 /obj/item/soap/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/slippery, 80)
+	if(slips == TRUE)
+		AddComponent(/datum/component/slippery, 80)
 	AddComponent(/datum/component/cleaner, cleanspeed, 0.1, pre_clean_callback=CALLBACK(src, PROC_REF(should_clean)), on_cleaned_callback=CALLBACK(src, PROC_REF(decreaseUses))) //less scaling for soapies
 
 /obj/item/soap/examine(mob/user)
@@ -80,6 +83,7 @@
 	inhand_icon_state = "soapdeluxe"
 	worn_icon_state = "soapdeluxe"
 	cleanspeed = 2 SECONDS //captain gets one of these
+	slips = TRUE
 
 /obj/item/soap/syndie
 	desc = "An untrustworthy bar of soap made of strong chemical agents that dissolve blood faster."
@@ -88,6 +92,7 @@
 	inhand_icon_state = "soapsyndie"
 	worn_icon_state = "soapsyndie"
 	cleanspeed = 0.5 SECONDS //faster than mops so it's useful for traitors who want to clean crime scenes
+	slips = TRUE
 
 /obj/item/soap/omega
 	name = "\improper Omega soap"
@@ -98,6 +103,7 @@
 	worn_icon_state = "soapomega"
 	cleanspeed = 0.3 SECONDS //Only the truest of mind soul and body get one of these
 	uses = 800 //In the Greek numeric system, Omega has a value of 800
+	slips = TRUE // We can trust whatever soul creates this.
 
 /obj/item/soap/omega/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] is using [src] to scrub themselves from the timeline! It looks like [user.p_theyre()] trying to commit suicide!"))

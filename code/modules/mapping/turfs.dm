@@ -1,10 +1,4 @@
 // Floors
-/turf/open/floor/material/meat
-	custom_materials = list(/datum/material/meat = MINERAL_MATERIAL_AMOUNT * 0.25)
-
-/turf/open/floor/material/pizza
-	custom_materials = list(/datum/material/pizza = MINERAL_MATERIAL_AMOUNT * 0.25)
-
 /turf/open/floor/material/plasmaglass
 	custom_materials = list(/datum/material/alloy/plasmaglass = MINERAL_MATERIAL_AMOUNT * 0.25)
 
@@ -18,12 +12,6 @@
 	custom_materials = list(/datum/material/alloy/titaniumglass = MINERAL_MATERIAL_AMOUNT * 0.25)
 
 // Walls
-/turf/closed/wall/material/meat
-	custom_materials = list(/datum/material/meat = MINERAL_MATERIAL_AMOUNT * 2)
-
-/turf/closed/wall/material/pizza
-	custom_materials = list(/datum/material/pizza = MINERAL_MATERIAL_AMOUNT * 2)
-
 /turf/closed/wall/material/plasmaglass
 	custom_materials = list(/datum/material/alloy/plasmaglass = MINERAL_MATERIAL_AMOUNT * 2)
 

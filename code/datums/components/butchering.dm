@@ -129,12 +129,6 @@
 			results += new sinew (T)
 		meat.guaranteed_butcher_results.Remove(sinew)
 
-	for(var/obj/item/carrion in results)
-		var/list/meat_mats = carrion.has_material_type(/datum/material/meat)
-		if(!length(meat_mats))
-			continue
-		carrion.set_custom_materials((carrion.custom_materials - meat_mats) + list(GET_MATERIAL_REF(/datum/material/meat/mob_meat, meat) = counterlist_sum(meat_mats)))
-
 	if(butcher)
 		butcher.visible_message(span_notice("[butcher] butchers [meat]."), \
 								span_notice("You butcher [meat]."))
