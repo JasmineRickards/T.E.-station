@@ -105,6 +105,7 @@
 	drillbit that will always, unsettlingly, manage to fit it's target perfectly."
 	toolspeed = 0.1
 	icon_state = "WB-32_hardlight-tipped_drill"
+	inhand_icon_state = null
 	lefthand_file = 'modular_skyrat/modules/aesthetics/tools/tools_lefthand.dmi'
 	righthand_file = 'modular_skyrat/modules/aesthetics/tools/tools_righthand.dmi'
 	hitsound = 'sound/weapons/pulse.ogg'
