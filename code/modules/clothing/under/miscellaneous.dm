@@ -119,7 +119,7 @@
 
 /obj/item/clothing/under/wb32/under/seal
 	name = "WB-32 Branned Combat Uniform"
-	icon = 'icons/obj/clothing/under/misc.dmi'
+	icon = 'icons/mob/clothing/under/misc.dmi'
 	icon_state = "wb32_seal_uniform"
 	inhand_icon_state = "bl_suit"
 	worn_icon = 'icons/mob/clothing/under/misc.dmi'
@@ -132,3 +132,4 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
 	can_adjust = FALSE
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+	supports_variations_flags = NONE

@@ -398,6 +398,9 @@
 	welding fuel on the fly, welders like these have historically saved many a freighter simply by existing. Allegedly."
 	icon = 'modular_skyrat/modules/aesthetics/tools/tools.dmi'
 	icon_state = "WB-32_nano-gen_welding_tool"
+	inhand_icon_state = null
+	lefthand_file = 'modular_skyrat/modules/aesthetics/tools/tools_lefthand.dmi'
+	righthand_file = 'modular_skyrat/modules/aesthetics/tools/tools_righthand.dmi'
 
 /obj/item/weldingtool/hugetank
 	name = "upgraded industrial welding tool"

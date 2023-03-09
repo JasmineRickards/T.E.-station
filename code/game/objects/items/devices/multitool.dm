@@ -143,6 +143,9 @@
 	wire-related information directly to a user's neurons, or lack thereof, for specialty situations WB-32 chooses."
 	icon = 'modular_skyrat/modules/aesthetics/device/device.dmi'
 	icon_state = "WB-32_skeleton_key"
+	inhand_icon_state = null // This actually lets the right icon display. Funny!
+	lefthand_file = 'modular_skyrat/modules/aesthetics/tools/tools_lefthand.dmi'
+	righthand_file = 'modular_skyrat/modules/aesthetics/tools/tools_righthand.dmi'
 
 /obj/item/multitool/cyborg//SKYRAT EDIT - ICON OVERRIDEN BY AESTHETICS - SEE MODULE
 	name = "electronic multitool"
