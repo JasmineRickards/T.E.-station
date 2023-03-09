@@ -128,10 +128,11 @@
 /obj/item/clothing/shoes/wb32/seal//The AI watches, it supplies.
 	name = "WB-32 Brand Combat Boots"
 	desc = "A set of reinforced, low-drag boots, high traction boots. Intended for the messiest of environments."
+	icon = 'icons/mob/clothing/feet.dmi'
 	icon_state = "wb32_combatboots"
 	inhand_icon_state = "jackboots"
 	armor = list(MELEE = 45, BULLET = 45, LASER = 45, ENERGY = 45, BOMB = 50, BIO = 100, FIRE = 100, ACID = 100)
 	strip_delay = 40
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	clothing_flags = NOSLIP|NOSLIP_ICE|THICKMATERIAL
-	lace_time = 160 SECONDS
+	lace_time = 160 SECONDS // Imagine being able to lay down next to this dude for 160 seconds just to unlace it. If they don't notice you doing it, you deserve it man.

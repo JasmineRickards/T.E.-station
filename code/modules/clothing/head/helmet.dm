@@ -369,7 +369,7 @@
 /obj/item/clothing/head/wb32/helmet/seal
 	name = "WB-32 brand Special Operations Helmet"
 	desc = "A ceramic plated protective helmet, seems layered in anything but ceramic."
-	icon = 'icons/obj/clothing/head/helmet.dmi'
+	icon = 'icons/mob/clothing/head/helmet.dmi' // TODO - Proper, Non-Worn Icons for these
 	worn_icon = 'icons/mob/clothing/head/helmet.dmi'
 	icon_state = "wb32_helmet_seal"
 	inhand_icon_state = "helmet"
@@ -382,3 +382,4 @@
 	clothing_flags = SNUG_FIT | PLASMAMAN_HELMET_EXEMPT
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEHAIR
+	supports_variations_flags = CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON

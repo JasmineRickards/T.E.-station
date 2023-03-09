@@ -446,6 +446,7 @@
 /obj/item/clothing/suit/armor/vest/wb32/seal
 	name = "WB-32 Negative Weight Vest"
 	desc = "A set of the finest acutely produced armor, having a negative weight, and thus improving combat force mobility."
+	icon = 'icons/mob/clothing/suits/armor.dmi'
 	icon_state = "wb32_sealvest"
 	inhand_icon_state = "armor"
 	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
@@ -455,4 +456,4 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT_OFF
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	slowdown = -1
+	slowdown = -1 // <Arcade Bit-Crushed Voice> POWER UP
