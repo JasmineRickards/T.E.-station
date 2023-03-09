@@ -365,3 +365,20 @@
 	material_flags = MATERIAL_EFFECTS | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS //Can change color and add prefix
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+
+/obj/item/clothing/head/wb32/helmet/seal
+	name = "WB-32 brand Special Operations Helmet"
+	desc = "A ceramic plated protective helmet, seems layered in anything but ceramic."
+	icon = 'icons/obj/clothing/head/helmet.dmi'
+	worn_icon = 'icons/mob/clothing/head/helmet.dmi'
+	icon_state = "wb32_helmet_seal"
+	inhand_icon_state = "helmet"
+	armor = list(MELEE = 90, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 90, BIO = 100, FIRE = 100, ACID = 100, WOUND = 85)
+	cold_protection = HEAD
+	min_cold_protection_temperature = HELMET_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = HELMET_MAX_TEMP_PROTECT
+	strip_delay = 60
+	clothing_flags = SNUG_FIT | PLASMAMAN_HELMET_EXEMPT
+	flags_cover = HEADCOVERSEYES
+	flags_inv = HIDEHAIR

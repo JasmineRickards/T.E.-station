@@ -116,3 +116,19 @@
 	sensor_mode = NO_SENSORS
 	can_adjust = FALSE
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
+
+/obj/item/clothing/under/wb32/under/seal
+	name = "WB-32 Branned Combat Uniform"
+	icon = 'icons/obj/clothing/under/misc.dmi'
+	icon_state = "wb32_seal_uniform"
+	inhand_icon_state = "bl_suit"
+	worn_icon = 'icons/mob/clothing/under/misc.dmi'
+	desc = "A surprisingly tough uniform intended for the toughest of the tough. It seems to have a near impossible weave pattern. You can't tell if it's warm or cold."
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(MELEE = 25, BULLET = 25, LASER = 25,ENERGY = 25, BOMB = 25, BIO = 25, FIRE = 25, ACID = 25)
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
+	can_adjust = FALSE
+	resistance_flags = FIRE_PROOF | ACID_PROOF

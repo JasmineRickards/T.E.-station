@@ -442,3 +442,17 @@
 	icon_state = "hop_coat"
 	inhand_icon_state = "b_suit"
 	body_parts_covered = CHEST|GROIN|ARMS
+
+/obj/item/clothing/suit/armor/vest/wb32/seal
+	name = "WB-32 Negative Weight Vest"
+	desc = "A set of the finest acutely produced armor, having a negative weight, and thus improving combat force mobility."
+	icon_state = "wb32_sealvest"
+	inhand_icon_state = "armor"
+	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(MELEE = 90, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 90, BIO = 100, FIRE = 100, ACID = 100, WOUND = 80)
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT_OFF
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	slowdown = -1
