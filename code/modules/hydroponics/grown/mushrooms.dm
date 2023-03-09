@@ -245,7 +245,6 @@
 	name = "glowshroom cluster"
 	desc = "<I>Mycena Bregprox</I>: This species of mushroom glows in the dark."
 	icon_state = "glowshroom"
-	var/effect_path = /obj/structure/glowshroom
 	wine_power = 50
 
 
@@ -269,7 +268,6 @@
 	name = "glowcap cluster"
 	desc = "<I>Mycena Ruthenia</I>: This species of mushroom glows in the dark, but isn't actually bioluminescent. They're warm to the touch..."
 	icon_state = "glowcap"
-	effect_path = /obj/structure/glowshroom/glowcap
 	tastes = list("glowcap" = 1)
 
 
@@ -294,7 +292,6 @@
 	name = "shadowshroom cluster"
 	desc = "<I>Mycena Umbra</I>: This species of mushroom emits shadow instead of light."
 	icon_state = "shadowshroom"
-	effect_path = /obj/structure/glowshroom/shadowshroom
 	tastes = list("shadow" = 1, "mushroom" = 1)
 	wine_power = 60
 
