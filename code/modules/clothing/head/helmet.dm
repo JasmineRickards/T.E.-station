@@ -371,7 +371,7 @@
 	desc = "A ceramic plated protective helmet, seems layered in anything but ceramic."
 	icon = 'icons/mob/clothing/head/helmet.dmi' // TODO - Proper, Non-Worn Icons for these
 	worn_icon = 'icons/mob/clothing/head/helmet.dmi'
-	icon_state = "wb32_helmet_seal"
+	icon_state = "wb32_helmet_worn" // :greg:
 	inhand_icon_state = "helmet"
 	armor = list(MELEE = 90, BULLET = 90, LASER = 90, ENERGY = 90, BOMB = 90, BIO = 100, FIRE = 100, ACID = 100, WOUND = 85)
 	cold_protection = HEAD
@@ -379,7 +379,6 @@
 	heat_protection = HEAD
 	max_heat_protection_temperature = HELMET_MAX_TEMP_PROTECT
 	strip_delay = 60
-	clothing_flags = SNUG_FIT | PLASMAMAN_HELMET_EXEMPT
-	flags_cover = HEADCOVERSEYES
+	clothing_flags = STOPSPRESSUREDAMAGE | SNUG_FIT | PLASMAMAN_HELMET_EXEMPT
 	flags_inv = HIDEHAIR
 	supports_variations_flags = CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON

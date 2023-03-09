@@ -136,3 +136,4 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	clothing_flags = NOSLIP|NOSLIP_ICE|THICKMATERIAL
 	lace_time = 160 SECONDS // Imagine being able to lay down next to this dude for 160 seconds just to unlace it. If they don't notice you doing it, you deserve it man.
+	supports_variations_flags = NONE
