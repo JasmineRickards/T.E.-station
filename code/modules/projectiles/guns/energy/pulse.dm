@@ -17,6 +17,7 @@
 
 /obj/item/gun/energy/pulse/prize
 	pin = /obj/item/firing_pin
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/practice) // Boowomp
 
 /obj/item/gun/energy/pulse/prize/Initialize(mapload)
 	. = ..()
