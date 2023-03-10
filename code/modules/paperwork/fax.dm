@@ -1,5 +1,3 @@
-GLOBAL_VAR_INIT(nt_fax_department, pick("NT HR Department", "NT Legal Department", "NT Complaint Department", "NT Customer Relations", "Nanotrasen Tech Support", "NT Internal Affairs Dept"))
-
 /obj/machinery/fax
 	name = "Fax Machine"
 	desc = "Bluespace technologies on the application of bureaucracy."
@@ -50,8 +48,8 @@ GLOBAL_VAR_INIT(nt_fax_department, pick("NT HR Department", "NT Legal Department
 	)
 	/// List with a fake-networks(not a fax actually), for request manager.
 	var/list/special_networks = list(
-		nanotrasen = list(fax_name = "NT HR Department", fax_id = "central_command", color = "teal", emag_needed = FALSE),
-		syndicate = list(fax_name = "Sabotage Department", fax_id = "syndicate", color = "red", emag_needed = TRUE),
+		nanotrasen = list(fax_name = "Nanotrasen Regional Command", fax_id = "central_command", color = "teal", emag_needed = FALSE),
+		syndicate = list(fax_name = "Syndicate Regional Command", fax_id = "syndicate", color = "red", emag_needed = TRUE),
 	)
 
 /obj/machinery/fax/Initialize(mapload)
@@ -62,7 +60,6 @@ GLOBAL_VAR_INIT(nt_fax_department, pick("NT HR Department", "NT Legal Department
 		fax_name = "Unregistered fax " + fax_id
 	wires = new /datum/wires/fax(src)
 	register_context()
-	special_networks["nanotrasen"]["fax_name"] = GLOB.nt_fax_department
 
 /obj/machinery/fax/Destroy()
 	QDEL_NULL(loaded_item_ref)
