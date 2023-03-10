@@ -158,17 +158,6 @@
 	contains = list()
 	crate_name = "pizza crate"
 
-	///Whether we've provided an infinite pizza box already this shift or not.
-	var/anomalous_box_provided = FALSE
-	/// one percent chance for a pizza box to be the ininfite pizza box
-	var/infinite_pizza_chance = 1
-	///Whether we've provided a bomb pizza box already this shift or not.
-	var/boombox_provided = FALSE
-	/// three percent chance for a pizza box to be the pizza bomb box
-	var/bomb_pizza_chance = 3
-	/// 1 in 3 pizza bombs spawned will be a dud
-	var/bomb_dud_chance = 33
-
 	/// list of pizza that can randomly go inside of a crate, weighted by how disruptive it would be
 	var/list/pizza_types = list(
 		/obj/item/food/pizza/margherita = 10,
@@ -187,40 +176,7 @@
 	. = ..()
 	var/list/rng_pizza_list = pizza_types.Copy()
 	for(var/i in 1 to 5)
-		if(add_anomalous(new_crate))
-			continue
-		if(add_boombox(new_crate))
-			continue
 		add_normal_pizza(new_crate, rng_pizza_list)
-
-/// adds the chance for an infinite pizza box
-/datum/supply_pack/organic/pizza/proc/add_anomalous(obj/structure/closet/crate/new_crate)
-	if(anomalous_box_provided)
-		return FALSE
-	if(!prob(infinite_pizza_chance))
-		return FALSE
-	new /obj/item/pizzabox/infinite(new_crate)
-	anomalous_box_provided = TRUE
-	log_game("An anomalous pizza box was provided in a pizza crate at during cargo delivery.")
-	if(prob(50))
-		addtimer(CALLBACK(src, PROC_REF(anomalous_pizza_report)), rand(30 SECONDS, 180 SECONDS))
-		message_admins("An anomalous pizza box was provided in a pizza crate at during cargo delivery.")
-	else
-		message_admins("An anomalous pizza box was silently created with no command report in a pizza crate delivery.")
-	return TRUE
-
-/// adds a chance of a pizza bomb replacing a pizza
-/datum/supply_pack/organic/pizza/proc/add_boombox(obj/structure/closet/crate/new_crate)
-	if(boombox_provided)
-		return FALSE
-	if(!prob(bomb_pizza_chance))
-		return FALSE
-	var/boombox_type = (prob(bomb_dud_chance)) ? /obj/item/pizzabox/bomb : /obj/item/pizzabox/bomb/armed
-	new boombox_type(new_crate)
-	boombox_provided = TRUE
-	log_game("A pizza box bomb was created by a pizza crate delivery.")
-	message_admins("A pizza box bomb has arrived in a pizza crate delivery.")
-	return TRUE
 
 /// adds a randomized pizza from the pizza list
 /datum/supply_pack/organic/pizza/proc/add_normal_pizza(obj/structure/closet/crate/new_crate, list/rng_pizza_list)
@@ -231,13 +187,6 @@
 	new_pizza_box.boxtag = new_pizza_box.pizza.boxtag
 	new_pizza_box.boxtag_set = TRUE
 	new_pizza_box.update_appearance(UPDATE_ICON | UPDATE_DESC)
-
-/// tells crew that an infinite pizza box exists, half of the time, based on a roll in the anamolous box proc
-/datum/supply_pack/organic/pizza/proc/anomalous_pizza_report()
-	print_command_report("[station_name()], our anomalous materials divison has reported a missing object that is highly likely to have been sent to your station during a routine cargo \
-	delivery. Please search all crates and manifests provided with the delivery and return the object if is located. The object resembles a standard <b>\[DATA EXPUNGED\]</b> and is to be \
-	considered <b>\[REDACTED\]</b> and returned at your leisure. Note that objects the anomaly produces are specifically attuned exactly to the individual opening the anomaly; regardless \
-	of species, the individual will find the object edible and it will taste great according to their personal definitions, which vary significantly based on person and species.")
 
 /datum/supply_pack/organic/potted_plants
 	name = "Potted Plants Crate"
