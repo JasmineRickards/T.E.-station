@@ -51,8 +51,8 @@
 	name = "DS-2 Corporate Liaison's Office"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
-/area/ruin/space/has_grav/skyrat/interdynefob/bridge/admiral
-	name = "DS-2 Station Admiral's Office"
+/area/ruin/space/has_grav/skyrat/interdynefob/bridge/captain
+	name = "DS-2 Captain's Office"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/ruin/space/has_grav/skyrat/interdynefob/bridge/vault
