@@ -106,8 +106,8 @@
 /obj/effect/mob_spawn/ghost_role/human/ds2/syndicate_command/corporateliaison
 	outfit = /datum/outfit/ds2/syndicate_command/corporateliaison
 
-/obj/effect/mob_spawn/ghost_role/human/ds2/syndicate_command/admiral
-	outfit = /datum/outfit/ds2/syndicate_command/admiral
+/obj/effect/mob_spawn/ghost_role/human/ds2/syndicate_command/captain
+	outfit = /datum/outfit/ds2/syndicate_command/captain
 
 /obj/effect/mob_spawn/ghost_role/human/hotel_staff
 	random_appearance = FALSE
@@ -292,17 +292,17 @@
 	belt = /obj/item/gun/ballistic/automatic/pistol/aps
 	head = /obj/item/clothing/head/hats/hos/syndicate
 	id = /obj/item/card/id/advanced/gold/generic
-	id_trim = /datum/id_trim/syndicom/skyrat/ds2/stationadmiral
+	id_trim = /datum/id_trim/syndicom/skyrat/ds2/captain
 
-/datum/outfit/ds2/syndicate_command/admiral
-	name = "DS-2 Admiral"
+/datum/outfit/ds2/syndicate_command/captain
+	name = "DS-2 Captain"
 	uniform = /obj/item/clothing/under/rank/captain/skyrat/utility/syndicate
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
 	back = /obj/item/storage/backpack/satchel
 	belt = /obj/item/gun/ballistic/automatic/pistol/aps
 	head = /obj/item/clothing/head/hats/hos/syndicate
 	id = /obj/item/card/id/advanced/gold/generic
-	id_trim = /datum/id_trim/syndicom/skyrat/ds2/stationadmiral
+	id_trim = /datum/id_trim/syndicom/skyrat/ds2/captain
 
 
 /datum/outfit/ds2/syndicate_command/post_equip(mob/living/carbon/human/syndicate)
