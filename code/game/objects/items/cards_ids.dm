@@ -1610,6 +1610,10 @@
 	assigned_icon_state = "assigned_syndicate"
 	wildcard_slots = WILDCARD_LIMIT_GOLD
 
+/obj/item/card/id/advanced/chameleon/black/highcomm
+	trim = /datum/id_trim/admin/syndicate
+	wildcard_slots = WILDCARD_LIMIT_ADMIN
+
 /obj/item/card/id/advanced/engioutpost
 	registered_name = "George 'Plastic' Miller"
 	desc = "A card used to provide ID and determine access across the station. There's blood dripping from the corner. Ew."

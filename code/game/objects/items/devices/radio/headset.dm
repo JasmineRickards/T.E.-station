@@ -137,9 +137,6 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "team leader headset"
 	command = TRUE
 
-/obj/item/radio/headset/syndicate/alt/universal /// Syndicate Bowman with EVERY syndicate frequency. ALL of them.
-	keyslot = /obj/item/encryptionkey/headset_syndicate/universal
-
 /obj/item/radio/headset/syndicate/alt/psyker
 	name = "psychic headset"
 	desc = "A headset designed to boost psychic waves. Protects ears from flashbangs."
@@ -153,6 +150,18 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/syndicate/alt/psyker/dropped(mob/user, silent)
 	. = ..()
 	REMOVE_CLOTHING_TRAIT(user, TRAIT_ECHOLOCATION_EXTRA_RANGE)
+
+/obj/item/radio/headset/syndicate_universal /// Syndicate Bowman with EVERY syndicate frequency. Pathed this way to avoid make_syndie().
+	name = "syndicate headset"
+	desc = "A syndicate headset that can be used to hear all radio frequencies. Protects ears from flashbangs."
+	icon_state = "syndie_headset"
+	inhand_icon_state = null
+	radiosound = 'modular_skyrat/modules/radiosound/sound/radio/syndie.ogg'
+	keyslot = /obj/item/encryptionkey/headset_syndicate/universal
+
+/obj/item/radio/headset/syndicate_universal/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 
 /obj/item/radio/headset/binary
 	keyslot = /obj/item/encryptionkey/binary
