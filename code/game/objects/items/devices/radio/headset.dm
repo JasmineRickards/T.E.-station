@@ -137,6 +137,9 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "team leader headset"
 	command = TRUE
 
+/obj/item/radio/headset/syndicate/alt/universal /// Syndicate Bowman with EVERY syndicate frequency. ALL of them.
+	keyslot = /obj/item/encryptionkey/headset_syndicate/universal
+
 /obj/item/radio/headset/syndicate/alt/psyker
 	name = "psychic headset"
 	desc = "A headset designed to boost psychic waves. Protects ears from flashbangs."
