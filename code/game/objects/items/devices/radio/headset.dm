@@ -151,6 +151,18 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	. = ..()
 	REMOVE_CLOTHING_TRAIT(user, TRAIT_ECHOLOCATION_EXTRA_RANGE)
 
+/obj/item/radio/headset/syndicate_universal /// Syndicate Bowman with EVERY syndicate frequency. Pathed this way to avoid make_syndie().
+	name = "syndicate headset"
+	desc = "A syndicate headset that can be used to hear all radio frequencies. Protects ears from flashbangs."
+	icon_state = "syndie_headset"
+	inhand_icon_state = null
+	radiosound = 'modular_skyrat/modules/radiosound/sound/radio/syndie.ogg'
+	keyslot = /obj/item/encryptionkey/headset_syndicate/universal
+
+/obj/item/radio/headset/syndicate_universal/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
+
 /obj/item/radio/headset/binary
 	keyslot = /obj/item/encryptionkey/binary
 
