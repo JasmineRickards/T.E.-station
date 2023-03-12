@@ -36,7 +36,7 @@
 
 /datum/design/microfusion/cell/basic
 	name = "Basic Microfusion Cell"
-	desc = "A basic microfusion cell with a capacity of 1200 MF and and 1 attachment points."
+	desc = "A basic microfusion cell with a capacity of 2000 MF and and 1 attachment points."
 	id = "basic_microfusion_cell"
 	build_type = PROTOLATHE | AWAY_LATHE | AUTOLATHE
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 200)
@@ -45,21 +45,21 @@
 
 /datum/design/microfusion/cell/enhanced
 	name = "Enhanced Microfusion Cell"
-	desc = "An enhanced microfusion cell with a capacity of 1500 MF and 1 attachment points."
+	desc = "An enhanced microfusion cell with a capacity of 5000 MF and 1 attachment points."
 	id = "enhanced_microfusion_cell"
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 200, /datum/material/uranium = 200)
 	build_path = /obj/item/stock_parts/cell/microfusion/enhanced
 
 /datum/design/microfusion/cell/advanced
 	name = "Advanced Microfusion Cell"
-	desc = "An advanced microfusion cell with a capacity of 1700 MF and 2 attachment points."
+	desc = "An advanced microfusion cell with a capacity of 8000 MF and 2 attachment points."
 	id = "advanced_microfusion_cell"
-	materials =  list(/datum/material/iron = 1000, /datum/material/gold = 300, /datum/material/silver = 300, /datum/material/glass = 300, /datum/material/uranium = 300)
+	materials =  list(/datum/material/iron = 2000, /datum/material/gold = 300, /datum/material/silver = 300, /datum/material/glass = 300, /datum/material/uranium = 300)
 	build_path = /obj/item/stock_parts/cell/microfusion/advanced
 
 /datum/design/microfusion/cell/bluespace
 	name = "Bluespace Microfusion Cell"
-	desc = "A bluespace microfusion cell with a capacity of 2000 MF and 3 attachment points."
+	desc = "A bluespace microfusion cell with a capacity of 20000 MF and 3 attachment points."
 	id = "bluespace_microfusion_cell"
 	materials = list(/datum/material/iron = 1000, /datum/material/gold = 300, /datum/material/glass = 300, /datum/material/diamond = 300, /datum/material/uranium = 300, /datum/material/titanium = 300, /datum/material/bluespace = 300)
 	build_path = /obj/item/stock_parts/cell/microfusion/bluespace
