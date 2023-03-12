@@ -13,7 +13,7 @@ Essentially, power cells that malfunction if not used in an MCR, and should only
 	charging_icon = "mf_in" //This is stored in cell.dmi in the aesthetics module
 	icon_state = "microfusion"
 	w_class = WEIGHT_CLASS_NORMAL
-	maxcharge = 1200 //12 shots
+	maxcharge = 2000 //12 shots
 	chargerate = 0 //MF cells should be unable to recharge if they are not currently inside of an MCR
 	microfusion_readout = TRUE
 	empty = TRUE //MF cells should start empty
@@ -191,20 +191,20 @@ Essentially, power cells that malfunction if not used in an MCR, and should only
 	name = "enhanced microfusion cell"
 	desc = "A second generation microfusion cell, weighing about the same as the standard-issue cell and having the same space for attachments; however, it has a higher capacity."
 	icon_state = "microfusion_enhanced"
-	maxcharge = 1500
+	maxcharge = 5000
 
 /obj/item/stock_parts/cell/microfusion/advanced
 	name = "advanced microfusion cell"
 	desc = "A third generation microfusion cell, boasting a much higher shot count. Additionally, these come with support for up to three modifications to the cell itself."
 	icon_state = "microfusion_advanced"
-	maxcharge = 1700
+	maxcharge = 8000
 	max_attachments = 3
 
 /obj/item/stock_parts/cell/microfusion/bluespace
 	name = "bluespace microfusion cell"
 	desc = "A fourth generation microfusion cell, employing bluespace technology to store power in a medium that's bigger on the inside. This has capacity for four modifications to the cell."
 	icon_state = "microfusion_bluespace"
-	maxcharge = 2000
+	maxcharge = 20000
 	max_attachments = 4
 
 /obj/item/stock_parts/cell/microfusion/nanocarbon
