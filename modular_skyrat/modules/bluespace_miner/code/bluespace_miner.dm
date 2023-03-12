@@ -200,7 +200,7 @@
 	desc = "Through the power of bluespace, it is capable of producing raw materials."
 	icon = 'modular_skyrat/modules/bluespace_miner/icons/bluespace_miner.dmi'
 	icon_state = "miner"
-	list/ore_chance = list(
+	ore_chance = list(
 		/obj/item/stack/ore/iron = 20,
 		/obj/item/stack/ore/glass/basalt = 20,
 		/obj/item/stack/ore/plasma = 14,
@@ -211,6 +211,7 @@
 		/obj/item/stack/ore/gold = 3,
 		/obj/item/stack/ore/diamond = 1,
 	)
+
 /obj/item/circuitboard/machine/bluespace_miner/ore
 	name = "Raw Bluespace Miner (Machine Board)"
 	desc = "The bluespace miner is a machine that, when provided the correct temperature and pressure, will produce materials."
