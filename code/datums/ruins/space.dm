@@ -200,6 +200,7 @@
 	suffix = "thederelict.dmm"
 	name = "Kosmicheskaya Stantsiya 13"
 	description = "The true fate of Kosmicheskaya Stantsiya 13 is an open question to this day. Most corporations deny its existence, for fear of questioning on what became of its crew."
+	unpickable = TRUE
 
 /datum/map_template/ruin/space/abandonedteleporter
 	id = "abandonedteleporter"
@@ -228,6 +229,7 @@
 	name = "Syndicate Listening Station"
 	description = "Listening stations form the backbone of the syndicate's information-gathering operations. \
 	Assignment to these stations is dreaded by most agents, as it entails long and lonely shifts listening to nearby stations chatter incessantly about the most meaningless things."
+	unpickable = TRUE
 
 /datum/map_template/ruin/space/old_ai_sat
 	id = "oldAIsat"
@@ -263,6 +265,7 @@
 	name = "Ancient Space Station"
 	description = "The crew of a space station awaken one hundred years after a crisis. Awaking to a derelict space station on the verge of collapse, and a hostile force of invading \
 	hivebots. Can the surviving crew overcome the odds and survive and rebuild, or will the cold embrace of the stars become their new home?"
+	unpickable = TRUE
 
 /datum/map_template/ruin/space/gondoland
 	id = "gondolaasteroid"

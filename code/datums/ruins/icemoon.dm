@@ -103,6 +103,7 @@
 	id = "hermitshack"
 	description = "A place of shelter for a lone hermit, scraping by to live another day."
 	suffix = "icemoon_underground_hermit.dmm"
+	unpickable = TRUE
 
 /datum/map_template/ruin/icemoon/underground/lavaland
 	name = "Lavaland Site"
@@ -135,6 +136,7 @@
 	Seem very intent on research and individual liberty, and also geology-based naming?"
 	prefix = "_maps/RandomRuins/AnywhereRuins/"
 	suffix = "golem_ship.dmm"
+	unpickable = TRUE
 
 /datum/map_template/ruin/icemoon/underground/mailroom
 	name = "Frozen-over Post Office"

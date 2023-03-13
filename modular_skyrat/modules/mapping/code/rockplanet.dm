@@ -51,7 +51,7 @@
 	suffix = "rockplanet_surface_syndicate_base1_skyrat.dmm"
 	allow_duplicates = FALSE
 	never_spawn_with = list(/datum/map_template/ruin/icemoon/underground/skyrat/syndicate_base, /datum/map_template/ruin/lavaland/skyrat/syndicate_base)
-	always_place = TRUE
+	unpickable = TRUE
 
 //Below here should be ruins that are pretty much entirely fluff - minimal loot or threat, just adds to the aesthetic
 /datum/map_template/ruin/rockplanet/abandoned_a	//Restaraunt

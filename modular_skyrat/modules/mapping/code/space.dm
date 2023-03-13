@@ -2,20 +2,12 @@
 /datum/map_template/ruin/space/skyrat
 	prefix = "_maps/RandomRuins/SpaceRuins/skyrat/"
 /*------*/
-/* //Disabled due to the existence of DS-2.
-/datum/map_template/ruin/space/skyrat/forgottenship
-	name = "CSBC-12"
-	id = "forgottenship"
-	description = "Cybersun would like to remind it's employees that any battle cruiser will be apropriately maintained, as will it's crew."
-	suffix = "forgottenship_skyrat.dmm"
-	always_place = TRUE
-*/
 /datum/map_template/ruin/space/skyrat/interdynefob
 	name = "DS-2"
 	id = "interdynefob"
 	description = "If DS-1 was so good..."
 	suffix = "interdynefob.dmm"
-	always_place = TRUE
+	unpickable = TRUE
 
 /datum/map_template/ruin/space/skyrat/derelictferry
 	id = "derelictferry"
@@ -88,6 +80,7 @@
 	suffix = "blackmarket.dmm"
 	name = "Shady Market"
 	description = "Whaddya buyin'?"
+	unpickable = TRUE
 
 /datum/map_template/ruin/space/skyrat/shuttle8532
 	id = "shuttle8532"
@@ -136,6 +129,7 @@
 	suffix = "cargodiselost.dmm"
 	name = "Cargodise Lost"
 	description = "A small crew of freight-haulers are marooned in space after pirates knock out their engines. They must survive off of the cargo on board their ship and fend off the pirate boarders on their ship."
+	unpickable = TRUE
 
 /datum/map_template/ruin/space/skyrat/infestedntship
 	suffix = "scrapheap.dmm"
@@ -172,7 +166,7 @@
 	name = "Port Tarkon"
 	id = "escapefromtarkon"
 	description = "An ambitious goal, A step forward, A trial run for the Tarkon drill, ment to implant mining stations within meteors. Decades of disaster have, however, left this one... Unattended for far too long."
-	always_place = TRUE
+	unpickable = TRUE
 
 /obj/modular_map_root/port_tarkon
 	config_file = "strings/modular_maps/skyrat/PortTarkon.toml"

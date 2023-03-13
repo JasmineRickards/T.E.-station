@@ -10,4 +10,4 @@
 	suffix = "lavaland_surface_syndicate_base1_skyrat.dmm"
 	allow_duplicates = FALSE
 	never_spawn_with = list(/datum/map_template/ruin/icemoon/underground/skyrat/syndicate_base, /datum/map_template/ruin/rockplanet/syndicate_base)
-	always_place = TRUE
+	unpickable = TRUE

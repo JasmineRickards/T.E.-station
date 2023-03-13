@@ -15,6 +15,7 @@
 	description = "Seemingly plucked from a tropical destination, this beach is calm and cool, with the salty waves roaring softly in the background. \
 	Comes with a rustic wooden bar and suicidal bartender."
 	suffix = "lavaland_biodome_beach.dmm"
+	unpickable = TRUE
 
 /datum/map_template/ruin/lavaland/biodome/winter
 	name = "Biodome Winter"
@@ -45,6 +46,7 @@
 	suffix = "lavaland_surface_seed_vault.dmm"
 	cost = 10
 	allow_duplicates = FALSE
+	unpickable = TRUE
 
 /datum/map_template/ruin/lavaland/ash_walker
 	name = "Ash Walker Nest"
@@ -53,8 +55,8 @@
 	Probably best to stay clear."
 	prefix = "_maps/RandomRuins/LavaRuins/skyrat/" // SKYRAT ADDITION
 	suffix = "lavaland_surface_ash_walker1_skyrat.dmm" // SKYRAT EDIT - ORIGINAL: lavaland_surface_ash_walker1.dmm
-	always_place = TRUE //SKYRAT EDIT CHANGE
-	allow_duplicates = FALSE
+	unpickable = TRUE
+
 //SKYRAT EDIT REMOVAL BEGIN - MAPPING
 /*
 /datum/map_template/ruin/lavaland/syndicate_base
@@ -75,6 +77,7 @@
 	prefix = "_maps/RandomRuins/AnywhereRuins/"
 	suffix = "golem_ship.dmm"
 	allow_duplicates = FALSE
+	unpickable = TRUE
 
 /datum/map_template/ruin/lavaland/gaia
 	name = "Patch of Eden"
@@ -215,6 +218,7 @@
 	suffix = "lavaland_surface_hermit.dmm"
 	allow_duplicates = FALSE
 	cost = 10
+	unpickable = TRUE
 
 /datum/map_template/ruin/lavaland/miningripley
 	name = "Ripley"
