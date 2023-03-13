@@ -83,6 +83,10 @@
 	spreadChance = 5
 	merge_type = /obj/item/stack/ore/uranium
 
+/obj/item/stack/ore/uranium/minimal_points
+	points = 10
+	merge_type = /obj/item/stack/ore/uranium/minimal_points
+
 /obj/item/stack/ore/iron
 	name = "iron ore"
 	icon_state = "Iron ore"
@@ -155,6 +159,10 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	to_chat(user, span_warning("You can't hit a high enough temperature to smelt [src] properly!"))
 	return TRUE
 
+/obj/item/stack/ore/plasma/minimal_points
+	points = 5
+	merge_type = /obj/item/stack/ore/plasma/minimal_points // To prevent gaming the miners by merging them into a regular stack.
+
 /obj/item/stack/ore/silver
 	name = "silver ore"
 	icon_state = "Silver ore"
@@ -166,6 +174,10 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	scan_state = "rock_Silver"
 	spreadChance = 5
 	merge_type = /obj/item/stack/ore/silver
+
+/obj/item/stack/ore/silver/minimal_points
+	points = 6
+	merge_type = /obj/item/stack/ore/silver/minimal_points
 
 /obj/item/stack/ore/gold
 	name = "gold ore"
@@ -179,6 +191,10 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	spreadChance = 5
 	merge_type = /obj/item/stack/ore/gold
 
+/obj/item/stack/ore/gold/minimal_points
+	points = 8
+	merge_type = /obj/item/stack/ore/gold/minimal_points
+
 /obj/item/stack/ore/diamond
 	name = "diamond ore"
 	icon_state = "Diamond ore"
@@ -189,6 +205,10 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	mine_experience = 10
 	scan_state = "rock_Diamond"
 	merge_type = /obj/item/stack/ore/diamond
+
+/obj/item/stack/ore/diamond/minimal_points
+	points = 10
+	merge_type = /obj/item/stack/ore/diamond/minimal_points
 
 /obj/item/stack/ore/bananium
 	name = "bananium ore"
@@ -205,13 +225,17 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	name = "titanium ore"
 	icon_state = "Titanium ore"
 	singular_name = "titanium ore chunk"
-	points = 50
+	points = 50 // What the fuck?? Aren't we here for plasma??
 	mats_per_unit = list(/datum/material/titanium=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/titanium
 	mine_experience = 3
 	scan_state = "rock_Titanium"
 	spreadChance = 5
 	merge_type = /obj/item/stack/ore/titanium
+
+/obj/item/stack/ore/titanium/minimal_points
+	points = 10
+	merge_type = /obj/item/stack/ore/titanium/minimal_points
 
 /obj/item/stack/ore/slag
 	name = "slag"
