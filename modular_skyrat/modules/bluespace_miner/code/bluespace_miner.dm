@@ -1,6 +1,6 @@
 /obj/machinery/bluespace_miner
-	name = "Processing bluespace miner"
-	desc = "Through the power of bluespace, it is capable of producing refined materials."
+	name = "bluespace miner"
+	desc = "Through the power of bluespace, it is capable of producing materials."
 	icon = 'modular_skyrat/modules/bluespace_miner/icons/bluespace_miner.dmi'
 	icon_state = "miner"
 
@@ -20,10 +20,12 @@
 		/obj/item/stack/sheet/mineral/silver = 8,
 		/obj/item/stack/sheet/mineral/titanium = 8,
 		/obj/item/stack/sheet/mineral/uranium = 3,
-		/obj/item/xenoarch/strange_rock = 0.01,
 		/obj/item/stack/sheet/mineral/gold = 3,
 		/obj/item/stack/sheet/mineral/diamond = 1,
 	)
+	var/list/emag_ore_chance = list(
+		/obj/item/stack/sheet/mineral/bananium = 1,
+		)
 	COOLDOWN_DECLARE(process_speed)
 
 /obj/machinery/bluespace_miner/RefreshParts()
@@ -129,9 +131,26 @@
 	if(obj_flags & EMAGGED)
 		balloon_alert(user, "already emagged!")
 		return
-	ore_chance += list(/obj/item/stack/sheet/mineral/bananium = 1)
+	ore_chance += emag_ore_chance
 	obj_flags |= EMAGGED
 	balloon_alert_to_viewers("fizzles!")
+
+/obj/machinery/bluespace_miner/raw
+	name = "Raw Bluespace Miner"
+	ore_chance = list(
+		/obj/item/stack/ore/iron = 20,
+		/obj/item/stack/ore/glass/basalt = 20, // Iron & Glass retain their normal point value of 1 to avoid rounding issues
+		/obj/item/stack/ore/plasma/minimal_points = 14,
+		/obj/item/stack/ore/silver/minimal_points = 8,
+		/obj/item/stack/ore/titanium/minimal_points = 8,
+		/obj/item/stack/ore/uranium/minimal_points = 3,
+		/obj/item/xenoarch/strange_rock = 0.01,
+		/obj/item/stack/ore/gold/minimal_points = 3,
+		/obj/item/stack/ore/diamond/minimal_points = 1, // I did some mining off camera
+	)
+	emag_ore_chance = list(
+		/obj/item/stack/ore/bananium = 1, // This is emag-only, no reason to nerf this one's point output.
+		)
 
 /obj/item/circuitboard/machine/bluespace_miner
 	name = "Bluespace Miner (Machine Board)"
@@ -145,6 +164,17 @@
 		/obj/item/stock_parts/micro_laser = 2,
 		/obj/item/stock_parts/manipulator = 2)
 	needs_anchored = TRUE
+
+/obj/item/circuitboard/machine/bluespace_miner/screwdriver_act(mob/living/user, obj/item/tool)
+	if(build_path == /obj/machinery/bluespace_miner)
+		name = "Raw Bluespace Miner"
+		build_path = /obj/machinery/bluespace_miner/raw
+		to_chat(user, span_notice("Switched to keeping ore raw."))
+	else
+		name = "Bluespace Miner"
+		build_path = /obj/machinery/bluespace_miner
+		to_chat(user, span_notice("Switched to processing ore."))
+	return TRUE
 
 /datum/supply_pack/misc/bluespace_miner
 	name = "Bluespace Miner"
@@ -179,69 +209,6 @@
 	prereq_ids = list("anomaly_research", "bluespace_power")
 	design_ids = list(
 		"bluespace_miner",
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
-	discount_experiments = list(/datum/experiment/scanning/points/bluespace_miner = 5000)
-
-/datum/techweb_node/bluespace_minerraw
-	id = "bluespaceraw_miner"
-	display_name = "Raw Bluespace Miner"
-	description = "The future is here, where we can mine ores from the great bluespace sea."
-	prereq_ids = list("anomaly_research", "bluespace_power")
-	design_ids = list(
-		"bluespaceraw_miner",
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
-	discount_experiments = list(/datum/experiment/scanning/points/bluespace_miner = 5000)
-
-
-/obj/machinery/bluespace_miner/ore
-	name = "Raw bluespace miner"
-	desc = "Through the power of bluespace, it is capable of producing raw materials."
-	icon = 'modular_skyrat/modules/bluespace_miner/icons/bluespace_miner.dmi'
-	icon_state = "miner"
-	ore_chance = list(
-		/obj/item/stack/ore/iron = 20,
-		/obj/item/stack/ore/glass/basalt = 20,
-		/obj/item/stack/ore/plasma = 14,
-		/obj/item/stack/ore/silver = 8,
-		/obj/item/stack/ore/titanium = 8,
-		/obj/item/stack/ore/uranium = 3,
-		/obj/item/xenoarch/strange_rock = 0.01,
-		/obj/item/stack/ore/gold = 3,
-		/obj/item/stack/ore/diamond = 1,
-	)
-
-/obj/item/circuitboard/machine/bluespace_miner/ore
-	name = "Raw Bluespace Miner (Machine Board)"
-	desc = "The bluespace miner is a machine that, when provided the correct temperature and pressure, will produce materials."
-	greyscale_colors = CIRCUIT_COLOR_GENERIC
-	build_path = /obj/machinery/bluespace_miner/ore
-	req_components = list(
-		/obj/item/stack/sheet/glass = 1,
-		/obj/item/stack/ore/bluespace_crystal/refined = 1,
-		/obj/item/stock_parts/matter_bin = 2,
-		/obj/item/stock_parts/micro_laser = 2,
-		/obj/item/stock_parts/manipulator = 2)
-	needs_anchored = TRUE
-
-/datum/design/board/bluespace_miner/ore
-	name = "Machine Design (Raw Bluespace Miner)"
-	desc = "Allows for the construction of circuit boards used to build a bluespace miner."
-	id = "bluespaceraw_miner"
-	build_path = /obj/item/circuitboard/machine/bluespace_miner/ore
-	category = list(
-		RND_CATEGORY_MACHINE + RND_SUBCATEGORY_MACHINE_CARGO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_ENGINEERING
-
-/datum/techweb_node/bluespace_miner/ore
-	id = "bluespace_miner"
-	display_name = "Bluespace Miner"
-	description = "The future is here, where we can mine ores from the great bluespace sea."
-	prereq_ids = list("anomaly_research", "bluespace_power")
-	design_ids = list(
-		"bluespaceraw_miner",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	discount_experiments = list(/datum/experiment/scanning/points/bluespace_miner = 5000)
