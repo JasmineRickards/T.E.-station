@@ -518,3 +518,11 @@
 	emote_type = EMOTE_AUDIBLE
 	vary = TRUE
 	sound = 'sound/effects/glassbash.ogg'
+
+/datum/emote/bun
+	key = "bun"
+	key_third_person = "squeals like a rabbit"
+	message = "squeals like a rabbit!"
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+	sound = 'sound/effects/rabbit.ogg'
