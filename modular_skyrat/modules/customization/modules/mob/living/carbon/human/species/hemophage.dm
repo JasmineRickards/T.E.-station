@@ -7,9 +7,9 @@
 /// Minimum amount of light for Hemophages to be considered in pure darkness, and therefore be allowed to heal just like in a closet.
 #define MINIMUM_LIGHT_THRESHOLD_FOR_REGEN 0
 /// How much organ damage do all hemophage organs take per second when the tumor is removed?
-#define TUMORLESS_ORGAN_DAMAGE 5
+#define TUMORLESS_ORGAN_DAMAGE 10
 /// How much damage can their organs take at maximum when the tumor isn't present anymore?
-#define TUMORLESS_ORGAN_DAMAGE_MAX 100
+#define TUMORLESS_ORGAN_DAMAGE_MAX 200
 
 /// Some starter text sent to the Hemophage initially, because Hemophages have shit to do to stay alive.
 #define HEMOPHAGE_SPAWN_TEXT "You are an [span_danger("Hemophage")]. You will slowly but constantly lose blood if outside of a closet-like object. If inside a closet-like object, or in pure darkness, you will slowly heal, at the cost of blood. You may gain more blood by grabbing a live victim and using your drain ability."
@@ -28,7 +28,7 @@
 /// The message displayed in the hemophage's chat when they leave their dormant state.
 #define DORMANT_STATE_END_MESSAGE "You feel a rush through your veins, as you can tell your tumor is pulsating at a regular pace once again. You no longer feel incredibly vulnerable, and exercise isn't as difficult anymore."
 /// How high should the damage multiplier to the Hemophage be when they're in a dormant state?
-#define DORMANT_DAMAGE_MULTIPLIER 3
+#define DORMANT_DAMAGE_MULTIPLIER 1.5 //Dormancy shouldn't be a 3x damage multiplier from all sources -TEStation Change
 /// By how much the blood drain will be divided when the tumor is in a dormant state.
 #define DORMANT_BLOODLOSS_MULTIPLIER 10
 
@@ -57,6 +57,7 @@
 		HAIR,
 		FACEHAIR,
 		LIPS,
+		MUTCOLORS,
 		DRINKSBLOOD,
 		HAS_FLESH,
 		HAS_BONE,
@@ -71,15 +72,26 @@
 		TRAIT_LITERATE,
 	)
 	inherent_biotypes = MOB_HUMANOID
-	mutant_bodyparts = list("wings" = "None")
+	mutant_bodyparts = list()
+	default_mutant_bodyparts = list(
+		"tail" = "None",
+		"snout" = "None",
+		"horns" = "None",
+		"ears" = "None",
+		"legs" = "None",
+		"taur" = "None",
+		"fluff" = "None",
+		"wings" = "None",
+		"head_acc" = "None",
+		"neck_acc" = "None"
+	)
 	exotic_bloodtype = "U"
-	use_skintones = TRUE
+	use_skintones = FALSE
 	mutantheart = /obj/item/organ/internal/heart/hemophage
 	mutantliver = /obj/item/organ/internal/liver/hemophage
 	mutantstomach = /obj/item/organ/internal/stomach/hemophage
 	mutanttongue = /obj/item/organ/internal/tongue/hemophage
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
-	examine_limb_id = SPECIES_HUMAN
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	/// Current multiplier for how fast their blood drains on spec_life(). Higher values mean it goes down faster.
 	var/bloodloss_speed_multiplier = 1
@@ -87,9 +99,16 @@
 	var/blood_to_health_multiplier = 1
 	/// The current status of our tumor. If PULSATING_TUMOR_MISSING, all tumor-corrupted organs will start to decay rapidly. If PULSATING_TUMOR_INACTIVE, no enhanced regeneration.
 	var/tumor_status = PULSATING_TUMOR_MISSING
+	bodypart_overrides = list(
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/mutant,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/mutant,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/mutant,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/mutant,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/mutant,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/mutant,
+	) //TEStation change. Allows them to use the mutant bodyparts of other species like anthromorph.
 
 	veteran_only = TRUE
-
 
 /datum/species/hemophage/check_roundstart_eligible()
 	if(check_holidays(HALLOWEEN))
@@ -475,7 +494,7 @@
 		to_chat(hemophage, span_warning("[victim] reeks of garlic! You can't bring yourself to drain such tainted blood."))
 		return
 
-	if(!do_after(hemophage, 3 SECONDS, target = victim))
+	if(!do_after(hemophage, 6 SECONDS, target = victim)) //Takes a lot more time. Stops people from just abusing it.
 		hemophage.balloon_alert(hemophage, "stopped feeding")
 		return
 
