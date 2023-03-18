@@ -108,7 +108,7 @@
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/mutant,
 	) //TEStation change. Allows them to use the mutant bodyparts of other species like anthromorph.
 
-
+	veteran_only = TRUE
 
 /datum/species/hemophage/check_roundstart_eligible()
 	if(check_holidays(HALLOWEEN))
