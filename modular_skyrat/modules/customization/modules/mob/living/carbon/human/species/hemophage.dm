@@ -7,9 +7,9 @@
 /// Minimum amount of light for Hemophages to be considered in pure darkness, and therefore be allowed to heal just like in a closet.
 #define MINIMUM_LIGHT_THRESHOLD_FOR_REGEN 0
 /// How much organ damage do all hemophage organs take per second when the tumor is removed?
-#define TUMORLESS_ORGAN_DAMAGE 10
+#define TUMORLESS_ORGAN_DAMAGE 5
 /// How much damage can their organs take at maximum when the tumor isn't present anymore?
-#define TUMORLESS_ORGAN_DAMAGE_MAX 200 //Yeah you need that tumor -TEStation change
+#define TUMORLESS_ORGAN_DAMAGE_MAX 100 //Yeah you need that tumor -TEStation change
 
 /// Some starter text sent to the Hemophage initially, because Hemophages have shit to do to stay alive.
 #define HEMOPHAGE_SPAWN_TEXT "You are an [span_danger("Hemophage")]. You will slowly but constantly lose blood if outside of a closet-like object. If inside a closet-like object, or in pure darkness, you will slowly heal, at the cost of blood. You may gain more blood by grabbing a live victim and using your drain ability."
