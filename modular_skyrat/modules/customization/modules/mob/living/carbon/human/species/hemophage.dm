@@ -1,5 +1,5 @@
 /// Maximum an Hemophage will drain, they will drain less if they hit their cap.
-#define HEMOPHAGE_DRAIN_AMOUNT 75 //Hemophages are now more lethal when they drain living people. This changes the charge of unwilling feeding to assault by proxy, instead of battery - Bubberstation change
+#define HEMOPHAGE_DRAIN_AMOUNT 75 //Hemophages are now more lethal when they drain living people. This changes the charge of unwilling feeding to assault by proxy, instead of battery - TEstation change
 /// How much blood do Hemophages normally lose per second (visible effect is every two seconds, so twice this value).
 #define NORMAL_BLOOD_DRAIN 0.115 //-.025 increase to make them need less blood.
 /// Minimum amount of blood that you can reach via blood regeneration, regeneration will stop below this.
@@ -9,7 +9,7 @@
 /// How much organ damage do all hemophage organs take per second when the tumor is removed?
 #define TUMORLESS_ORGAN_DAMAGE 10
 /// How much damage can their organs take at maximum when the tumor isn't present anymore?
-#define TUMORLESS_ORGAN_DAMAGE_MAX 200 //Yeah you need that tumor -Bubberstation change
+#define TUMORLESS_ORGAN_DAMAGE_MAX 200 //Yeah you need that tumor -TEStation change
 
 /// Some starter text sent to the Hemophage initially, because Hemophages have shit to do to stay alive.
 #define HEMOPHAGE_SPAWN_TEXT "You are an [span_danger("Hemophage")]. You will slowly but constantly lose blood if outside of a closet-like object. If inside a closet-like object, or in pure darkness, you will slowly heal, at the cost of blood. You may gain more blood by grabbing a live victim and using your drain ability."
@@ -28,7 +28,7 @@
 /// The message displayed in the hemophage's chat when they leave their dormant state.
 #define DORMANT_STATE_END_MESSAGE "You feel a rush through your veins, as you can tell your tumor is pulsating at a regular pace once again. You no longer feel incredibly vulnerable, and exercise isn't as difficult anymore."
 /// How high should the damage multiplier to the Hemophage be when they're in a dormant state?
-#define DORMANT_DAMAGE_MULTIPLIER 1.5 //Dormancy shouldn't be a 3x damage multiplier from all sources -Bubberstation change.
+#define DORMANT_DAMAGE_MULTIPLIER 1.5 //Dormancy shouldn't be a 3x damage multiplier from all sources -TEStation Change
 /// By how much the blood drain will be divided when the tumor is in a dormant state.
 #define DORMANT_BLOODLOSS_MULTIPLIER 10
 
@@ -104,7 +104,7 @@
 		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/mutant,
 		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/mutant,
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/mutant,
-	) //Bubberstation change. Allows them to use the mutant bodyparts of other species like anthromorph.
+	) //TEStation change. Allows them to use the mutant bodyparts of other species like anthromorph.
 
 
 
