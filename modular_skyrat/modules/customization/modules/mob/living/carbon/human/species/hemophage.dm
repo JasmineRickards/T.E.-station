@@ -1,6 +1,5 @@
 /// Maximum an Hemophage will drain, they will drain less if they hit their cap.
-#define HEMOPHAGE_DRAIN_AMOUNT 50 //Hemophages are now more lethal when they drain living people. This changes the charge of unwilling feeding to assault by proxy, instead of battery - TEstation change
-/// How much blood do Hemophages normally lose per second (visible effect is every two seconds, so twice this value).
+#define HEMOPHAGE_DRAIN_AMOUNT 50
 #define NORMAL_BLOOD_DRAIN 0.115 //-.025 increase to make them need less blood.
 /// Minimum amount of blood that you can reach via blood regeneration, regeneration will stop below this.
 #define MINIMUM_VOLUME_FOR_REGEN (BLOOD_VOLUME_BAD + 1) // We do this to avoid any jankiness, and because we want to ensure that they don't fall into a state where they're constantly passing out in a locker.
