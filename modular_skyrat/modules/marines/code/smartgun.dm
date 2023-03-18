@@ -17,7 +17,7 @@
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
-	spread = 18
+	spread = 8
 	mag_type = /obj/item/ammo_box/magazine/smartgun_drum
 	can_suppress = FALSE
 	fire_delay = 0.5
@@ -142,7 +142,7 @@
 
 /obj/projectile/bullet/smart/a10x28
 	name = "10x28mm bullet"
-	damage = 12
-	armour_penetration = 5
+	damage = 35
+	armour_penetration = 15
 	wound_bonus = 15
 	wound_falloff_tile = 1

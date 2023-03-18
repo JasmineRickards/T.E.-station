@@ -84,7 +84,7 @@
 
 /obj/projectile/bullet/a556/ap
 	name = ".277 armor-piercing bullet"
-	armour_penetration = 60
+	armour_penetration = 15
 
 /*
 *	.244 Acia
@@ -129,11 +129,11 @@
 
 /obj/projectile/bullet/a556x45
 	name = "5.56x45mm bullet"
-	damage = 50
-	armour_penetration = 20
+	damage = 45
+	armour_penetration = 5
 	stamina = 10
 	speed = 0.2
-	wound_bonus = 20
+	wound_bonus = 5
 	bare_wound_bonus = 10
 
 /*
@@ -232,7 +232,7 @@
 
 /obj/projectile/bullet/c42x30mm_rubber
 	name = "4.2x30mm rubber bullet"
-	damage = 3
+	damage = 2
 	stamina = 17
 	ricochets_max = 6
 	ricochet_incidence_leeway = 0
@@ -282,7 +282,7 @@
 
 /obj/projectile/bullet/c12mm
 	name = "12mm bullet"
-	damage = 40
+	damage = 50
 
 /obj/projectile/bullet/c12mm/ap
 	name = "12mm armor-piercing bullet"
@@ -291,7 +291,7 @@
 
 /obj/projectile/bullet/c12mm/hp
 	name = "12mm hollow-point bullet"
-	damage = 60
+	damage = 70
 	weak_against_armour = TRUE
 
 /obj/projectile/bullet/incendiary/c12mm
@@ -301,8 +301,8 @@
 
 /obj/projectile/bullet/c12mm/rubber
 	name = "12mm Magnum rubber ball"
-	damage = 10
-	stamina = 40
+	damage = 5
+	stamina = 50
 	ricochets_max = 6
 	ricochet_incidence_leeway = 0
 	ricochet_chance = 130

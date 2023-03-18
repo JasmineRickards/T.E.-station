@@ -13,7 +13,7 @@
 
 /obj/projectile/bullet/b6mm
 	name = "6.3mm flechette"
-	damage = 10
+	damage = 25
 	speed = 1
 	embedding = list(embed_chance=10, fall_chance=3, jostle_chance=4, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.4, pain_mult=5, jostle_pain_mult=6, rip_time=10)
 	armour_penetration = 50
@@ -31,7 +31,7 @@
 	name = "6mm dissuasive pellet"
 	icon_state = "pellet"
 	damage = 2
-	stamina = 15
+	stamina = 35
 	ricochets_max = 2
 	ricochet_incidence_leeway = 0
 	ricochet_chance = 130
@@ -73,7 +73,7 @@
 	name = "9x25mm IHDF bullet"
 	icon_state = "ihdf"
 	icon = 'modular_skyrat/modules/sec_haul/icons/guns/projectiles.dmi'
-	damage = 30
+	damage = 35
 	damage_type = STAMINA
 	embedding = list(embed_chance=0, fall_chance=3, jostle_chance=4, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.4, pain_mult=5, jostle_pain_mult=6, rip_time=10)
 
@@ -88,8 +88,8 @@
 /obj/projectile/bullet/c9mm/rubber
 	name = "9x25mm rubber bullet"
 	icon_state = "pellet"
-	damage = 5
-	stamina = 25
+	damage = 2
+	stamina = 35
 	ricochets_max = 6
 	ricochet_incidence_leeway = 0
 	ricochet_chance = 130
@@ -112,8 +112,8 @@
 
 /obj/projectile/bullet/c10mm/rubber
 	name = "10mm Auto rubber bullet"
-	damage = 10
-	stamina = 35
+	damage = 3
+	stamina = 40
 	ricochets_max = 6
 	ricochet_incidence_leeway = 0
 	ricochet_chance = 130
@@ -153,8 +153,8 @@
 
 /obj/projectile/bullet/b12mm
 	name = "12.7x30mm bullet"
-	damage = 35
-	wound_bonus = 30
+	damage = 65
+	wound_bonus = 20
 	speed = 1
 
 /obj/item/ammo_casing/b12mm/rubber
@@ -168,8 +168,8 @@
 
 /obj/projectile/bullet/b12mm/rubber
 	name = "12.7x30mm beanbag slug"
-	damage = 10
-	stamina = 35
+	damage = 5
+	stamina = 45
 	ricochets_max = 6
 	ricochet_incidence_leeway = 0
 	ricochet_chance = 130
@@ -189,7 +189,7 @@
 
 /obj/projectile/bullet/b12mm/hp
 	name = "12mm hollowpoint bullet"
-	damage = 35
+	damage = 75
 	wound_bonus = 40
 	embedding = list(embed_chance=75, fall_chance=3, jostle_chance=4, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.4, pain_mult=5, jostle_pain_mult=6, rip_time=10)
 	weak_against_armour = TRUE
@@ -294,8 +294,8 @@
 
 /obj/projectile/bullet/b473/rubber
 	name = "4.73x33mm rubber bullet"
-	damage = 5
-	stamina = 20
+	damage = 2
+	stamina = 35
 	ricochets_max = 6
 	ricochet_incidence_leeway = 0
 	ricochet_chance = 130
