@@ -3,13 +3,13 @@
 /obj/projectile/bullet/a556
 	name = "5.56mm bullet"
 	damage = 45
-	armour_penetration = 30
+	armour_penetration = 5
 	wound_bonus = -40
 
 /obj/projectile/bullet/a556/phasic
 	name = "5.56mm phasic bullet"
 	icon_state = "gaussphase"
-	damage = 30
+	damage = 8
 	armour_penetration = 70
 	projectile_phasing =  PASSTABLE | PASSGLASS | PASSGRILLE | PASSCLOSEDTURF | PASSMACHINE | PASSSTRUCTURE | PASSDOORS
 

@@ -22,7 +22,6 @@
 	name = "5.56mm phasic bullet casing"
 	desc = "A 5.56mm phasic bullet casing."
 	projectile_type = /obj/projectile/bullet/a556/phasic
-	damage = 10
 
 // 40mm (Grenade Launcher)
 
