@@ -1,5 +1,5 @@
 /// Maximum an Hemophage will drain, they will drain less if they hit their cap.
-#define HEMOPHAGE_DRAIN_AMOUNT 75 //Hemophages are now more lethal when they drain living people. This changes the charge of unwilling feeding to assault by proxy, instead of battery - TEstation change
+#define HEMOPHAGE_DRAIN_AMOUNT 50 //Hemophages are now more lethal when they drain living people. This changes the charge of unwilling feeding to assault by proxy, instead of battery - TEstation change
 /// How much blood do Hemophages normally lose per second (visible effect is every two seconds, so twice this value).
 #define NORMAL_BLOOD_DRAIN 0.115 //-.025 increase to make them need less blood.
 /// Minimum amount of blood that you can reach via blood regeneration, regeneration will stop below this.
@@ -7,9 +7,9 @@
 /// Minimum amount of light for Hemophages to be considered in pure darkness, and therefore be allowed to heal just like in a closet.
 #define MINIMUM_LIGHT_THRESHOLD_FOR_REGEN 0
 /// How much organ damage do all hemophage organs take per second when the tumor is removed?
-#define TUMORLESS_ORGAN_DAMAGE 5
+#define TUMORLESS_ORGAN_DAMAGE 10
 /// How much damage can their organs take at maximum when the tumor isn't present anymore?
-#define TUMORLESS_ORGAN_DAMAGE_MAX 100 //Yeah you need that tumor -TEStation change
+#define TUMORLESS_ORGAN_DAMAGE_MAX 200
 
 /// Some starter text sent to the Hemophage initially, because Hemophages have shit to do to stay alive.
 #define HEMOPHAGE_SPAWN_TEXT "You are an [span_danger("Hemophage")]. You will slowly but constantly lose blood if outside of a closet-like object. If inside a closet-like object, or in pure darkness, you will slowly heal, at the cost of blood. You may gain more blood by grabbing a live victim and using your drain ability."
