@@ -4,8 +4,8 @@
 	icon_state = "marauder"
 	base_icon_state = "marauder"
 	movedelay = 5
-	max_integrity = 500
-	armor = list(MELEE = 50, BULLET = 55, LASER = 40, ENERGY = 30, BOMB = 30, BIO = 0, FIRE = 100, ACID = 100)
+	max_integrity = 600
+	armor = list(MELEE = 70, BULLET = 65, LASER = 50, ENERGY = 30, BOMB = 30, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 60000
 	destruction_sleep_duration = 40
 	exit_delay = 40

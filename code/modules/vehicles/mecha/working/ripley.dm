@@ -6,10 +6,10 @@
 	silicon_icon_state = "ripley-empty"
 	movedelay = 1.5 //Move speed, lower is faster.
 	max_temperature = 20000
-	max_integrity = 200
+	max_integrity = 300
 	ui_x = 1200
 	lights_power = 7
-	armor = list(MELEE = 40, BULLET = 20, LASER = 10, ENERGY = 20, BOMB = 40, BIO = 0, FIRE = 100, ACID = 100)
+	armor = list(MELEE = 60, BULLET = 40, LASER = 20, ENERGY = 20, BOMB = 40, BIO = 0, FIRE = 100, ACID = 100)
 	max_equip_by_category = list(
 		MECHA_UTILITY = 2,
 		MECHA_POWER = 1,

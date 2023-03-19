@@ -5,9 +5,9 @@
 	base_icon_state = "gygax"
 	allow_diagonal_movement = TRUE
 	movedelay = 3
-	max_integrity = 250
+	max_integrity = 350
 	internals_req_access = list(ACCESS_MECH_SCIENCE, ACCESS_MECH_SECURITY)
-	armor = list(MELEE = 25, BULLET = 20, LASER = 30, ENERGY = 15, BOMB = 0, BIO = 0, FIRE = 100, ACID = 100)
+	armor = list(MELEE = 35, BULLET = 40, LASER = 30, ENERGY = 15, BOMB = 0, BIO = 0, FIRE = 100, ACID = 100)
 	max_temperature = 25000
 	leg_overload_coeff = 80
 	force = 25
