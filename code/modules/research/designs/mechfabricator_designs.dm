@@ -1525,6 +1525,12 @@
 	materials = list(/datum/material/iron = 5000, /datum/material/uranium = 2000)
 	build_path = /obj/item/mod/module/storage/large_capacity
 
+/datum/design/module/mod_storage_syndicate
+	name = "Syndicate Storage Module"
+	id = "mod_storage_syndicate"
+	materials = list(/datum/material/iron = 7500, /datum/material/glass = 1000, /datum/material/uranium = 4000)
+	build_path = /obj/item/mod/module/storage/syndicate
+
 /datum/design/module/mod_visor_medhud
 	name = "Medical Visor Module"
 	id = "mod_visor_medhud"
@@ -1596,6 +1602,12 @@
 	id = "mod_jetpack"
 	materials = list(/datum/material/iron = 1500, /datum/material/plasma = 1000)
 	build_path = /obj/item/mod/module/jetpack
+
+/datum/design/module/mod_jetpack_advanced
+	name = "Advanced Ion Jetpack Module"
+	id = "mod_jetpack_advanced"
+	materials = list(/datum/material/iron = 3000, /datum/material/plasma = 2000, /datum/material/diamond = 500)
+	build_path = /obj/item/mod/module/jetpack/advanced
 
 /datum/design/module/mod_magboot
 	name = "Magnetic Stabilizator Module"
