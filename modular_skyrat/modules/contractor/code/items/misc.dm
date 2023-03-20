@@ -145,10 +145,7 @@
 			# Medium vessels
 
 			Medium vessels have a health pool of 2, a 2 range attack with direct fire weapons and a
-			2 tile move option. They are also a UNIQUE unit, and can fire specialised
-			short range breaching missiles.
-			These missiles travel at a rate of 2 tiles per turn, and can only move for three turns.
-			 If these missiles hit, 1 damage is done.
+			2 tile move option.
 
 			# Large vessels - Cruisers
 
