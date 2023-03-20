@@ -2271,6 +2271,8 @@
 		"donksoft_refill",
 		"donksofttoyvendor",
 		"largecrossbow",
+		"mod_jetpack_advanced",
+		"mod_storage_syndicate",
 		"rapidsyringe",
 		"suppressor",
 		"super_pointy_tape",
