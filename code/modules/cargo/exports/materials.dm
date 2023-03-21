@@ -106,7 +106,7 @@
 		/obj/item/shard)
 
 /datum/export/material/hot_ice
-	cost = CARGO_CRATE_VALUE * 1.4
+	cost = CARGO_CRATE_VALUE * 4
 	message = "cm3 of Hot Ice"
 	material_id = /datum/material/hot_ice
 	export_types = /obj/item/stack/sheet/hot_ice
