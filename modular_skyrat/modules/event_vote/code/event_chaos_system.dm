@@ -69,7 +69,7 @@
 // LOW CHAOS EVENTS
 
 /datum/round_event_control/cortical_borer
-	chaos_level = EVENT_CHAOS_LOW
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/cme/minimal
 	chaos_level = EVENT_CHAOS_LOW
@@ -138,7 +138,7 @@
 	chaos_level = EVENT_CHAOS_LOW
 
 /datum/round_event_control/obsessed
-	chaos_level = EVENT_CHAOS_LOW
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/disease_outbreak
 	chaos_level = EVENT_CHAOS_LOW
@@ -147,7 +147,7 @@
 	chaos_level = EVENT_CHAOS_LOW
 
 /datum/round_event_control/morph
-	chaos_level = EVENT_CHAOS_LOW
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/supermatter_surge
 	chaos_level = EVENT_CHAOS_LOW
@@ -155,7 +155,7 @@
 // MODERATE CHAOS PRESETS
 
 /datum/round_event_control/cme/moderate
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/space_ninja
 	chaos_level = EVENT_CHAOS_MED
@@ -164,22 +164,22 @@
 	chaos_level = EVENT_CHAOS_MED
 
 /datum/round_event_control/nightmare
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/meteor_wave/meaty
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/meteor_wave/threatening
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/meteor_wave
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/immovable_rod
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/fugitives
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/sandstorm
 	chaos_level = EVENT_CHAOS_MED
@@ -188,32 +188,32 @@
 	chaos_level = EVENT_CHAOS_MED
 
 /datum/round_event_control/abductor
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/revenant
-	chaos_level = EVENT_CHAOS_MED
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /*
 *	HIGH CHAOS EVENTS
 */
 
 /datum/round_event_control/slaughter
-	chaos_level = EVENT_CHAOS_HIGH
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/alien_infestation
-	chaos_level = EVENT_CHAOS_HIGH
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/blob
-	chaos_level = EVENT_CHAOS_HIGH
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/pirates
-	chaos_level = EVENT_CHAOS_HIGH
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/space_dragon
-	chaos_level = EVENT_CHAOS_HIGH
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/resonance_cascade
-	chaos_level = EVENT_CHAOS_HIGH
+	chaos_level = EVENT_CHAOS_DISABLED
 
 /datum/round_event_control/spacevine
 	chaos_level = EVENT_CHAOS_HIGH
@@ -222,7 +222,7 @@
 	chaos_level = EVENT_CHAOS_HIGH
 
 /datum/round_event_control/cme/extreme
-	chaos_level = EVENT_CHAOS_HIGH
+	chaos_level = EVENT_CHAOS_DISABLED
 
 
 // RANDOM EVENTS
