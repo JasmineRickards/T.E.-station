@@ -402,7 +402,7 @@
 					P = new/obj/item/reagent_containers/pill(target_loc)
 				else
 					P = new/obj/item/reagent_containers/pill(drop_location())
-				P.name = trim("[name] pill")
+				P.name = trim("[name] pill", MAX_NAME_LEN)
 				if(chosen_pill_style == RANDOM_PILL_STYLE)
 					P.icon_state ="pill[rand(1,21)]"
 				else
@@ -416,7 +416,7 @@
 			var/obj/item/reagent_containers/pill/patch/P
 			for(var/i in 1 to amount)
 				P = new/obj/item/reagent_containers/pill/patch(drop_location())
-				P.name = trim("[name] patch")
+				P.name = trim("[name] patch", MAX_NAME_LEN)
 				P.icon_state = patch_style
 				adjust_item_drop_location(P)
 				reagents.trans_to(P, vol_each, transfered_by = usr)
@@ -425,7 +425,7 @@
 			var/obj/item/reagent_containers/cup/bottle/P
 			for(var/i in 1 to amount)
 				P = new/obj/item/reagent_containers/cup/bottle(drop_location())
-				P.name = trim("[name] bottle")
+				P.name = trim("[name] bottle", MAX_NAME_LEN)
 				adjust_item_drop_location(P)
 				reagents.trans_to(P, vol_each, transfered_by = usr)
 			return TRUE
@@ -434,7 +434,7 @@
 			var/obj/item/reagent_containers/cup/vial/small/P
 			for(var/i = 0; i < amount; i++)
 				P = new/obj/item/reagent_containers/cup/vial/small(drop_location())
-				P.name = trim("[name] vial")
+				P.name = trim("[name] vial", MAX_NAME_LEN)
 				adjust_item_drop_location(P)
 				reagents.trans_to(P, vol_each, transfered_by = usr)
 			return TRUE
@@ -451,7 +451,7 @@
 			for(var/i in 1 to amount)
 				P = new/obj/item/reagent_containers/condiment/pack(drop_location())
 				P.originalname = name
-				P.name = trim("[name] pack")
+				P.name = trim("[name] pack", MAX_NAME_LEN)
 				P.desc = "A small condiment pack. The label says it contains [name]."
 				reagents.trans_to(P, vol_each, transfered_by = usr)
 			return TRUE
@@ -462,7 +462,7 @@
 				if (style)
 					apply_condi_style(P, style)
 				P.renamedByPlayer = TRUE
-				P.name = name
+				P.name = trim(name, MAX_NAME_LEN)
 				reagents.trans_to(P, vol_each, transfered_by = usr)
 			return TRUE
 		return FALSE
