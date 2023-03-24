@@ -37,6 +37,28 @@
 	contains = list(/obj/item/stack/sheet/plasteel/twenty)
 	crate_name = "plasteel sheets crate"
 
+/datum/supply_pack/materials/uranium10
+	name = "10 Uranium Sheets"
+	desc = "Recreate chernobyl with ten uranium sheets!"
+	cost = CARGO_CRATE_VALUE * 15
+	contains = list(/obj/item/stack/sheet/mineral/uranium=10)
+	crate_name = "Uranium sheets crate"
+
+/datum/supply_pack/materials/silver10
+	name = "10 Silver Sheets"
+	desc = "Win the station second place with ten silver sheets!"
+	cost = CARGO_CRATE_VALUE * 15
+	contains = list(/obj/item/stack/sheet/mineral/silver=10
+				)
+	crate_name = "Silver sheets crate"
+
+/datum/supply_pack/materials/gold10
+	name = "10 Gold Sheets"
+	desc = "Coat cargo in gold tiling with 10 gold sheets!"
+	cost = CARGO_CRATE_VALUE * 20
+	contains = list(/obj/item/stack/sheet/mineral/gold=10)
+	crate_name = "Gold sheets crate"
+
 /datum/supply_pack/materials/plasteel50
 	name = "50 Plasteel Sheets"
 	desc = "For when you REALLY have to reinforce something."
