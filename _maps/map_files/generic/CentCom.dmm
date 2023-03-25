@@ -2241,6 +2241,18 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/supplypod)
+"lF" = (
+/obj/machinery/door/airlock/external{
+	name = "Ferry Airlock"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "lJ" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Shuttle Control Office"
@@ -2838,6 +2850,17 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
+"ok" = (
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/door/airlock/external{
+	name = "Ferry Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "ol" = (
 /obj/machinery/camera/directional/north{
 	c_tag = "Red Team";
@@ -3065,17 +3088,9 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "oU" = (
-/obj/structure/closet/emcloset,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/mask/gas,
-/obj/item/clothing/mask/gas,
-/obj/item/clothing/mask/gas,
-/obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/south,
-/obj/machinery/status_display/evac/directional/south,
-/turf/open/floor/iron,
+/obj/machinery/status_display/evac,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
 /area/centcom/central_command_areas/ferry)
 "oV" = (
 /obj/structure/table/wood,
@@ -3535,6 +3550,15 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
+"qV" = (
+/obj/machinery/door/airlock/external{
+	name = "Ferry Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/centcom/central_command_areas/ferry)
 "qW" = (
 /obj/structure/flora/bush/lavendergrass/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
@@ -4005,12 +4029,12 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen/entertainment/directional/south,
 /obj/structure/sign/warning/secure_area/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
 /obj/machinery/light/directional/south,
+/obj/machinery/computer/security/telescreen/entertainment/directional/south,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "to" = (
@@ -4294,18 +4318,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
-"uz" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 25;
-	height = 50;
-	json_key = "emergency";
-	name = "CentCom Emergency Shuttle Dock";
-	shuttle_id = "emergency_away";
-	width = 50
-	},
-/turf/open/space,
-/area/space)
 "uA" = (
 /obj/structure/chair{
 	dir = 4
@@ -4476,15 +4488,8 @@
 /turf/open/floor/plating,
 /area/centcom/central_command_areas/ferry)
 "vB" = (
-/obj/structure/closet/emcloset,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/mask/gas,
-/obj/item/clothing/mask/gas,
-/obj/item/clothing/mask/gas,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/status_display/ai/directional/north,
+/obj/structure/fans/tiny,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "vC" = (
@@ -4501,14 +4506,17 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "vE" = (
-/obj/machinery/firealarm/directional/north,
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
+/obj/machinery/light/directional/north,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "vF" = (
@@ -4866,21 +4874,15 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "xc" = (
-/obj/machinery/door/airlock/external/ruin{
+/obj/machinery/door/airlock/external{
 	name = "Ferry Airlock"
 	},
-/obj/effect/turf_decal/stripes/line{
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/effect/mapping_helpers/airlock/access/all/admin/general,
-/turf/open/floor/iron,
+/turf/open/floor/plating,
 /area/centcom/central_command_areas/ferry)
 "xd" = (
-/obj/structure/fans/tiny,
-/obj/effect/turf_decal/delivery,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "xe" = (
@@ -5457,6 +5459,18 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/control)
+"zL" = (
+/obj/structure/closet/emcloset,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "zM" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -6548,17 +6562,9 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/centcom/central_command_areas/evacuation/ship)
 "Io" = (
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 2;
-	height = 13;
-	json_key = "ferry";
-	name = "CentCom Ferry Dock";
-	shuttle_id = "ferry_away";
-	width = 5
-	},
-/turf/open/space,
-/area/space)
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "Ir" = (
 /obj/machinery/computer/emergency_shuttle{
 	dir = 1
@@ -6937,6 +6943,20 @@
 /obj/machinery/status_display/evac/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/prison)
+"Kt" = (
+/obj/docking_port/stationary{
+	dheight = 3;
+	dir = 8;
+	dwidth = 8;
+	height = 11;
+	shuttle_id = "ferry_away";
+	json_key = null;
+	name = "CentCom Ferry Dock";
+	roundstart_template = /datum/map_template/shuttle/ferry;
+	width = 20
+	},
+/turf/open/space,
+/area/space)
 "KC" = (
 /obj/machinery/status_display/evac/directional/south,
 /turf/open/floor/wood,
@@ -8123,6 +8143,15 @@
 "QC" = (
 /turf/closed/indestructible/riveted,
 /area/centcom/tdome/observation)
+"QK" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "QM" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -8509,6 +8538,17 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
+"SK" = (
+/obj/structure/closet/emcloset,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/ferry)
 "SM" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-21"
@@ -9580,16 +9620,9 @@
 /turf/open/floor/iron/grimy,
 /area/centcom/tdome/administration)
 "Xy" = (
-/obj/machinery/door/airlock/external/ruin{
-	name = "Ferry Airlock"
-	},
-/obj/effect/turf_decal/stripes/line{
+/obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/effect/mapping_helpers/airlock/access/all/admin/general,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "Xz" = (
@@ -42819,7 +42852,7 @@ aa
 aa
 aa
 aa
-aa
+Kt
 aa
 aa
 aa
@@ -43074,10 +43107,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+oe
+lF
+qV
+oe
 aa
 aa
 aa
@@ -43331,10 +43364,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+oe
+vB
+vB
+oe
 aa
 aa
 aa
@@ -43588,10 +43621,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+oe
+xd
+xd
+oe
 aa
 aa
 aa
@@ -43845,10 +43878,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+oe
+vB
+vB
+oe
 aa
 aa
 aa
@@ -44102,11 +44135,11 @@ mD
 mD
 oe
 oe
-aa
-aa
-aa
-aa
-aa
+vA
+ok
+xc
+yn
+oe
 aa
 aa
 aa
@@ -44359,11 +44392,11 @@ sq
 to
 ZN
 oe
-aa
-aa
+SK
 Io
-aa
-aa
+Io
+zL
+oU
 aa
 aa
 aa
@@ -44616,11 +44649,11 @@ sr
 tp
 Xr
 mD
-aa
+vC
+wr
+xe
+QK
 oe
-xc
-oe
-aa
 aa
 aa
 aa
@@ -44873,11 +44906,11 @@ ss
 tq
 Ir
 mD
-vA
-oe
+vD
 xd
+xd
+yp
 oe
-yn
 mD
 aa
 aa
@@ -45130,11 +45163,11 @@ st
 tr
 um
 mD
-vB
-oe
+vD
+xd
+xd
 Xy
-oe
-oU
+wx
 mD
 ta
 oe
@@ -45387,11 +45420,11 @@ su
 ts
 By
 mD
-vC
-wr
-xe
-wr
-wx
+vD
+xd
+xd
+xd
+yp
 mD
 pB
 pT
@@ -45645,9 +45678,9 @@ ts
 pR
 uO
 vD
-fw
-xf
-fw
+xd
+xd
+xd
 yp
 sd
 pC
@@ -62862,7 +62895,7 @@ aa
 aa
 aa
 aa
-uz
+ad
 aa
 aa
 aa
