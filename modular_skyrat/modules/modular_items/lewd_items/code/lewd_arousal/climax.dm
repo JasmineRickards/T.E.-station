@@ -36,13 +36,9 @@
 
 	switch(gender)
 		if(MALE)
-			playsound(get_turf(src), pick('modular_skyrat/modules/modular_items/lewd_items/sounds/final_m1.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/final_m2.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/final_m3.ogg'), 50, TRUE, ignore_walls = FALSE)
+			playsound(get_turf(src), pick('sound/misc/soggy.ogg'), 50, TRUE, ignore_walls = FALSE)
 		if(FEMALE)
-			playsound(get_turf(src), pick('modular_skyrat/modules/modular_items/lewd_items/sounds/final_f1.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/final_f2.ogg',
-										'modular_skyrat/modules/modular_items/lewd_items/sounds/final_f3.ogg'), 50, TRUE, ignore_walls = FALSE)
+			playsound(get_turf(src), pick('sound/misc/soggy.ogg'), 50, TRUE, ignore_walls = FALSE)
 
 	var/self_orgasm = FALSE
 	var/self_their = p_their()
