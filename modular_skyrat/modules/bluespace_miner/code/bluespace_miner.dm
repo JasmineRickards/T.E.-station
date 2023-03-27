@@ -82,15 +82,15 @@
 	var/datum/gas_mixture/environment = src_turf.return_air()
 	// if its hotter than (or equal to) room temp, don't work
 	if(environment.temperature >= T20C)
-		playsound(src, 'sound/machines/buzz-sigh.ogg', 50, FALSE)
+		playsound(src, 'sound/machines/buzz-sigh.ogg', 40, FALSE, ignore_walls = FALSE)
 		return FALSE
 	// if its lesser than(or equal to) normal pressure, don't work
 	if(environment.return_pressure() <= ONE_ATMOSPHERE)
-		playsound(src, 'sound/machines/buzz-sigh.ogg', 50, FALSE)
+		playsound(src, 'sound/machines/buzz-sigh.ogg', 40, FALSE, ignore_walls = FALSE)
 		return FALSE
 	// overpressurizing will cause nuclear particles...
 	if(environment.return_pressure() >= (ONE_ATMOSPHERE * 1.5))
-		playsound(src, 'sound/machines/buzz-sigh.ogg', 50, FALSE)
+		playsound(src, 'sound/machines/buzz-sigh.ogg', 40, FALSE, ignore_walls = FALSE)
 		return FALSE
 	//add amount_produced degrees to the temperature
 	var/datum/gas_mixture/merger = new
@@ -112,7 +112,7 @@
 	if(!check_factors())
 		return
 	spawn_mats()
-	playsound(src, 'sound/machines/ping.ogg', 50, FALSE)
+	playsound(src, 'sound/machines/ping.ogg', 40, FALSE, ignore_walls = FALSE)
 
 /obj/machinery/bluespace_miner/crowbar_act(mob/living/user, obj/item/tool)
 	if(default_deconstruction_crowbar(tool))
