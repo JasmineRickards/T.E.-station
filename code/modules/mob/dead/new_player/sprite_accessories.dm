@@ -131,6 +131,10 @@
 	name = "BedHead 4X"
 	icon_state = "hair_bedheadv4"
 
+/datum/sprite_accessory/hair/overeyetwo
+	name = "Overeye Two"
+	icon_state = "hair_overeyetwo"
+
 /datum/sprite_accessory/hair/bedheadlong
 	name = "Long Bedhead"
 	icon_state = "hair_long_bedhead"
@@ -2196,7 +2200,7 @@
 /datum/sprite_accessory/moth_wings/plasmafire
 	name = "Plasmafire"
 	icon_state = "plasmafire"
-	
+
 /datum/sprite_accessory/moth_wings/moffra
 	name = "Moffra"
 	icon_state = "moffra"
@@ -2283,7 +2287,7 @@
 /datum/sprite_accessory/moth_antennae/plasmafire
 	name = "Plasmafire"
 	icon_state = "plasmafire"
-	
+
 /datum/sprite_accessory/moth_antennae/moffra
 	name = "Moffra"
 	icon_state = "moffra"
