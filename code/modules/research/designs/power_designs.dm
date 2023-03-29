@@ -2,32 +2,6 @@
 //////////////////Power/////////////////
 ////////////////////////////////////////
 
-/datum/design/rtg
-	name = "Basic 10 kw RTG generator board"
-	desc = "A basic RTG machine, capable of produing 10kw"
-	id = "rtgb"
-	build_type = PROTOLATHE | AWAY_LATHE | AUTOLATHE |MECHFAB
-	materials = list(/datum/material/iron = 700, /datum/material/glass = 50)
-	construction_time=100
-	build_path = /obj/item/circuitboard/machine/rtg
-	category = list(
-		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_1
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
-
-/datum/design/rtgadv
-	name = "Advanced 25 kw RTG generator board"
-	desc = "An advanced RTG machine, capable of produing 25kw"
-	id = "rtgbadv"
-	build_type = PROTOLATHE | AWAY_LATHE | AUTOLATHE |MECHFAB
-	materials = list(/datum/material/iron = 1400, /datum/material/glass = 50)
-	construction_time=100
-	build_path = /obj/item/circuitboard/machine/rtg/advanced
-	category = list(
-		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_1
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
-
 /datum/design/basic_cell
 	name = "Basic Power Cell"
 	desc = "A basic power cell that holds 1 MJ of energy."
