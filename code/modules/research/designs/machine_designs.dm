@@ -21,6 +21,26 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
 
+/datum/design/board/rtg
+	name = "RTG generator board"
+	desc = "A basic RTG. Capable of produing a scalable amount of power depending on part tier, from 10kW to 40kW." // This doesn't account for WB-32 parts but'll be less confusing for people.
+	id = "rtgb"
+	build_path = /obj/item/circuitboard/machine/rtg
+	category = list(
+		RND_CATEGORY_MACHINE + RND_SUBCATEGORY_MACHINE_ENGINEERING
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
+
+/datum/design/board/rtg_advanced
+	name = "Advanced RTG generator board"
+	desc = "A basic RTG. Capable of produing a scalable amount of power depending on part tier, from 25kW to 100kW."
+	id = "rtgbadv"
+	build_path = /obj/item/circuitboard/machine/rtg/advanced
+	category = list(
+		RND_CATEGORY_MACHINE + RND_SUBCATEGORY_MACHINE_ENGINEERING
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
+
 /datum/design/board/announcement_system
 	name = "Automated Announcement System Board"
 	desc = "The circuit board for an automated announcement system."
