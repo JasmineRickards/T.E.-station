@@ -99,7 +99,7 @@
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "dG" = (
-/turf/closed/wall/mineral/iron{
+/turf/closed/wall/mineral/stone{
 	color = "#03fcf0"
 	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
@@ -248,6 +248,16 @@
 	color = "#03fcf0"
 	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"rw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 4
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "sh" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/flora/bush/jungle/c/style_3,
@@ -356,6 +366,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/turf_decal/trimline/dark_blue/warning,
 /turf/open/floor/stone{
 	color = "#03fcf0"
 	},
@@ -408,6 +419,18 @@
 	color = "#03fcf0"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/dark_blue/warning{
+	dir = 1
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"CV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 4
+	},
 /turf/open/floor/stone{
 	color = "#03fcf0"
 	},
@@ -519,6 +542,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/thinplating_new/corner{
 	dir = 4
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"My" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 8
 	},
 /turf/open/floor/stone{
 	color = "#03fcf0"
@@ -677,6 +709,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/flora/bush/flowers_br,
 /turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"ZJ" = (
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "ZW" = (
 /obj/effect/light_emitter,
@@ -1704,21 +1744,21 @@ ko
 iv
 iv
 dG
-ko
-iv
-iv
-iv
-ko
-ko
-ko
-ko
-ko
-ko
-ko
-ko
-iv
-ko
-ko
+My
+ZJ
+ZJ
+ZJ
+My
+My
+My
+My
+My
+My
+My
+My
+ZJ
+My
+My
 dG
 lE
 lE
@@ -1808,21 +1848,21 @@ ko
 iv
 iv
 dG
-ko
-pf
-ko
-ko
-pf
-pf
-ko
-ko
-ko
-pf
-pf
-pf
-ko
-pf
-ko
+CV
+rw
+CV
+CV
+rw
+rw
+CV
+CV
+CV
+rw
+rw
+rw
+CV
+rw
+CV
 dG
 cM
 Bi
