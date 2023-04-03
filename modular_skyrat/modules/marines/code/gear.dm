@@ -38,7 +38,7 @@
 
 /obj/projectile/bullet/a300
 	name = ".300 caseless bullet"
-	damage = 13
+	damage = 28
 	armour_penetration = 30 //gonna actually kill the brit that made this var require a U in armor
 	embedding = null
 	shrapnel_type = null

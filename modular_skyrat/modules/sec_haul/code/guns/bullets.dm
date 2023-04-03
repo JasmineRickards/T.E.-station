@@ -207,7 +207,7 @@
 
 /obj/projectile/bullet/b577
 	name = ".577S FMJ bullet"
-	damage = 40
+	damage = 50
 	wound_bonus = 15
 	bare_wound_bonus = 30
 	dismemberment = 15

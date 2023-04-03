@@ -142,7 +142,7 @@
 
 /obj/projectile/bullet/smart/a10x28
 	name = "10x28mm bullet"
-	damage = 35
+	damage = 45
 	armour_penetration = 15
 	wound_bonus = 15
 	wound_falloff_tile = 1
