@@ -7,9 +7,40 @@
 	color = "#03fcf0"
 	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"ar" = (
+/turf/open/misc/dirt{
+	planetary_atmos = 0
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"ax" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"bl" = (
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "bp" = (
 /turf/open/floor/stone{
 	color = "#fceb03"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"by" = (
+/obj/structure/flora/bush/ferny,
+/turf/open/misc/beach/sand,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"cc" = (
+/obj/structure/flora/bush/leafy,
+/turf/open/misc/dirt{
+	planetary_atmos = 0
 	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "cG" = (
@@ -40,6 +71,24 @@
 	initial_gas_mix = "TEMP=2.7"
 	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"cU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 1
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"cZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new/corner{
+	dir = 1
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "dC" = (
 /obj/structure/flora/bush/grassy,
 /turf/open/misc/grass,
@@ -50,8 +99,13 @@
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "dG" = (
-/turf/closed/wall/mineral/iron{
+/turf/closed/wall/mineral/stone{
 	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"ee" = (
+/turf/open/water/jungle{
+	planetary_atmos = 0
 	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "eF" = (
@@ -63,6 +117,12 @@
 /obj/structure/flora/tree/jungle/small,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"fX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "hj" = (
 /obj/structure/flora/bush/leafy,
 /obj/structure/flora/bush/flowers_br,
@@ -73,12 +133,22 @@
 /obj/structure/flora/bush/jungle,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"hG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new,
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "hN" = (
 /obj/structure/flora/biolumi,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "il" = (
-/obj/item/food/grown/moonflower,
+/obj/item/food/grown/moonflower{
+	pixel_y = -6
+	},
+/obj/structure/flora/bush/jungle/c/style_2,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "iv" = (
@@ -99,8 +169,7 @@
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "lh" = (
-/obj/structure/flora/bush/ferny,
-/turf/open/misc/grass,
+/turf/open/misc/beach/sand,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "lB" = (
 /turf/open/misc/grass,
@@ -121,6 +190,10 @@
 "mN" = (
 /obj/structure/flora/rock,
 /turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"ni" = (
+/obj/structure/flora/bush/lavendergrass,
+/turf/open/misc/beach/sand,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "nx" = (
 /obj/structure/flora/bush/lavendergrass,
@@ -151,6 +224,11 @@
 	color = "#03fcf0"
 	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"pT" = (
+/turf/open/floor/pod{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "qD" = (
 /obj/structure/flora/bush/flowers_pp,
 /obj/structure/flora/bush/flowers_br,
@@ -159,6 +237,30 @@
 "qR" = (
 /obj/structure/flora/biolumi/mine/weaklight,
 /obj/structure/flora/bush/flowers_br,
+/turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"rq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"rw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 4
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"sh" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/flora/bush/jungle/c/style_3,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "sY" = (
@@ -182,6 +284,12 @@
 "tQ" = (
 /turf/open/misc/asteroid/airless,
 /area/ruin/unpowered)
+"ur" = (
+/obj/structure/flora/bush/reed/style_random,
+/turf/open/misc/dirt{
+	planetary_atmos = 0
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "us" = (
 /obj/structure/flora/biolumi/flower/weaklight,
 /obj/structure/flora/bush/grassy,
@@ -258,6 +366,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/turf_decal/trimline/dark_blue/warning,
 /turf/open/floor/stone{
 	color = "#03fcf0"
 	},
@@ -269,6 +378,14 @@
 /obj/structure/flora/bush/flowers_pp,
 /obj/structure/flora/bush/grassy,
 /turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"yi" = (
+/obj/effect/turf_decal/siding/thinplating_new/corner{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "yU" = (
 /obj/structure/flora/biolumi/lamp/weaklight,
@@ -302,6 +419,18 @@
 	color = "#03fcf0"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/dark_blue/warning{
+	dir = 1
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"CV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 4
+	},
 /turf/open/floor/stone{
 	color = "#03fcf0"
 	},
@@ -319,7 +448,25 @@
 "Da" = (
 /obj/effect/light_emitter,
 /obj/item/melee/sabre/luna,
+/obj/structure/flora/rock/style_3,
 /turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"Db" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"DU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/stone{
+	color = "#fc8403"
+	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "Fo" = (
 /turf/closed/mineral/random,
@@ -328,12 +475,43 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"GI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/stone,
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "IA" = (
 /mob/living/simple_animal/hostile/carp{
 	dir = 8
 	},
 /turf/open/misc/asteroid/airless,
 /area/ruin/unpowered)
+"Jk" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/flora/bush/sparsegrass,
+/turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"JC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"JF" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/turf/open/floor/pod{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "KF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/stone{
@@ -360,6 +538,24 @@
 /obj/structure/flora/biolumi/mine/weaklight,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"Mv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new/corner{
+	dir = 4
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"My" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "MG" = (
 /obj/machinery/quantumpad{
 	desc = "A bluespace quantum-linked telepad used for teleporting objects to other quantum pads. This one seems crudely modified - though whatever effects it was meant to have seem inert. The modifications look frail...";
@@ -380,10 +576,28 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"NJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 4
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "OR" = (
 /obj/structure/flora/bush/flowers_br,
 /obj/structure/flora/bush/grassy,
 /turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"Pj" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/stone,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "PJ" = (
 /turf/open/floor/stone{
@@ -395,6 +609,16 @@
 /obj/structure/flora/bush/flowers_yw,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"Rl" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/pod{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "Rp" = (
 /obj/effect/light_emitter,
 /turf/open/floor/stone{
@@ -405,7 +629,7 @@
 "RZ" = (
 /obj/structure/flora/bush/grassy,
 /obj/structure/flora/bush/flowers_br,
-/turf/open/misc/grass,
+/turf/open/misc/beach/sand,
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "Sj" = (
 /obj/structure/railing{
@@ -436,6 +660,21 @@
 /mob/living/simple_animal/hostile/carp,
 /turf/open/misc/asteroid/airless,
 /area/ruin/unpowered)
+"TO" = (
+/obj/effect/turf_decal/siding/thinplating_new/corner,
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"Vd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "Vs" = (
 /obj/structure/flora/bush/leafy,
 /turf/open/misc/grass,
@@ -452,10 +691,32 @@
 	color = "#03fcf0"
 	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
+"YO" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/pod{
+	color = "#03fcf0"
+	},
+/area/ruin/space/has_grav/powered/skyrat/luna)
 "YT" = (
 /obj/structure/flora/biolumi/flower/weaklight,
 /obj/structure/flora/bush/flowers_br,
 /turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"ZE" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/flora/bush/flowers_br,
+/turf/open/misc/grass,
+/area/ruin/space/has_grav/powered/skyrat/luna)
+"ZJ" = (
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	color = "#03fcf0"
+	},
 /area/ruin/space/has_grav/powered/skyrat/luna)
 "ZW" = (
 /obj/effect/light_emitter,
@@ -741,19 +1002,19 @@ Fo
 Fo
 Fo
 dG
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-ko
-ko
-iv
-iv
+pT
+pT
+pT
+pT
+pT
+pT
+pT
+pT
+pT
+fX
+fX
+pT
+pT
 dG
 lB
 Fo
@@ -793,19 +1054,19 @@ Fo
 Fo
 Fo
 dG
-iv
-ko
-iv
-iv
-iv
-iv
-iv
-ko
-ko
-iv
-iv
-ko
-iv
+ax
+Vd
+ax
+ax
+ax
+ax
+ax
+Vd
+Vd
+ax
+ax
+Vd
+ax
 dG
 lB
 Fv
@@ -1282,13 +1543,13 @@ lB
 mN
 lB
 uM
-uM
+lh
 RZ
-vp
+lB
 vp
 lB
-lB
-nx
+lh
+ni
 lB
 Fo
 Fo
@@ -1330,18 +1591,18 @@ dG
 lB
 lB
 lh
-lh
-lB
-dC
-dC
-lB
-lB
-vn
-vp
-vp
-vp
-lB
-nx
+by
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ni
 Fo
 Fo
 Fo
@@ -1379,21 +1640,21 @@ ko
 iv
 iv
 dG
-lB
-lh
-lB
-lB
-lB
-lB
-lB
-wL
-lB
-lB
-lB
-lB
-lB
-nx
-nx
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
+ee
 dG
 xg
 xg
@@ -1408,28 +1669,28 @@ Fo
 Fo
 Fo
 Fo
-Fo
 dG
-iv
-ko
-ko
-ko
-ko
+dG
+TO
+NJ
+NJ
+NJ
+Mv
 iv
 dG
-yg
-wa
-wa
-yg
-wa
-yg
-wa
-yg
-yg
-yg
-wa
-yg
-yg
+Pj
+GI
+GI
+Pj
+GI
+Pj
+GI
+Pj
+Pj
+Pj
+GI
+Pj
+Pj
 dG
 dG
 dG
@@ -1460,15 +1721,15 @@ Fo
 Fo
 Fo
 Fo
-Fo
 dG
-ko
-Ng
-lB
+JF
+hG
+ZE
+vn
 il
-ko
+cU
 iv
-ko
+Rl
 ko
 ko
 ko
@@ -1483,21 +1744,21 @@ ko
 iv
 iv
 dG
-ko
-iv
-iv
-iv
-ko
-ko
-ko
-ko
-ko
-ko
-ko
-ko
-iv
-ko
-ko
+My
+ZJ
+ZJ
+ZJ
+My
+My
+My
+My
+My
+My
+My
+My
+ZJ
+My
+My
 dG
 lE
 lE
@@ -1512,15 +1773,15 @@ Fo
 Fo
 Fo
 Fo
-Fo
 dG
-ko
+JF
+hG
 lB
 Da
 Ng
+cU
 ko
-ko
-ko
+Rl
 ko
 ko
 ko
@@ -1564,15 +1825,15 @@ Fo
 Fo
 Fo
 Fo
-Fo
 dG
-ko
+JF
+hG
+sh
 Ng
-Ng
-Ng
+Jk
+cU
 ko
-ko
-iv
+YO
 iv
 ko
 ko
@@ -1587,21 +1848,21 @@ ko
 iv
 iv
 dG
-ko
-pf
-ko
-ko
-pf
-pf
-ko
-ko
-ko
-pf
-pf
-pf
-ko
-pf
-ko
+CV
+rw
+CV
+CV
+rw
+rw
+CV
+CV
+CV
+rw
+rw
+rw
+CV
+rw
+CV
 dG
 cM
 Bi
@@ -1616,28 +1877,28 @@ Fo
 Fo
 Fo
 Fo
-Fo
 dG
-iv
-ko
-iv
-ko
-ko
+dG
+yi
+rq
+bl
+rq
+cZ
 ko
 dG
-yg
-yg
-wa
-wa
-yg
-yg
-wa
-yg
-yg
-yg
-wa
-wa
-yg
+Pj
+Pj
+GI
+GI
+Pj
+Pj
+GI
+Pj
+Pj
+Pj
+GI
+GI
+Pj
 dG
 dG
 dG
@@ -1691,21 +1952,21 @@ ko
 ko
 iv
 dG
-lB
-lB
-lB
-lB
-lB
-lB
-lB
+ee
+ee
+ee
+ar
 lh
+ee
+ee
+ar
 lB
 lB
 lB
 wL
 lB
-lB
-lB
+lh
+ee
 dG
 xC
 Lz
@@ -1743,13 +2004,13 @@ iv
 ko
 iv
 dG
-lB
-lB
-uM
+ee
+ur
+ar
 sY
 lB
-Vs
-eF
+cc
+ar
 Vs
 tn
 lB
@@ -1795,7 +2056,7 @@ PJ
 iv
 iv
 dG
-lB
+ar
 Tj
 lB
 uM
@@ -2249,19 +2510,19 @@ Fo
 Fo
 Fo
 dG
-iv
-ko
-ko
-ko
-ko
-ko
-CZ
-ko
-iv
-ko
-ko
-ko
-iv
+Db
+JC
+JC
+JC
+JC
+JC
+DU
+JC
+Db
+JC
+JC
+JC
+Db
 dG
 lB
 Wf
@@ -2301,19 +2562,19 @@ Fo
 Fo
 Fo
 dG
-iv
-iv
-iv
-iv
-iv
-iv
-iv
-ko
-ko
-ko
-iv
-iv
-iv
+pT
+pT
+pT
+pT
+pT
+pT
+pT
+fX
+fX
+fX
+pT
+pT
+pT
 dG
 lB
 lB
