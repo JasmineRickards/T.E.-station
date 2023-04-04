@@ -23,7 +23,7 @@
 	charging_icon = "potato_in"
 	charge_light_type = "old"
 
-/obj/item/stock_parts/cell/emproof/slime
+/obj/item/stock_parts/cell/slime
 	charging_icon = "slime_in"
 
 /obj/item/stock_parts/cell/high/slime_hypercharged

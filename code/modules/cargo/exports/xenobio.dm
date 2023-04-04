@@ -23,7 +23,7 @@
 /datum/export/slime/charged
 	cost = CARGO_CRATE_VALUE * 5
 	unit_name = "\improper EMP-proof slime core"
-	export_types = list(/obj/item/stock_parts/cell/emproof/slime)
+	export_types = list(/obj/item/stock_parts/cell/slime)
 
 /datum/export/slime/hypercharged
 	cost = CARGO_CRATE_VALUE * 25
