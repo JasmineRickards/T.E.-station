@@ -29,6 +29,10 @@ map kilostation
 	votable
 endmap
 
+map pubbystation
+	votable
+endmap
+
 map icebox
 	minplayers 3
 	votable
