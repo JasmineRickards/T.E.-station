@@ -2292,22 +2292,15 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/storage/box/rubbershot{
-	pixel_x = -3;
-	pixel_y = 3
-	},
 /obj/item/storage/box/rubbershot,
-/obj/item/storage/box/rubbershot,
-/obj/item/storage/box/rubbershot{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /obj/item/storage/box/rubbershot{
 	pixel_x = 3;
 	pixel_y = -3
 	},
 /obj/structure/sign/warning/no_smoking/directional/east,
 /obj/machinery/light/directional/east,
+/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/lethalshot,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "aiR" = (
@@ -2381,14 +2374,8 @@
 /turf/open/floor/iron,
 /area/station/security/brig)
 "ajg" = (
-/obj/structure/rack,
-/obj/item/gun/microfusion/mcr01{
-	pixel_y = 7
-	},
-/obj/item/gun/microfusion/mcr01,
-/obj/item/gun/microfusion/mcr01{
-	pixel_y = -7
-	},
+/obj/structure/rack/gunrack,
+/obj/effect/spawner/armory_spawn/cmg,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "ajh" = (
@@ -2418,16 +2405,8 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "ajj" = (
-/obj/structure/rack,
-/obj/item/gun/energy/laser{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/energy/laser,
-/obj/item/gun/energy/laser{
-	pixel_x = 3;
-	pixel_y = -3
-	},
+/obj/structure/rack/gunrack,
+/obj/effect/spawner/armory_spawn/microfusion,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "ajk" = (
@@ -2653,6 +2632,9 @@
 /obj/structure/rack,
 /obj/item/gun/energy/e_gun/dragnet,
 /obj/item/gun/energy/e_gun/dragnet,
+/obj/item/melee/hammer,
+/obj/item/melee/hammer,
+/obj/item/melee/hammer,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "ajS" = (
@@ -2670,17 +2652,8 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/central)
 "ajT" = (
-/obj/structure/rack,
-/obj/item/gun/ballistic/shotgun/riot{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/ballistic/shotgun/riot,
-/obj/item/gun/ballistic/shotgun/riot{
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/obj/item/radio/intercom/directional/east,
+/obj/structure/rack/gunrack,
+/obj/effect/spawner/armory_spawn/shotguns,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "ajW" = (
@@ -30348,6 +30321,7 @@
 	cycle_id = "perma-cell-2-passthrough"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/brig,
+/obj/structure/curtain/cloth,
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "cMl" = (
@@ -31743,6 +31717,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "perma-cell-3-passthrough"
 	},
+/obj/structure/curtain/cloth,
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "ekt" = (
@@ -32232,6 +32207,7 @@
 	cycle_id = "perma-cell-1-passthrough"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/brig,
+/obj/structure/curtain/cloth,
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "eGT" = (
@@ -32250,6 +32226,9 @@
 /area/station/service/abandoned_gambling_den/gaming)
 "eHq" = (
 /obj/machinery/light/directional/east,
+/obj/machinery/cryopod{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/commons/fitness)
 "eHY" = (
@@ -32277,6 +32256,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "perma-cell-2-passthrough"
 	},
+/obj/structure/curtain/cloth,
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "eIL" = (
@@ -35136,7 +35116,11 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
 "hmF" = (
-/obj/item/radio/intercom/directional/east,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/obj/machinery/cryopod{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/commons/fitness)
 "hmL" = (
@@ -37480,8 +37464,10 @@
 /turf/open/floor/carpet,
 /area/station/service/library)
 "jNg" = (
-/obj/structure/extinguisher_cabinet/directional/north,
-/turf/closed/wall,
+/obj/machinery/cryopod{
+	dir = 4
+	},
+/turf/open/floor/iron,
 /area/station/commons/fitness)
 "jNt" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
@@ -43061,6 +43047,7 @@
 	cycle_id = "perma-cell-3-passthrough"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/brig,
+/obj/structure/curtain/cloth,
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "oRl" = (
@@ -45281,6 +45268,13 @@
 /obj/structure/table,
 /obj/item/storage/box/firingpins,
 /obj/item/storage/box/firingpins,
+/obj/item/grenade/barrier{
+	pixel_x = -4
+	},
+/obj/item/grenade/barrier,
+/obj/item/grenade/barrier{
+	pixel_x = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "qLU" = (
@@ -46553,19 +46547,12 @@
 /turf/open/floor/grass,
 /area/station/medical/treatment_center)
 "rOV" = (
-/obj/item/grenade/barrier{
-	pixel_x = 4
-	},
-/obj/item/grenade/barrier,
-/obj/item/grenade/barrier{
-	pixel_x = -4
-	},
-/obj/structure/table,
 /obj/machinery/button/door/directional/east{
 	id = "armory";
 	name = "Armory Shutters";
 	req_access = list("armory")
 	},
+/obj/structure/closet/secure_closet/smartgun,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "rPu" = (
@@ -49128,6 +49115,7 @@
 /obj/item/training_toolbox{
 	pixel_y = 5
 	},
+/obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron,
 /area/station/commons/fitness)
 "tYU" = (
@@ -49699,6 +49687,13 @@
 /area/station/medical/medbay/central)
 "utR" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
+/obj/machinery/cryopod{
+	dir = 8
+	},
+/obj/machinery/computer/cryopod{
+	dir = 8;
+	pixel_x = 32
+	},
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
@@ -49834,6 +49829,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "perma-cell-1-passthrough"
 	},
+/obj/structure/curtain/cloth,
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "uxx" = (
@@ -52498,7 +52494,7 @@
 "wKP" = (
 /obj/structure/closet/athletic_mixed,
 /obj/effect/turf_decal/tile/blue,
-/obj/machinery/airalarm/directional/east,
+/obj/item/radio/intercom/directional/east,
 /turf/open/floor/iron/white/corner{
 	dir = 4
 	},
@@ -54012,7 +54008,9 @@
 /area/station/medical/treatment_center)
 "xRU" = (
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/computer/cryopod{
+	pixel_y = 32
+	},
 /turf/open/floor/iron,
 /area/station/commons/fitness)
 "xSs" = (
@@ -94608,7 +94606,7 @@ aaa
 xkF
 xkF
 xkF
-jNg
+xkF
 kWi
 alD
 cQs
@@ -95119,7 +95117,7 @@ aiT
 aiS
 aiS
 aiS
-ayu
+jNg
 icK
 pfF
 emV
