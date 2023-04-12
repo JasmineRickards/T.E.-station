@@ -15162,17 +15162,8 @@
 /turf/open/floor/circuit/green,
 /area/station/science/robotics/mechbay)
 "bgS" = (
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 3;
-	height = 13;
-	name = "pubby arrivals";
-	roundstart_template = /datum/map_template/shuttle/arrival/pubby;
-	shuttle_id = "arrival_stationary";
-	width = 6
-	},
-/turf/open/space/basic,
-/area/space)
+/turf/open/floor/plating,
+/area/station/hallway/secondary/entry)
 "bgU" = (
 /obj/structure/rack,
 /obj/item/wrench,
@@ -18112,16 +18103,12 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "btK" = (
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 2;
-	height = 13;
-	name = "port bay 2";
-	shuttle_id = "ferry_home";
-	width = 5
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
 	},
-/turf/open/space/basic,
-/area/space)
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
 "btL" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -32415,6 +32402,17 @@
 /obj/item/gavelhammer,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security/brig)
+"ePz" = (
+/obj/docking_port/stationary{
+	dir = 8;
+	name = "arrivals";
+	shuttle_id = "arrivals_stationary";
+	dwidth = 1;
+	width = 5;
+	height = 13
+	},
+/turf/open/space/basic,
+/area/space)
 "ePM" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 10
@@ -33848,6 +33846,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/library/artgallery)
+"gdC" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
 "gdJ" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/bodybags{
@@ -41400,12 +41402,17 @@
 /turf/closed/wall,
 /area/station/cargo/miningdock)
 "ntG" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	dir = 8
+/obj/docking_port/stationary{
+	dheight = 3;
+	dir = 8;
+	dwidth = 8;
+	height = 11;
+	name = "Port Bay 2";
+	shuttle_id = "ferry_home";
+	width = 20
 	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
+/turf/open/space/basic,
+/area/space)
 "ntO" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -42255,6 +42262,12 @@
 	},
 /turf/open/space,
 /area/space/nearstation)
+"olz" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
 "olO" = (
 /turf/open/floor/plating,
 /area/station/ai_monitored/turret_protected/ai_sat_ext_ap)
@@ -71778,7 +71791,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+ntG
 aaa
 aaa
 aaa
@@ -72034,9 +72047,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+hXW
+btL
+hXW
 aaa
 aaa
 aaa
@@ -72291,9 +72304,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aZx
+bgS
+aZx
 aaa
 aaa
 aaa
@@ -72536,21 +72549,21 @@ xee
 hXW
 aZx
 aZx
+hXW
 aZx
+hXW
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
+hXW
 aZx
-aZx
-aZx
-aZx
+hXW
+hXW
+btM
+hXW
 aaa
 aaa
 aaa
@@ -72793,18 +72806,18 @@ aWK
 hXW
 bMo
 bop
-aZx
+dux
+xeP
+lZC
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aZx
+bbQ
+xeP
+bdV
 bop
 bon
 aZx
@@ -73307,18 +73320,18 @@ aie
 hXW
 nJB
 vvo
-dux
-xeP
-lZC
+bbR
+bcY
+aZx
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
-bbQ
-xeP
-bdV
+aZx
+bkQ
+bbR
 wmY
 bon
 aZx
@@ -73564,19 +73577,19 @@ duQ
 hXW
 nJB
 bop
+bop
+bcZ
 hXW
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 hXW
-aZx
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aZx
-hXW
-hXW
-ntG
+btK
+bop
+wmY
 uib
 aZx
 aaa
@@ -73821,8 +73834,8 @@ ppQ
 hXW
 qJm
 bop
-bbR
-bcY
+bop
+gdC
 aZx
 aaa
 aaa
@@ -73831,8 +73844,8 @@ aaa
 aaa
 aaa
 aZx
-bkQ
-bbR
+olz
+bop
 wmY
 bon
 aZx
@@ -74593,16 +74606,16 @@ hXW
 oPg
 ejn
 hXW
-hXW
-aZx
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
 aZx
 hXW
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+hXW
+aZx
 hXW
 kaH
 fLM
@@ -74866,7 +74879,7 @@ bon
 aZx
 aaa
 aaa
-btK
+aaa
 aaa
 aaa
 aaa
@@ -75368,9 +75381,9 @@ bbR
 hXW
 aaa
 aaa
-bgS
 aaa
 aaa
+ePz
 aaa
 hXW
 bbR
