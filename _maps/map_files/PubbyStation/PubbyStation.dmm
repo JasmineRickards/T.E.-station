@@ -30583,7 +30583,9 @@
 	pixel_x = 22;
 	id_tag = "AP1";
 	name = "Bolt";
-	req_access = list("security")
+	req_access = list("security");
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -30854,7 +30856,9 @@
 /obj/machinery/button/door/directional/south{
 	id = "AP1";
 	name = "Bolt";
-	req_access = list("security")
+	req_access = list("security");
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/floor/iron,
 /area/station/security/prison)
