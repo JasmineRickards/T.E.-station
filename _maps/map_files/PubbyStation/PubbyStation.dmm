@@ -30579,7 +30579,9 @@
 /obj/machinery/button/door{
 	pixel_y = 22;
 	pixel_x = 22;
-	id_tag = "AP1"
+	id_tag = "AP1";
+	name = "Bolt";
+	req_access = list("security")
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -30844,12 +30846,13 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 6
 	},
-/obj/machinery/button/door{
-	pixel_y = -22;
-	id_tag = "AP1"
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
+	},
+/obj/machinery/button/door/directional/south{
+	id = "AP1";
+	name = "Bolt";
+	req_access = list("security")
 	},
 /turf/open/floor/iron,
 /area/station/security/prison)
@@ -51071,7 +51074,8 @@
 "vBY" = (
 /obj/structure/lattice,
 /obj/item/toy/plush/space_lizard_plushie{
-	name = "Watches-the-ERP"
+	name = "Watches-the-ERP";
+	desc = "Hey, my immersion!"
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
