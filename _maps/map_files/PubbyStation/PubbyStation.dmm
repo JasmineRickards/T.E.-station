@@ -22072,7 +22072,7 @@
 /turf/open/floor/iron/freezer,
 /area/station/medical/virology)
 "bKp" = (
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/right/brown,
 /obj/item/toy/plush/moth,
 /obj/machinery/status_display/ai{
 	pixel_y = 32
@@ -22836,7 +22836,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "bNR" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /obj/effect/spawner/random/entertainment/drugs,
@@ -27149,9 +27149,9 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/engineering/glass/critical{
 	heat_proof = 1;
-	name = "Supermatter Chamber";
-	req_one_access_txt = "10;24"
+	name = "Supermatter Chamber"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "ciJ" = (
@@ -33311,7 +33311,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/library/artgallery)
 "fAE" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -37504,9 +37504,9 @@
 	},
 /obj/machinery/door/airlock/engineering/glass/critical{
 	heat_proof = 1;
-	name = "Supermatter Chamber";
-	req_one_access_txt = "10;24"
+	name = "Supermatter Chamber"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "jOk" = (
@@ -44004,7 +44004,7 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "pHN" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/middle/brown{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -52642,9 +52642,9 @@
 /turf/open/floor/iron,
 /area/station/maintenance/disposal)
 "wQy" = (
-/obj/structure/chair/sofa/left,
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/light_switch/directional/east,
+/obj/structure/chair/sofa/left/brown,
 /turf/open/floor/carpet,
 /area/station/medical/psychology)
 "wQE" = (
