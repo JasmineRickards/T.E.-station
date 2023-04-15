@@ -62,9 +62,15 @@
 			var/input = tgui_input_text(user, "What corporation do you wish to set this implant to be loyal to? I.E. Nanotrasen, Interdyne Pharmaceuticals, Cybersun Industries...", "Set Corporation", "Nanotrasen", MAX_NAME_LEN)
 			if(isnull(input))
 				return
+			if(findtext(input,user.real_name) > 0) // The chances of getting a middleman just to exploit this is slim to none, and I'd
+				balloon_alert(user, "Invalid Use") // Rather not scan the global player list JUST for this each time
+				return
 			our_implant.company = input
 			input = tgui_input_text(user, "What department do you wish to set this implant to be compliant with? I.E. Security, Science, Medical", "Set Department", "Security", MAX_NAME_LEN)
 			if(isnull(input))
+				return
+			if(findtext(input,user.real_name) > 0) // If we SERIOUSLY start seeing people middleman this feel free to convert it though.
+				balloon_alert(user, "Invalid Use")
 				return
 			our_implant.department = input
 
