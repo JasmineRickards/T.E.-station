@@ -402,4 +402,17 @@
 	)
 	crate_name = "Ammo box"
 
+/datum/supply_pack/security/armory/threefiftyseven
+	name = "Syndicate Revolver Crate"
+	desc = "When noon dawns over your station - be ready with this modern, functional piece of Waffle. Co. \
+	armsmanship. Contains two Syndicate Revolvers and two speedloaders, for optimal space cowboy performance."
+	cost = CARGO_CRATE_VALUE * 30 // I HOPE this is self-evident.
+	hidden = TRUE
+	contains = list(
+		/obj/item/gun/ballistic/revolver/syndicate = 2,
+		/obj/item/ammo_box/a357 = 2,
+	)
+	crate_name = "emergency crate"
+	crate_type = /obj/structure/closet/crate/internals // The tried and true strategy - It's not smuggling if you don't know it is.
+
 // SKYRAT EDIT REMOVAL END
