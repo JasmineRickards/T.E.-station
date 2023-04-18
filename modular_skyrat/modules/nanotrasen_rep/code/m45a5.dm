@@ -8,7 +8,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45a5
 	can_suppress = FALSE
-	fire_delay = 4.25 //Originally 1.75 which was unintentionally extremely fast.
+	fire_delay = 2 //Originally 1.75 which was unintentionally extremely fast.
 	fire_sound_volume = 60
 	spread = 2
 	force = 8 //There's heavier guns that dealt less damage on melee than this so we're reducing it from the original 12
@@ -25,7 +25,7 @@
 	icon_state = "rowlandmodular"
 	ammo_type = /obj/item/ammo_casing/b460
 	caliber = CALIBER_460
-	max_ammo = 8 //Previously 15, then previously 10. Locked to 8, as you can now restock .460 Magnum which was unintended due to its strong nature.
+	max_ammo = 12 //Previously 15, then previously 10. Locked to 8, as you can now restock .460 Magnum which was unintended due to its strong nature.
 	multiple_sprites = AMMO_BOX_FULL_EMPTY_BASIC
 
 /obj/item/ammo_casing/b460
@@ -38,8 +38,8 @@
 
 /obj/projectile/bullet/b460
 	name = ".460 RM JHP bullet"
-	damage = 30
+	damage = 50
 	wound_bonus = 30
 	weak_against_armour = TRUE
-	speed = 2 //Previously 2.25. Now compensates for ammo count.
+	speed = 2.25 //Previously 2.25. Now compensates for ammo count.
 
