@@ -455,10 +455,9 @@
 	generate_effect(movement_dir)
 	return TRUE
 
-/obj/item/mecha_parts/mecha_equipment/thrusters/ion //for mechs with built-in thrusters, should never really exist un-attached to a mech
+/obj/item/mecha_parts/mecha_equipment/thrusters/ion
 	name = "Ion thruster package"
 	desc = "A set of thrusters that allow for exosuit movement in zero-gravity environments."
-	detachable = FALSE
 	effect_type = /obj/effect/particle_effect/ion_trails
 
 /obj/item/mecha_parts/mecha_equipment/thrusters/ion/thrust(movement_dir)
@@ -468,6 +467,10 @@
 		generate_effect(movement_dir)
 		return TRUE
 	return FALSE
+
+/obj/item/mecha_parts/mecha_equipment/thrusters/ion/internal //for mechs with built-in thrusters, should never really exist un-attached to a mech
+	name = "internal ion thruster package"
+	detachable = FALSE
 
 ///////////////////////////////////// CONCEALED WEAPON BAY ////////////////////////////////////////
 

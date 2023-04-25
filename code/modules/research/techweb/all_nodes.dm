@@ -1607,7 +1607,7 @@
 	id = "adv_weaponry"
 	display_name = "Advanced Weapon Development Technology"
 	description = "Our weapons are breaking the rules of reality by now."
-	prereq_ids = list("adv_engi", "weaponry")
+	prereq_ids = list("adv_engi", "weaponry", "adv_mecha")
 	design_ids = list(
 		"pin_loyalty",
 		"ammo_workbench",//SKYRAT EDIT ADDITION
@@ -1623,6 +1623,7 @@
 		"norwindkit",
 		"zetakit",
 		"fireflykit",
+		"ion_mech_thrusters",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 
