@@ -71,7 +71,7 @@
 	equip_by_category = list(
 		MECHA_L_ARM = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot,
 		MECHA_R_ARM = null,
-		MECHA_UTILITY = list(/obj/item/mecha_parts/mecha_equipment/thrusters/ion),
+		MECHA_UTILITY = list(/obj/item/mecha_parts/mecha_equipment/thrusters/ion/internal),
 		MECHA_POWER = list(),
 		MECHA_ARMOR = list(/obj/item/mecha_parts/mecha_equipment/armor/anticcw_armor_booster, /obj/item/mecha_parts/mecha_equipment/armor/antiproj_armor_booster),
 	)

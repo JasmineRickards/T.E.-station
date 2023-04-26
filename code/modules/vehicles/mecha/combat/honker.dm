@@ -50,7 +50,7 @@
 	equip_by_category = list(
 		MECHA_L_ARM = /obj/item/mecha_parts/mecha_equipment/weapon/honker,
 		MECHA_R_ARM = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/banana_mortar/bombanana,
-		MECHA_UTILITY = list(/obj/item/mecha_parts/mecha_equipment/thrusters/ion),
+		MECHA_UTILITY = list(/obj/item/mecha_parts/mecha_equipment/thrusters/ion/internal),
 		MECHA_POWER = list(),
 		MECHA_ARMOR = list(),
 	)
