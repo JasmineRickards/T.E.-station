@@ -10688,8 +10688,13 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "aNT" = (
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/plating,
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/item/soap,
+/obj/structure/bedsheetbin,
+/turf/open/floor/iron/cafeteria,
 /area/station/security/prison)
 "aNU" = (
 /obj/machinery/door/airlock/maintenance{
@@ -29794,9 +29799,8 @@
 /turf/open/floor/carpet,
 /area/station/service/library)
 "czK" = (
-/obj/effect/turf_decal/trimline/red/filled/corner,
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/red/filled/corner{
+/obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -30579,14 +30583,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/button/door/directional/east{
-	id = "AP1";
-	name = "Door Bolt Control";
-	normaldoorcontrol = 1;
-	req_access = list("command");
-	specialfunctions = 4;
-	pixel_y = 11
-	},
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 1
 	},
@@ -30849,15 +30845,6 @@
 /obj/structure/table/wood,
 /obj/item/kinky_shocker{
 	name = "'Stunbaton'"
-	},
-/obj/machinery/button/door/directional/east{
-	id = "AP1";
-	name = "Door Bolt Control";
-	normaldoorcontrol = 1;
-	req_access = list("command");
-	specialfunctions = 4;
-	pixel_x = -8;
-	pixel_y = -24
 	},
 /turf/open/floor/wood,
 /area/station/security/prison)
@@ -31179,12 +31166,11 @@
 /turf/open/floor/wood,
 /area/station/security/prison/garden)
 "dGY" = (
-/obj/structure/sink{
-	pixel_y = 29
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners{
+	dir = 1
 	},
-/obj/structure/closet/crate/trashcart/laundry,
-/obj/effect/spawner/random/contraband/prison,
-/turf/open/floor/plating,
+/obj/machinery/washing_machine,
+/turf/open/floor/iron/cafeteria,
 /area/station/security/prison)
 "dHc" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
@@ -34148,9 +34134,6 @@
 /area/station/maintenance/central)
 "gtR" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 4
-	},
 /obj/machinery/door/airlock{
 	id_tag = "AP1";
 	name = "Alternative Punishment Chamber"
@@ -34158,6 +34141,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/machinery/button/door/directional/east{
+	id = "AP1";
+	name = "Door Bolt Control";
+	normaldoorcontrol = 1;
+	req_access = list("command");
+	specialfunctions = 4
 	},
 /turf/open/floor/carpet,
 /area/station/security/prison)
@@ -40585,6 +40575,11 @@
 /obj/effect/mapping_helpers/airlock/access/any/engineering/atmos,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
+"mHY" = (
+/obj/machinery/airalarm/directional/west,
+/obj/structure/sink/directional/south,
+/turf/open/floor/plating,
+/area/station/security/prison)
 "mIa" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -43093,12 +43088,11 @@
 /turf/open/floor/iron/dark,
 /area/station/command/gateway)
 "oSI" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock{
-	name = "Cleaning Closet"
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners{
+	dir = 1
 	},
 /obj/structure/cable,
-/turf/open/floor/plating,
+/turf/open/floor/iron/cafeteria,
 /area/station/security/prison)
 "oTb" = (
 /obj/structure/cable,
@@ -46904,7 +46898,15 @@
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/ce)
 "sfh" = (
-/turf/open/floor/plating,
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners{
+	dir = 1
+	},
+/obj/structure/closet/crate/trashcart/laundry,
+/obj/effect/spawner/random/contraband/prison,
+/obj/item/clothing/under/rank/prisoner,
+/obj/item/clothing/under/rank/prisoner/skirt,
+/obj/item/clothing/shoes/sneakers/orange,
+/turf/open/floor/iron/cafeteria,
 /area/station/security/prison)
 "sgc" = (
 /obj/machinery/vending/cigarette,
@@ -52150,6 +52152,16 @@
 	},
 /turf/open/floor/plating,
 /area/station/security/range)
+"wwX" = (
+/obj/machinery/door/airlock{
+	name = "Cleaning Closet"
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/security/prison)
 "wxa" = (
 /obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/tile/red/opposingcorners,
@@ -75567,8 +75579,8 @@ aht
 acM
 hsN
 dra
-aem
-aem
+agy
+aNT
 oSI
 agy
 ppf
@@ -75826,7 +75838,7 @@ aem
 aem
 aem
 sfh
-afs
+oSI
 agy
 cCc
 dGV
@@ -76083,7 +76095,7 @@ aht
 aht
 aem
 dGY
-aNT
+oSI
 agy
 cCc
 dGV
@@ -76339,8 +76351,8 @@ aaa
 aaa
 aht
 aem
-fJd
-flR
+agy
+wwX
 agy
 vTg
 cpv
@@ -76596,9 +76608,9 @@ aaa
 aaa
 aht
 aem
-aem
-aem
-aem
+mHY
+afs
+agy
 jNt
 cqI
 uaS
@@ -76852,10 +76864,10 @@ aaa
 aaa
 aaa
 aht
-fon
-aht
-aht
-knG
+aem
+fJd
+flR
+agy
 ksD
 uaS
 uaS
@@ -77109,10 +77121,10 @@ aaa
 aaa
 aaa
 aht
-pDW
-pDW
-aht
-knG
+aem
+aem
+aem
+agy
 rBL
 dGV
 uaS
@@ -77367,9 +77379,9 @@ aaa
 aaa
 aht
 aht
-pDW
 aht
-knG
+aht
+aem
 knG
 cCc
 cCs
