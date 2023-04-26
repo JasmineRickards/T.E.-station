@@ -270,9 +270,7 @@
 "aaX" = (
 /obj/structure/table,
 /obj/machinery/firealarm/directional/east,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
@@ -632,11 +630,9 @@
 /turf/open/floor/iron/white,
 /area/station/ai_monitored/turret_protected/ai)
 "acM" = (
-/mob,
-/mob,
-/mob,
-/mob,
-/turf/closed/wall/r_wall,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/turf/open/floor/plating,
 /area/station/security/prison)
 "acN" = (
 /turf/closed/wall/r_wall,
@@ -1400,11 +1396,9 @@
 /turf/open/floor/plastic,
 /area/station/security/lockers)
 "afs" = (
-/obj/machinery/washing_machine,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
-	},
-/turf/open/floor/iron/cafeteria,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/turf/open/floor/plating,
 /area/station/security/prison)
 "aft" = (
 /obj/machinery/light/small/directional/west,
@@ -2901,9 +2895,7 @@
 	dir = 4
 	},
 /obj/machinery/iv_drip,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 4
@@ -4547,9 +4539,7 @@
 /obj/machinery/camera/directional/north{
 	c_tag = "Brig Entrance"
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
@@ -4630,9 +4620,7 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/command/nuke_storage)
 "aqM" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/circuit/green{
@@ -8812,9 +8800,7 @@
 /area/station/commons/storage/emergency/starboard)
 "aEU" = (
 /obj/item/storage/toolbox,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plating,
@@ -9675,14 +9661,6 @@
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
-"aIL" = (
-/mob,
-/obj/machinery/washing_machine,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
-	},
-/turf/open/floor/iron/cafeteria,
-/area/station/security/prison)
 "aIX" = (
 /obj/effect/landmark/observer_start,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -10321,9 +10299,7 @@
 /obj/structure/closet/crate,
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/tile/blue,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/button/door/directional/east{
 	req_access = list("teleporter")
@@ -10426,9 +10402,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/solars/starboard)
 "aMw" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
@@ -10714,12 +10688,8 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "aNT" = (
-/obj/machinery/washing_machine,
-/obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
-	},
-/turf/open/floor/iron/cafeteria,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plating,
 /area/station/security/prison)
 "aNU" = (
 /obj/machinery/door/airlock/maintenance{
@@ -12392,9 +12362,7 @@
 	pixel_x = -10;
 	pixel_y = 15
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/service/bar)
@@ -13350,9 +13318,7 @@
 /area/station/security/checkpoint/customs)
 "aYK" = (
 /obj/structure/closet/secure_closet/security,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 4
@@ -13615,9 +13581,7 @@
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/service/janitor)
@@ -14260,9 +14224,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
 "bcE" = (
@@ -15102,9 +15064,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/service/cafeteria)
 "bgr" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -15840,9 +15800,7 @@
 	pixel_y = 5
 	},
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 1
 	},
@@ -16155,9 +16113,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
 "bla" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
@@ -16645,9 +16601,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "bns" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/showroomfloor,
 /area/station/service/kitchen/coldroom)
@@ -17595,9 +17549,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 1
@@ -18377,9 +18329,7 @@
 /turf/open/floor/plating,
 /area/station/science/lab)
 "buD" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -23521,9 +23471,7 @@
 /area/station/engineering/storage/tech)
 "bQA" = (
 /obj/machinery/vending/assist,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/green/fourcorners,
 /turf/open/floor/iron/dark,
@@ -25708,9 +25656,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
 	},
@@ -26607,9 +26553,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/engineering/transit_tube)
@@ -27036,9 +26980,7 @@
 /obj/item/kirbyplants{
 	icon_state = "plant-22"
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/service/library)
@@ -27688,7 +27630,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
+	dir = 9
 	},
 /turf/open/floor/iron,
 /area/station/security/prison)
@@ -27767,9 +27709,7 @@
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/radio,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
@@ -29123,9 +29063,7 @@
 /obj/machinery/hydroponics/soil,
 /obj/machinery/light/small/directional/north,
 /obj/item/seeds/watermelon/holy,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/grass,
 /area/station/service/hydroponics/garden/monastery)
@@ -29856,8 +29794,9 @@
 /turf/open/floor/carpet,
 /area/station/service/library)
 "czK" = (
+/obj/effect/turf_decal/trimline/red/filled/corner,
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/red/filled/line{
+/obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -30633,13 +30572,23 @@
 /area/station/ai_monitored/security/armory)
 "dfD" = (
 /obj/structure/cable,
+/obj/effect/turf_decal/trimline/red/filled/line{
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/red/filled/corner,
+/obj/machinery/button/door/directional/east{
+	id = "AP1";
+	name = "Door Bolt Control";
+	normaldoorcontrol = 1;
+	req_access = list("command");
+	specialfunctions = 4;
+	pixel_y = 11
+	},
 /obj/effect/turf_decal/trimline/red/filled/corner{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/iron,
 /area/station/security/prison)
@@ -30894,11 +30843,23 @@
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "dra" = (
-/mob,
-/mob,
-/mob,
-/mob,
-/turf/closed/wall,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/structure/table/wood,
+/obj/item/kinky_shocker{
+	name = "'Stunbaton'"
+	},
+/obj/machinery/button/door/directional/east{
+	id = "AP1";
+	name = "Door Bolt Control";
+	normaldoorcontrol = 1;
+	req_access = list("command");
+	specialfunctions = 4;
+	pixel_x = -8;
+	pixel_y = -24
+	},
+/turf/open/floor/wood,
 /area/station/security/prison)
 "drR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -31218,11 +31179,12 @@
 /turf/open/floor/wood,
 /area/station/security/prison/garden)
 "dGY" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
+/obj/structure/sink{
+	pixel_y = 29
 	},
-/turf/open/floor/iron/cafeteria,
+/obj/structure/closet/crate/trashcart/laundry,
+/obj/effect/spawner/random/contraband/prison,
+/turf/open/floor/plating,
 /area/station/security/prison)
 "dHc" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
@@ -31491,9 +31453,7 @@
 "dVK" = (
 /obj/structure/table,
 /obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/sorting)
@@ -32153,9 +32113,7 @@
 /turf/open/floor/iron/grimy,
 /area/station/service/chapel/monastery)
 "eDH" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/table,
 /obj/item/stack/sheet/glass/fifty{
 	layer = 4
@@ -32231,9 +32189,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "eGF" = (
@@ -32729,9 +32685,7 @@
 /area/station/hallway/primary/central/aft)
 "eZA" = (
 /obj/item/stack/cable_coil/cut,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/central)
@@ -33106,11 +33060,6 @@
 /obj/structure/grille,
 /turf/open/space/basic,
 /area/space/nearstation)
-"foo" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/space/nearstation)
 "fow" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -33233,9 +33182,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "ftW" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 1
@@ -33258,9 +33205,6 @@
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/wood,
 /area/station/service/abandoned_gambling_den)
-"fuK" = (
-/turf/closed/wall,
-/area/station/security/prison/garden)
 "fuR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible/layer2,
 /turf/open/floor/iron,
@@ -33644,14 +33588,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
-"fMV" = (
-/obj/structure/lattice,
-/obj/item/toy/plush/space_lizard_plushie{
-	name = "Watches-the-ERP";
-	desc = "Hey, my immersion!"
-	},
-/turf/open/space/basic,
-/area/space)
 "fNb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
@@ -34092,9 +34028,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
@@ -34213,14 +34147,19 @@
 /turf/open/floor/plating,
 /area/station/maintenance/central)
 "gtR" = (
-/obj/effect/turf_decal/trimline/red/filled/corner{
-	dir = 1
-	},
+/obj/structure/cable,
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 4
 	},
-/obj/structure/cable,
-/turf/open/floor/iron,
+/obj/machinery/door/airlock{
+	id_tag = "AP1";
+	name = "Alternative Punishment Chamber"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/carpet,
 /area/station/security/prison)
 "gtW" = (
 /obj/structure/cable,
@@ -34805,9 +34744,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
 "gRJ" = (
@@ -35181,9 +35118,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
 "hmF" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/cryopod{
 	dir = 8
@@ -35297,24 +35232,8 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
 "hsN" = (
-/mob,
-/mob,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
 /obj/structure/table/wood,
-/obj/item/kinky_shocker{
-	name = "'Stunbaton'"
-	},
-/obj/machinery/button/door/directional/east{
-	id = "AP1";
-	name = "Door Bolt Control";
-	normaldoorcontrol = 1;
-	req_access = list("command");
-	specialfunctions = 4;
-	pixel_x = -8;
-	pixel_y = -24
-	},
+/obj/item/restraints/handcuffs/lewd,
 /turf/open/floor/wood,
 /area/station/security/prison)
 "htK" = (
@@ -35418,15 +35337,8 @@
 /turf/open/floor/iron/chapel,
 /area/station/service/chapel)
 "hAp" = (
-/mob,
-/mob,
-/mob,
-/mob,
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	dir = 8
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/carpet,
 /area/station/security/prison)
 "hAF" = (
@@ -36833,9 +36745,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/iron/white/corner{
 	dir = 1
 	},
@@ -37789,12 +37699,6 @@
 /obj/effect/turf_decal/trimline/blue/corner,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
-"jXs" = (
-/obj/structure/closet/crate/trashcart/laundry,
-/obj/effect/spawner/random/contraband/prison,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/station/security/prison)
 "jXw" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/start/hangover,
@@ -38311,9 +38215,7 @@
 /area/station/engineering/atmos)
 "ksD" = (
 /obj/machinery/hydroponics/soil,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/grass,
 /area/station/security/prison/garden)
@@ -38395,8 +38297,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/security/brig)
 "kxv" = (
-/mob,
-/turf/closed/wall,
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp,
+/turf/open/floor/wood,
 /area/station/security/prison)
 "kxI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -38922,17 +38825,6 @@
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
 /area/station/medical/psychology)
-"kZn" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
-/obj/structure/cable,
-/obj/structure/window/reinforced/spawner/east,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
-	},
-/turf/open/floor/iron/cafeteria,
-/area/station/security/prison)
 "kZU" = (
 /obj/structure/table/wood/fancy,
 /obj/structure/sign/painting/library_secure{
@@ -39495,16 +39387,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/library/lounge)
-"lxa" = (
-/mob,
-/obj/item/bedsheet/black/double{
-	dir = 1
-	},
-/obj/structure/bed/double{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/station/security/prison)
 "lxx" = (
 /obj/item/stack/medical/gauze{
 	pixel_x = 2
@@ -39888,9 +39770,7 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai_upload)
 "lUC" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -40884,12 +40764,12 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "mQP" = (
-/mob,
-/mob,
-/mob,
-/mob,
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp,
+/obj/item/bedsheet/black/double{
+	dir = 1
+	},
+/obj/structure/bed/double{
+	dir = 1
+	},
 /turf/open/floor/wood,
 /area/station/security/prison)
 "mQV" = (
@@ -41544,9 +41424,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/department/chapel/monastery)
 "nwJ" = (
@@ -41691,15 +41569,7 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/exit/departure_lounge)
 "nDH" = (
-/mob,
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 4
-	},
-/obj/machinery/door/airlock{
-	id_tag = "AP1";
-	name = "Alternative Punishment Chamber"
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
@@ -41917,9 +41787,6 @@
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/service/library/artgallery)
-"nPp" = (
-/turf/closed/wall/r_wall,
-/area/space/nearstation)
 "nPA" = (
 /obj/item/chair,
 /turf/open/floor/plating,
@@ -42347,19 +42214,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/brig)
-"okw" = (
-/obj/structure/table,
-/obj/structure/bedsheetbin,
-/obj/item/soap,
-/obj/machinery/airalarm/directional/west,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
-	},
-/turf/open/floor/iron/cafeteria,
-/area/station/security/prison)
 "okX" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -42504,9 +42358,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
@@ -42648,11 +42500,6 @@
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/wood,
 /area/station/service/abandoned_gambling_den)
-"otO" = (
-/mob,
-/mob,
-/turf/closed/wall/r_wall,
-/area/station/security/prison)
 "ouo" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/white,
@@ -43008,9 +42855,7 @@
 	c_tag = "Virology Lab";
 	network = list("ss13","medbay")
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -43435,9 +43280,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "pbR" = (
@@ -44576,22 +44419,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/monastery)
-"qcq" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 9
-	},
-/obj/machinery/button/door/directional/east{
-	id = "AP1";
-	name = "Door Bolt Control";
-	normaldoorcontrol = 1;
-	req_access = list("command");
-	specialfunctions = 4;
-	pixel_y = 24;
-	pixel_x = 8
-	},
-/obj/machinery/vending/dorms,
-/turf/open/floor/iron,
-/area/station/security/prison)
 "qcD" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister/bz,
@@ -44620,9 +44447,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "qdt" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/service/abandoned_gambling_den/gaming)
@@ -46943,10 +46768,6 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
-"saf" = (
-/mob,
-/turf/closed/wall/r_wall,
-/area/station/security/prison)
 "sah" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -47083,9 +46904,8 @@
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/ce)
 "sfh" = (
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space)
+/turf/open/floor/plating,
+/area/station/security/prison)
 "sgc" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/iron/dark,
@@ -47634,9 +47454,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "sEC" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/service/library/artgallery)
@@ -47672,13 +47490,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible/layer2,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
-"sGo" = (
-/obj/structure/cable,
-/obj/machinery/door/airlock{
-	name = "Laundry Room"
-	},
-/turf/open/floor/iron/white,
-/area/station/security/prison)
 "sGr" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -47690,9 +47501,7 @@
 	c_tag = "Holodeck Control";
 	name = "holodeck camera"
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -48475,12 +48284,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos/hfr_room)
-"tnq" = (
-/mob,
-/obj/structure/table/wood,
-/obj/item/restraints/handcuffs/lewd,
-/turf/open/floor/wood,
-/area/station/security/prison)
 "tnY" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -49714,9 +49517,7 @@
 /obj/structure/table/glass,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/machinery/light/directional/north,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 1
@@ -50694,9 +50495,7 @@
 /area/station/maintenance/department/cargo)
 "uYF" = (
 /obj/machinery/light/small/directional/north,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 1
@@ -51135,9 +50934,7 @@
 /obj/item/screwdriver{
 	pixel_y = 16
 	},
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
@@ -51261,12 +51058,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/engineering/main)
-"vAJ" = (
-/mob,
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/turf/open/floor/carpet,
-/area/station/security/prison)
 "vAX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
@@ -51275,11 +51066,12 @@
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/storage)
 "vBY" = (
-/mob,
-/mob,
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable,
-/turf/open/floor/plating,
+/obj/structure/lattice,
+/obj/item/toy/plush/space_lizard_plushie{
+	name = "Watches-the-ERP";
+	desc = "Hey, my immersion!"
+	},
+/turf/open/space/basic,
 /area/space/nearstation)
 "vBZ" = (
 /obj/structure/disposalpipe/segment,
@@ -52643,21 +52435,6 @@
 /obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/iron,
 /area/station/cargo/office)
-"wGv" = (
-/obj/machinery/camera/directional/east{
-	c_tag = "Prison Laundry";
-	network = list("ss13","prison")
-	},
-/obj/structure/closet/crate/trashcart/laundry,
-/obj/item/clothing/under/rank/prisoner/skirt,
-/obj/item/clothing/under/rank/prisoner/skirt,
-/obj/item/clothing/under/rank/prisoner,
-/obj/item/clothing/under/rank/prisoner,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
-	dir = 1
-	},
-/turf/open/floor/iron/cafeteria,
-/area/station/security/prison)
 "wGM" = (
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /turf/open/floor/iron/white,
@@ -52859,13 +52636,6 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted,
 /turf/open/floor/iron,
 /area/station/maintenance/disposal)
-"wQv" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/station/security/prison)
 "wQy" = (
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/light_switch/directional/east,
@@ -53032,9 +52802,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/aft)
 "wVE" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -54187,9 +53955,7 @@
 /area/space/nearstation)
 "xNH" = (
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/north{
-	name = "Prison Laundry Room APC'
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/solars/port)
 "xNS" = (
@@ -75025,11 +74791,11 @@ aaa
 aaa
 aaa
 aaa
-sfh
-foo
+aaa
+aht
 acM
-otO
-saf
+aem
+aem
 agy
 agy
 aen
@@ -75282,12 +75048,12 @@ aaa
 aaa
 aaa
 aaa
-sfh
-foo
-lxa
+aaa
+aht
+acM
 mQP
 kxv
-qcq
+agy
 clK
 wPr
 kmV
@@ -75539,9 +75305,9 @@ aaa
 aaa
 aaa
 aaa
-fMV
+aaa
 vBY
-vAJ
+acM
 hAp
 nDH
 gtR
@@ -75796,14 +75562,14 @@ aaa
 aaa
 aaa
 aaa
-sfh
-foo
-tnq
+aaa
+aht
+acM
 hsN
 dra
-agy
-sGo
-agy
+aem
+aem
+oSI
 agy
 ppf
 ppf
@@ -76053,13 +75819,13 @@ aaa
 aaa
 aaa
 aaa
-sfh
-foo
-saf
-saf
+aaa
+aht
 acM
-okw
-dGY
+aem
+aem
+aem
+sfh
 afs
 agy
 cCc
@@ -76314,8 +76080,8 @@ aaa
 aht
 aht
 aht
-nPp
-kZn
+aht
+aem
 dGY
 aNT
 agy
@@ -76570,11 +76336,11 @@ aaa
 aaa
 aaa
 aaa
+aaa
 aht
-nPp
-wGv
-dGY
-aIL
+aem
+fJd
+flR
 agy
 vTg
 cpv
@@ -76827,12 +76593,12 @@ aaa
 aaa
 aaa
 aaa
+aaa
 aht
-nPp
 aem
-oSI
-agy
-agy
+aem
+aem
+aem
 jNt
 cqI
 uaS
@@ -77084,12 +76850,12 @@ aaa
 aaa
 aaa
 aaa
+aaa
 aht
 fon
-aem
-wQv
-flR
-fuK
+aht
+aht
+knG
 ksD
 uaS
 uaS
@@ -77341,12 +77107,12 @@ aaa
 aaa
 aaa
 aaa
+aaa
 aht
 pDW
-aem
-fJd
-jXs
-fuK
+pDW
+aht
+knG
 rBL
 dGV
 uaS
@@ -77598,11 +77364,11 @@ aaa
 aaa
 aaa
 aaa
+aaa
+aht
 aht
 pDW
-aem
-aem
-aem
+aht
 knG
 knG
 cCc
@@ -77856,8 +77622,8 @@ aaa
 aaa
 aaa
 aaa
-aht
-pDW
+aaa
+aaa
 pDW
 aht
 aht
@@ -78114,8 +77880,8 @@ aaa
 aaa
 aaa
 aaa
-sfh
-sfh
+aaa
+aaa
 pDW
 aht
 aht
@@ -78373,7 +78139,7 @@ aaa
 aaa
 aaa
 aaa
-sfh
+aaa
 pDW
 pDW
 pDW
