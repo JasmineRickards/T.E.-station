@@ -332,9 +332,8 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	name = "roasted sunflower seeds"
 	desc = "Homemade roasted sunflower seeds in a paper cup. A healthy and filling snack to nibble as you watch people pass."
 	icon_state = "sunseeds"
-	food_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/iron = 2)
-	junkiness = 5 //Homemade or not, sunflower seets are always kinda junky
-	foodtypes = JUNKFOOD | NUTS
+	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 4, /datum/reagent/iron = 2)
+	foodtypes = NUTS
 	trash_type = /obj/item/trash/semki/healthy
 
 /obj/item/food/cornchips
