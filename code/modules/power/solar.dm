@@ -1,4 +1,4 @@
-#define SOLAR_GEN_RATE 1500
+#define SOLAR_GEN_RATE 4500 //Default is 1500, doubled or tripled for the sake of alternative power.
 #define OCCLUSION_DISTANCE 20
 #define PANEL_Z_OFFSET 13
 #define PANEL_EDGE_Z_OFFSET (PANEL_Z_OFFSET - 2)
