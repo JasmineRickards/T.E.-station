@@ -67,11 +67,11 @@
 	color = "#60A584" // rgb: 96, 165, 132
 	taste_description = "smoke"
 	trippy = FALSE
-	overdose_threshold = 15
+	overdose_threshold = 150
 	metabolization_rate = 0.125 * REAGENTS_METABOLISM
 	ph = 8
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
-	addiction_types = list(/datum/addiction/nicotine = 18) // 7.2 per 2 seconds
+	addiction_types = list(/datum/addiction/nicotine = 50) // 7.2 per 2 seconds
 
 	//Nicotine is used as a pesticide IRL.
 /datum/reagent/drug/nicotine/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)

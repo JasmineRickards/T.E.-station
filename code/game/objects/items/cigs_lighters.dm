@@ -572,9 +572,9 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	inhand_icon_off = "cigaroff"
 	type_butt = /obj/item/cigbutt/cigarbutt
 	throw_speed = 0.5
-	smoketime = 11 MINUTES
+	smoketime = 25 MINUTES
 	chem_volume = 40
-	list_reagents = list(/datum/reagent/drug/nicotine = 25)
+	list_reagents = list(/datum/reagent/drug/nicotine = 85)
 	choke_time_max = 40 SECONDS
 
 /obj/item/clothing/mask/cigarette/cigar/cohiba
@@ -583,9 +583,9 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "cigar2off"
 	icon_on = "cigar2on"
 	icon_off = "cigar2off"
-	smoketime = 20 MINUTES
+	smoketime = 40 MINUTES
 	chem_volume = 80
-	list_reagents = list(/datum/reagent/drug/nicotine = 40)
+	list_reagents = list(/datum/reagent/drug/nicotine = 80)
 
 /obj/item/clothing/mask/cigarette/cigar/havana
 	name = "premium Havanian cigar"
@@ -593,9 +593,9 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "cigar2off"
 	icon_on = "cigar2on"
 	icon_off = "cigar2off"
-	smoketime = 30 MINUTES
+	smoketime = 60 MINUTES
 	chem_volume = 60
-	list_reagents = list(/datum/reagent/drug/nicotine = 45)
+	list_reagents = list(/datum/reagent/drug/nicotine = 85)
 
 /obj/item/cigbutt
 	name = "cigarette butt"
