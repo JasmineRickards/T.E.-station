@@ -3653,6 +3653,7 @@
 /area/station/command/heads_quarters/rd)
 "bbz" = (
 /obj/machinery/power/smes,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/maintenance/solars/port/fore)
 "bbN" = (
@@ -41663,6 +41664,7 @@
 /area/station/service/bar)
 "lOz" = (
 /obj/machinery/power/smes,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/maintenance/solars/starboard/aft)
 "lOA" = (
@@ -64744,6 +64746,7 @@
 /area/station/tcommsat/computer)
 "sbU" = (
 /obj/machinery/power/smes,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/maintenance/solars/port/aft)
 "sct" = (
@@ -77311,6 +77314,7 @@
 /area/station/hallway/secondary/entry)
 "vwi" = (
 /obj/machinery/power/smes,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/maintenance/solars/starboard/fore)
 "vwl" = (
