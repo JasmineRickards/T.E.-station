@@ -2223,12 +2223,8 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/cargodise_freighter/cargo)
 "JM" = (
-/obj/machinery/suit_storage_unit{
-	mask_type = /obj/item/clothing/mask/gas/explorer;
-	storage_type = /obj/item/tank/jetpack/oxygen/harness;
-	suit_type = /obj/item/mod/control/pre_equipped/traitor_elite
-	},
 /obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/machinery/suit_storage_unit/nri,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/cargodise_freighter/bridge)
 "JQ" = (

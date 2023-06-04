@@ -6791,12 +6791,6 @@
 /obj/structure/cable,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/machinery/fax{
-	fax_name = "Unknown Syndicate Fax";
-	name = "DS-2 Fax Machine";
-	pixel_y = 7;
-	syndicate_network = 1
-	},
 /turf/open/floor/iron/dark/textured_half,
 /area/ruin/space/has_grav/skyrat/interdynefob/bridge)
 "DH" = (
@@ -11077,6 +11071,13 @@
 /area/ruin/space/has_grav/skyrat/interdynefob/security)
 "VM" = (
 /obj/machinery/light/cold/directional/north,
+/obj/machinery/fax{
+	fax_name = "Unknown Syndicate Fax";
+	name = "DS-2 Fax Machine";
+	pixel_y = 7;
+	syndicate_network = 1
+	},
+/obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/skyrat/interdynefob/bridge)
 "VO" = (
