@@ -331,6 +331,14 @@
 /obj/item/pen{
 	pixel_x = -14
 	},
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/skyrat/interdynefob/security)
 "aZ" = (
@@ -2861,6 +2869,8 @@
 /obj/item/mmi/posibrain{
 	pixel_x = -4
 	},
+/obj/item/card/emag,
+/obj/item/card/emag,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/skyrat/interdynefob/research)
 "lI" = (
@@ -3655,6 +3665,7 @@
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
+/obj/vehicle/sealed/mecha/gygax/dark,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/skyrat/interdynefob/research)
 "pf" = (
@@ -3863,6 +3874,9 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/skyrat/interdynefob/cargo)
 "pW" = (
@@ -4685,6 +4699,9 @@
 	dir = 8;
 	pixel_x = -24
 	},
+/obj/item/uplink/nuclear{
+	name = "Logistics network uplink"
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/skyrat/interdynefob/cargo)
 "tE" = (
@@ -5174,6 +5191,10 @@
 	dir = 1;
 	pixel_y = 24
 	},
+/obj/item/uplink/nuclear{
+	name = "Emergency weapons request uplink";
+	desc = "A basic handheld radio that communicates with local logistics networks."
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/skyrat/interdynefob/security)
 "vM" = (
@@ -5303,6 +5324,7 @@
 	dir = 1
 	},
 /obj/machinery/light/cold/directional/south,
+/obj/vehicle/sealed/mecha/marauder/mauler,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/skyrat/interdynefob/research)
 "wp" = (
@@ -5964,6 +5986,7 @@
 /obj/effect/turf_decal/tile/dark_red/fourcorners,
 /obj/structure/table,
 /obj/machinery/ecto_sniffer,
+/obj/item/mod/control/pre_equipped/empty/elite,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/skyrat/interdynefob/research)
 "Ae" = (
@@ -8146,6 +8169,7 @@
 /obj/item/ai_module/supplied/freeform{
 	pixel_y = 7
 	},
+/obj/item/card/emag/battlecruiser,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/skyrat/interdynefob/research)
 "JL" = (
