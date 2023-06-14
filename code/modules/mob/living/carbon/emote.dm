@@ -138,6 +138,23 @@
 		qdel(N)
 		to_chat(user, span_warning("You're incapable of slapping in your current state."))
 
+/datum/emote/living/carbon/jerk
+	key = "jerk"
+	key_third_person = ""
+	hands_use_check = TRUE
+	cooldown = 10 SECONDS // jerk it #'w '#
+
+/datum/emote/living/carbon/jerk/run_emote(mob/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return
+	var/obj/item/hand_item/coom/JERK = new(user)
+	if(user.put_in_hands(JERK))
+		to_chat(user, span_notice("You ready your jerking hand."))
+	else
+		qdel(JERK)
+		to_chat(user, span_warning("You're incapable of jerking in your current state."))
+
 
 /datum/emote/living/carbon/hand
 	key = "hand"
