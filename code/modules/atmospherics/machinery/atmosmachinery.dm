@@ -61,6 +61,10 @@
 	///keeps the name of the object from being overridden if it's vareditted.
 	var/override_naming
 
+	//cuation overlay stuff
+	var/static/mutable_appearance/cautionOverlay
+	var/caution = FALSE
+
 /obj/machinery/atmospherics/LateInitialize()
 	. = ..()
 	update_name()
@@ -465,11 +469,12 @@
 		PIPING_FORWARD_SHIFT(pipe_overlay, piping_layer, 2)
 	return pipe_overlay
 
-/obj/machinery/atmospherics/on_construction(obj_color, set_layer = PIPING_LAYER_DEFAULT)
+/obj/machinery/atmospherics/on_construction(obj_color, set_layer = PIPING_LAYER_DEFAULT, cautionEnabled)
 	if(can_unwrench)
 		add_atom_colour(obj_color, FIXED_COLOUR_PRIORITY)
 		set_pipe_color(obj_color)
 	set_piping_layer(set_layer)
+	caution = cautionEnabled
 	atmos_init()
 	var/list/nodes = pipeline_expansion()
 	for(var/obj/machinery/atmospherics/A in nodes)

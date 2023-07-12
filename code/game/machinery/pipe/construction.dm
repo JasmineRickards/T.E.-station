@@ -28,7 +28,10 @@ Buildable meters
 	var/pipe_color
 	///Initial direction of the created pipe (either made from the RPD or after unwrenching the pipe)
 	var/p_init_dir = SOUTH
-
+	//Caution flag
+	var/caution = FALSE
+	var/static/mutable_appearance/cautionOverlay //TE edit for caution pipes.
+	appearance_flags = KEEP_TOGETHER
 /obj/item/pipe/directional
 	RPD_type = PIPE_UNARY
 /obj/item/pipe/binary
@@ -68,6 +71,7 @@ Buildable meters
 	pipe_type = make_from.type
 	paintable = make_from.paintable
 	pipe_color = make_from.pipe_color
+	caution = make_from.caution //TE edit
 
 /obj/item/pipe/trinary/flippable/make_from_existing(obj/machinery/atmospherics/components/trinary/make_from)
 	..()
@@ -90,11 +94,21 @@ Buildable meters
 	layer = initial(layer) + ((piping_layer - PIPING_LAYER_DEFAULT) * PIPING_LAYER_LCHANGE)
 
 /obj/item/pipe/proc/update()
+	caution_overlays() //TE edit
 	var/obj/machinery/atmospherics/fakeA = pipe_type
 	name = "[initial(fakeA.name)] fitting"
 	icon_state = initial(fakeA.pipe_state)
 	if(ispath(pipe_type,/obj/machinery/atmospherics/pipe/heat_exchanging))
 		resistance_flags |= FIRE_PROOF | LAVA_PROOF
+
+/obj/item/pipe/proc/caution_overlays() //TE custom cuation pipe
+	cut_overlays()
+
+	if(caution)
+		cautionOverlay = mutable_appearance(icon, "caution")
+		cautionOverlay.blend_mode = BLEND_MULTIPLY
+		cautionOverlay.appearance_flags = KEEP_TOGETHER
+		add_overlay(cautionOverlay)
 
 /obj/item/pipe/verb/flip()
 	set category = "Object"
@@ -182,7 +196,7 @@ Buildable meters
 
 	var/obj/machinery/atmospherics/built_machine = new pipe_type(loc, , , p_init_dir)
 	build_pipe(built_machine)
-	built_machine.on_construction(pipe_color, piping_layer)
+	built_machine.on_construction(pipe_color, piping_layer, caution) //TE edit
 	transfer_fingerprints_to(built_machine)
 
 	wrench.play_tool_sound(src)
@@ -326,6 +340,18 @@ Buildable meters
 	do_a_flip()
 	balloon_alert(user, "pipe was flipped")
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+
+/obj/item/pipe/multitool_act(mob/user)
+	. = ..()
+
+	user.visible_message(span_warning("[user] begins to [caution ? "unwrap" : "wrap" ] tape around [src]..."), span_warning("You begin to [caution ? "unwrap the" : "somehow magically wrap the"] caution tape around the pipe"))
+	if(!do_after(user, 3 SECONDS, src))
+		return FALSE // Cause we FAILED the do_after
+
+	// play_sound maybe?
+	caution = !caution
+	update()
+	return ..()
 
 /obj/item/pipe_meter
 	name = "meter"
