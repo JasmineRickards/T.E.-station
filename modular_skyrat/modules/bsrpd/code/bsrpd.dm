@@ -12,6 +12,7 @@
 	inhand_icon_state = "bsrpd"
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	custom_materials = null
+	reach = 7
 	var/current_capacity = BSRPD_CAPACITY_MAX
 	var/ranged_use_cost = BSRPD_CAPACITY_USE
 	var/in_use = FALSE
