@@ -110,7 +110,15 @@
 	. = ..()
 	update_pipe_icon()
 	update_layer()
-	caution_overlays() //TE edit
+
+/obj/machinery/atmospherics/pipe/update_overlays()
+	. = ..()
+
+	if(caution)
+		cautionOverlay = mutable_appearance(icon, "caution")
+		cautionOverlay.blend_mode = BLEND_MULTIPLY
+		cautionOverlay.appearance_flags = KEEP_TOGETHER
+		add_overlay(cautionOverlay)
 
 /obj/machinery/atmospherics/proc/update_node_icon()
 	for(var/i in 1 to device_type)
@@ -133,16 +141,6 @@
 	layer = initial(layer) + (piping_layer - PIPING_LAYER_DEFAULT) * PIPING_LAYER_LCHANGE + (GLOB.pipe_colors_ordered[pipe_color] * 0.0001)
 
 
-/obj/machinery/atmospherics/pipe/proc/caution_overlays() //TE custom cuation pipe
-	cut_overlays()
-	if(hide)
-		return
-
-	if(caution)
-		cautionOverlay = mutable_appearance(icon, "caution")
-		cautionOverlay.blend_mode = BLEND_MULTIPLY
-		cautionOverlay.appearance_flags = KEEP_TOGETHER
-		add_overlay(cautionOverlay)
 
 /obj/machinery/atmospherics/pipe/attackby(obj/item/W, mob/user)
 	if(istype(W, /obj/item/multitool))
