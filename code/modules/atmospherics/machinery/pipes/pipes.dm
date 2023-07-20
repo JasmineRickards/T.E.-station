@@ -114,7 +114,7 @@
 /obj/machinery/atmospherics/pipe/update_overlays()
 	. = ..()
 
-	if(caution)
+	if(caution && !hide)
 		cautionOverlay = mutable_appearance(icon, "caution")
 		cautionOverlay.blend_mode = BLEND_MULTIPLY
 		cautionOverlay.appearance_flags = KEEP_TOGETHER
