@@ -31,6 +31,7 @@
 		/datum/gun_crafting_bench_recipe/BasicRifle,
 		/datum/gun_crafting_bench_recipe/intermrifle,
 		/datum/gun_crafting_bench_recipe/advrifle,
+		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacket,
 		/datum/crafting_bench_recipe/plate_helmet,
 		/datum/crafting_bench_recipe/plate_vest,
 		/datum/crafting_bench_recipe/plate_gloves,
@@ -378,6 +379,7 @@
 		/datum/gun_crafting_bench_recipe/BasicRifle,
 		/datum/gun_crafting_bench_recipe/intermrifle,
 		/datum/gun_crafting_bench_recipe/advrifle,
+		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacket,
 
 			)
 
@@ -483,3 +485,9 @@
 	max_ammo = 12
 	multiload = TRUE
 #undef WEAPON_COMPLETION_WOOD_AMOUNT
+
+/obj/item/ammo_box/basicrifle
+	name = "Ammo packet"
+	icon_state = "buckshot"
+	ammo_type = /obj/item/ammo_casing/a762BasicRifle
+	max_ammo = 15

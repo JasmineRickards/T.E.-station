@@ -181,7 +181,7 @@
 		/obj/item/stack/ore/plasma = 1,
 		/obj/item/stack/sheet/iron = 2,
 	)
-	resulting_item = /obj/item/gun/ballistic/rifle/BasicRifle
+	resulting_item = /obj/item/BasicRifleAmmoSpawner
 	required_good_hits = 8
 
 /obj/item/BasicRifleAmmoSpawner
@@ -252,4 +252,14 @@
 		/obj/item/stack/sheet/mineral/titanium = 2,
 	)
 	resulting_item = /obj/item/gun/ballistic/automatic/advrifle
+	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe/BasicRifleAmmopacket
+	recipe_name = "Crude Rifle Ammo"
+	recipe_requirements = list(
+		/obj/item/stack/ore/plasma = 2,
+		/obj/item/stack/sheet/iron = 4,
+		/obj/item/stack/sheet/cloth = 1,
+	)
+	resulting_item = /obj/item/gun/ballistic/rifle/BasicRifle
 	required_good_hits = 8
