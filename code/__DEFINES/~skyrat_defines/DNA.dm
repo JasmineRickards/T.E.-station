@@ -50,7 +50,7 @@
 #define MAXIMUM_MARKINGS_PER_LIMB 3
 
 #define BODY_SIZE_NORMAL 1.00
-#define BODY_SIZE_MAX 2.5
+#define BODY_SIZE_MAX 3
 #define BODY_SIZE_MIN 0.6
 
 //In inches
