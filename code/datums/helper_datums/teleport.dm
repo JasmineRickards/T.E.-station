@@ -29,12 +29,12 @@
 	switch(channel)
 		if(TELEPORT_CHANNEL_BLUESPACE)
 			if(istype(teleatom, /obj/item/storage/backpack/holding))
-				precision = rand(1,100)
+				precision = rand(1,3)
 
 			var/static/list/bag_cache = typecacheof(/obj/item/storage/backpack/holding)
 			var/list/bagholding = typecache_filter_list(teleatom.get_all_contents(), bag_cache)
 			if(bagholding.len)
-				precision = max(rand(1,100)*bagholding.len,100)
+				precision = max(rand(1,3)*bagholding.len,3)
 				if(isliving(teleatom))
 					var/mob/living/MM = teleatom
 					to_chat(MM, span_warning("The bluespace interface on your bag of holding interferes with the teleport!"))

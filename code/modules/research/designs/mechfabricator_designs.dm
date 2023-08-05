@@ -1531,6 +1531,12 @@
 	materials = list(/datum/material/iron = 7500, /datum/material/glass = 1000, /datum/material/uranium = 4000)
 	build_path = /obj/item/mod/module/storage/syndicate
 
+/datum/design/module/mod_storage_bluespace
+	name = "MOD bluespace storage module"
+	id = "mod_storage_bluespace"
+	materials = list(/datum/material/iron = 7500, /datum/material/glass = 1000, /datum/material/uranium = 4000, /datum/material/plasma = 1000, /datum/material/bluespace = 5000, )
+	build_path = /obj/item/mod/module/storage/bluespace
+
 /datum/design/module/mod_visor_medhud
 	name = "Medical Visor Module"
 	id = "mod_visor_medhud"

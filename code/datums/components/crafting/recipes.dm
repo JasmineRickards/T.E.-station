@@ -1221,7 +1221,7 @@ SKYRAT EDIT STOP: Ash Rituals */
 	name = "Bag of Holding"
 	reqs = list(
 		/obj/item/bag_of_holding_inert = 1,
-		/obj/item/assembly/signaler/anomaly/bluespace = 1,
+		/obj/item/stack/sheet/bluespace_crystal = 5,
 	)
 	result = /obj/item/storage/backpack/holding
 	category = CAT_CLOTHING

@@ -752,6 +752,7 @@
 		"swapper",
 		"triphasic_scanning",
 		"wormholeprojector",
+		"mod_storage_bluespace",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	discount_experiments = list(/datum/experiment/scanning/points/machinery_tiered_scan/tier3_variety = 5000)

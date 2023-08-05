@@ -1,6 +1,6 @@
 /obj/item/satchel_of_holding_inert
 	name = "inert satchel of holding"
-	desc = "What is currently a just an unwieldly block of metal with a slot ready to accept a bluespace anomaly core."
+	desc = "What is currently a just an unwieldly block of metal with a slot ready to accept bluespace poly crystals."
 	icon = 'modular_skyrat/modules/holdingfashion_port/icons/storage.dmi'
 	icon_state = "inertsatchel"
 	w_class = WEIGHT_CLASS_BULKY
@@ -17,7 +17,7 @@
 
 /obj/item/duffel_of_holding_inert
 	name = "inert duffel bag of holding"
-	desc = "What is currently a just an unwieldly block of metal with a slot ready to accept a bluespace anomaly core."
+	desc = "What is currently a just an unwieldly block of metal with a slot ready to accept bluespace poly crystals."
 	icon = 'modular_skyrat/modules/holdingfashion_port/icons/storage.dmi'
 	icon_state = "inertduffel"
 	w_class = WEIGHT_CLASS_BULKY
