@@ -148,3 +148,108 @@
 	)
 	resulting_item = /obj/item/forging/incomplete_bow
 	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe
+	/// The name of the recipe to show
+	var/recipe_name = "generic debug recipe"
+	/// The items required to create the resulting item
+	var/list/recipe_requirements
+	/// What the end result of this recipe should be
+	var/resulting_item = /obj/item/forging
+	/// If we use the materials from the component parts
+	var/transfers_materials = TRUE
+	/// How many times should you have to swing the hammer to finish this item
+	var/required_good_hits = 6
+	/// What skill is relevant to the creation of this item?
+	var/relevant_skill = /datum/skill/smithing
+	/// How much experience in our relevant skill do we give upon completion?
+	var/relevant_skill_reward = 30
+
+/datum/gun_crafting_bench_recipe/BasicRifle
+	recipe_name = "Crude Rifle"
+	recipe_requirements = list(
+		/obj/item/stack/sheet/mineral/wood = 4,
+		/obj/item/weaponcrafting/basicpart = 1,
+		/obj/item/stack/sheet/mineral/titanium = 2,
+	)
+	resulting_item = /obj/item/gun/ballistic/rifle/BasicRifle
+	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe/BasicRifleAmmo
+	recipe_name = "Crude Rifle Ammo"
+	recipe_requirements = list(
+		/obj/item/stack/ore/plasma = 1,
+		/obj/item/stack/sheet/iron = 2,
+	)
+	resulting_item = /obj/item/gun/ballistic/rifle/BasicRifle
+	required_good_hits = 8
+
+/obj/item/BasicRifleAmmoSpawner
+	name = "Crude Rifle Ammo"
+	desc = "You shouldn't see this."
+
+	var/spawning_amount = 6
+
+/obj/item/BasicRifleAmmoSpawner/Initialize(mapload)
+	. = ..()
+	var/turf/src_turf = get_turf(src)
+	for(var/i in 1 to spawning_amount)
+		new /obj/item/ammo_casing/a762BasicRifle(src_turf)
+	qdel(src)
+
+/datum/gun_crafting_bench_recipe/basicpart
+	recipe_name = "Basic Gun parts"
+	recipe_requirements = list(
+		/obj/item/stack/sheet/iron = 2,
+		/obj/item/stack/sheet/mineral/wood = 4,
+	)
+	resulting_item = /obj/item/weaponcrafting/basicpart
+	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe/intermpart
+	recipe_name = "Intermediate Gun parts"
+	recipe_requirements = list(
+		/obj/item/stack/sheet/iron = 3,
+		/obj/item/stack/sheet/mineral/wood = 4,
+		/obj/item/stack/sheet/mineral/titanium = 1,
+	)
+	resulting_item = /obj/item/weaponcrafting/intermpart
+	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe/advpart
+	recipe_name = "Advanced Gun parts"
+	recipe_requirements = list(
+		/obj/item/stack/sheet/iron = 3,
+		/obj/item/stack/sheet/mineral/wood = 4,
+		/obj/item/stack/sheet/mineral/titanium = 4,
+	)
+	resulting_item = /obj/item/weaponcrafting/advpart
+	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe/BasicRifle
+	recipe_name = "Basic Rifle"
+	recipe_requirements = list(
+		/obj/item/stack/sheet/iron = 3,
+		/obj/item/weaponcrafting/basicpart = 1,
+	)
+	resulting_item = /obj/item/gun/ballistic/rifle/BasicRifle
+	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe/intermrifle
+	recipe_name = "Intermediate rifle"
+	recipe_requirements = list(
+		/obj/item/stack/sheet/iron = 3,
+		/obj/item/weaponcrafting/intermpart = 1,
+	)
+	resulting_item = /obj/item/gun/ballistic/revolver/intermrifle
+	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe/advrifle
+	recipe_name = "Advanced rifle"
+	recipe_requirements = list(
+		/obj/item/stack/sheet/iron = 3,
+		/obj/item/weaponcrafting/advpart = 1,
+		/obj/item/stack/sheet/mineral/titanium = 2,
+	)
+	resulting_item = /obj/item/gun/ballistic/automatic/advrifle
+	required_good_hits = 8

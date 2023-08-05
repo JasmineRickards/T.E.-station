@@ -23,6 +23,14 @@
 	COOLDOWN_DECLARE(hit_cooldown)
 	/// What recipes are we allowed to choose from?
 	var/list/allowed_choices = list(
+		/datum/gun_crafting_bench_recipe/BasicRifle,
+		/datum/gun_crafting_bench_recipe/BasicRifleAmmo,
+		/datum/gun_crafting_bench_recipe/basicpart,
+		/datum/gun_crafting_bench_recipe/intermpart,
+		/datum/gun_crafting_bench_recipe/advpart,
+		/datum/gun_crafting_bench_recipe/BasicRifle,
+		/datum/gun_crafting_bench_recipe/intermrifle,
+		/datum/gun_crafting_bench_recipe/advrifle,
 		/datum/crafting_bench_recipe/plate_helmet,
 		/datum/crafting_bench_recipe/plate_vest,
 		/datum/crafting_bench_recipe/plate_gloves,
@@ -353,4 +361,125 @@
 		. += found_movable_atom
 	return .
 
+/obj/structure/reagent_crafting_bench/guns
+	name = "Gun forging workbench"
+	desc = "A crafting bench fitted with tools, securing mechanisms, and a steady surface for gun assembly."
+	icon = 'modular_skyrat/modules/reagent_forging/icons/obj/forge_structures.dmi'
+	icon_state = "crafting_bench_empty"
+
+	anchored = TRUE
+	density = TRUE
+	list/allowed_choices = list(
+		/datum/gun_crafting_bench_recipe/BasicRifle,
+		/datum/gun_crafting_bench_recipe/BasicRifleAmmo,
+		/datum/gun_crafting_bench_recipe/basicpart,
+		/datum/gun_crafting_bench_recipe/intermpart,
+		/datum/gun_crafting_bench_recipe/advpart,
+		/datum/gun_crafting_bench_recipe/BasicRifle,
+		/datum/gun_crafting_bench_recipe/intermrifle,
+		/datum/gun_crafting_bench_recipe/advrifle,
+
+			)
+
+
+
+
+
+
+
+/obj/item/gun/ballistic/rifle/BasicRifle
+	name = "Crudely Crafted Rifle"
+	desc = "A roughly built bolt-action rifle. At least it is reliable."
+	slot_flags = ITEM_SLOT_BACK
+	icon_state = "moistprime"
+	inhand_icon_state = "moistprime"
+	worn_icon_state = "moistprime"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/BasicRifle
+	fire_sound = 'sound/weapons/gun/sniper/shot.ogg'
+	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
+
+/obj/item/gun/ballistic/rifle/lionhunter/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/scope, range_modifier = 1.25)
+
+/obj/item/ammo_box/magazine/internal/boltaction/BasicRifle
+	name = "lionhunter rifle internal magazine"
+	ammo_type = /obj/item/ammo_casing/a762BasicRifle
+	caliber = CALIBER_b764
+	max_ammo = 3
+
+/obj/item/ammo_casing/a762BasicRifle
+	name = "Hand-made bullet"
+	icon_state = "762-casing"
+	caliber = CALIBER_b764
+	projectile_type = /obj/projectile/bullet/a762BasicRifle
+
+
+
+
+/obj/projectile/bullet/a762BasicRifle
+	name = "Crude rifle bullet"
+	damage = 45
+
+/obj/item/weaponcrafting/basicpart
+	name = "Basic Gun Parts"
+	desc = "A collection of crude weapon parts."
+	icon = 'icons/obj/weapons/improvised.dmi'
+	icon_state = "riflestock"
+
+/obj/item/weaponcrafting/intermpart
+	name = "Basic Gun Parts"
+	desc = "A collection of simple weapon parts."
+	icon = 'icons/obj/weapons/improvised.dmi'
+	icon_state = "receiver"
+
+/obj/item/weaponcrafting/advpart
+	name = "Advanced Gun Parts"
+	desc = "A collection of carefully crafted parts for delicate usage."
+	icon = 'icons/obj/weapons/improvised.dmi'
+	icon_state = "kitsuitcase"
+
+/obj/item/weaponcrafting/bullettips
+	name = "Bullet tips"
+	icon = 'modular_skyrat/modules/shotgunrebalance/icons/shotbox.dmi'
+	icon_state = "buckshot"
+
+/obj/item/gun/ballistic/revolver/intermrifle
+	name = "\improper Improvised rotating rifle"
+	desc = "A crudely made revolving rifle. Somewhat better than a bolt action to use."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/guns/projectile40x32.dmi'
+	icon_state = "revolving-rifle"
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/intermrifle
+	internal_magazine = TRUE
+	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
+	has_gun_safety = FALSE
+
+/obj/item/ammo_box/magazine/internal/cylinder/intermrifle
+	name = "detective revolver cylinder"
+	caliber = CALIBER_b764
+	ammo_type = /obj/item/ammo_casing/a762BasicRifle
+	max_ammo = 6
+
+/obj/item/gun/ballistic/automatic/advrifle
+	name = "Improvised repeating rifle"
+	desc = "A simple semi-automatic rifle, chambered in those same crude rounds for simplistic handling."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/guns/projectile40x32.dmi'
+	icon_state = "cfa_rifle"
+	inhand_icon_state = "irifle"
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	lefthand_file = 'modular_skyrat/modules/modular_weapons/icons/mob/inhands/weapons/64x_guns_left.dmi'
+	righthand_file = 'modular_skyrat/modules/modular_weapons/icons/mob/inhands/weapons/64x_guns_right.dmi'
+	worn_icon_state = null
+	internal_magazine = TRUE
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/advrifle
+	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
+	has_gun_safety = FALSE
+
+/obj/item/ammo_box/magazine/internal/boltaction/advrifle
+	name = "detective revolver cylinder"
+	ammo_type = /obj/item/ammo_casing/a762BasicRifle
+	caliber = CALIBER_b764
+	max_ammo = 12
+	multiload = TRUE
 #undef WEAPON_COMPLETION_WOOD_AMOUNT

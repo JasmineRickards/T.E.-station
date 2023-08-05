@@ -730,6 +730,7 @@
 	atom_storage.set_holdable(list(
 		/obj/item/ammo_casing/a762,
 		/obj/item/ammo_casing/shotgun,
+		/obj/item/ammo_casing/a762BasicRifle,
 		))
 
 /obj/item/storage/belt/fannypack

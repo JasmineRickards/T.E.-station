@@ -1654,6 +1654,12 @@
 	pixel_y = 30;
 	req_access = list("syndicate")
 	},
+/obj/structure/table/wood/fancy/black,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/stack/telecrystal/twenty,
+/obj/item/uplink/nuclear_restricted{
+	name = "logistics uplink"
+	},
 /turf/open/floor/iron/edge,
 /area/ruin/syndicate_lava_base/main)
 "oe" = (
@@ -2135,6 +2141,10 @@
 	onstation = 0
 	},
 /turf/open/floor/wood,
+/area/ruin/syndicate_lava_base/dormitories)
+"sI" = (
+/obj/machinery/vending/wardrobe/sec_wardrobe/red,
+/turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/dormitories)
 "sL" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -2852,6 +2862,10 @@
 /obj/structure/disposalpipe/junction/flip,
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/syndicate_lava_base/main)
+"Bb" = (
+/obj/machinery/vending/imported/yangyu,
+/turf/open/floor/iron,
+/area/ruin/syndicate_lava_base/dormitories)
 "Bf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/directional/east,
@@ -4288,6 +4302,10 @@
 	},
 /turf/open/floor/plating/icemoon,
 /area/ruin/syndicate_lava_base/testlab)
+"Px" = (
+/obj/machinery/vending/imported,
+/turf/open/floor/iron,
+/area/ruin/syndicate_lava_base/dormitories)
 "PG" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -4334,6 +4352,10 @@
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/medbay)
+"Qd" = (
+/obj/machinery/vending/imported/tizirian,
+/turf/open/floor/iron,
+/area/ruin/syndicate_lava_base/dormitories)
 "Qe" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
@@ -6503,10 +6525,10 @@ zF
 Jd
 fq
 Jd
-Jd
-Jd
-Jd
-Jd
+Bb
+Qd
+Px
+sI
 ef
 Sm
 Jd

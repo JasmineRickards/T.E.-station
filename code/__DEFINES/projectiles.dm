@@ -56,3 +56,4 @@
 #define CALIBER_HOOK "hook"
 /// The caliber used by the changeling tentacle mutation.
 #define CALIBER_TENTACLE "tentacle"
+#define CALIBER_b764 "Bulky bullet"
