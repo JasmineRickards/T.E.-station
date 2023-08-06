@@ -478,6 +478,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/advrifle
 	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
 	has_gun_safety = FALSE
+	semi_auto = TRUE
 
 /obj/item/ammo_box/magazine/internal/boltaction/advrifle
 	name = "detective revolver cylinder"
@@ -492,4 +493,4 @@
 	icon = 'modular_skyrat/modules/shotgunrebalance/icons/shotbox.dmi'
 	icon_state = "buckshot"
 	ammo_type = /obj/item/ammo_casing/a762BasicRifle
-	max_ammo = 15
+	max_ammo = 12

@@ -271,3 +271,5 @@
 		/obj/item/ammo_box/basicrifle = 1,
 		/obj/item/ammo_casing/a762BasicRifle = 12,
 		)
+	resulting_item = /obj/item/ammo_box/basicrifle
+	required_good_hits = 8
