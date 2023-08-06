@@ -32,6 +32,7 @@
 		/datum/gun_crafting_bench_recipe/intermrifle,
 		/datum/gun_crafting_bench_recipe/advrifle,
 		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacket,
+		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacketrefill,
 		/datum/crafting_bench_recipe/plate_helmet,
 		/datum/crafting_bench_recipe/plate_vest,
 		/datum/crafting_bench_recipe/plate_gloves,
@@ -488,6 +489,7 @@
 
 /obj/item/ammo_box/basicrifle
 	name = "Ammo packet"
+	icon = 'modular_skyrat/modules/shotgunrebalance/icons/shotbox.dmi'
 	icon_state = "buckshot"
 	ammo_type = /obj/item/ammo_casing/a762BasicRifle
 	max_ammo = 15

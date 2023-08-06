@@ -255,11 +255,19 @@
 	required_good_hits = 8
 
 /datum/gun_crafting_bench_recipe/BasicRifleAmmopacket
-	recipe_name = "Crude Rifle Ammo"
+	recipe_name = "Crude Rifle Ammo packet"
 	recipe_requirements = list(
 		/obj/item/stack/ore/plasma = 2,
 		/obj/item/stack/sheet/iron = 4,
 		/obj/item/stack/sheet/cloth = 1,
 	)
-	resulting_item = /obj/item/gun/ballistic/rifle/BasicRifle
+	resulting_item = /obj/item/ammo_box/basicrifle
 	required_good_hits = 8
+
+/datum/gun_crafting_bench_recipe/BasicRifleAmmopacketrefill
+	recipe_name = "Crude Rifle Ammo packet refill"
+	recipe_requirements = list(
+		/obj/item/stack/ore/plasma = 2,
+		/obj/item/ammo_box/basicrifle = 1,
+		/obj/item/ammo_casing/a762BasicRifle = 12,
+		)
