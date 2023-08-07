@@ -46,6 +46,10 @@
 			final_pixel_y = base_pixel_y
 		else //if(lying != 0)
 			if(lying_prev == 0) //Standing to lying
+				if(lying_angle == 90)
+					ntransform.Translate((previous_y_offset*-1),0)
+				else
+					ntransform.Translate(previous_y_offset,0)
 				pixel_y = base_pixel_y
 				final_pixel_y = base_pixel_y + PIXEL_Y_OFFSET_LYING
 				if(dir & (EAST|WEST)) //Facing east or west

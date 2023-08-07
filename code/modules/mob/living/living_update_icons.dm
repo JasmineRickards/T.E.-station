@@ -3,7 +3,7 @@
 /mob/living/update_transform()
 	perform_update_transform() // carbon mobs do it differently than silicons and simple animals.
 	size_multiplier = lying_angle ? transform.b : transform.a
-	if(size_multiplier < 0)
+	if(lying_angle > 180)
 		size_multiplier *= -1
 	previous_y_offset = lying_angle ? transform.c : transform.f
 	if(lying_angle > 180)
