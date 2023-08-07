@@ -1,8 +1,6 @@
 // For any mob that can be ridden
 
 //SKYRAT EDIT START: Human Riding Defines
-//#define OVERSIZED_OFFSET 18
-//#define OVERSIZED_SIDE_OFFSET 11
 #define X_SIZE_OFFSET 8
 #define Y_SIZE_OFFSET 6
 //SKYRAT EDIT END
@@ -271,10 +269,8 @@
 		else
 			AM.layer = MOB_ABOVE_PIGGYBACK_LAYER
 
-#warn riding a creature is probably fucked and should be adressed at some point. This is not setup for variable sprite scales. - Luke Vale
 /datum/component/riding/creature/human/get_offsets(pass_index)
 	var/mob/living/carbon/human/H = parent
-	//var/mob/living/carbon/human/F = H.buckled_mobs
 	//SKYRAT EDIT BEGIN - Oversized Overhaul
 	for(var/i in H.buckled_mobs)
 		var/mob/living/rider = i
@@ -437,8 +433,6 @@
 
 
 //SKYRAT EDIT START: Human Riding Defines
-//#undef OVERSIZED_OFFSET
-//#undef OVERSIZED_SIDE_OFFSET
 #undef X_SIZE_OFFSET
 #undef Y_SIZE_OFFSET
 //SKYRAT EDIT END
