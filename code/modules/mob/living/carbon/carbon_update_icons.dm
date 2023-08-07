@@ -38,6 +38,7 @@
 	var/final_pixel_y = pixel_y
 	var/final_dir = dir
 	var/changed = 0
+	var/resize_carry = resize
 	if(lying_angle != lying_prev && rotate_on_lying)
 		changed++
 		ntransform.TurnTo(lying_prev , lying_angle)
@@ -49,10 +50,18 @@
 				final_pixel_y = base_pixel_y + PIXEL_Y_OFFSET_LYING
 				if(dir & (EAST|WEST)) //Facing east or west
 					final_dir = pick(NORTH, SOUTH) //So you fall on your side rather than your face or ass
+
 	if(resize != RESIZE_DEFAULT_SIZE)
 		changed++
 		ntransform.Scale(resize)
 		resize = RESIZE_DEFAULT_SIZE
+
+	if(!lying_angle)
+		size_multiplier = size_multiplier * resize_carry
+		var/neg_offset = ((previous_y_offset*-1) * resize_carry)
+		var/offsetY = ((size_multiplier - 1) * 32)/2
+		ntransform.Translate(0,neg_offset)
+		ntransform.Translate(0,offsetY)
 
 	if(changed)
 		SEND_SIGNAL(src, COMSIG_PAUSE_FLOATING_ANIM, 0.3 SECONDS)

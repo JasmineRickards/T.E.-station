@@ -952,11 +952,15 @@
 	else if(HAS_TRAIT(src, TRAIT_QUICK_CARRY))
 		carrydelay = 4 SECONDS
 		skills_space = " quickly"
-	//SKYRAT EDIT ADDITION
-	else if(HAS_TRAIT(target, TRAIT_OVERSIZED) && !HAS_TRAIT(src, TRAIT_OVERSIZED))
+	//SKYRAT EDIT ADDITION - edited again by T.E.
+	//else if(HAS_TRAIT(target, TRAIT_OVERSIZED) && !HAS_TRAIT(src, TRAIT_OVERSIZED))  Old proc for checking
+	if((target.size_multiplier - 1) >= (src.size_multiplier))
 		visible_message(span_warning("[src] tries to carry [target], but they are too heavy!"))
 		return
 	//SKYRAT EDIT END
+	if((target.size_multiplier >= src.size_multiplier) && (HAS_TRAIT(target, TRAIT_OVERSIZED) && !HAS_TRAIT(src, TRAIT_OVERSIZED))) //T.E. Edit
+		visible_message(span_warning("[src] tries to carry [target], but they are too heavy!"))
+		return
 	visible_message(span_notice("[src] starts[skills_space] lifting [target] onto [p_their()] back..."),
 		span_notice("You[skills_space] start to lift [target] onto your back..."))
 	if(!do_after(src, carrydelay, target))
@@ -984,7 +988,8 @@
 		target.visible_message(span_warning("[target] can't hang onto [src]!"))
 		return
 	//SKYRAT EDIT START
-	if(HAS_TRAIT(target, TRAIT_OVERSIZED) && !HAS_TRAIT(src, TRAIT_OVERSIZED))
+	//if(HAS_TRAIT(target, TRAIT_OVERSIZED) && !HAS_TRAIT(src, TRAIT_OVERSIZED))  - If the if statement below doesn't work then f me IG
+	if(((target.size_multiplier - 1) >= (src.size_multiplier)) || ((target.size_multiplier >= src.size_multiplier) && (HAS_TRAIT(target, TRAIT_OVERSIZED) && !HAS_TRAIT(src, TRAIT_OVERSIZED))))
 		target.visible_message(span_warning("[target] is too heavy for [src] to carry!"))
 		var/dam_zone = pick(BODY_ZONE_CHEST, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 		var/obj/item/bodypart/affecting = get_bodypart(ran_zone(dam_zone))

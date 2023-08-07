@@ -176,6 +176,30 @@ GLOBAL_LIST_INIT(loadout_pocket_items, generate_loadout_items(/datum/loadout_ite
 	restricted_roles = list(JOB_CHAPLAIN)
 
 /*
+*	SIZEITEMS
+*/
+
+/datum/loadout_item/pocket_items/sizering
+	name = "Normalizer Ring"
+	item_path = /obj/item/clothing/gloves/ring/syntech
+
+/datum/loadout_item/pocket_items/sizeband
+	name = "Normalizer Band"
+	item_path = /obj/item/clothing/gloves/ring/syntech/band
+
+/datum/loadout_item/pocket_items/sizenecklace
+	name = "Normalizer Pendant"
+	item_path = /obj/item/clothing/neck/syntech
+
+/datum/loadout_item/pocket_items/sizechoker
+	name = "Normalizer Choker"
+	item_path = /obj/item/clothing/neck/syntech/choker
+
+/datum/loadout_item/pocket_items/sizecollar
+	name = "Normalizer Collar"
+	item_path = /obj/item/clothing/neck/syntech/collar
+
+/*
 *	FRAGRANCES
 */
 

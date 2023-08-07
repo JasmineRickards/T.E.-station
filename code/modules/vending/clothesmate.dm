@@ -158,6 +158,11 @@
 				/obj/item/clothing/suit/costume/pg = 20,
 				/obj/item/clothing/shoes/jackbros = 20,
 				/obj/item/clothing/shoes/saints = 20,
+				/obj/item/clothing/gloves/ring/syntech = 2,
+				/obj/item/clothing/gloves/ring/syntech/band = 2,
+				/obj/item/clothing/neck/syntech = 2,
+				/obj/item/clothing/neck/syntech/choker = 2,
+				/obj/item/clothing/neck/syntech/collar = 2,
 			),
 		),
 	)

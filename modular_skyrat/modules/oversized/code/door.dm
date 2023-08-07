@@ -7,7 +7,7 @@
 
 /obj/machinery/door/airlock/proc/on_entered(datum/source, atom/movable/crossed_atom)
 	SIGNAL_HANDLER
-	if(HAS_TRAIT(crossed_atom, TRAIT_OVERSIZED) && ishuman(crossed_atom))
+	if(HAS_TRAIT(crossed_atom, TRAIT_OVERSIZED) && ishuman(crossed_atom) && HAS_TRAIT(crossed_atom, TRAIT_HUGE_SIZE)) //T.E. Edit to make it so if you've been shrunked down, no oversized head bonk.
 		var/mob/living/carbon/human/crossing_human = crossed_atom
 		if(crossing_human.m_intent != MOVE_INTENT_WALK && crossing_human.body_position == STANDING_UP)
 			//We gonna bamf you, you tall fucker

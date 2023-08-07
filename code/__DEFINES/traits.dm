@@ -405,7 +405,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 // Being close enough to the supermatter makes it heal at higher temperatures
 // and emit less heat. Present on /mob or /datum/mind
 #define TRAIT_SUPERMATTER_SOOTHER "supermatter_soother"
-
+// Are you currently over 150% scale.
+#define TRAIT_HUGE_SIZE "huge_size"
 /// `do_teleport` will not allow this atom to teleport
 #define TRAIT_NO_TELEPORT "no-teleport"
 /// This atom is a secluded location, which is counted as out of bounds.

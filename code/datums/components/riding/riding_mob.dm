@@ -271,9 +271,10 @@
 		else
 			AM.layer = MOB_ABOVE_PIGGYBACK_LAYER
 
+#warn riding a creature is probably fucked and should be adressed at some point. This is not setup for variable sprite scales. - Luke Vale
 /datum/component/riding/creature/human/get_offsets(pass_index)
-	var/mob/living/carbon/human/H = parent
-	//SKYRAT EDIT BEGIN - Oversized Overhaul
+	var/mob/living/carbon/human/H = parent 
+	//SKYRAT EDIT BEGIN - Oversized Overhaul 
 	if(H.buckle_lying)
 		return HAS_TRAIT(H, TRAIT_OVERSIZED) ? list(
 				TEXT_NORTH = list(0, OVERSIZED_OFFSET),

@@ -50,7 +50,7 @@
 	if(!istype(M))
 		return FALSE
 	//SKYRAT EDIT ADDITION
-	if(HAS_TRAIT(M, TRAIT_OVERSIZED))
+	if(HAS_TRAIT(M, TRAIT_HUGE_SIZE))
 		to_chat(M, span_warning("You are far too big for this!"))
 		return FALSE
 	//SKYRAT EDIT END
