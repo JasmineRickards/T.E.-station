@@ -114,7 +114,8 @@
 					/obj/item/storage/box/shibari_stand = 4)
 
 	premium = list(
-		/obj/item/clothing/neck/human_petcollar/locked/holo = 3)
+		/obj/item/clothing/neck/human_petcollar/locked/holo = 3,
+		/obj/item/sizebrick = 3)
 
 	contraband = list(
 					/obj/item/electropack/shockcollar = 4,

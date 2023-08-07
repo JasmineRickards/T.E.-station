@@ -118,7 +118,7 @@
 	. = ..()
 	handle_layer()
 	//SKYRAT EDIT ADDITION
-	if(HAS_TRAIT(M, TRAIT_OVERSIZED))
+	if(HAS_TRAIT(M, TRAIT_OVERSIZED) && HAS_TRAIT(M, TRAIT_HUGE_SIZE))
 		visible_message(span_warning("[src] buckles under the weight of [M] causing it to break!"))
 		playsound(src, 'modular_skyrat/modules/oversized/sound/chair_break.ogg', 70, TRUE)
 		deconstruct()
