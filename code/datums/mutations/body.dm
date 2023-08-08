@@ -120,27 +120,26 @@
 	if(..())
 		return
 	// SKYRAT EDIT BEGIN
-	if(owner.dna.features["body_size"] < 1)
-		to_chat(owner, "You feel your body shrinking even further, but your organs aren't! Uh oh!")
-		owner.adjustBruteLoss(25)
-		return
+	// if(owner.dna.features["body_size"] < 1) Again, no reason to nuke someone for just having the trait >:(
+	// 	to_chat(owner, "You feel your body shrinking even further, but your organs aren't! Uh oh!")
+	// 	owner.adjustBruteLoss(25)
+	// 	return
 	// SKYRAT EDIT END
 	ADD_TRAIT(owner, TRAIT_DWARF, GENETIC_MUTATION)
-	var/matrix/new_transform = matrix()
-	new_transform.Scale(1, 0.8)
-	owner.transform = new_transform.Multiply(owner.transform)
-	passtable_on(owner, GENETIC_MUTATION)
-	owner.visible_message(span_danger("[owner] suddenly shrinks!"), span_notice("Everything around you seems to grow.."))
+	if(!owner.normalized)
+		owner.resize = 0.8
+		owner.update_transform()
+		owner.visible_message(span_danger("[owner] suddenly shrinks!"), span_notice("Everything around you seems to grow.."))
+
 
 /datum/mutation/human/dwarfism/on_losing(mob/living/carbon/human/owner)
 	if(..())
 		return
 	REMOVE_TRAIT(owner, TRAIT_DWARF, GENETIC_MUTATION)
-	var/matrix/new_transform = matrix()
-	new_transform.Scale(1, 1.25)
-	owner.transform = new_transform.Multiply(owner.transform)
-	passtable_off(owner, GENETIC_MUTATION)
-	owner.visible_message(span_danger("[owner] suddenly grows!"), span_notice("Everything around you seems to shrink.."))
+	if(!owner.normalized)
+		owner.resize = 1.25
+		owner.update_transform()
+		owner.visible_message(span_danger("[owner] suddenly grows!"), span_notice("Everything around you seems to shrink.."))
 
 //Clumsiness has a very large amount of small drawbacks depending on item.
 /datum/mutation/human/clumsy
@@ -394,23 +393,25 @@
 	if(..())
 		return
 	// SKYRAT EDIT BEGIN
-	if(owner.dna.features["body_size"] > 1)
-		to_chat(owner, "You feel your body expanding even further, but it feels like your bones are expanding too much!")
-		owner.adjustBruteLoss(25) // take some DAMAGE
-		return
+	// if(owner.dna.features["body_size"] > 1) NO REASON to make it fail and punish you. - luke vale.
+	// 	to_chat(owner, "You feel your body expanding even further, but it feels like your bones are expanding too much!")
+	// 	owner.adjustBruteLoss(25) // take some DAMAGE
+	// 	return
 	// SKYRAT EDIT END
 	ADD_TRAIT(owner, TRAIT_GIANT, GENETIC_MUTATION)
-	owner.resize = 1.25
-	owner.update_transform()
-	owner.visible_message(span_danger("[owner] suddenly grows!"), span_notice("Everything around you seems to shrink.."))
+	if(!owner.normalized)
+		owner.resize = 1.25
+		owner.update_transform()
+		owner.visible_message(span_danger("[owner] suddenly grows!"), span_notice("Everything around you seems to shrink.."))
 
 /datum/mutation/human/gigantism/on_losing(mob/living/carbon/human/owner)
 	if(..())
 		return
 	REMOVE_TRAIT(owner, TRAIT_GIANT, GENETIC_MUTATION)
-	owner.resize = 0.8
-	owner.update_transform()
-	owner.visible_message(span_danger("[owner] suddenly shrinks!"), span_notice("Everything around you seems to grow.."))
+	if(!owner.normalized)
+		owner.resize = 0.8
+		owner.update_transform()
+		owner.visible_message(span_danger("[owner] suddenly shrinks!"), span_notice("Everything around you seems to grow.."))
 
 /datum/mutation/human/spastic
 	name = "Spastic"

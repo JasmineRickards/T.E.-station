@@ -152,7 +152,7 @@
 
 			//scaling
 			var/atom/movable/owned_turf = user.owned_turf
-			var/change_multiplier = human_user.dna.features["body_size"] / BODY_SIZE_NORMAL
+			var/change_multiplier = human_user.size_multiplier // just grabs our current body size for use in this.
 			var/translate = ((change_multiplier-1) * 32)/2
 			owned_turf.transform = owned_turf.transform.Scale(change_multiplier)
 			owned_turf.transform = owned_turf.transform.Translate(0, translate)
