@@ -3,6 +3,8 @@
 	var/normalize_size = 1 //This number is used as the "normal" height people will be given when wearing one of these accessories
 	var/natural_size = null //The value of the wearer's body_size var in prefs. Unused for now.
 	var/recorded_size = null //the user's height prior to equipping
+	///Used to keep track if we have the gigantism or dwarfism for use in the size clothing.
+	var/macro_or_micro = 0 // 1 = dwarf 2 = giant
 
 //For applying a normalization
 /obj/item/clothing/proc/normalize_mob_size(mob/living/carbon/human/H)
@@ -20,18 +22,41 @@
 	H.visible_message("<span class='warning'>A flash of purple light engulfs [H], before they change to normal!</span>","<span class='notice'>You feel warm for a moment, before everything scales to your size...</span>")
 	H.set_size(normalize_size) //Then apply the size
 	H.normalized = TRUE //And set normalization
-
+	if(HAS_TRAIT(H, TRAIT_GIANT))
+		macro_or_micro = 2
+	if(HAS_TRAIT(H, TRAIT_DWARF))
+		macro_or_micro = 1
 //For removing a normalization, and reverting back to normal
 /obj/item/clothing/proc/denormalize_mob_size(mob/living/carbon/human/H)
 	if(!recorded_size)
 		return
+
+	if(!macro_or_micro)
+		if(HAS_TRAIT(H, TRAIT_GIANT))
+			recorded_size *= 1.25
+		else if(HAS_TRAIT(H, TRAIT_DWARF))
+			recorded_size *= 0.8
+	else if(macro_or_micro == 1)
+		if(!HAS_TRAIT(H, TRAIT_DWARF))
+			recorded_size *= 1.25
+			macro_or_micro = 0
+		if(HAS_TRAIT(H, TRAIT_GIANT))
+			recorded_size *= 1.25
+			macro_or_micro = 2
+	else
+		if(!HAS_TRAIT(H, TRAIT_GIANT))
+			recorded_size *= 0.8
+		if(HAS_TRAIT(H, TRAIT_DWARF))
+			recorded_size *= 0.8
+
 	if(H.normalized) //sanity check
 		playsound(H,'sound/weapons/emitter2.ogg', 50, 1)
 		flash_lighting_fx(3, 3, LIGHT_COLOR_YELLOW)
 		H.visible_message("<span class='warning'>Golden light engulfs [H], and they shoot back to their default height!</span>","<span class='notice'>Energy rushes through your body, and you return to normal.</span>")
 		H.set_size(recorded_size)
 		H.normalized = FALSE
-		recorded_size = null
+	recorded_size = null
+
 
 //For storing normalization on mobs
 /mob/living

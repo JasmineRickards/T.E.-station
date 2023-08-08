@@ -13,8 +13,18 @@
     sizechange(user)
 
 /obj/item/sizebrick/proc/sizechange(mob/living/carbon/human/H)
+    if(H.normalized)
+        to_chat(H, "<span class='warning'>The devices buzzes, refusing to change you while being normalized.</span>")
+        playsound(H, 'sound/machines/buzz-sigh.ogg', 50, 1)
+        return
     var/size_select = tgui_input_number(usr, "Put the desired size (60-300%)", "Set Size", 100, 300, 60)
+    var/size_adjust = 1
+    if (HAS_TRAIT(H, TRAIT_DWARF))
+        size_adjust = 0.8
+    if (HAS_TRAIT(H, TRAIT_GIANT))
+        size_adjust = 1.25
     size_select /= 100
+    size_select *= size_adjust
     if (H.size_multiplier == size_select)
         to_chat(H, "<span class='warning'>The devices buzzes, your selected size is the same as your current.</span>")
         playsound(H, 'sound/machines/buzz-sigh.ogg', 50, 1)
