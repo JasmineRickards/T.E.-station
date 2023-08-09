@@ -1235,16 +1235,6 @@
 	icon_state = null
 	gender = NEUTER
 
-/datum/sprite_accessory/bra/female_bikini
-	name = "Bikini Top"
-	icon_state = "female_bikini_top"
-	gender = FEMALE
-
-/datum/sprite_accessory/bra/female_lace
-	name = "Lace Bikini Top"
-	icon_state = "female_lace_top"
-	gender = FEMALE
-
 /datum/sprite_accessory/bra/female_strapless
 	name = "Strapless Bikini Top"
 	icon_state = "female_strapless_top"
@@ -1261,7 +1251,7 @@
 	gender = FEMALE
 
 /datum/sprite_accessory/bra/swimsuit_halter
-	name = "Halter Swimsuit Top"
+	name = "Halter neck bra - Alt"
 	icon_state = "swim_halter"
 	gender = FEMALE
 

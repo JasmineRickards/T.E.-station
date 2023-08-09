@@ -557,6 +557,8 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 */
 
 //Moves all bras to their own catagory to allow wearing shirts with bras. As there are quite alot of cloths that don't cover your chest.
+
+
 /datum/sprite_accessory/bra/babydoll
 	name = "Baby-Doll"
 	icon_state = "babydoll"
