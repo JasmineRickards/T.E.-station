@@ -52,6 +52,7 @@
 		if(mob_species)
 			spawned_human.set_species(mob_species)
 		spawned_human.underwear = "Nude"
+		spawned_human.bra = "Nude"
 		spawned_human.undershirt = "Nude"
 		spawned_human.socks = "Nude"
 		if(hairstyle)

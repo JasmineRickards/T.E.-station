@@ -12,6 +12,10 @@ GLOBAL_LIST_EMPTY(facial_hair_gradients_list) //stores /datum/sprite_accessory/f
 GLOBAL_LIST_EMPTY(underwear_list) //stores /datum/sprite_accessory/underwear indexed by name
 GLOBAL_LIST_EMPTY(underwear_m) //stores only underwear name
 GLOBAL_LIST_EMPTY(underwear_f) //stores only underwear name
+	//Bras
+GLOBAL_LIST_EMPTY(bra_list) //stores /datum/sprite_accessory/bra indexed by name
+GLOBAL_LIST_EMPTY(bra_m) //stores only bra name
+GLOBAL_LIST_EMPTY(bra_f) //stores only bra name
 	//Undershirts
 GLOBAL_LIST_EMPTY(undershirt_list) //stores /datum/sprite_accessory/undershirt indexed by name
 GLOBAL_LIST_EMPTY(undershirt_m)  //stores only undershirt name

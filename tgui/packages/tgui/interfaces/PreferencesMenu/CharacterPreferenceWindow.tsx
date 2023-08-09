@@ -1,4 +1,4 @@
-import { exhaustiveCheck } from 'common/exhaustive';
+import { exhaustiveCheck } from '../../../common/exhaustive';
 import { useBackend, useLocalState } from '../../backend';
 import { Stack, Dropdown, Flex } from '../../components';
 import { Window } from '../../layouts';

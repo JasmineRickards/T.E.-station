@@ -23,16 +23,6 @@
 	COOLDOWN_DECLARE(hit_cooldown)
 	/// What recipes are we allowed to choose from?
 	var/list/allowed_choices = list(
-		/datum/gun_crafting_bench_recipe/BasicRifle,
-		/datum/gun_crafting_bench_recipe/BasicRifleAmmo,
-		/datum/gun_crafting_bench_recipe/basicpart,
-		/datum/gun_crafting_bench_recipe/intermpart,
-		/datum/gun_crafting_bench_recipe/advpart,
-		/datum/gun_crafting_bench_recipe/BasicRifle,
-		/datum/gun_crafting_bench_recipe/intermrifle,
-		/datum/gun_crafting_bench_recipe/advrifle,
-		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacket,
-		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacketrefill,
 		/datum/crafting_bench_recipe/plate_helmet,
 		/datum/crafting_bench_recipe/plate_vest,
 		/datum/crafting_bench_recipe/plate_gloves,
@@ -371,7 +361,7 @@
 
 	anchored = TRUE
 	density = TRUE
-	list/allowed_choices = list(
+	allowed_choices = list(
 		/datum/gun_crafting_bench_recipe/BasicRifle,
 		/datum/gun_crafting_bench_recipe/BasicRifleAmmo,
 		/datum/gun_crafting_bench_recipe/basicpart,
@@ -381,11 +371,10 @@
 		/datum/gun_crafting_bench_recipe/intermrifle,
 		/datum/gun_crafting_bench_recipe/advrifle,
 		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacket,
-
 			)
-
-
-
+/obj/structure/reagent_crafting_bench/guns/Initialize(mapload)
+	. = ..()
+	populate_radial_choice_list()
 
 
 

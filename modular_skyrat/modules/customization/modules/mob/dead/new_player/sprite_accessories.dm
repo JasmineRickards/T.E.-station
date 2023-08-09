@@ -515,50 +515,15 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 /*
 	Adding covers_chest to TG underwears where applicable
 */
-/datum/sprite_accessory/underwear/female_bikini
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/female_lace
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/female_bralette
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/female_sport
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/female_strapless
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/female_babydoll
-	covers_chest = TRUE
-
 /datum/sprite_accessory/underwear/swimsuit_onepiece
 	covers_chest = TRUE
 
 /datum/sprite_accessory/underwear/swimsuit_strapless_onepiece
 	covers_chest = TRUE
 
-/datum/sprite_accessory/underwear/swimsuit_twopiece
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/swimsuit_strapless_twopiece
-	covers_chest = TRUE
-
 /datum/sprite_accessory/underwear/swimsuit_stripe
 	covers_chest = TRUE
 
-/datum/sprite_accessory/underwear/swimsuit_halter
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/female_white_neko
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/female_black_neko
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/female_uk
-	covers_chest = TRUE
 
 /*
 	End of adding covers_chest to TG stuff, start of adding has_digitigrade to TG stuff
@@ -591,6 +556,180 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	End of adding has_digitigrade to TG stuff
 */
 
+//Moves all bras to their own catagory to allow wearing shirts with bras. As there are quite alot of cloths that don't cover your chest.
+
+
+/datum/sprite_accessory/bra/babydoll
+	name = "Baby-Doll"
+	icon_state = "babydoll"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/bra
+	name = "Bra"
+	icon_state = "bra"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/bra_alt
+	name = "Bra - Alt"
+	icon_state = "bra_alt"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/bra_thin
+	name = "Bra - Thin"
+	icon_state = "bra_thin"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/bra_kinky
+	name = "Bra - Kinky Black"
+	icon_state = "bra_kinky"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/bra_freedom
+	name = "Bra - Freedom"
+	icon_state = "bra_assblastusa"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/bra_commie
+	name = "Bra - Commie"
+	icon_state = "bra_commie"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/bra_beekini
+	name = "Bra - Bee-kini"
+	icon_state = "bra_bee-kini"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/bra_uk
+	name = "Bra - UK"
+	icon_state = "bra_uk"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/bra_neko
+	name = "Bra - Neko"
+	icon_state = "bra_neko"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/halterneck_bra
+	name = "Bra - Halterneck"
+	icon_state = "halterneck_bra"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/sports_bra
+	name = "Bra, Sports"
+	icon_state = "sports_bra"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/sports_bra_alt
+	name = "Bra, Sports - Alt"
+	icon_state = "sports_bra_alt"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/bra_strapless
+	name = "Bra, Strapless"
+	icon_state = "bra_strapless"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/bra_latex
+	name = "Bra, Latex"
+	icon_state = "bra_latex"
+	gender = FEMALE
+	use_static = TRUE
+	erp_accessory = TRUE
+
+/datum/sprite_accessory/bra/striped_bra
+	name = "Bra - Striped"
+	icon_state = "striped_bra"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/sarashi
+	name = "Bra - Sarashi"
+	icon_state = "bandages"
+	gender = NEUTER
+
+/datum/sprite_accessory/bra/fishnet_sleeves
+	name = "Fishnet - Sleeves"
+	icon_state = "fishnet_sleeves"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/fishnet_sleeves/alt
+	name = "Fishnet - Sleeves Alt"
+	icon_state = "fishnet_sleeves_alt"
+
+/datum/sprite_accessory/bra/fishnet_gloves
+	name = "Fishnet - Gloves"
+	icon_state = "fishnet_gloves"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/fishnet_gloves/alt
+	name = "Fishnet - Gloves Alt"
+	icon_state = "fishnet_gloves_alt"
+
+
+/datum/sprite_accessory/bra/fishnet_base
+	name = "Fishnet - Top"
+	icon_state = "fishnet_body"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/fishnet_base/alt
+	name = "Fishnet - Top Alt"
+	icon_state = "fishnet_body_alt"
+
+/datum/sprite_accessory/bra/corset
+	name = "Corset"
+	icon_state = "corset"
+	gender = FEMALE
+	use_static = TRUE
+
+/datum/sprite_accessory/bra/chastbra
+	name = "Chastity Bra"
+	icon_state = "chastbra"
+	gender = FEMALE
+	use_static = TRUE
+	erp_accessory = TRUE
+
+/datum/sprite_accessory/bra/pasties
+	name = "Pasties"
+	icon_state = "pasties"
+	gender = FEMALE
+	erp_accessory = TRUE
+
+/datum/sprite_accessory/bra/pasties_alt
+	name = "Pasties - Alt"
+	icon_state = "pasties_alt"
+	gender = FEMALE
+	erp_accessory = TRUE
+
+/datum/sprite_accessory/bra/shibari
+	name = "Shibari"
+	icon_state = "shibari"
+	gender = FEMALE
+	erp_accessory = TRUE
+
+/datum/sprite_accessory/bra/shibari_sleeves
+	name = "Shibari Sleeves"
+	icon_state = "shibari_sleeves"
+	gender = FEMALE
+	erp_accessory = TRUE
+
+/datum/sprite_accessory/bra/binder
+	name = "Binder"
+	icon_state = "binder"
+	gender = MALE
+	use_static = null
+
+/datum/sprite_accessory/bra/binder/strapless
+	name = "Binder - Strapless"
+	icon_state = "binder_strapless"
+
+//End of bras
 /datum/sprite_accessory/undershirt
 	icon = 'modular_skyrat/master_files/icons/mob/clothing/underwear.dmi'
 	use_static = TRUE
@@ -622,188 +761,9 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	icon_state = "tank_sun"
 	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/babydoll
-	name = "Baby-Doll"
-	icon_state = "babydoll"
-	gender = FEMALE
-	use_static = null
 
-/datum/sprite_accessory/undershirt/bra
-	name = "Bra"
-	icon_state = "bra"
-	gender = FEMALE
-	use_static = null
 
-/datum/sprite_accessory/undershirt/bra_alt
-	name = "Bra - Alt"
-	icon_state = "bra_alt"
-	gender = FEMALE
-	use_static = null
 
-/datum/sprite_accessory/undershirt/bra_thin
-	name = "Bra - Thin"
-	icon_state = "bra_thin"
-	gender = FEMALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/bra_kinky
-	name = "Bra - Kinky Black"
-	icon_state = "bra_kinky"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/bra_freedom
-	name = "Bra - Freedom"
-	icon_state = "bra_assblastusa"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/bra_commie
-	name = "Bra - Commie"
-	icon_state = "bra_commie"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/bra_beekini
-	name = "Bra - Bee-kini"
-	icon_state = "bra_bee-kini"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/bra_uk
-	name = "Bra - UK"
-	icon_state = "bra_uk"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/bra_neko
-	name = "Bra - Neko"
-	icon_state = "bra_neko"
-	gender = FEMALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/halterneck_bra
-	name = "Bra - Halterneck"
-	icon_state = "halterneck_bra"
-	gender = FEMALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/sports_bra
-	name = "Bra, Sports"
-	icon_state = "sports_bra"
-	gender = FEMALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/sports_bra_alt
-	name = "Bra, Sports - Alt"
-	icon_state = "sports_bra_alt"
-	gender = FEMALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/bra_strapless
-	name = "Bra, Strapless"
-	icon_state = "bra_strapless"
-	gender = FEMALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/bra_latex
-	name = "Bra, Latex"
-	icon_state = "bra_latex"
-	gender = FEMALE
-	use_static = TRUE
-	erp_accessory = TRUE
-
-/datum/sprite_accessory/undershirt/striped_bra
-	name = "Bra - Striped"
-	icon_state = "striped_bra"
-	gender = FEMALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/sarashi
-	name = "Bra - Sarashi"
-	icon_state = "bandages"
-	gender = NEUTER
-	use_static = null
-
-/datum/sprite_accessory/undershirt/fishnet_sleeves
-	name = "Fishnet - Sleeves"
-	icon_state = "fishnet_sleeves"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/fishnet_sleeves/alt
-	name = "Fishnet - Sleeves Alt"
-	icon_state = "fishnet_sleeves_alt"
-	use_static = null
-
-/datum/sprite_accessory/undershirt/fishnet_gloves
-	name = "Fishnet - Gloves"
-	icon_state = "fishnet_gloves"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/fishnet_gloves/alt
-	name = "Fishnet - Gloves Alt"
-	icon_state = "fishnet_gloves_alt"
-	use_static = null
-
-/datum/sprite_accessory/undershirt/fishnet_base
-	name = "Fishnet - Top"
-	icon_state = "fishnet_body"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/fishnet_base/alt
-	name = "Fishnet - Top Alt"
-	icon_state = "fishnet_body_alt"
-	use_static = null
-
-/datum/sprite_accessory/undershirt/swimsuit
-	name = "Swimsuit Top"
-	icon_state = "bra_swimming"
-	gender = FEMALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/corset
-	name = "Corset"
-	icon_state = "corset"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/undershirt/chastbra
-	name = "Chastity Bra"
-	icon_state = "chastbra"
-	gender = FEMALE
-	use_static = TRUE
-	erp_accessory = TRUE
-
-/datum/sprite_accessory/undershirt/pasties
-	name = "Pasties"
-	icon_state = "pasties"
-	gender = FEMALE
-	use_static = null
-	erp_accessory = TRUE
-
-/datum/sprite_accessory/undershirt/pasties_alt
-	name = "Pasties - Alt"
-	icon_state = "pasties_alt"
-	gender = FEMALE
-	use_static = null
-	erp_accessory = TRUE
-
-/datum/sprite_accessory/undershirt/shibari
-	name = "Shibari"
-	icon_state = "shibari"
-	gender = FEMALE
-	use_static = null
-	erp_accessory = TRUE
-
-/datum/sprite_accessory/undershirt/shibari_sleeves
-	name = "Shibari Sleeves"
-	icon_state = "shibari_sleeves"
-	gender = FEMALE
-	use_static = null
-	erp_accessory = TRUE
 
 /datum/sprite_accessory/undershirt/bulletclub //4 life
 	name = "Shirt - Black Skull"
@@ -820,15 +780,6 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	name = "Shirt - Blue Stripes"
 	icon_state = "longstripe_blue"
 
-/datum/sprite_accessory/undershirt/binder
-	name = "Binder"
-	icon_state = "binder"
-	gender = MALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/binder/strapless
-	name = "Binder - Strapless"
-	icon_state = "binder_strapless"
 
 /datum/sprite_accessory/undershirt/turtleneck
 	name = "Sweater - Turtleneck"

@@ -39,6 +39,17 @@
 		else
 			return pick(GLOB.underwear_list)
 
+/proc/random_bra(gender)
+	if(!GLOB.bra_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/bra, GLOB.bra_list, GLOB.bra_m, GLOB.bra_f)
+	switch(gender)
+		if(MALE)
+			return pick(GLOB.bra_m)
+		if(FEMALE)
+			return pick(GLOB.bra_f)
+		else
+			return pick(GLOB.bra_list)
+
 /proc/random_undershirt(gender)
 	if(!GLOB.undershirt_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/undershirt, GLOB.undershirt_list, GLOB.undershirt_m, GLOB.undershirt_f)

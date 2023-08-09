@@ -5,7 +5,7 @@ import { GamePreferencesPage } from './GamePreferencesPage';
 import { PageButton } from './PageButton';
 import { useBackend, useLocalState } from '../../backend';
 import { GamePreferencesSelectedPage, PreferencesMenuData } from './data';
-import { exhaustiveCheck } from 'common/exhaustive';
+import { exhaustiveCheck } from '../../../common/exhaustive';
 
 export const GamePreferenceWindow = (
   props: {

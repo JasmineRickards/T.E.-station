@@ -532,11 +532,13 @@
 
 	// Clothes, of course
 	new_profile.underwear = target.underwear
+	new_profile.bra = target.bra
 	new_profile.undershirt = target.undershirt
 	new_profile.socks = target.socks
 
 	// SKYRAT EDIT START
 	new_profile.underwear_color = target.underwear_color
+	new_profile.bra_color = target.bra_color
 	new_profile.undershirt_color = target.undershirt_color
 	new_profile.socks_color = target.socks_color
 	new_profile.eye_color_left = target.eye_color_left
@@ -777,11 +779,13 @@
 	var/datum/dna/chosen_dna = chosen_profile.dna
 	user.real_name = chosen_profile.name
 	user.underwear = chosen_profile.underwear
+	user.bra = chosen_profile.bra
 	user.undershirt = chosen_profile.undershirt
 	user.socks = chosen_profile.socks
 
 	// SKYRAT EDIT START
 	user.underwear_color = chosen_profile.underwear_color
+	user.bra_color = chosen_profile.bra_color
 	user.undershirt_color = chosen_profile.undershirt_color
 	user.socks_color = chosen_profile.socks_color
 	user.emissive_eyes = chosen_profile.emissive_eyes
@@ -949,6 +953,8 @@
 	var/list/worn_icon_state_list = list()
 	/// The underwear worn by the profile source
 	var/underwear
+	// The bra worn by the profile source
+	var/bra
 	/// The undershirt worn by the profile source
 	var/undershirt
 	/// The socks worn by the profile source
@@ -964,6 +970,7 @@
 
 	/// SKYRAT EDIT START
 	var/underwear_color
+	var/bra_color
 	var/undershirt_color
 	var/socks_color
 	var/eye_color_left
@@ -1004,6 +1011,7 @@
 	new_profile.righthand_file_list = righthand_file_list.Copy()
 	new_profile.inhand_icon_state_list = inhand_icon_state_list.Copy()
 	new_profile.underwear = underwear
+	new_profile.bra = bra
 	new_profile.undershirt = undershirt
 	new_profile.socks = socks
 	new_profile.worn_icon_list = worn_icon_list.Copy()
@@ -1015,6 +1023,7 @@
 
 	// SKYRAT EDIT START
 	new_profile.underwear_color = underwear_color
+	new_profile.bra_color = bra_color
 	new_profile.undershirt_color = undershirt_color
 	new_profile.socks_color = socks_color
 	new_profile.eye_color_left = eye_color_left

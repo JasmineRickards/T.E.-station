@@ -776,6 +776,7 @@
 
 /datum/mafia_role/nightmare/special_reveal_equip()
 	body.underwear = "Nude"
+	body.bra = "Nude"
 	body.undershirt = "Nude"
 	body.socks = "Nude"
 	body.set_species(/datum/species/shadow)
