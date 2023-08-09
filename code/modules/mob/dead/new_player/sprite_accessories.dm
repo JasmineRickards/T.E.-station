@@ -1157,29 +1157,24 @@
 	icon_state = "female_lace"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/female_bralette
-	name = "Bralette w/ Boyshorts"
-	icon_state = "female_bralette"
+/datum/sprite_accessory/underwear/female_boyshorts
+	name = "Boyshorts"
+	icon_state = "female_boyshorts"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/female_sport
-	name = "Sports Bra w/ Boyshorts"
-	icon_state = "female_sport"
+/datum/sprite_accessory/underwear/female_alt_boyshorts
+	name = "Boyshorts Alt"
+	icon_state = "female_boyshorts_two"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/female_thong
-	name = "Thong"
-	icon_state = "female_thong"
-	gender = FEMALE
+// /datum/sprite_accessory/underwear/female_thong
+// 	name = "Thong"
+// 	icon_state = "female_thong"
+// 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/female_strapless
-	name = "Strapless Bikini"
-	icon_state = "female_strapless"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/female_babydoll
-	name = "Babydoll"
-	icon_state = "female_babydoll"
+/datum/sprite_accessory/underwear/female_bikini_alt
+	name = "Bikini Alt"
+	icon_state = "female_bikini_alt"
 	gender = FEMALE
 
 /datum/sprite_accessory/underwear/swimsuit_onepiece
@@ -1192,37 +1187,16 @@
 	icon_state = "swim_strapless_onepiece"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/swimsuit_twopiece
-	name = "Two-Piece Swimsuit"
-	icon_state = "swim_twopiece"
+/datum/sprite_accessory/underwear/swimsuit_bottom
+	name = "Swimsuit Bottom"
+	icon_state = "swim_twopiece_bottom"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/swimsuit_strapless_twopiece
-	name = "Strapless Two-Piece Swimsuit"
-	icon_state = "swim_strapless_twopiece"
-	gender = FEMALE
 
 /datum/sprite_accessory/underwear/swimsuit_stripe
 	name = "Strapless Striped Swimsuit"
 	icon_state = "swim_stripe"
 	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_halter
-	name = "Halter Swimsuit"
-	icon_state = "swim_halter"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/female_white_neko
-	name = "Neko Bikini (White)"
-	icon_state = "female_neko_white"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/female_black_neko
-	name = "Neko Bikini (Black)"
-	icon_state = "female_neko_black"
-	gender = FEMALE
-	use_static = TRUE
 
 /datum/sprite_accessory/underwear/female_commie
 	name = "Commie Bikini"
@@ -1248,9 +1222,62 @@
 	gender = FEMALE
 	use_static = TRUE
 
-////////////////////////////
+/////////////////////
+// Bra Definitions //
+/////////////////////
+/datum/sprite_accessory/bra
+	icon = 'modular_skyrat/master_files/icons/mob/clothing/underwear.dmi'
+	use_static = FALSE
+	em_block = TRUE
+
+/datum/sprite_accessory/bra/nude
+	name = "Nude"
+	icon_state = null
+	gender = NEUTER
+
+/datum/sprite_accessory/bra/female_bikini
+	name = "Bikini Top"
+	icon_state = "female_bikini_top"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/female_lace
+	name = "Lace Bikini Top"
+	icon_state = "female_lace_top"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/female_strapless
+	name = "Strapless Bikini Top"
+	icon_state = "female_strapless_top"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/swimsuit_top
+	name = "Swimsuit Top"
+	icon_state = "swim_twopiece_top"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/swimsuit_strapless_top
+	name = "Strapless Swimsuit Top"
+	icon_state = "swim_strapless_twopiece_top"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/swimsuit_halter
+	name = "Halter Swimsuit Top"
+	icon_state = "swim_halter"
+	gender = FEMALE
+
+/datum/sprite_accessory/bra/sports_bra
+	name = "Sports Bra"
+	icon_state = "sports_bra"
+	gender = NEUTER
+
+/datum/sprite_accessory/bra/sports_bra2
+	name = "Sports Bra (Alt)"
+	icon_state = "sports_bra_alt"
+	gender = NEUTER
+
+///////////////////////////
 // Undershirt Definitions //
-////////////////////////////
+/////////////////////////////
 
 /datum/sprite_accessory/undershirt
 	icon = 'icons/mob/clothing/underwear.dmi'
@@ -1443,15 +1470,6 @@
 	icon_state = "whiteshortsleeve"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/sports_bra
-	name = "Sports Bra"
-	icon_state = "sports_bra"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/sports_bra2
-	name = "Sports Bra (Alt)"
-	icon_state = "sports_bra_alt"
-	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/blueshirtsport
 	name = "Sports Shirt (Blue)"

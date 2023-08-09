@@ -272,6 +272,7 @@
 	var/mob/living/carbon/human/spare = new /mob/living/carbon/human(H.loc)
 
 	spare.underwear = "Nude"
+	spare.bra = "Nude"
 	H.dna.transfer_identity(spare, transfer_SE=1)
 	spare.dna.features["mcolor"] = "#[pick("7F", "FF")][pick("7F", "FF")][pick("7F", "FF")]"
 	spare.dna.update_uf_block(DNA_MUTANT_COLOR_BLOCK)

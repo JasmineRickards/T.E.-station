@@ -97,6 +97,7 @@
 		ADD_TRAIT(human_attacker, TRAIT_BOMBIMMUNE, type)
 		human_attacker.unequip_everything()
 		human_attacker.underwear = "Nude"
+		human_attacker.bra = "Nude"
 		human_attacker.undershirt = "Nude"
 		human_attacker.socks = "Nude"
 		human_attacker.update_body()

@@ -1,4 +1,4 @@
-import { exhaustiveCheck } from 'common/exhaustive';
+import { exhaustiveCheck } from '../../../common/exhaustive';
 import { useBackend } from '../../backend';
 import { GamePreferencesSelectedPage, PreferencesMenuData, Window } from './data';
 import { CharacterPreferenceWindow } from './CharacterPreferenceWindow';
