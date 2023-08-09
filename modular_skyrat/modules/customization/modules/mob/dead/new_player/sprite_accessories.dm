@@ -717,6 +717,16 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	gender = FEMALE
 	erp_accessory = TRUE
 
+/datum/sprite_accessory/bra/binder
+	name = "Binder"
+	icon_state = "binder"
+	gender = MALE
+	use_static = null
+
+/datum/sprite_accessory/bra/binder/strapless
+	name = "Binder - Strapless"
+	icon_state = "binder_strapless"
+
 //End of bras
 /datum/sprite_accessory/undershirt
 	icon = 'modular_skyrat/master_files/icons/mob/clothing/underwear.dmi'
@@ -768,15 +778,6 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	name = "Shirt - Blue Stripes"
 	icon_state = "longstripe_blue"
 
-/datum/sprite_accessory/undershirt/binder
-	name = "Binder"
-	icon_state = "binder"
-	gender = MALE
-	use_static = null
-
-/datum/sprite_accessory/undershirt/binder/strapless
-	name = "Binder - Strapless"
-	icon_state = "binder_strapless"
 
 /datum/sprite_accessory/undershirt/turtleneck
 	name = "Sweater - Turtleneck"
