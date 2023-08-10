@@ -17,7 +17,7 @@
 		if(GENITAL_HIDDEN_BY_CLOTHES)
 			if((H.w_uniform && H.w_uniform.body_parts_covered & genital_location) || (H.wear_suit && H.wear_suit.body_parts_covered & genital_location))
 				return TRUE
-			if(H.bra != "Nude")
+			if(H.bra != "Nude" && !(H.underwear_visibility & UNDERWEAR_HIDE_BRA) && genital_location == CHEST)
 				return TRUE
 			if(istype(H.wear_suit, /obj/item/clothing/suit/toggle/labcoat/skyrat/hospitalgown)) //Until this file has a way to force-hide from items, this'll have to do
 				return TRUE
