@@ -767,6 +767,8 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 	. += GLOB.paperframe_recipes
 /obj/item/stack/sheet/paperframes/five
 	amount = 5
+/obj/item/stack/sheet/paperframes/ten
+	amount = 10
 /obj/item/stack/sheet/paperframes/twenty
 	amount = 20
 /obj/item/stack/sheet/paperframes/fifty

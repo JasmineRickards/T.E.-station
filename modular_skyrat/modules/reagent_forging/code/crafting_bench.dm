@@ -371,6 +371,7 @@
 		/datum/gun_crafting_bench_recipe/intermrifle,
 		/datum/gun_crafting_bench_recipe/advrifle,
 		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacket,
+		/datum/gun_crafting_bench_recipe/BasicRifleAmmopacketrefill,
 			)
 /obj/structure/reagent_crafting_bench/guns/Initialize(mapload)
 	. = ..()

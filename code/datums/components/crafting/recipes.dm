@@ -792,7 +792,7 @@
 
 /datum/crafting_recipe/paperframes
 	name = "Paper Frames"
-	result = /obj/item/stack/sheet/paperframes/five
+	result = /obj/item/stack/sheet/paperframes/ten
 	time = 10
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 5, /obj/item/paper = 20)
 	category = CAT_MISC
