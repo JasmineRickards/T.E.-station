@@ -7,7 +7,8 @@ LINEN BINS
 #define BEDSHEET_ABSTRACT "abstract"
 #define BEDSHEET_SINGLE "single"
 #define BEDSHEET_DOUBLE "double"
-
+#define BEDSHEET_SINGLE_HUGE "single_huge"
+#define BEDSHEET_DOUBLE_HUGE "double_huge"
 /obj/item/bedsheet
 	name = "bedsheet"
 	desc = "A surprisingly soft linen bedsheet."
@@ -31,6 +32,7 @@ LINEN BINS
 	var/bedsheet_type = BEDSHEET_SINGLE
 	var/datum/weakref/signal_sleeper //this is our goldylocks
 
+// Dying keys are not set up at all. So no changing the colors of the huge sheets.
 /obj/item/bedsheet/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/surgery_initiator)
@@ -38,8 +40,18 @@ LINEN BINS
 	if(bedsheet_type == BEDSHEET_DOUBLE)
 		stack_amount *= 2
 		dying_key = DYE_REGISTRY_DOUBLE_BEDSHEET
+	if(bedsheet_type == BEDSHEET_SINGLE_HUGE)
+		stack_amount *= 6
+		dying_key = DYE_REGISTRY_BEDSHEET_HUGE
+	if(bedsheet_type == BEDSHEET_DOUBLE_HUGE)
+		stack_amount *= 3
+		dying_key = DYE_REGISTRY_DOUBLE_BEDSHEET_HUGE
 	register_context()
 	register_item_context()
+	RegisterSignal(src, COMSIG_ITEM_PICKUP, PROC_REF(on_pickup))
+	RegisterSignal(src, COMSIG_ITEM_DROPPED, PROC_REF(on_drop))
+	if((bedsheet_type == BEDSHEET_DOUBLE_HUGE) || (bedsheet_type == BEDSHEET_SINGLE_HUGE))
+		src.transform = src.transform.Scale(3)
 
 /obj/item/bedsheet/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	if(istype(held_item) && (held_item.tool_behaviour == TOOL_WIRECUTTER || held_item.get_sharpness()))
@@ -91,7 +103,7 @@ LINEN BINS
 	dir = angle2dir(angle + 180) // 180 flips it to be the same direction as the mob
 
 	signal_sleeper = WEAKREF(sleeper)
-	RegisterSignal(src, COMSIG_ITEM_PICKUP, PROC_REF(on_pickup))
+	
 	RegisterSignal(sleeper, COMSIG_MOVABLE_MOVED, PROC_REF(smooth_sheets))
 	RegisterSignal(sleeper, COMSIG_LIVING_SET_BODY_POSITION, PROC_REF(smooth_sheets))
 	RegisterSignal(sleeper, COMSIG_PARENT_QDELETING, PROC_REF(smooth_sheets))
@@ -99,7 +111,6 @@ LINEN BINS
 /obj/item/bedsheet/proc/smooth_sheets(mob/living/sleeper)
 	SIGNAL_HANDLER
 
-	UnregisterSignal(src, COMSIG_ITEM_PICKUP)
 	UnregisterSignal(sleeper, COMSIG_MOVABLE_MOVED)
 	UnregisterSignal(sleeper, COMSIG_LIVING_SET_BODY_POSITION)
 	UnregisterSignal(sleeper, COMSIG_PARENT_QDELETING)
@@ -115,11 +126,25 @@ LINEN BINS
 
 	var/mob/living/sleeper = signal_sleeper?.resolve()
 
-	UnregisterSignal(src, COMSIG_ITEM_PICKUP)
 	UnregisterSignal(sleeper, COMSIG_MOVABLE_MOVED)
 	UnregisterSignal(sleeper, COMSIG_LIVING_SET_BODY_POSITION)
 	UnregisterSignal(sleeper, COMSIG_PARENT_QDELETING)
 	signal_sleeper = null
+	if((bedsheet_type == BEDSHEET_DOUBLE_HUGE) || (bedsheet_type == BEDSHEET_SINGLE_HUGE))
+		if(transform.a == 3)
+			src.transform = src.transform.Scale(1 / 3)
+		// if(bedsheet_type == (BEDSHEET_SINGLE_HUGE))
+		// 	if(transform.f == 0)
+		// 		src.transform = src.transform.Translate(0,16)
+
+/obj/item/bedsheet/proc/on_drop(datum/source, mob/grabber)
+	SIGNAL_HANDLER
+	if((bedsheet_type == BEDSHEET_DOUBLE_HUGE) || (bedsheet_type == BEDSHEET_SINGLE_HUGE))
+		if(transform.a == 1)
+			src.transform = src.transform.Scale(3)
+		// if(bedsheet_type == (BEDSHEET_SINGLE_HUGE))
+		// 	if(transform.f == 0)
+		// 		src.transform = src.transform.Translate(0,16)
 
 /obj/item/bedsheet/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_WIRECUTTER || I.get_sharpness())
@@ -352,9 +377,19 @@ LINEN BINS
 	return INITIALIZE_HINT_QDEL
 
 /obj/item/bedsheet/random/double
+	name = "random double bedsheet"
 	icon_state = "random_bedsheet"
 	spawn_type = BEDSHEET_DOUBLE
 
+/obj/item/bedsheet/random/double_huge
+	name = "random huge double bedsheet"
+	icon_state = "random_bedsheet"
+	spawn_type = BEDSHEET_DOUBLE_HUGE
+
+/obj/item/bedsheet/random/singe_huge
+	name = "random huge bedsheet"
+	icon_state = "random_bedsheet"
+	spawn_type = BEDSHEET_SINGLE_HUGE
 /obj/item/bedsheet/dorms
 	icon_state = "random_bedsheet"
 	name = "random dorms bedsheet"
