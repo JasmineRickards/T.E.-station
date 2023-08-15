@@ -431,3 +431,15 @@
 /datum/sprite_accessory/tails/mammal/wagging/zorgoia
 	name = "Zorgoia tail"
 	icon_state = "zorgoia"
+
+
+// T.E Tails
+
+/datum/sprite_accessory/tails/mammal/wagging/tewolf
+	name = "wolf (alt)"
+	icon_state = "wolfalt"
+
+/datum/sprite_accessory/tails/mammal/wagging/tfsune
+	name = "Transforming Kitsune tail"
+	icon_state = "tfox"
+	fluffy = TRUE
