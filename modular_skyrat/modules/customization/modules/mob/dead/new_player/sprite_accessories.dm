@@ -437,11 +437,6 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	icon_state = "striped_panties"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/panties_swimsuit
-	name = "Panties - Swimsuit"
-	icon_state = "panties_swimming"
-	gender = FEMALE
-
 /datum/sprite_accessory/underwear/panties_thin
 	name = "Panties - Thin"
 	icon_state = "panties_thin"
@@ -452,26 +447,6 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	icon_state = "ljonb"
 	has_digitigrade = TRUE
 
-/datum/sprite_accessory/underwear/swimsuit_red
-	name = "Swimsuit, One Piece - Red"
-	icon_state = "swimming_red"
-	gender = FEMALE
-	use_static = TRUE
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/swimsuit
-	name = "Swimsuit, One Piece - Black"
-	icon_state = "swimming_black"
-	gender = FEMALE
-	use_static = TRUE
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/swimsuit_blue
-	name = "Swimsuit, One Piece - Striped Blue"
-	icon_state = "swimming_blue"
-	gender = FEMALE
-	use_static = TRUE
-	covers_chest = TRUE
 
 /datum/sprite_accessory/underwear/thong
 	name = "Thong"
@@ -512,22 +487,7 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	use_static = TRUE
 	covers_chest = TRUE
 
-/*
-	Adding covers_chest to TG underwears where applicable
-*/
-/datum/sprite_accessory/underwear/swimsuit_onepiece
-	covers_chest = TRUE
 
-/datum/sprite_accessory/underwear/swimsuit_strapless_onepiece
-	covers_chest = TRUE
-
-/datum/sprite_accessory/underwear/swimsuit_stripe
-	covers_chest = TRUE
-
-
-/*
-	End of adding covers_chest to TG stuff, start of adding has_digitigrade to TG stuff
-*/
 /datum/sprite_accessory/underwear/male_boxers
 	has_digitigrade = TRUE
 

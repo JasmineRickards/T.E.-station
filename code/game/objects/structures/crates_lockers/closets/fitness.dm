@@ -63,3 +63,28 @@
 	for(var/i in 1 to 3)
 		new /obj/item/clothing/suit/bluetag(src)
 	new /obj/item/clothing/head/helmet/bluetaghelm(src)
+
+
+//TE Additions
+/obj/structure/closet/athletic_swim
+	name = "Swimsuit wardrobe"
+	desc = "It's a storage unit for swimsuits."
+	icon_door = "mixed"
+
+/obj/structure/closet/athletic_swim/PopulateContents()
+	..()
+	new /obj/item/clothing/under/swimsuit(src)
+	new /obj/item/clothing/under/swimsuit/blue(src)
+	new /obj/item/clothing/under/swimsuit/purple(src)
+	new /obj/item/clothing/under/swimsuit/green(src)
+	new /obj/item/clothing/under/swimsuit/red(src)
+	new /obj/item/clothing/under/swimsuit/striped(src)
+	new /obj/item/clothing/under/swimsuit/white(src)
+	new /obj/item/clothing/under/swimsuit/earth(src)
+	new /obj/item/clothing/under/swimsuit/stripper_pink(src)
+	new /obj/item/clothing/under/swimsuit/stripper_green(src)
+	new /obj/item/clothing/under/swimsuit/mankini(src)
+	new /obj/item/clothing/under/swimsuit/cowbikini(src)
+	new /obj/item/clothing/under/swimsuit/wetsuit(src)
+	new /obj/item/clothing/under/swimsuit/wetsuit_skimpy(src)
+	new /obj/item/clothing/under/swimsuit/wetsuit_rec(src)
