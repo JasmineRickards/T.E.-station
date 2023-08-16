@@ -9745,8 +9745,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 4";
-	id_tag = "Cell4Privacy"
+	id_tag = "Cell4Privacy";
+	name = "Cell 4"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/prison)
@@ -14229,8 +14229,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 6";
-	id_tag = "Cell6Privacy"
+	id_tag = "Cell6Privacy";
+	name = "Cell 6"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/prison)
@@ -23470,8 +23470,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 3";
-	id_tag = "Cell3Privacy"
+	id_tag = "Cell3Privacy";
+	name = "Cell 3"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/prison)
@@ -29188,10 +29188,10 @@
 /obj/structure/table/reinforced,
 /obj/machinery/computer/security/telescreen{
 	desc = "Used for monitoring the engine.";
+	dir = 4;
 	name = "Engine Monitor";
 	network = list("engine");
-	pixel_x = -32;
-	dir = 4
+	pixel_x = -32
 	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 4
@@ -34185,8 +34185,8 @@
 	},
 /obj/machinery/button/curtain{
 	id = "Cell6Privacy";
-	pixel_y = 24;
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 24
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
@@ -34468,8 +34468,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 5";
-	id_tag = "Cell5Privacy"
+	id_tag = "Cell5Privacy";
+	name = "Cell 5"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/prison)
@@ -38740,8 +38740,8 @@
 	},
 /obj/machinery/button/curtain{
 	id = "Cell3Privacy";
-	pixel_y = 24;
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 24
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
@@ -44192,9 +44192,9 @@
 "mxE" = (
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/booze{
+	pixel_y = 6;
 	spawn_loot_count = 2;
-	spawn_random_offset = 1;
-	pixel_y = 6
+	spawn_random_offset = 1
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/cargo/miningoffice)
@@ -46968,11 +46968,11 @@
 "niQ" = (
 /obj/docking_port/stationary{
 	dir = 4;
+	dwidth = 9;
+	height = 25;
 	name = "DeltaStation emergency evac bay";
 	shuttle_id = "emergency_home";
-	dwidth = 9;
-	width = 29;
-	height = 25
+	width = 29
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -49211,8 +49211,8 @@
 	},
 /obj/machinery/button/curtain{
 	id = "Cell5Privacy";
-	pixel_y = 24;
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 24
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
@@ -49961,8 +49961,8 @@
 	},
 /obj/machinery/button/curtain{
 	id = "Cell4Privacy";
-	pixel_y = 24;
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 24
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
@@ -50202,8 +50202,8 @@
 "nZZ" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/yellow{
-	pixel_y = 3;
-	pixel_x = -2
+	pixel_x = -2;
+	pixel_y = 3
 	},
 /obj/item/stamp/ce{
 	pixel_x = -2;
@@ -52732,8 +52732,8 @@
 	},
 /obj/machinery/button/curtain{
 	id = "Cell1Privacy";
-	pixel_y = 24;
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 24
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
@@ -53786,11 +53786,11 @@
 "paZ" = (
 /obj/docking_port/stationary{
 	dir = 8;
+	dwidth = 1;
+	height = 13;
 	name = "arrivals";
 	shuttle_id = "arrivals_stationary";
-	dwidth = 1;
-	width = 5;
-	height = 13
+	width = 5
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -62387,8 +62387,8 @@
 	},
 /obj/machinery/button/curtain{
 	id = "Cell2Privacy";
-	pixel_y = 24;
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 24
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison)
@@ -65534,8 +65534,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 1";
-	id_tag = "Cell1Privacy"
+	id_tag = "Cell1Privacy";
+	name = "Cell 1"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/prison)
@@ -68368,6 +68368,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/maintenance/port/greater)
+"sYC" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/athletic_swim,
+/turf/open/floor/iron/white/small,
+/area/station/common/pool)
 "sYS" = (
 /obj/effect/mapping_helpers/ianbirthday,
 /turf/open/floor/carpet/executive,
@@ -71971,12 +71976,12 @@
 	pixel_y = -1
 	},
 /obj/item/coffee_cartridge/bootleg{
-	pixel_y = 9;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 9
 	},
 /obj/item/coffee_cartridge/decaf{
-	pixel_y = 4;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 4
 	},
 /obj/item/coffee_cartridge/fancy{
 	pixel_x = 3;
@@ -86404,8 +86409,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 2";
-	id_tag = "Cell2Privacy"
+	id_tag = "Cell2Privacy";
+	name = "Cell 2"
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/security/prison)
@@ -124154,7 +124159,7 @@ jki
 rtS
 ueT
 aCq
-bzn
+sYC
 bzn
 mRW
 bzY

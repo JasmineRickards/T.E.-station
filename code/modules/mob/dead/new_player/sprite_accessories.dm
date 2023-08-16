@@ -1116,11 +1116,6 @@
 	icon_state = "male_kinky"
 	gender = MALE
 
-/datum/sprite_accessory/underwear/male_mankini
-	name = "Mankini"
-	icon_state = "male_mankini"
-	gender = MALE
-
 /datum/sprite_accessory/underwear/male_hearts
 	name = "Hearts Boxers"
 	icon_state = "male_hearts"
@@ -1147,16 +1142,6 @@
 
 
 //FEMALE UNDERWEAR
-/datum/sprite_accessory/underwear/female_bikini
-	name = "Bikini"
-	icon_state = "female_bikini"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/female_lace
-	name = "Lace Bikini"
-	icon_state = "female_lace"
-	gender = FEMALE
-
 /datum/sprite_accessory/underwear/female_boyshorts
 	name = "Boyshorts"
 	icon_state = "female_boyshorts"
@@ -1171,50 +1156,6 @@
 // 	name = "Thong"
 // 	icon_state = "female_thong"
 // 	gender = FEMALE
-
-/datum/sprite_accessory/underwear/female_bikini_alt
-	name = "Bikini Alt"
-	icon_state = "female_bikini_alt"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_onepiece
-	name = "One-Piece Swimsuit"
-	icon_state = "swim_onepiece"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_strapless_onepiece
-	name = "Strapless One-Piece Swimsuit"
-	icon_state = "swim_strapless_onepiece"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_bottom
-	name = "Swimsuit Bottom"
-	icon_state = "swim_twopiece_bottom"
-	gender = FEMALE
-
-
-/datum/sprite_accessory/underwear/swimsuit_stripe
-	name = "Strapless Striped Swimsuit"
-	icon_state = "swim_stripe"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/female_commie
-	name = "Commie Bikini"
-	icon_state = "female_commie"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/female_usastripe
-	name = "Freedom Bikini"
-	icon_state = "female_assblastusa"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/female_uk
-	name = "UK Bikini"
-	icon_state = "female_uk"
-	gender = FEMALE
-	use_static = TRUE
 
 /datum/sprite_accessory/underwear/female_kinky
 	name = "Lingerie"
@@ -1234,21 +1175,6 @@
 	name = "Nude"
 	icon_state = null
 	gender = NEUTER
-
-/datum/sprite_accessory/bra/female_strapless
-	name = "Strapless Bikini Top"
-	icon_state = "female_strapless_top"
-	gender = FEMALE
-
-/datum/sprite_accessory/bra/swimsuit_top
-	name = "Swimsuit Top"
-	icon_state = "swim_twopiece_top"
-	gender = FEMALE
-
-/datum/sprite_accessory/bra/swimsuit_strapless_top
-	name = "Strapless Swimsuit Top"
-	icon_state = "swim_strapless_twopiece_top"
-	gender = FEMALE
 
 /datum/sprite_accessory/bra/swimsuit_halter
 	name = "Halter neck bra - Alt"
