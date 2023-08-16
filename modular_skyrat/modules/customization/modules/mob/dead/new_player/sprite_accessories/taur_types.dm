@@ -173,6 +173,9 @@
 	icon_state = "canine"
 	taur_mode = STYLE_TAUR_PAW
 
+/datum/sprite_accessory/taur/canine/alt
+	name = "Canine (tri color)"
+	icon_state = "caninetri"
 /datum/sprite_accessory/taur/feline
 	name = "Feline"
 	icon_state = "feline"
