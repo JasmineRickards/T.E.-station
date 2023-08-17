@@ -78,6 +78,23 @@
 					/obj/item/clothing/under/costume/bunnylewd = 5,
 					/obj/item/clothing/under/costume/bunnylewd/white = 5,
 					/obj/item/clothing/under/misc/skyrat/gear_harness = 4,
+					//Swimsuits
+					/obj/item/clothing/under/swimsuit =2,
+					/obj/item/clothing/under/swimsuit/blue =2,
+					/obj/item/clothing/under/swimsuit/purple =2,
+					/obj/item/clothing/under/swimsuit/green =2,
+					/obj/item/clothing/under/swimsuit/red =2,
+					/obj/item/clothing/under/swimsuit/striped =2,
+					/obj/item/clothing/under/swimsuit/white =2,
+					/obj/item/clothing/under/swimsuit/earth =2,
+					/obj/item/clothing/under/swimsuit/stripper_pink =2,
+					/obj/item/clothing/under/swimsuit/stripper_green =2,
+					/obj/item/clothing/under/swimsuit/mankini =2,
+					/obj/item/clothing/under/swimsuit/cowbikini =2,
+					/obj/item/clothing/under/swimsuit/wetsuit =2,
+					/obj/item/clothing/under/swimsuit/wetsuit_skimpy =2,
+					/obj/item/clothing/under/swimsuit/wetsuit_rec =2,
+
 
 					//hands
 					/obj/item/clothing/gloves/ball_mittens = 8,
