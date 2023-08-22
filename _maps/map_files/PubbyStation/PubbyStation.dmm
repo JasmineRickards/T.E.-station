@@ -11608,6 +11608,7 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/service/kitchen,
+/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/station/maintenance/central)
 "aRP" = (
@@ -13141,6 +13142,7 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/service/kitchen,
+/obj/structure/fans/tiny,
 /turf/open/floor/iron/showroomfloor,
 /area/station/service/kitchen/coldroom)
 "aYb" = (
@@ -25589,8 +25591,8 @@
 	},
 /obj/effect/mapping_helpers/mail_sorting/engineering/ce_office,
 /obj/structure/disposalpipe/sorting/mail{
-	name = "CE's Junction";
-	dir = 8
+	dir = 8;
+	name = "CE's Junction"
 	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
@@ -30583,9 +30585,9 @@
 	id = "AP1";
 	name = "Door Bolt Control";
 	normaldoorcontrol = 1;
+	pixel_y = 11;
 	req_access = list("command");
-	specialfunctions = 4;
-	pixel_y = 11
+	specialfunctions = 4
 	},
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 1
@@ -30854,10 +30856,10 @@
 	id = "AP1";
 	name = "Door Bolt Control";
 	normaldoorcontrol = 1;
-	req_access = list("command");
-	specialfunctions = 4;
 	pixel_x = -8;
-	pixel_y = -24
+	pixel_y = -24;
+	req_access = list("command");
+	specialfunctions = 4
 	},
 /turf/open/floor/wood,
 /area/station/security/prison)
@@ -32415,11 +32417,11 @@
 "ePz" = (
 /obj/docking_port/stationary{
 	dir = 8;
+	dwidth = 1;
+	height = 13;
 	name = "arrivals";
 	shuttle_id = "arrivals_stationary";
-	dwidth = 1;
-	width = 5;
-	height = 13
+	width = 5
 	},
 /turf/open/space/basic,
 /area/space)
@@ -35649,8 +35651,8 @@
 /area/station/maintenance/department/science/xenobiology)
 "hQc" = (
 /mob/living/basic/mouse/white{
-	name = "Tom";
-	desc = "Tom is the mascot of the permanent brig prisoners. Riots have been fought over his mistreatment by Security."
+	desc = "Tom is the mascot of the permanent brig prisoners. Riots have been fought over his mistreatment by Security.";
+	name = "Tom"
 	},
 /turf/open/floor/iron/dark/side{
 	dir = 4
@@ -51068,8 +51070,8 @@
 "vBY" = (
 /obj/structure/lattice,
 /obj/item/toy/plush/space_lizard_plushie{
-	name = "Watches-the-ERP";
-	desc = "Hey, my immersion!"
+	desc = "Hey, my immersion!";
+	name = "Watches-the-ERP"
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
