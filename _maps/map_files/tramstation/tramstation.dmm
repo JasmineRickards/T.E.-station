@@ -5616,8 +5616,8 @@
 /obj/structure/fluff/tram_rail/floor,
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/right)
@@ -13728,7 +13728,7 @@
 	desc = "A small control panel used to move the kitchen dumbwaiter up and down.";
 	linked_elevator_id = "dumbwaiter_lift";
 	name = "Dumbwaiter Control Panel";
-	preset_destination_names = list("2"="Hydroponics","3"="Kitchen")
+	preset_destination_names = list("2" = "Hydroponics", "3" = "Kitchen")
 	},
 /turf/open/floor/iron/white,
 /area/station/service/kitchen)
@@ -14197,8 +14197,8 @@
 	dir = 2;
 	dwidth = 8;
 	height = 11;
-	shuttle_id = "ferry_home";
 	name = "Port Bay 2";
+	shuttle_id = "ferry_home";
 	width = 20
 	},
 /turf/open/floor/plating,
@@ -14250,8 +14250,8 @@
 	dir = 8;
 	dwidth = 1;
 	height = 13;
-	shuttle_id = "arrivals_stationary";
 	name = "arrivals";
+	shuttle_id = "arrivals_stationary";
 	width = 5
 	},
 /turf/open/space/openspace,
@@ -16506,8 +16506,8 @@
 	},
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/center)
@@ -18564,8 +18564,8 @@
 /obj/structure/fluff/tram_rail/floor,
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/center)
@@ -19186,9 +19186,9 @@
 /obj/machinery/newscaster/directional/north,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
 /obj/machinery/button/curtain{
+	id = "barbershopcurtains";
 	pixel_x = -26;
-	pixel_y = -3;
-	id = "barbershopcurtains"
+	pixel_y = -3
 	},
 /turf/open/floor/iron/white,
 /area/station/service/barber)
@@ -24505,8 +24505,8 @@
 /obj/structure/fluff/tram_rail/floor,
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/left)
@@ -26234,16 +26234,6 @@
 	},
 /turf/open/floor/carpet,
 /area/station/service/library)
-"jrg" = (
-/obj/machinery/door/airlock{
-	name = "Kitchen Access"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/catwalk_floor,
-/area/station/service/kitchen/coldroom)
 "jrl" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -28452,8 +28442,8 @@
 	},
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/center)
@@ -32323,8 +32313,8 @@
 	},
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/center)
@@ -33286,8 +33276,8 @@
 	dir = 2;
 	dwidth = 11;
 	height = 22;
-	shuttle_id = "whiteship_home";
 	name = "SS13: Auxiliary Dock, Station-Port";
+	shuttle_id = "whiteship_home";
 	width = 35
 	},
 /turf/open/space/openspace,
@@ -39965,8 +39955,8 @@
 	},
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/right)
@@ -41460,8 +41450,8 @@
 	},
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/left)
@@ -45438,8 +45428,8 @@
 /obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/left)
@@ -46194,8 +46184,8 @@
 	},
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/left)
@@ -55600,8 +55590,8 @@
 /obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/right)
@@ -57911,7 +57901,7 @@
 	desc = "A small control panel used to move the kitchen dumbwaiter up and down.";
 	linked_elevator_id = "dumbwaiter_lift";
 	name = "Dumbwaiter Control Panel";
-	preset_destination_names = list("2"="Hydroponics","3"="Kitchen")
+	preset_destination_names = list("2" = "Hydroponics", "3" = "Kitchen")
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
@@ -60889,8 +60879,8 @@
 /obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/center)
@@ -67282,8 +67272,8 @@
 	},
 /turf/open/floor/vault{
 	base_icon_state = "tram2";
-	icon_state = "tram2";
 	desc = "A sturdy looking tram platform.";
+	icon_state = "tram2";
 	name = "tram platform"
 	},
 /area/station/hallway/primary/tram/right)
@@ -68701,6 +68691,17 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/service/janitor)
+"yhx" = (
+/obj/machinery/door/airlock{
+	name = "Kitchen Access"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/structure/fans/tiny,
+/turf/open/floor/catwalk_floor,
+/area/station/service/kitchen/coldroom)
 "yhG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -101214,7 +101215,7 @@ nUP
 cQY
 kDd
 xJy
-jrg
+yhx
 ewM
 iRL
 dNp
