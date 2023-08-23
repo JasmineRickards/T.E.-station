@@ -74,7 +74,7 @@
 	slow_pressure_step_in = 4 //step_in while in normal pressure conditions
 	movedelay = 4
 	max_temperature = 30000
-	max_integrity = 250
+	max_integrity = 350
 	possible_int_damage = MECHA_INT_FIRE|MECHA_INT_TEMP_CONTROL|MECHA_INT_TANK_BREACH|MECHA_INT_CONTROL_LOST|MECHA_INT_SHORT_CIRCUIT
 	armor = list(MELEE = 40, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 60, BIO = 0, FIRE = 100, ACID = 100)
 	wreckage = /obj/structure/mecha_wreckage/ripley/mk2
