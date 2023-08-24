@@ -25850,6 +25850,21 @@
 	},
 /turf/open/floor/iron,
 /area/station/maintenance/port/fore)
+"gjk" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/freezer{
+	name = "Coldroom"
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/duct,
+/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
+/obj/structure/fans/tiny,
+/turf/open/floor/iron/freezer,
+/area/station/service/kitchen/coldroom)
 "gjl" = (
 /obj/machinery/computer/upload/borg{
 	dir = 1
@@ -31510,23 +31525,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
-"hFP" = (
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/siding/white/corner{
-	dir = 4
-	},
-/obj/machinery/door/airlock/freezer{
-	name = "Coldroom"
-	},
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/duct,
-/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
-/turf/open/floor/iron/freezer,
-/area/station/service/kitchen/coldroom)
 "hFS" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
@@ -41174,8 +41172,8 @@
 	dir = 8;
 	dwidth = 8;
 	height = 11;
-	shuttle_id = "ferry_home";
 	name = "Port Bay 2";
+	shuttle_id = "ferry_home";
 	width = 20
 	},
 /turf/open/space/basic,
@@ -48180,25 +48178,6 @@
 "lGv" = (
 /turf/closed/wall/r_wall,
 /area/station/security/prison/work)
-"lGE" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/door/airlock/maintenance_hatch{
-	name = "Kitchen Coldroom"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
-/turf/open/floor/iron,
-/area/station/maintenance/port/fore)
 "lGF" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 1
@@ -49018,6 +48997,26 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/maintenance/department/eva/abandoned)
+"lQp" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Kitchen Coldroom"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
+/obj/structure/fans/tiny,
+/turf/open/floor/iron,
+/area/station/maintenance/port/fore)
 "lQt" = (
 /obj/structure/closet/athletic_mixed,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -49354,8 +49353,8 @@
 /area/station/maintenance/port/aft)
 "lUo" = (
 /obj/docking_port/stationary/random{
-	shuttle_id = "pod_lavaland";
-	name = "lavaland"
+	name = "lavaland";
+	shuttle_id = "pod_lavaland"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -78758,7 +78757,7 @@
 /obj/effect/spawner/random/structure/table_fancy,
 /obj/item/reagent_containers/cup/glass/bottle/beer{
 	desc = "Whatever it is, it reeks of foul, putrid froth.";
-	list_reagents = list(/datum/reagent/consumable/ethanol/bacchus_blessing=15);
+	list_reagents = list(/datum/reagent/consumable/ethanol/bacchus_blessing = 15);
 	name = "Delta-Down";
 	pixel_x = 5;
 	pixel_y = 5
@@ -89706,8 +89705,8 @@
 /obj/docking_port/stationary{
 	dwidth = 1;
 	height = 13;
-	shuttle_id = "arrivals_stationary";
 	name = "arrivals";
+	shuttle_id = "arrivals_stationary";
 	width = 5
 	},
 /turf/open/space/basic,
@@ -95814,8 +95813,8 @@
 "xpI" = (
 /obj/machinery/button/curtain{
 	id = "barbershopcurtains";
-	pixel_y = -24;
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = -24
 	},
 /obj/machinery/vending/barbervend,
 /turf/open/floor/iron/edge{
@@ -129848,7 +129847,7 @@ oYs
 oYs
 oYs
 oYs
-lGE
+lQp
 clh
 oYs
 mcs
@@ -130873,7 +130872,7 @@ sIE
 pVw
 hXw
 btc
-hFP
+gjk
 xAt
 uao
 oTB

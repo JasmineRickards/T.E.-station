@@ -2844,8 +2844,8 @@
 /area/station/security/checkpoint/science/research)
 "aNg" = (
 /obj/machinery/button/door/directional/north{
-	name = "Privacy Shutters Control";
-	id = "nt_rep_priv"
+	id = "nt_rep_priv";
+	name = "Privacy Shutters Control"
 	},
 /obj/structure/table/wood,
 /obj/item/folder/yellow{
@@ -2861,8 +2861,8 @@
 	pixel_y = 3
 	},
 /obj/item/folder/blue{
-	pixel_y = 6;
-	pixel_x = -2
+	pixel_x = -2;
+	pixel_y = 6
 	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain/private/nt_rep)
@@ -3682,6 +3682,14 @@
 "bbO" = (
 /turf/closed/wall/r_wall,
 /area/station/service/chapel/storage)
+"bbT" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Kitchen Cold Room Maintenance"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
+/obj/structure/fans/tiny,
+/turf/open/floor/iron/dark,
+/area/station/maintenance/department/bridge)
 "bcs" = (
 /obj/structure/sign/warning/explosives,
 /turf/closed/wall/r_wall,
@@ -13168,8 +13176,8 @@
 "dSe" = (
 /obj/structure/table/wood,
 /obj/item/taperecorder{
-	pixel_y = 5;
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 5
 	},
 /obj/item/camera{
 	pixel_x = -4
@@ -16415,8 +16423,8 @@
 "eOH" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
-	name = "Privacy Shutter";
-	id = "nt_rep_priv_2"
+	id = "nt_rep_priv_2";
+	name = "Privacy Shutter"
 	},
 /turf/open/floor/plating,
 /area/command/heads_quarters/captain/private/nt_rep)
@@ -30998,6 +31006,28 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/office)
+"iEo" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/freezer{
+	name = "Kitchen Coldroom"
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
+/obj/structure/fans/tiny,
+/turf/open/floor/iron/dark,
+/area/station/service/kitchen/coldroom)
 "iEr" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -33174,13 +33204,6 @@
 	},
 /turf/open/floor/engine/vacuum,
 /area/station/science/ordnance/bomb)
-"jgB" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Kitchen Cold Room Maintenance"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
-/turf/open/floor/iron/dark,
-/area/station/maintenance/department/bridge)
 "jgI" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate,
@@ -39123,7 +39146,7 @@
 /obj/effect/decal/cleanable/blood/gibs/old,
 /obj/effect/spawner/random/structure/crate,
 /mob/living/simple_animal/chicken{
-	atmos_requirements = list("min_oxy"=0,"max_oxy"=0,"min_tox"=0,"max_tox"=1,"min_co2"=0,"max_co2"=0,"min_n2"=0,"max_n2"=0);
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
 	desc = "A timeless classic.";
 	name = "Kentucky"
 	},
@@ -39136,8 +39159,8 @@
 	dir = 8;
 	dwidth = 8;
 	height = 11;
-	shuttle_id = "ferry_home";
 	name = "Port Bay 2";
+	shuttle_id = "ferry_home";
 	width = 20
 	},
 /turf/open/floor/plating,
@@ -48563,7 +48586,7 @@
 "nFN" = (
 /obj/machinery/igniter/incinerator_ordmix,
 /mob/living/simple_animal/chicken{
-	atmos_requirements = list("min_oxy"=0,"max_oxy"=0,"min_tox"=0,"max_tox"=1,"min_co2"=0,"max_co2"=0,"min_n2"=0,"max_n2"=0);
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
 	desc = "A timeless classic.";
 	name = "Kentucky"
 	},
@@ -64978,7 +65001,7 @@
 	},
 /obj/item/reagent_containers/cup/glass/bottle/beer{
 	desc = "A station exclusive. Consumption may result in seizures, blindness, drunkenness, or even death.";
-	list_reagents = list(/datum/reagent/consumable/ethanol/thirteenloko=30);
+	list_reagents = list(/datum/reagent/consumable/ethanol/thirteenloko = 30);
 	name = "Kilo-Kocktail";
 	pixel_x = 5;
 	pixel_y = 5
@@ -67490,8 +67513,8 @@
 	dir = 4;
 	dwidth = 1;
 	height = 13;
-	shuttle_id = "arrivals_stationary";
 	name = "arrivals";
+	shuttle_id = "arrivals_stationary";
 	width = 5
 	},
 /turf/open/floor/plating/airless,
@@ -70917,8 +70940,8 @@
 "tUr" = (
 /obj/structure/table/wood,
 /obj/item/stamp{
-	pixel_y = 8;
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = 8
 	},
 /obj/item/stamp/denied{
 	pixel_x = -6;
@@ -76134,8 +76157,8 @@
 "vtt" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
-	name = "Privacy Shutter";
-	id = "nt_rep_priv"
+	id = "nt_rep_priv";
+	name = "Privacy Shutter"
 	},
 /turf/open/floor/plating,
 /area/command/heads_quarters/captain/private/nt_rep)
@@ -77712,27 +77735,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
-"vMW" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/freezer{
-	name = "Kitchen Coldroom"
-	},
-/obj/machinery/door/firedoor,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
-/turf/open/floor/iron/dark,
-/area/station/service/kitchen/coldroom)
 "vNl" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -119917,7 +119919,7 @@ tBj
 uQS
 iWm
 luh
-vMW
+iEo
 ghp
 qeZ
 oGo
@@ -120180,7 +120182,7 @@ dMp
 eBu
 jDF
 rzV
-jgB
+bbT
 rPo
 kjK
 rOX
