@@ -28,7 +28,7 @@
 	else if(penis.aroused != AROUSAL_FULL)
 		to_chat(user, span_notice("You need to be aroused in order to masturbate."))
 		return
-	var/cum_volume = testicles.genital_size ** CUM_VOLUME_MULTIPLIER
+	var/cum_volume = testicles.genital_size ** CUM_VOLUME_EXPONENT
 	if(target == user)
 		user.visible_message(span_warning("[user] starts masturbating onto [target.p_them()]self!"), span_danger("You start masturbating onto yourself!"))
 
