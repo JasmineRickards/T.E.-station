@@ -61,8 +61,7 @@
 			var/datum/sprite_accessory/tails/tail = GLOB.sprite_accessories["tail"][name]
 			if(tail.fluffy)
 				user.allowed_turfs += "tails"
-			if(tail.snake)
-				user.allowed_turfs += "snake"
+
 		if(human_user.dna.species.mutant_bodyparts["taur"])
 			var/name = human_user.dna.species.mutant_bodyparts["taur"][MUTANT_INDEX_NAME]
 			var/datum/sprite_accessory/taur/taur = GLOB.sprite_accessories["taur"][name]
@@ -116,11 +115,11 @@
 				user.owned_turf.color = human_user.dna.features["mcolor"]
 
 
-		var/list/body_part = list("tails", "constrict", "snake")
+		var/list/body_part = list("tails", "constrict")
 		if(current_turf in body_part) //These turfs can be a body part and need color/size applied
 			var/key = null
 
-			var/list/tail_emotes = list("tails","snake")
+			var/list/tail_emotes = list("tails")
 			if(current_turf in tail_emotes)
 				key = "tail"
 			var/list/taur_emotes = list("constrict")
