@@ -124,8 +124,6 @@
 			src.add_overlay(overlay)
 			playsound(get_turf(src), 'modular_skyrat/modules/emotes/sound/emotes/hiss.ogg', 25, TRUE)
 
-<<<<<<< HEAD
-=======
 		if("snake")
 			name = "tail"
 			desc = "It's a scaly tail."
@@ -137,7 +135,6 @@
 			src.add_overlay(overlay)
 			playsound(get_turf(src), 'modular_skyrat/modules/emotes/sound/emotes/hiss.ogg', 25, TRUE)
 
->>>>>>> 6d9e3049c758a3cf82ce2d44977a0da53456bf5e
 		//prints
 		if("pawprint")
 			name = "pawprint"
