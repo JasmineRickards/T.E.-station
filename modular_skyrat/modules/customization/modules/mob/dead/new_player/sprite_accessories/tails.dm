@@ -9,6 +9,7 @@
 	genetic = TRUE
 	/// Can we use this tail for the fluffy tail turf emote?
 	var/fluffy = FALSE
+	var/snake = FALSE
 
 /datum/sprite_accessory/tails/is_hidden(mob/living/carbon/human/wearer, obj/item/bodypart/bodypart)
 	var/list/used_in_turf = list("tail")
@@ -370,6 +371,7 @@
 /datum/sprite_accessory/tails/mammal/wagging/snake_under
 	name = "Snake (Undertail color)"
 	icon_state = "snakeunder"
+	snake = TRUE
 
 /datum/sprite_accessory/tails/mammal/wagging/squirrel
 	name = "Squirrel"
