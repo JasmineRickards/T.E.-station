@@ -61,6 +61,11 @@
 			var/datum/sprite_accessory/tails/tail = GLOB.sprite_accessories["tail"][name]
 			if(tail.fluffy)
 				user.allowed_turfs += "tails"
+<<<<<<< HEAD
+=======
+			if(tail.snake)
+				user.allowed_turfs += "snake"
+>>>>>>> 6d9e3049c758a3cf82ce2d44977a0da53456bf5e
 
 		if(human_user.dna.species.mutant_bodyparts["taur"])
 			var/name = human_user.dna.species.mutant_bodyparts["taur"][MUTANT_INDEX_NAME]
