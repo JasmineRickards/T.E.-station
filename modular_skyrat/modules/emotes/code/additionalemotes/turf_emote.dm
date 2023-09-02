@@ -63,6 +63,7 @@
 				user.allowed_turfs += "tails"
 			if(tail.snake)
 				user.allowed_turfs += "snake"
+
 		if(human_user.dna.species.mutant_bodyparts["taur"])
 			var/name = human_user.dna.species.mutant_bodyparts["taur"][MUTANT_INDEX_NAME]
 			var/datum/sprite_accessory/taur/taur = GLOB.sprite_accessories["taur"][name]

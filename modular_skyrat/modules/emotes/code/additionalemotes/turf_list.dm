@@ -124,16 +124,16 @@
 			src.add_overlay(overlay)
 			playsound(get_turf(src), 'modular_skyrat/modules/emotes/sound/emotes/hiss.ogg', 25, TRUE)
 
-        if("snake")
-            name = "tail"
-            desc = "It's a scaly tail."
-            icon = 'modular_skyrat/master_files/icons/effects/turf_effects_64.dmi'
-            icon_state = "snake"
-            pixel_x = -16
-            var/mutable_appearance/overlay = mutable_appearance('modular_skyrat/master_files/icons/effects/turf_effects_64.dmi', "snake_top", EXTRA_ABOVE_MOB_LAYER, src, GAME_PLANE_UPPER)
-            overlay.appearance_flags = TILE_BOUND|PIXEL_SCALE|KEEP_TOGETHER
-            src.add_overlay(overlay)
-            playsound(get_turf(src), 'modular_skyrat/modules/emotes/sound/emotes/hiss.ogg', 25, TRUE)
+		if("snake")
+			name = "tail"
+			desc = "It's a scaly tail."
+			icon = 'modular_skyrat/master_files/icons/effects/turf_effects_64.dmi'
+			icon_state = "snake"
+			pixel_x = -16
+			var/mutable_appearance/overlay = mutable_appearance('modular_skyrat/master_files/icons/effects/turf_effects_64.dmi', "snake_top", EXTRA_ABOVE_MOB_LAYER, src, GAME_PLANE_UPPER)
+			overlay.appearance_flags = TILE_BOUND|PIXEL_SCALE|KEEP_TOGETHER
+			src.add_overlay(overlay)
+			playsound(get_turf(src), 'modular_skyrat/modules/emotes/sound/emotes/hiss.ogg', 25, TRUE)
 
 		//prints
 		if("pawprint")
